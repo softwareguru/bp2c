@@ -39,6 +39,13 @@ instagram: https://www.instagram.com/futuro_mobiik/?hl=en
 facebook: https://www.facebook.com/MobiikES/
 x: 
 
+# Carousel
+img1: /images/carousel/mobiik/1.gif
+img2: /images/carousel/mobiik/2.gif
+img3: /images/carousel/mobiik/3.gif
+img4: /images/carousel/mobiik/4.gif
+img5: /images/carousel/mobiik/5.gif
+
 website: https://www.mobiik.com/
 jobslink: https://www.mobiik.com/jobs
 weight: 6

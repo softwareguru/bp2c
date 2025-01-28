@@ -39,6 +39,14 @@ instagram:
 facebook: 
 x: 
 
+# Carousel
+
+img1: /images/carousel/ensitech/1.jpg 
+img2: /images/carousel/ensitech/2.jpg
+img3: /images/carousel/ensitech/3.jpg
+img4: /images/carousel/ensitech/4.jpg
+img5:
+
 website: https://ensitech.com
 
 jobslink: https://recruitcrm.io/jobs/Ensitech_Careers

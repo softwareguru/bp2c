@@ -39,6 +39,13 @@ instagram: https://www.instagram.com/onephasellc?igsh=MmJldTluanYyNzFs
 facebook: https://www.facebook.com/OnephaseLLC
 x: 
 
+# Carousel
+img1: /images/carousel/onephase/1.png
+img2: /images/carousel/onephase/2.png
+img3: /images/carousel/onephase/3.png
+img4: /images/carousel/onephase/4.png
+img5: /images/carousel/onephase/5.png
+
 website: https://onephase.com
 jobslink: https://www.linkedin.com/company/onephase/jobs/
 weight: 8

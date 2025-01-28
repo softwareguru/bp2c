@@ -39,6 +39,13 @@ facebook: https://www.facebook.com/griddynamicsglobal
 x:
 youtube: https://www.youtube.com/@griddynamicsengineeringcom2006
 
+# Carousel
+img1: /images/carousel/grid-dynamics/1.jpg 
+img2: /images/carousel/grid-dynamics/2.jpg
+img3: /images/carousel/grid-dynamics/3.jpg
+img4: /images/carousel/grid-dynamics/4.jpg
+img5: /images/carousel/grid-dynamics/5.jpg
+
 website: https://www.griddynamics.com/
 jobslink: https://careers.griddynamics.com/
 weight: 4

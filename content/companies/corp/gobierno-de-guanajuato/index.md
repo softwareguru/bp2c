@@ -39,5 +39,16 @@ instagram:
 facebook: 
 x: 
 
+# Carousel
+img1: /images/carousel/gobierno-de-guanajuato/1.jpg
+img2: /images/carousel/gobierno-de-guanajuato/2.jpg
+img3: /images/carousel/gobierno-de-guanajuato/3.jpg
+img4: /images/carousel/gobierno-de-guanajuato/4.jpg
+img5: /images/carousel/gobierno-de-guanajuato/5.jpg
+
+
+website: 
+jobslink: 
+
 weight: 1
 ---

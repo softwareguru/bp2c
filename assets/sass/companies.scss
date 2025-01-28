@@ -1,10 +1,15 @@
 .bg-companies{
     background-image: url(../images/team-example.jpg);
     background-size: cover;
-    height: 60vh;
+    height: 48vh;
     background-position: center;
     margin-top: -40px;
 }
+
+.img-location{
+    border-radius: 25px;
+}
+
 .section-cities a{
     text-decoration: none;
     color: rgb(58, 58, 58);

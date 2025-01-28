@@ -5,8 +5,8 @@
 <section>
   <!-- Imagenes empresa -->
   <section class="bg-companies">
-    <div>
-      <img class="img-fluid img-location mx-auto d-block" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
+    <div class="container">
+      <img class="img-fluid img-location" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
   </div>
   </section>
   <!-- Imagenes empresa -->
@@ -86,7 +86,7 @@
     <!-- /Porcentaje general y sello -->
 
     <!-- Beneficios -->
-    <div class="container beneficios-section mt-4">
+    <div class="container beneficios-section mt-4 ">
         <div class="container row">
           {{ with .Params.Cafeteria }}
             <div class="col-md-3 col-sm-6 mb-4">
@@ -152,30 +152,119 @@
     </div>
 
     <!-- Carousel -->
-    <div class="container mt-4">
 
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/images/team-example.jpg" class="d-block w-100" height="500" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/team-example.jpg" class="d-block w-100" height="500" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/team-example.jpg" class="d-block w-100" height="500" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+<body>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper container">
+    <div class="swiper-wrapper">
+
+
+      {{ with .Params.Img1}}
+      <div class="swiper-slide"><img src="{{ . }}"></div>
+      {{ end}}
+
+      {{ with .Params.Img2}}
+      <div class="swiper-slide"><img src="{{ . }}"></div>
+      {{ end}}
+
+      {{ with .Params.Img3}}
+      <div class="swiper-slide"><img src="{{ . }}"></div>
+      {{ end}}
+
+      {{ with .Params.Img4}}
+      <div class="swiper-slide"><img src="{{ . }}"></div>
+      {{ end}}
+
+      {{ with .Params.Img5}}
+      <div class="swiper-slide"><img src="{{ . }}"></div>
+      {{ end}}
+
+
     </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      autoplay: true,
+      autoplaySpeed: 10000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+</body>
+
+
     <!-- /Carousel -->
 
 
@@ -183,8 +272,8 @@
     <div class="container text-center mt-4">
       <div class="row">
         <div class="col-lg-4 text-center redes">
-         <h4>Redes Sociales</h4>
-        <ul class="d-flex justify-content-evenly mt-4">
+
+        <ul class="d-flex justify-content-evenly mt-2 mb-4">
           {{ with .Params.Linkedin }}
           {{ if ne . "" }}
           <a href="{{ . }}">
@@ -202,28 +291,32 @@
           {{ end }}
 
           {{ with .Params.Facebook }}
+          {{ if ne . "" }}
               <a href="{{ . }}">
                 <img src="/images/icons/facebook.png" alt="Linkedin" width="52" height="52">
               </a>
           {{ end }}
+          {{ end }}
 
           {{ with .Params.X }}
+          {{ if ne . "" }}
               <a href="{{ . }}">
                 <img src="/images/icons/twitter.png" alt="Linkedin" width="52" height="52">
               </a>
+          {{ end }}
           {{ end }}
       </ul>
         </div>
         <div class="col-lg-4">
           <div class="mb-4">
-            <a href="#">
+            <a href="{{ .Params.Website}}" target="_blank">
               <button class="btn text-white btn-lg hero-button">Sitio web</button>
             </a>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="mb-4">
-            <a href="#">
+            <a href="{{ .Params.Jobslink }}" target="_blank">
               <button class="btn text-white btn-lg hero-button">Oportunidades Laborales</button>
             </a>
           </div>

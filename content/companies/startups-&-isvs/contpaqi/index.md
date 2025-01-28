@@ -40,6 +40,13 @@ facebook: https://www.facebook.com/CONTPAQi https://www.instagram.com/contpaqimx
 x: 
 tiktok: https://www.tiktok.com/@contpaqi
 
+# Carousel
+img1: /images/carousel/contpaqi/1.jpg 
+img2: /images/carousel/contpaqi/2.jpg
+img3: /images/carousel/contpaqi/3.jpg
+img4: /images/carousel/contpaqi/4.jpg
+img5: /images/carousel/contpaqi/5.jpg
+
 website: https://www.contpaqi.com
 jobslink: https://www.linkedin.com/company/contpaqi1/jobs/
 

@@ -44,6 +44,13 @@ instagram: https://www.instagram.com/kohmi_mx/?hl=en
 facebook: https://www.facebook.com/MxKohmi/
 x: https://twitter.com/MxKohmi
 
+# Carousel
+img1: /images/carousel/kohmi/1.jpg 
+img2: /images/carousel/kohmi/2.jpg
+img3: /images/carousel/kohmi/3.jpg
+img4: /images/carousel/kohmi/4.jpg
+img5: /images/carousel/kohmi/5.jpg
+
 website: https://kohmi.net/
 jobslink: https://kohmi.net/
 weight: 2

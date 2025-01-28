@@ -39,6 +39,13 @@ instagram: https://www.instagram.com/inbest.cloud
 facebook: https://www.facebook.com/InBest
 x: https://twitter.com/inbestcloud
 
+# Carousel
+img1: /images/carousel/inbest/1.png
+img2: /images/carousel/inbest/2.png
+img3: /images/carousel/inbest/3.png
+img4: /images/carousel/inbest/4.png
+img5: /images/carousel/inbest/5.png
+
 website: https://www.inbest.cloud/
 jobslink: https://www.linkedin.com/company/inbest-cloud/jobs/
 weight: 7
