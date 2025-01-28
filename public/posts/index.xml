@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Best Place to Code</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Best Place to Code</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QuantStack announces dedicated Apache Arrow team</title>
+      <link>http://localhost:1313/posts/quantstack-apache-arrow/</link>
+      <pubDate>Thu, 24 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/quantstack-apache-arrow/</guid>
+      <description>QuantStack has announced the creation of a dedicated team to support the Apache Arrow project, a key tool in the open-source data analytics community. Led by Antoine Pitrou, a principal maintainer of Arrow and core CPython developer, this team aims to ensure the continuity and growth of the project, especially following recent layoffs at Voltron Data, which affected several Arrow maintainers. Apache Arrow&amp;rsquo;s standardized, columnar memory format is crucial for efficient data processing, and QuantStack&amp;rsquo;s involvement underscores the importance of supporting foundational tools in data science and analytics.</description>
+    </item>
+    <item>
+      <title>Microsoft Drasi simplifies change detection and reaction in complex systems</title>
+      <link>http://localhost:1313/posts/2024-10-05-microsoft-drasi/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-10-05-microsoft-drasi/</guid>
+      <description>Microsoft Drasi simplifies change detection and reaction in complex systems Microsoft&amp;rsquo;s new open-source project, Drasi, optimizes change detection and automated reactions within complex, event-driven systems. Targeted at IoT, security, and app development, Drasi eliminates the need for manual data collation by integrating directly with sources like Azure Event Grid and PostgreSQL.&#xA;Its framework includes Continuous Queries and automated Reactions, enhancing real-time processing and reducing complexity for developers. Notably, Drasi’s flexible architecture allows custom integrations, making it adaptable to varied operational needs, and it&amp;rsquo;s submitted as a Cloud Native Computing Foundation Sandbox project.</description>
+    </item>
+    <item>
+      <title>The Commercialization trade-offs for open-source: the Wordpress lesson</title>
+      <link>http://localhost:1313/posts/wordpress-wpengine-mullenweg/</link>
+      <pubDate>Thu, 26 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/wordpress-wpengine-mullenweg/</guid>
+      <description>The Commercialization trade-offs for open-source: the Wordpress lesson A heated dispute has unfolded within the open-source WordPress community, revealing tensions between the FOSS ethos and profit-driven businesses. WordPress cofounder Matt Mullenweg has launched sharp criticism at WP Engine, a significant WordPress hosting provider, accusing it of &amp;ldquo;strip-mining the WordPress ecosystem.&amp;rdquo; The controversy highlights a deeper question within open-source analytics projects: how to balance community contributions with the commercialization of open-source analytics software.</description>
+    </item>
+    <item>
+      <title>Open source Helical Insight version 5.2.1</title>
+      <link>http://localhost:1313/posts/helical-insights-521/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/helical-insights-521/</guid>
+      <description>Helical IT Solutions has launched Helical Insight version 5.2.1, a major update in the realm of open-source Business Intelligence (BI). This release aims to provide a cost-effective and scalable alternative to traditional BI tools like PowerBI, Tableau, and Quicksight, with a focus on democratizing data analytics.&#xA;The project Github repo can be found here.&#xA;The platform&amp;rsquo;s open-source nature make it accessible to businesses of all sizes, offering flexible deployment options. Its browser-based interface allows self-service analytics, supporting internal teams and external clients alike.</description>
+    </item>
+    <item>
+      <title>OSA Con 2024: CFPs are now closed.</title>
+      <link>http://localhost:1313/posts/osa-con-24-cfp-now-closed/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/osa-con-24-cfp-now-closed/</guid>
+      <description>OSA Con 2024: CFPs are now closed - thanks to all who submitted. Thanks to all who submitted talks for this year&amp;rsquo;s event. It was a great range of ideas, and we wish we could share them all. We carefully curated the list based on this year&amp;rsquo;s themes and selected a diverse range of speakers.&#xA;We hope to see you all there - if you have not already please register here.</description>
+    </item>
+    <item>
+      <title>OSA Con 2024: Submit Your Proposals on Open Source Analytics Today!</title>
+      <link>http://localhost:1313/posts/osa-con-24-submit-proposals/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/osa-con-24-submit-proposals/</guid>
+      <description>OSA Con 2024: Submit Your Proposals on Open Source Analytics Today! Open source projects are building blocks for the biggest, fastest, cheapest analytic software on the planet. OSA Con is the vendor-neutral, 100% open conference where developers gather to learn about those projects and the analytic apps that build on them. The 2024 conference runs from 19 to 21 November. The call for papers is open until July 29th. Project roadmaps, industrial applications, new technologies, better vendor models for open source projects, crazy new ideas–all welcome!</description>
+    </item>
+    <item>
+      <title>SensiML to open source Analytics Studio for TinyML code for IoT sensor apps</title>
+      <link>http://localhost:1313/posts/sensiml-open-source-tinyml/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sensiml-open-source-tinyml/</guid>
+      <description>SensiML to open source Analytics Studio for TinyML code for IoT sensor apps SensiML, a subsidiary of QuickLogic, is opening access to its Analytics Studio, an automated machine learning (AutoML) engine, as open-source software. Previously available as a managed cloud service, Analytics Studio supports a wide range of MCUs and AI-accelerated SoCs for building edge AI/ML applications. By going open source, SensiML aims to enhance its platform, including adding capabilities like GenAI model development and object recognition.</description>
+    </item>
+  </channel>
+</rss>

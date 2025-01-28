@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+<link rel="stylesheet" href="/css/style.css" media="screen">
+
+    <title>The Commercialization trade-offs for open-source: the Wordpress lesson</title>
+
+<meta name="description" content="The move is intended to foster innovation in IoT edge devices and fill a gap in the AI landscape.">
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/wordpress-wpengine-mullenweg/" />
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/wordpress-wpengine-mullenweg/" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/posts/wordpress-wpengine-mullenweg/" />
+
+
+
+
+<meta property="og:title" content="The Commercialization trade-offs for open-source: the Wordpress lesson" />
+<meta property="og:description" content="The move is intended to foster innovation in IoT edge devices and fill a gap in the AI landscape." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/wordpress-wpengine-mullenweg/" />
+    <meta property="og:image" content="http://localhost:1313/posts/wordpress-wpengine-mullenweg/wordpress-wpengine.jpg" />
+      
+    <meta property="og:image" content="http://localhost:1313/images/BestPlaceToCode-logo-100h.png" />
+      
+    <meta property="og:image" content="http://localhost:1313/images/site-feature-image.png" />
+      
+  <meta property="article:section" content="posts" />
+  
+    <meta property="article:published_time" content="2024-09-26T00:00:00+00:00" />
+  
+  
+    <meta property="article:modified_time" content="2024-11-19T14:27:05-06:00" />
+  
+
+
+
+
+
+
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="http://localhost:1313/posts/wordpress-wpengine-mullenweg/wordpress-wpengine.jpg"/>
+  <meta name="twitter:title" content="The Commercialization trade-offs for open-source: the Wordpress lesson"/>
+<meta name="twitter:description" content="The move is intended to foster innovation in IoT edge devices and fill a gap in the AI landscape."/>
+
+
+
+
+
+
+  
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Commercialization trade-offs for open-source: the Wordpress lesson",
+  "image": "http://localhost:1313/posts/wordpress-wpengine-mullenweg/wordpress-wpengine.jpg",
+  "datePublished": "2024-09-26T00:00:00+00:00",
+  "dateModified": "2024-11-19T14:27:05-06:00",
+  "mainEntityOfPage": "http://localhost:1313/",
+  "publisher": {
+    "@type": "Organization",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/images/BestPlaceToCode-logo-100h.png"
+    },
+    "name": "Best Place to Code"
+  },
+  "wordcount" :  876 ,
+  "description": "The move is intended to foster innovation in IoT edge devices and fill a gap in the AI landscape.",
+  "keywords":  null 
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<link rel="icon" type="image/svg+xml" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" href="http://localhost:1313/favicon.png">
+
+    
+</head>
+
+<body class="posts single d-flex flex-column min-vh-100"><header class="main-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="/">
+        
+        <img src="/images/BestPlaceToCode-logo-100h.png" alt="logo" width="150"
+          class="d-inline-block align-text-top">
+        
+      </a>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="menu-main navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/manifesto">Acerca de</a>
+          </li>
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="/posts" >
+                  News
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/sessions/2023" >
+                  Sessions OSA CON 2023
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/events" >
+                  Events
+                </a>
+              </li>
+              </ul>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/contact">Contact</a>
+          </li>
+          
+          </ul>
+
+        
+        
+        
+
+      </div>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+    </div>
+  </nav>
+</header><div id="content">
+        <nav class="header-breadcrumb my-2" aria-label="breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb my-0">
+            
+            
+                
+                
+                    
+                
+                    
+                
+            
+                    <li class="breadcrumb-item"> <a href="http://localhost:1313/">Home</a> </li>
+                
+            
+                    <li class="breadcrumb-item"> <a href="http://localhost:1313/posts/">Posts</a> </li>
+                
+            
+                <li class="breadcrumb-item active" aria-current="page">  The Commercialization trade-offs for open-source: the Wordpress lesson</li>
+            
+        </ol>
+    </div>
+</nav>
+
+
+<div class="container py-3">
+  <h1 id="the-commercialization-trade-offs-for-open-source-the-wordpress-lesson">The Commercialization trade-offs for open-source: the Wordpress lesson</h1>
+<p>A heated dispute has unfolded within the open-source WordPress community, revealing tensions between the FOSS ethos and profit-driven businesses. WordPress cofounder Matt Mullenweg has launched sharp criticism at WP Engine, a significant WordPress hosting provider, accusing it of &ldquo;strip-mining the WordPress ecosystem.&rdquo; The controversy highlights a deeper question within open-source analytics projects: how to balance community contributions with the commercialization of open-source analytics software.</p>
+<h2 id="the-core-issue-commercial-use-of-open-source-software">The Core Issue: Commercial Use of Open-Source Software</h2>
+<p>WP Engine, a company founded in 2010 and later acquired by private equity firm Silver Lake, offers WordPress hosting based on the free, open-source WordPress software. Mullenweg’s main critique centers on WP Engine’s business model, which profits from WordPress without sufficiently contributing back to the open-source community that maintains and improves the platform. In a WordCamp keynote speech, Mullenweg called WP Engine a &ldquo;cancer&rdquo; to the WordPress community, accusing it of taking more from the ecosystem than it gives.</p>
+<p>This accusation strikes at the heart of a persistent challenge for open-source projects: the fact that anyone can use the code, but not everyone contributes equally. WP Engine&rsquo;s limited contribution of 40 hours per week to the WordPress.org open-source project, in contrast to Automattic’s contribution of 3,988 hours per week, is at the center of Mullenweg&rsquo;s frustration. The open-source license governing WordPress allows companies to use the code freely, but the spirit of open-source suggests that successful businesses should give back to the projects they depend on.</p>
+<h2 id="open-source-vs-profit-the-tension">Open Source vs. Profit: The Tension</h2>
+<p>This conflict illuminates the growing tensions between open-source communities and the businesses that build on their work. Open-source software, such as WordPress, relies on a global community of contributors to create, maintain, and improve the code. Many developers volunteer their time, driven by a sense of collective ownership and community improvement. However, when a business profits from an open-source project without contributing back, it risks undermining the very foundation of the software.</p>
+<p>WP Engine has defended its business practices by pointing to its investments in community sponsorships and the promotion of the WordPress platform. However, critics argue that these contributions fall short of the level expected from a company profiting so heavily from the open-source project.</p>
+<p>Mullenweg’s stance is clear: businesses built on open-source projects should not just extract value but also contribute to their sustainability. This is especially important for the future of WordPress, which powers 43 percent of all websites on the internet.</p>
+<h2 id="governance-and-power-in-open-source">Governance and Power in Open Source</h2>
+<p>The governance of open-source projects is another critical issue highlighted by this dispute. Mullenweg’s dual role as the leader of WordPress.org (the open-source project) and Automattic (the commercial entity behind WordPress.com) raises questions about conflicts of interest. While Mullenweg claims his fight against WP Engine is about defending open-source values, critics point out that Automattic itself is a commercial player competing directly with WP Engine.</p>
+<p>The conflict has escalated with legal threats and counterclaims. WP Engine alleges that Mullenweg demanded a substantial financial payment in exchange for not publicly criticizing the company. Mullenweg, in turn, argues that WP Engine’s use of the “WP” abbreviation misleads customers into thinking they are getting the same service as WordPress.com.</p>
+<p>This power struggle within the WordPress ecosystem touches on a broader issue facing open-source projects: who gets to control the direction of the project and its trademarks? Mullenweg’s control over both the WordPress Foundation (which owns the WordPress trademark) and Automattic has led some in the community to accuse him of using his influence to push competitors out, which they argue risks blurring the lines between open-source governance and business interests.</p>
+<h2 id="the-future-of-open-source-and-commercialization">The Future of Open Source and Commercialization</h2>
+<p>This dispute is more than just a business rivalry; it reflects broader concerns about the sustainability and governance of open-source projects in a commercial world. Open-source software has transformed the tech industry by providing free tools for everyone to use and build upon. However, the question remains: how can open-source communities maintain their values in the face of profit-driven commercialization?</p>
+<p>To preserve the health of open-source projects, there must be a balance between community contributions and commercial interests. While businesses like WP Engine are not legally required to give back to the open-source project, Mullenweg’s stance suggests that such contributions are necessary to ensure the long-term success and sustainability of WordPress.</p>
+<p>Clear governance structures, fair contributions from commercial entities, and transparency are critical to maintaining this balance. Open-source projects thrive on collaboration and mutual support, and if businesses take too much without giving back, they risk undermining the very ecosystem they depend on.</p>
+<p>The outcome of this conflict between Mullenweg and WP Engine may set an important precedent for how open-source projects and commercial entities can coexist. At its core, this is not just a legal or business dispute—it’s a battle for the future of open-source software and its role in a commercial world.</p>
+<h2 id="some-lessons-for-the-open-source-analytics-community">Some lessons for the open-source analytics community</h2>
+<p>The WordPress-WP Engine controversy illustrates a key challenge for open-source analytics projects: how to reconcile the values of free, open collaboration with the realities of commercial profit. As open-source continues to power much of the internet, finding ways to balance these competing interests will be essential to ensuring the future health and success of open-source projects like WordPress.</p>
+
+</div>
+
+
+    </div>
+    <footer class="py-3 mt-auto bg-light">
+  <div class="container py-1 my-1">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <p class="col-md mb-0 text-muted"></p>
+      <ul class="nav col-md-auto justify-content-end">
+        <li class="nav-item"><a href="/code-of-conduct/" class="nav-link px-2 text-muted" title='Code of Conduct' aria-label='Code of Conduct'>Code of Conduct</a></li>
+        <li class="nav-item"><a href="/privacy-policy/" class="nav-link px-2 text-muted" title='Privacy Policy' aria-label='Privacy Policy'>Privacy Policy</a></li>
+        </ul>
+    </div>
+  </div>
+</footer>
+    
+
+
+<script src="/js/bootstrap/bootstrap.bundle.min.min.6b1c8410dba61df0be2410ec2db27e9f023403abdad53000a93ed2a0589528c911a05d8716e98c67a03ccc55c5fe3a7e2b8f4bd27c54ffd8891c048c73a825f9.js" integrity="sha512-axyEENumHfC&#43;JBDsLbJ&#43;nwI0A6va1TAAqT7SoFiVKMkRoF2HFumMZ6A8zFXF/jp&#43;K49L0nxU/9iJHASMc6gl&#43;Q==" crossorigin="anonymous" defer></script>
+
+
+
+  <script src="/js/main.min.e8d88c82c0438b527f1aca4115652ba1e2877bf805b75593b23ac0e3fe2b3fe95a467d1feef275355132ba061da6404b0d24d55afabc209b294b1db043be014d.js" integrity="sha512-6NiMgsBDi1J/GspBFWUroeKHe/gFt1WTsjrA4/4rP&#43;laRn0f7vJ1NVEyugYdpkBLDSTVWvq8IJspSx2wQ74BTQ==" crossorigin="anonymous" defer></script>
+
+
+
+      
+</body>
+</html>

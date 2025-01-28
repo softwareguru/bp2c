@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ciudades on Best Place to Code</title>
+    <link>http://localhost:1313/cities/</link>
+    <description>Recent content in Ciudades on Best Place to Code</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/cities/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aguastalientes</title>
+      <link>http://localhost:1313/cities/aguascalientes/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/aguascalientes/</guid>
+      <description>Aguascalientes </description>
+    </item>
+    <item>
+      <title>Kiev</title>
+      <link>http://localhost:1313/cities/kiev/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/kiev/</guid>
+      <description>Kiev </description>
+    </item>
+    <item>
+      <title>Mexicali</title>
+      <link>http://localhost:1313/cities/mexicali/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/mexicali/</guid>
+      <description>Mexicali </description>
+    </item>
+    <item>
+      <title>San Luis Potosí</title>
+      <link>http://localhost:1313/cities/san-luis-potosi/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/san-luis-potosi/</guid>
+      <description>San Luis Potosí </description>
+    </item>
+    <item>
+      <title>Bogotá</title>
+      <link>http://localhost:1313/cities/bogota/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/bogota/</guid>
+      <description>Bogotá </description>
+    </item>
+    <item>
+      <title>Monterrey</title>
+      <link>http://localhost:1313/cities/monterrey/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/monterrey/</guid>
+      <description>Monterrey </description>
+    </item>
+    <item>
+      <title>Santiago</title>
+      <link>http://localhost:1313/cities/santiago/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/santiago/</guid>
+      <description>Santiago </description>
+    </item>
+    <item>
+      <title>Buenos Aires</title>
+      <link>http://localhost:1313/cities/buenos-aires/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/buenos-aires/</guid>
+      <description>Buenos Aires </description>
+    </item>
+    <item>
+      <title>Morelia</title>
+      <link>http://localhost:1313/cities/morelia/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/morelia/</guid>
+      <description>Morelia </description>
+    </item>
+    <item>
+      <title>Silicon Valley</title>
+      <link>http://localhost:1313/cities/silicon-valley/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/silicon-valley/</guid>
+      <description>Silicon Valley </description>
+    </item>
+    <item>
+      <title>Ciudad de México</title>
+      <link>http://localhost:1313/cities/ciudad-de-m%C3%A9xico/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/ciudad-de-m%C3%A9xico/</guid>
+      <description>Ciudad de México </description>
+    </item>
+    <item>
+      <title>Guadalajara</title>
+      <link>http://localhost:1313/cities/guadalajara/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/guadalajara/</guid>
+      <description>Guadalajara </description>
+    </item>
+    <item>
+      <title>Guanajuato</title>
+      <link>http://localhost:1313/cities/guanajuato/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/guanajuato/</guid>
+      <description>Guanajuato </description>
+    </item>
+    <item>
+      <title>Puebla</title>
+      <link>http://localhost:1313/cities/puebla/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/puebla/</guid>
+      <description>Puebla </description>
+    </item>
+    <item>
+      <title>San Jose</title>
+      <link>http://localhost:1313/cities/san-jose/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/san-jose/</guid>
+      <description>San Jose </description>
+    </item>
+    <item>
+      <title>San José (Costa Rica)</title>
+      <link>http://localhost:1313/cities/san-jose-costa-rica/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/cities/san-jose-costa-rica/</guid>
+      <description>San José (Costa Rica) </description>
+    </item>
+  </channel>
+</rss>

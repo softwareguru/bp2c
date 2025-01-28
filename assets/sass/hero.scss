@@ -1,0 +1,21 @@
+
+.bg-hero{
+    background-image: url(/images/bg-bp2c-1.png);
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+}
+
+.hero-button{
+    background-color: $green-button;
+    border-radius: 25px;
+    padding: 15px 30px 15px 30px;
+
+    &:hover{
+        background-color: rgb(121, 202, 121);
+    }
+
+}
+
+
+

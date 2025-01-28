@@ -1,0 +1,165 @@
+baseURL = 'https://bestplacetocode.com/'
+title = 'Best Place to Code'
+theme = 'hugo-bootstrap'
+
+disableHugoGeneratorInject = true
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+#sectionPagesMenu = "main"
+#googleAnalytics = "###########"
+
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = 'series'
+  author = "authors"
+  cities = "cities"
+
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.99.1"
+
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+
+  [markup.goldmark]
+
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      wrapStandAloneImageWithinParagraph = false
+
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xHTML = false
+
+
+# Site Params
+
+# Open Graph, Twitter Cards and schema.org Thing and Article (in posts)
+# https://gohugo.io/templates/internal/#open-graph
+# https://gohugo.io/templates/internal/#twitter-cards
+# https://schema.org/Thing
+# https://schema.org/Article
+[params]
+  description = "Best place to code es una iniciativa de Software Guru para reconocer a las empresas que se esfuerzan por brindar las mejores condiciones de trabajo posibles para quienes se desempeñan en las áreas de software y tecnología de información."
+  images = ['images/BestPlaceToCode-logo-100h.png','images/site-feature-image.png']
+  mainMenuLogo = "images/BestPlaceToCode-logo-100h.png"
+
+  themeColor = "#fff"
+
+  [params.options]
+    bootStrapJs = true
+    breadCrumb = true
+    listCategoryFilter = true
+    listTagFilter = true
+
+
+[[menus.main]]
+name = "Acerca de"
+url = "/manifesto"
+weight = 10
+
+[[menus.main]]
+identifier = "resources"
+name = "Recursos"
+weight = 20
+
+[[menus.main]]
+name = "Blog"
+url = "blog"
+parent="resources"
+weight = 10
+
+[[menus.main]]
+name = "Estudio de Salarios SG"
+url = "https://sg.com.mx/estudios/salarios/2020"
+parent="resources"
+weight = 30
+
+[[menus.main]]
+name = "Vacantes Get on Board"
+url = "https://www.getonbrd.com/"
+parent="resources"
+weight = 40
+
+[[menus.main]]
+name = "Alianza Software Guru y Get on Board"
+url = "https://sg.com.mx/buzz/software-guru-get-board-una-alianza-que-potencia-las-empresas-y-al-talento-digital-latino"
+parent="resources"
+weight = 50
+
+[[menus.main]]
+name = "Eventos"
+url = "events"
+weight = 30
+
+[[menus.main]]
+identifier = "quiero-ser-bp2c"
+name = "Quiero ser BP2C"
+weight = 30
+
+
+[[menus.main]]
+name = "Cómo formar parte"
+url = "como-formar-parte"
+parent="quiero-ser-bp2c"
+weight = 10
+
+[[menus.main]]
+name = "Beneficios"
+url = "beneficios"
+parent="quiero-ser-bp2c"
+weight = 30
+
+[[menus.main]]
+name = "Evaluación y cuestionario"
+url = "evaluacion-y-cuestionario"
+parent="quiero-ser-bp2c"
+weight = 40
+
+[[menus.main]]
+name = "Preguntas frecuentes"
+url = "faqs"
+parent="quiero-ser-bp2c"
+weight = 50
+
+
+[[menus.main]]
+name = "Contact"
+url = "contacto"
+weight = 50
+
+

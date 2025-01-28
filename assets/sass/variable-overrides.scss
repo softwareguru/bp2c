@@ -1,0 +1,35 @@
+// Default variable overrides
+
+// scss-docs-start theme-color-variables
+$primary:       #1a9dcf;
+$secondary:     #6c757d;
+$success:       #198754;
+$info:          #0dcaf0;
+$warning:       #ffc107;
+$danger:        #dc3545;
+$light:         #f8f9fa;
+$dark:          #212529;
+// scss-docs-end theme-color-variables
+
+
+// BP2C colors
+
+$bg-color:      #F7F0E8;
+$green-button:  #B1D635;
+$blue-button:   #0098CF;
+$green-section: #DEE7BE;
+$blue-section:  #CFE6EE;
+
+
+// Your variable overrides
+$body-bg: #fff;
+$body-color: #363b3f;
+$font-size-base: 1.2rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1200px
+);

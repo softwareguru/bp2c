@@ -1,0 +1,16 @@
+<head>
+    {{ block "head/google-tag" . }}{{ partial "head/google-tag.html" . }}{{ end }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ block "head/stylesheet" . }}{{ partial "head/stylesheet.html" . }}{{ end }}
+    {{ block "head/seo" . }}{{ partial "head/seo.html" . }}{{ end }}
+    {{ block "head/favicons" . }}{{ partial "head/favicons.html" . }}{{ end }}
+    {{ if .IsHome }}
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      {{ $js := resources.Get "js/swiper-bundle.js" }}
+      {{ with $js }}
+        {{ $js := . | minify | fingerprint "sha512" -}}
+        <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+      {{ end }}
+    {{ end }}
+</head>

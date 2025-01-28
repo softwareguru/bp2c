@@ -1,0 +1,86 @@
+.bg-companies{
+    background-image: url(../images/team-example.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-position: center;
+    margin-top: -40px;
+}
+.section-cities a{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+
+.collapse-img-section{
+    display: flex; 
+    justify-content: center;
+
+    @media (max-width:991px) {
+        display: none;
+      }
+    
+}
+
+.ranking-numer{
+    color: $green-button;
+    font-size: 3em;
+    margin-top: -20px;
+    margin-bottom: -8px ;
+    font-weight: 600;
+}
+
+.collapse-img-section img{
+    @media (max-width:992px) {
+        display: none;
+      }
+}
+
+.collapse-companies-blue, .collapse-companies-green{ 
+    border-radius: 25px; 
+    padding: 0 25px 0 25px;
+}
+
+.collapse-companies-green{
+    background-color: $green-section; 
+}
+
+.collapse-companies-blue{
+    background-color: $blue-section;
+}
+
+.card-cities{
+    border-radius: 25px;
+}
+
+.card-cisites-body{
+    padding: 35px;
+}
+
+.title-cities{
+    font-weight: 600;
+}
+
+.cities{
+    color: blue;
+    text-transform: uppercase;
+    font-size: .8em;
+    &:hover{
+        color: rgb(0, 0, 224);
+    }
+}
+
+.accordion-item{
+    margin-bottom: -40px;
+}
+
+.accordion-body{
+    margin-bottom: 30px;
+}
+
+
+// redes sociales por empresa
+
+.redes ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mexicali on Best Place to Code</title>
+    <link>http://localhost:1313/cities/mexicali/</link>
+    <description>Recent content in Mexicali on Best Place to Code</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 27 Jan 2025 15:15:41 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/cities/mexicali/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spark Technologies</title>
+      <link>http://localhost:1313/companies/tech-consulting-mid/spark-technologies/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-mid/spark-technologies/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+<link rel="stylesheet" href="/css/style.css" media="screen">
+
+    <title>Leveraging object storage: Tiered Storage for ClickHouse</title>
+
+<meta name="description" content="Discussing the journey to make Tiered Storage available for Aiven for ClickHouse. From product discovery to the benefits and use cases of leveraging object storage for ClickHouse workloads.">
+  
+
+
+<link rel="canonical" href="http://localhost:1313/sessions/2023/leveraging-object-storage-tiered-storage-for-clickhouse/" />
+
+
+<link rel="alternate" hreflang="en" href="http://localhost:1313/sessions/2023/leveraging-object-storage-tiered-storage-for-clickhouse/" />
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/sessions/2023/leveraging-object-storage-tiered-storage-for-clickhouse/" />
+
+
+
+
+<meta property="og:title" content="Leveraging object storage: Tiered Storage for ClickHouse" />
+<meta property="og:description" content="Discussing the journey to make Tiered Storage available for Aiven for ClickHouse. From product discovery to the benefits and use cases of leveraging object storage for ClickHouse workloads." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/sessions/2023/leveraging-object-storage-tiered-storage-for-clickhouse/" />
+    <meta property="og:image" content="http://localhost:1313/images/BestPlaceToCode-logo-100h.png" />
+      
+    <meta property="og:image" content="http://localhost:1313/images/site-feature-image.png" />
+      
+  <meta property="article:section" content="sessions" />
+  
+  
+    <meta property="article:modified_time" content="2024-05-16T13:00:16-06:00" />
+  
+
+
+
+
+
+
+
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:image" content="http://localhost:1313/images/BestPlaceToCode-logo-100h.png"/>
+    <meta name="twitter:title" content="Leveraging object storage: Tiered Storage for ClickHouse"/>
+<meta name="twitter:description" content="Discussing the journey to make Tiered Storage available for Aiven for ClickHouse. From product discovery to the benefits and use cases of leveraging object storage for ClickHouse workloads."/>
+
+
+
+
+
+
+  
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Leveraging object storage: Tiered Storage for ClickHouse",
+  "datePublished": "0001-01-01T00:00:00+00:00",
+  "dateModified": "2024-05-16T13:00:16-06:00",
+  "author": {
+    "@type": "Person",
+    "name": "Arthur Ansquer",
+    "url": "http:\/\/localhost:1313\//authors/arthur-ansquer"
+  },
+  "mainEntityOfPage": "http://localhost:1313/",
+  "publisher": {
+    "@type": "Organization",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/images/BestPlaceToCode-logo-100h.png"
+    },
+    "name": "Best Place to Code"
+  },
+  "wordcount" :  28 ,
+  "description": "Discussing the journey to make Tiered Storage available for Aiven for ClickHouse. From product discovery to the benefits and use cases of leveraging object storage for ClickHouse workloads.",
+  "keywords":  null 
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<link rel="icon" type="image/svg+xml" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" href="http://localhost:1313/favicon.png">
+
+    
+</head>
+
+<body class="sessions single d-flex flex-column min-vh-100"><header class="main-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="/">
+        
+        <img src="/images/BestPlaceToCode-logo-100h.png" alt="logo" width="150"
+          class="d-inline-block align-text-top">
+        
+      </a>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="menu-main navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/manifesto">Acerca de</a>
+          </li>
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Recursos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="/blog" >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="https://sg.com.mx/estudios/salarios/2020" >
+                  Estudio de Salarios SG
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="https://www.getonbrd.com/" >
+                  Vacantes Get on Board
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="https://sg.com.mx/buzz/software-guru-get-board-una-alianza-que-potencia-las-empresas-y-al-talento-digital-latino" >
+                  Alianza Software Guru y Get on Board
+                </a>
+              </li>
+              </ul>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/events">Eventos</a>
+          </li>
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Quiero ser BP2C
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="/como-formar-parte" >
+                  Cómo formar parte
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/beneficios" >
+                  Beneficios
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/evaluacion-y-cuestionario" >
+                  Evaluación y cuestionario
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/faqs" >
+                  Preguntas frecuentes
+                </a>
+              </li>
+              </ul>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/contacto">Contact</a>
+          </li>
+          
+          </ul>
+
+        
+        
+        
+
+      </div>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+    </div>
+  </nav>
+</header><div id="content">
+        <nav class="header-breadcrumb my-2" aria-label="breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb my-0">
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                    <li class="breadcrumb-item"> <a href="http://localhost:1313/">Home</a> </li>
+                
+            
+                    <li class="breadcrumb-item"> <a href="http://localhost:1313/sessions/">Sessions</a> </li>
+                
+            
+                    <li class="breadcrumb-item"> <a href="http://localhost:1313/sessions/2023/">OSA Con 2023</a> </li>
+                
+            
+                <li class="breadcrumb-item active" aria-current="page">  Leveraging object storage: Tiered Storage for ClickHouse</li>
+            
+        </ol>
+    </div>
+</nav>
+
+
+<div class="container">
+    <h1>Leveraging object storage: Tiered Storage for ClickHouse</h1>
+
+    <div class="row d-flex">
+        <div class="col-4 col-md-2">Event: </div>
+        <div class="col-4 col-md-3">
+            <a href="http://localhost:1313/sessions/2023/">OSA Con 2023</a>
+        </div>  
+    </div>
+
+    <div class="row d-flex">
+        <div class="col-4 col-md-2">Speaker(s): </div>
+        <div class="col-4 col-md-3">
+            
+                  <a href="http://localhost:1313/authors/arthur-ansquer/">Arthur Ansquer</a> <br>
+            
+        </div>  
+    </div>
+
+    <div class="my-3">
+    <p>Discussing the journey to make Tiered Storage available for Aiven for ClickHouse. From product discovery to the benefits and use cases of leveraging object storage for ClickHouse workloads.</p>
+
+    </div>
+
+    
+        
+        
+      
+      
+
+
+    
+</div>
+
+
+    </div>
+    <footer class="py-3 mt-auto bg-light">
+  <div class="container py-1 my-1">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <p class="col-md mb-0 text-muted"></p>
+      <ul class="nav col-md-auto justify-content-end">
+        <li class="nav-item"><a href="/privacy-policy/" class="nav-link px-2 text-muted" title='Privacy Policy' aria-label='Privacy Policy'>Privacy Policy</a></li>
+        </ul>
+    </div>
+  </div>
+</footer>
+    
+
+
+<script src="/js/bootstrap/bootstrap.bundle.min.min.6b1c8410dba61df0be2410ec2db27e9f023403abdad53000a93ed2a0589528c911a05d8716e98c67a03ccc55c5fe3a7e2b8f4bd27c54ffd8891c048c73a825f9.js" integrity="sha512-axyEENumHfC&#43;JBDsLbJ&#43;nwI0A6va1TAAqT7SoFiVKMkRoF2HFumMZ6A8zFXF/jp&#43;K49L0nxU/9iJHASMc6gl&#43;Q==" crossorigin="anonymous" defer></script>
+
+
+
+  <script src="/js/main.min.e8d88c82c0438b527f1aca4115652ba1e2877bf805b75593b23ac0e3fe2b3fe95a467d1feef275355132ba061da6404b0d24d55afabc209b294b1db043be014d.js" integrity="sha512-6NiMgsBDi1J/GspBFWUroeKHe/gFt1WTsjrA4/4rP&#43;laRn0f7vJ1NVEyugYdpkBLDSTVWvq8IJspSx2wQ74BTQ==" crossorigin="anonymous" defer></script>
+
+
+
+      
+</body>
+</html>

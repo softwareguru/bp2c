@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OSA Con 2023 on Best Place to Code</title>
+    <link>http://localhost:1313/sessions/2023/</link>
+    <description>Recent content in OSA Con 2023 on Best Place to Code</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/sessions/2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Panel Discussion on Growing a Healthy Open Source Community</title>
+      <link>http://localhost:1313/sessions/2023/panel-discussion-on-growing-a-healthy-open-source-community/</link>
+      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/panel-discussion-on-growing-a-healthy-open-source-community/</guid>
+      <description>Communities are at the heart of the open source movement. Community members help with everything from code contributions to trying out software to marketing. Plus, good communities are just fun to be around. In this panel discussion our experts will discuss strategies and tactics to build communities that are welcoming to all, promote collaborative work, and help make their open source projects a success.</description>
+    </item>
+    <item>
+      <title>Panel: Open Source means Open! Or Does it? The State of Licensing in 2023</title>
+      <link>http://localhost:1313/sessions/2023/panel-open-source/</link>
+      <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/panel-open-source/</guid>
+      <description>Open source licenses are a linchpin of the free and open source software movement. Join our panel of open source experts as we do our yearly check-on the state of licenses. We&amp;rsquo;ll talk about new developments in licensing this year (Terraform anyone?), revisit what a license actually does for your project, and talk about legal and moral issues when projects relicense. We&amp;rsquo;ll even take questions from the crowd.</description>
+    </item>
+    <item>
+      <title>The Future of Analytics is Open Source and Cloud Native</title>
+      <link>http://localhost:1313/sessions/2023/the-future-of-analytics/</link>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/the-future-of-analytics/</guid>
+      <description>Analytic platforms are like cathedrals for data - and their foundations are cloud native. In this talk we&amp;rsquo;ll discuss the forces driving open source adoption, how cloud native enables flexible analytic applications, and what it means for systems being designed today.</description>
+    </item>
+    <item>
+      <title>Navigating the Landscape of a Fully Open Source Data Stack in 2023</title>
+      <link>http://localhost:1313/sessions/2023/navigating-landscape/</link>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/navigating-landscape/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reinventing Kafka in the Data Streaming Era</title>
+      <link>http://localhost:1313/sessions/2023/reinventing-kafka-in-the-data-streaming-era/</link>
+      <pubDate>Sun, 26 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/reinventing-kafka-in-the-data-streaming-era/</guid>
+      <description>Many enterprises are adopting data streaming platforms to take actions on what&amp;rsquo;s happening in the business in real time. Apache Kafka is becoming the standard for building this platform. In this talk, I will first provide an overview of Kafka and its eco-system: with Kafka as the storage layer, systems like Apache Flink as the real time processing layer, and an integration layer that connects any data sources and sinks. Then, I will talk about a couple of recent innovations.</description>
+    </item>
+    <item>
+      <title>`New` Workflow Orchestrator in town: Apache Airflow 2.x</title>
+      <link>http://localhost:1313/sessions/2023/airflow2x/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/airflow2x/</guid>
+      <description>Quite often you hear about the &amp;ldquo;new&amp;rdquo; orchestrator that aims to solve your orchestration needs. You can also often hear how it compares to Airlfow. However those comparisions often overlook the fact that since Airflow 2.0 has been introduced, it continues to evolve and piece-by-piece modernize itself.&#xA;New UI, New ways of writing your orchestration tasks, new ways to test them. And the comparision often overlook that if you start your journey with Airflow today, your experience will be quite a bit different than even 2 years ago (what usually most comparisions talk about).</description>
+    </item>
+    <item>
+      <title>A Guide to Responsible Data Collection In Open Source</title>
+      <link>http://localhost:1313/sessions/2023/a-guide-to-responsible-data-collection-in-open-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/a-guide-to-responsible-data-collection-in-open-source/</guid>
+      <description>Collecting usage data in open source can be a controversial topic, but attitudes on this topic have been notably shifting recently. After working with many open source projects and companies over the past 4 years, our team at Scarf has established empirically successful best practices and considerations that all open source projects should be aware of to effectively track the usage of their software. This talk will discuss a breadth of considerations including:</description>
+    </item>
+    <item>
+      <title>An Overview of DuckDB</title>
+      <link>http://localhost:1313/sessions/2023/an-overview-duckdb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/an-overview-duckdb/</guid>
+      <description>DuckDB is an analytical database management system. It runs in-process, which makes its configuration trivial and eliminates any overhead between the client application and the database. DuckDB is open-source and highly portable with integrations for Python, R, Java, Julia, and 10+ other languages. DuckDB has top-notch support for data formats (CSV, Parquet, JSON, Iceberg) and data sources (https, s3, gcs, etc.). This talk will introduce the DuckDB system, explain its key design decisions, and demonstrate how it is able to scale even on a single laptop.</description>
+    </item>
+    <item>
+      <title>Apache Pulsar: Finally an Alternative to Kafka?</title>
+      <link>http://localhost:1313/sessions/2023/apache-pulsar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/apache-pulsar/</guid>
+      <description>Today, when you think about building event-driven and real-time applications, the words that come to you spontaneously are probably: RabbitMQ, ActiveMQ, or Kafka. These are the solutions that dominate this landscape. But have you ever heard of Apache Pulsar?&#xA;After a brief presentation of the fundamental concepts of messaging, you&amp;rsquo;ll discover the Apache Pulsar features that enable you to build amazing event-driven applications.&#xA;You&amp;rsquo;ll learn the following:&#xA;how Apache Pulsar architecture differs from other brokers how it enables scaling processing power &amp;amp; data independently, quickly, and with no hassle how it guarantees high durability of messages across nodes and different data centers how it covers the use cases of both RabbitMQ &amp;amp; Kafka while involving a single broker how to integrate Pulsar with your existing application portfolio and more </description>
+    </item>
+    <item>
+      <title>Build a fully-managed OSS compatible lakehouse with BigLake Managed Tables</title>
+      <link>http://localhost:1313/sessions/2023/biglake-managed-tables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/biglake-managed-tables/</guid>
+      <description>Open table formats like Apache Iceberg, Apache Hudi, and Delta Lake use embedded metadata, stored alongside data on object stores to provide transactionally consistent DML and time travel features. This metadata is usually backed by a transaction log also stored in object storage. While this approach of maintaining a transaction log on an object store provides simplicity to build an open ecosystem, workloads that require high-throughput write and DML are often limited.</description>
+    </item>
+    <item>
+      <title>Building a ChatGPT Data Pipeline with RisingWave Stream Processor and Astra Vector Search</title>
+      <link>http://localhost:1313/sessions/2023/chatgpt-pipeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/chatgpt-pipeline/</guid>
+      <description>Enter the exciting brave new world of GenAI, by building a ChatGPT Data Pipeline that leverages on RisingWave&amp;rsquo;s efficient stream processing write jobs for real-time market data that&amp;rsquo;s been enriched with Astra/Cassandra&amp;rsquo;s high performant vector embedding and similarity search.</description>
+    </item>
+    <item>
+      <title>CICD Pipelines for dbt: DIY or DIWhy?</title>
+      <link>http://localhost:1313/sessions/2023/cicd-dbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/cicd-dbt/</guid>
+      <description>Continuous integration and continuous deployment (CICD) pipelines are crucial for deploying efficient and reliable data transformations. In this session we will answer the question &amp;ldquo;DIY or DIWhy?&amp;rdquo;, where we will help you decide if you should build your own CICD pipelines for deploying your dbt project, or if you should use dbt Cloud&amp;rsquo;s out of the box solutions.&#xA;We&amp;rsquo;ll examine the benefits and challenges of building your own pipeline with dbt Core, including flexibility and customization options, but also the need for more infrastructure and maintenance.</description>
+    </item>
+    <item>
+      <title>Data Alchemy: Transforming Raw Data to Gold with Apache Hudi and DBT</title>
+      <link>http://localhost:1313/sessions/2023/data-alchemy-transforming-raw-data-to-gold-with-apache-hudi-and-dbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/data-alchemy-transforming-raw-data-to-gold-with-apache-hudi-and-dbt/</guid>
+      <description>The medallion architecture graduates raw data sitting in operational systems into a set of refined tables in a series of stages, ultimately processing data to serve analytics from gold tables. While there is a deep desire to build this architecture incrementally, it is very challenging with current technologies available on lakehouses. Many technologies can’t efficiently update records or efficiently process incremental data without recomputing all the data to serve low-latency tables.</description>
+    </item>
+    <item>
+      <title>Data as Code: Project Nessie brings a Git-like experience for Apache Iceberg Tables</title>
+      <link>http://localhost:1313/sessions/2023/data-as-code-project-nessie-brings-a-git-like-experience-for-apache-iceberg-tables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/data-as-code-project-nessie-brings-a-git-like-experience-for-apache-iceberg-tables/</guid>
+      <description>Multi-table transactions have existed in data warehouses for some time, but with the open source Project Nessie, multi-table transactions and an innovative git-like experience become available to data lakehouses. In this session, learn how Project Nessie enables the new “Data as Code” paradigm allowing for workload isolation, multi-table transactions and experimentation when working with Apache Iceberg tables.&#xA;In this session you&amp;rsquo;ll learn about the Data-as-code paradigm, what is the open source Project Nessie and the new patterns in data engineering it enables.</description>
+    </item>
+    <item>
+      <title>Data on GKE</title>
+      <link>http://localhost:1313/sessions/2023/data-on-gke/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/data-on-gke/</guid>
+      <description>Kubernetes was mostly associated with stateless applications such as web and batch applications. However, like most things, Kubernetes is constantly evolving. These days, we are seeing an exponential increase in the number of stateful apps on Kubernetes. In fact, the number of clusters running stateful apps on Google Kubernetes Engine (GKE) has doubled every year since 2019.&#xA;Learn how today, Kubernetes is increasingly used to run stateful and data applications such as databases (Kafka, MySQL, PostgreSQL, and MongoDB), big data (Hadoop and Spark), data analytics (Hive and Pig), and machine learning (TensorFlow and PyTorch).</description>
+    </item>
+    <item>
+      <title>ETL with Meltano &#43; Singer in the LLM era</title>
+      <link>http://localhost:1313/sessions/2023/singer-llm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/singer-llm/</guid>
+      <description>Are we reinventing ETL in the LLM app ecosystem? While the existing LLM app tools like LangChain and LlamaIndex are useful for building LLM apps, their ETL features fall short for production use cases. We’ll explore Singer and the Meltano community, new data pipeline needs in the AI space, and how we can apply data engineering principles to solve them.&#xA;Video of demo</description>
+    </item>
+    <item>
+      <title>From Click to Insight: Transforming Streams with Apache Flink</title>
+      <link>http://localhost:1313/sessions/2023/from-click-to-insight-transforming-streams-with-apache-flink/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/from-click-to-insight-transforming-streams-with-apache-flink/</guid>
+      <description>In this topic, I&amp;rsquo;ll delve into using Apache Flink for real-time distributed data processing in diverse product initiatives. From implementing counters and windowed analytics to online data enrichment, I&amp;rsquo;ll highlight the challenges faced and share insights on harnessing Flink&amp;rsquo;s capabilities to address these scenarios in high-demand environments</description>
+    </item>
+    <item>
+      <title>From Zero to Superset Hero: Data visualisation as a code with Terraform</title>
+      <link>http://localhost:1313/sessions/2023/superset-hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/superset-hero/</guid>
+      <description>In this session, we will share the journey of overcoming common frustrations with Superset. These day-to-day struggles include the time-consuming process of renaming a column in each chart, copy-pasting metrics just to create a slightly similar chart, and many more challenges that grow bigger as your company does. The challenges got so big for us that despite having zero prior experience with the Go language, we decided to create the Superset Terraform provider and build a so-called “dashboards as a code” solution.</description>
+    </item>
+    <item>
+      <title>Getting Started with Polars</title>
+      <link>http://localhost:1313/sessions/2023/polars/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/polars/</guid>
+      <description>Get ready to revolutionize your data analysis with Polars - the newest, most highly optimized dataframe library on the market! In this talk, we&amp;rsquo;ll introduce you to the power of Polars and show you how it compares to the popular Pandas library.</description>
+    </item>
+    <item>
+      <title>Going beyond Observability: Grafana for Analytics</title>
+      <link>http://localhost:1313/sessions/2023/going-beyond-observability-grafana-for-analytics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/going-beyond-observability-grafana-for-analytics/</guid>
+      <description>Grafana is a powerful platform for infrastructure observability and visualization, allowing for easy access to a wide array of operational metrics. It is more than that too however, as Grafana has been quickly adding a multitude of features to support a large variety of data analysis use cases; all while using the same intuitive user experience that Grafana has become known for. See how new scatter plots, data transformations, usability enhancements, and other tools are making Grafana a first class citizen in the realm of data analysis.</description>
+    </item>
+    <item>
+      <title>How to implement Data Contracts with DataHub</title>
+      <link>http://localhost:1313/sessions/2023/how-to-implement-data-contracts-with-datahub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/how-to-implement-data-contracts-with-datahub/</guid>
+      <description>Data contracts have been much discussed in the community of late, with a lot of curiosity around how to approach this concept in practice. We believe data contracts need a harmonizing layer to manage data quality in a uniform manner across a fragmented stack. We are calling this harmonizing layer the Control Plane for Data - powered by the common thread across these systems: metadata. This talk will cover practical ways of implementing Data Contracts with DataHub, the most popular open source metadata platform.</description>
+    </item>
+    <item>
+      <title>How we built a zero-ETL data infrastructure for real-time analytics</title>
+      <link>http://localhost:1313/sessions/2023/how-we-built-a-zero-etl-data-infrastructure-for-real-time-analytics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/how-we-built-a-zero-etl-data-infrastructure-for-real-time-analytics/</guid>
+      <description>Kenobi is a real-time analytics platform which can ingest JSONs and without any manual intervention for data schema definition or data modelling, enables anyone to create metrics and aggregations on the data.&#xA;This enables teams to use logs and system-generated events directly without needing to pre-process the data to make them useable.&#xA;In this talk, we&amp;rsquo;ll discuss the challenges in creating the dynamic transformation layer and the pros/cons associated with the approach.</description>
+    </item>
+    <item>
+      <title>Leveraging object storage: Tiered Storage for ClickHouse</title>
+      <link>http://localhost:1313/sessions/2023/leveraging-object-storage-tiered-storage-for-clickhouse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/leveraging-object-storage-tiered-storage-for-clickhouse/</guid>
+      <description>Discussing the journey to make Tiered Storage available for Aiven for ClickHouse. From product discovery to the benefits and use cases of leveraging object storage for ClickHouse workloads.</description>
+    </item>
+    <item>
+      <title>Make data movement limitless and secure with Open Source</title>
+      <link>http://localhost:1313/sessions/2023/make-data-movement-limitless-and-secure-with-open-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/make-data-movement-limitless-and-secure-with-open-source/</guid>
+      <description>In 2017, the average number of SaaS apps used by an organization was 16, and by 2022 that number increased to 110, and this number doesn’t even account for databases and files. Accessing and integrating that data into a warehouse is a significant challenge for organizations. Each of these sources is a data silo with huge variability in data formats and complexity to access. In order to ensure successful data movement in a world of exponential data growth, any ELT solution that feeds data warehouses must address both the most common sources and the long tail of APIs.</description>
+    </item>
+    <item>
+      <title>Many Faces of Real-time Analytics</title>
+      <link>http://localhost:1313/sessions/2023/many-faces-of-real-time-analytics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/many-faces-of-real-time-analytics/</guid>
+      <description>Real-time analytics systems derive meaningful insights from continuous streams of data, enabling organizations to make swift decisions and react fast. However, not all real-time analytics systems are made equal. While they share the same goal in the end, there are differences in how they achieve it.&#xA;This talk aims to classify real-time analytics systems into four main groups based on five characteristics, discuss popular use cases for them, and identify the best technology choice for implementing them in production.</description>
+    </item>
+    <item>
+      <title>Maximizing Query Speed and Minimizing Costs in Data Lakes with Open-Source Caching</title>
+      <link>http://localhost:1313/sessions/2023/maximizing-query-speed-and-minimizing-costs-in-data-lakes-with-open-source-caching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/maximizing-query-speed-and-minimizing-costs-in-data-lakes-with-open-source-caching/</guid>
+      <description>As data lakes scale in complexity and size, companies face challenges with slow and inconsistent data access, rapidly growing storage costs, and high operation costs when migrating to the cloud. In this talk, we discuss an open-source caching framework we designed to improve performance by 1.5x and reduce storage costs by millions per year. The framework leverages tools like Hadoop, Parquet, Hudi, and Alluxio and applies to both on-prem and cloud environments.</description>
+    </item>
+    <item>
+      <title>Maybe The Real Modern Data Stack Was the Open Source Tools We Got Along The Way</title>
+      <link>http://localhost:1313/sessions/2023/maybe-the-real-modern-data-stack-was-the-open-source-tools-we-got-along-the-way/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/maybe-the-real-modern-data-stack-was-the-open-source-tools-we-got-along-the-way/</guid>
+      <description>There are many misconceptions of the Modern Data Stack, and it&amp;rsquo;s easy to forget the real pain it solved and the value it unlocked.&#xA;While some people still view the Modern Data Stack as marketing-fluff, I&amp;rsquo;d like to demonstrate how powerful it can be by reclaiming it using Open Source tooling.&#xA;With tools like sling, dbt, duckdb, dagster, and more, we can spin up cost-effective, fast, and powerful ETL data stacks that would have taken months to implement in the past.</description>
+    </item>
+    <item>
+      <title>Most &#34;Open Source&#34; AI Isn&#39;t. And What We Can Do About That.</title>
+      <link>http://localhost:1313/sessions/2023/most-open-source-ai-isn-t-and-what-we-can-do-about-that/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/most-open-source-ai-isn-t-and-what-we-can-do-about-that/</guid>
+      <description>What does &amp;ldquo;Open Source AI&amp;rdquo; really mean? If you publish the weights for a neural network, is that much different than only publishing an executable binary without the source? What if the model has memorized data or code that it can reproduce without attribution? What if you interrogate a model for why a decision was made, and you get a wrong explanation? How can you debug and fix it, and how can you understand what&amp;rsquo;s going on?</description>
+    </item>
+    <item>
+      <title>Open Formats: The Happy Accident Disrupting the Data Industry</title>
+      <link>http://localhost:1313/sessions/2023/open-formats-the-happy-accident-disrupting-the-data-industry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/open-formats-the-happy-accident-disrupting-the-data-industry/</guid>
+      <description>Analytic databases are quietly going through an unprecedented transformation. Open table formats, led by Apache Iceberg, enable multiple query engines to share one central copy of a table. This will fundamentally change the data industry, by freeing data that’s being held hostage by siloed data vendors.&#xA;This session will cover the origins and basics of open table formats and show how new capabilities are shaping the future of both open source compute projects and commercial data warehouses alike.</description>
+    </item>
+    <item>
+      <title>Open Source BI FTW - Building Compelling Dashboards with Apache Superset</title>
+      <link>http://localhost:1313/sessions/2023/open-source-bi-ftw-building-compelling-dashboards-with-apache-superset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/open-source-bi-ftw-building-compelling-dashboards-with-apache-superset/</guid>
+      <description>Open source BI is here, it&amp;rsquo;s better, it&amp;rsquo;s cheaper, and it can be everything you need it to be.</description>
+    </item>
+    <item>
+      <title>Open Source Project Report: Evidence - Business Intelligence as Code</title>
+      <link>http://localhost:1313/sessions/2023/evidence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/evidence/</guid>
+      <description>Evidence is an open source business intelligence tool where all content is defined in markdown and SQL. This session will give an overview of the project: what it is, why we&amp;rsquo;re building it, why we chose open source, and the upcoming roadmap. It will also include a look at the newest release, which introduces a client-side SQL runtime powered by DuckDB WebAssembly, interactive filters, and support for multiple data source connections including APIs.</description>
+    </item>
+    <item>
+      <title>OSA Con 2023 Welcome</title>
+      <link>http://localhost:1313/sessions/2023/opening-remarks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/opening-remarks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prestissimo : The new generation Presto</title>
+      <link>http://localhost:1313/sessions/2023/prestissimo-the-new-generation-presto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/prestissimo-the-new-generation-presto/</guid>
+      <description>Prestissimo is the latest innovation in the Presto SQL query engine (https://prestodb.io/). It is an ambitious endeavor to replace Presto&amp;rsquo;s Java based runtime execution with a new state of the art C++ engine based on the concepts of vectorization and runtime optimizations.&#xA;The Native engine has many benefits :&#xA;Huge Performance boost and CPU efficiency on account of use of vectorization, SIMD and sophisticated adaptive runtime optimizations. Eliminates spiky and unpredictable Java GC issues.</description>
+    </item>
+    <item>
+      <title>Proton : A single binary to tackle streaming and historical analytics</title>
+      <link>http://localhost:1313/sessions/2023/proton-a-single-binary-to-tackle-streaming-and-historical-analytics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/proton-a-single-binary-to-tackle-streaming-and-historical-analytics/</guid>
+      <description>Proton is a unified streaming and historical analytic engine which is built on top of ClickHouse code base and is in one single binary. It is the core engine which empowers Timeplus core product and open sourced under apache v2 https://github.com/timeplus-io/proton.&#xA;In this talk, I will cover its technical internals like watermarking, streaming query state management, its internal streaming store, and how it connects historical data with live streaming etc. In the meaning while, some core features like tumble / hop / session window processing, streaming join, aggregation, new designed materialized view etc will be presented as well.</description>
+    </item>
+    <item>
+      <title>Query Live Data Using Open Source SQL Engines</title>
+      <link>http://localhost:1313/sessions/2023/query-live-data-using-open-source-sql-engines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/query-live-data-using-open-source-sql-engines/</guid>
+      <description>Streaming data is rapidly becoming a key component in modern applications, and Apache Kafka, Redpanda and Apache Pulsar have emerged as a popular and powerful platform for managing and processing these data streams. However, as the volume and complexity of streaming data continue to grow, it becomes increasingly critical to have efficient and effective ways of querying and analyzing this data.&#xA;This is where query engines like Apache Flink, ksqlDB, Trino, Timeplus Proton, RisingWave, Materialize, etc come in.</description>
+    </item>
+    <item>
+      <title>QuestDB: The building blocks of a fast open-source time-series database</title>
+      <link>http://localhost:1313/sessions/2023/questdb-the-building-blocks-of-a-fast-open-source-time-series-database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/questdb-the-building-blocks-of-a-fast-open-source-time-series-database/</guid>
+      <description>Traditionally, databases have treated timestamps just as another data type. However, when performing real-time analytics, timestamps should be first class citizens and we need rich time semantics to get the most out of our data. We also need to deal with ever growing datasets while keeping performant, which is as fun as it sounds.&#xA;It is no wonder time-series databases are now more popular than ever before. Join me in this session to learn about the internal architecture and building blocks of QuestDB, an open source time-series database designed for speed.</description>
+    </item>
+    <item>
+      <title>Real-Time Revolution: Kickstarting Your Journey in Streaming Data</title>
+      <link>http://localhost:1313/sessions/2023/real-time-revolution-kickstarting-your-journey-in-streaming-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/real-time-revolution-kickstarting-your-journey-in-streaming-data/</guid>
+      <description>Stream processing is hard! It&amp;rsquo;s expensive! It&amp;rsquo;s unnecessary! Batch is all you need! It&amp;rsquo;s hard to maintain! While some of these may sound true, the world of streaming data has come a long way and it is time we start to take advantage of data in real-time.&#xA;This talk dips your feet into the world of streaming data and demystifies some of the common misconceptions. We will cover some of the basics around streaming data and how you can get started with your first stream processing project with the Python open source stream processor Bytewax.</description>
+    </item>
+    <item>
+      <title>Reducing complexity and increasing performance with Trino</title>
+      <link>http://localhost:1313/sessions/2023/reducing-complexity-and-increasing-performance-with-trino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/reducing-complexity-and-increasing-performance-with-trino/</guid>
+      <description>In this talk, we&amp;rsquo;ll be providing a quick overview of and then a longer update on Trino, the lightning-fast distributed SQL query and federation engine. Trino has been a prominent force in the open source data stack for over a decade, and development on it is as active as ever. It serves a multitude of data sources and has more clients supporting it than ever before. With exciting features such as table procedures (including a tool to automatically migrate from Hive to Iceberg), polymorphic table functions, and modern SQL features like MERGE, there&amp;rsquo;s a lot going on in Trino that you may not know about if you haven&amp;rsquo;t been paying close attention recently.</description>
+    </item>
+    <item>
+      <title>StarRocks: Fast Real-Time Analytics for User-Facing Applications</title>
+      <link>http://localhost:1313/sessions/2023/starrocks-fast-real-time-analytics-for-user-facing-applications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/starrocks-fast-real-time-analytics-for-user-facing-applications/</guid>
+      <description>Real-time analytics is essential for user-facing applications, such as e-commerce websites, social media platforms, and streaming services. These applications need to be able to analyze data in real time to provide users with personalized experiences and make recommendations.&#xA;StarRocks is a high-performance, distributed analytical database that is optimized for real-time analytics. StarRocks can directly read and query data from a variety of sources, including Apache Kafka, Apache Hudi, and Amazon S3.</description>
+    </item>
+    <item>
+      <title>The Need for an Open Standard for Semantic Layer</title>
+      <link>http://localhost:1313/sessions/2023/the-need-for-an-open-standard-for-semantic-layer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/the-need-for-an-open-standard-for-semantic-layer/</guid>
+      <description>Join Brian Bickell, Cube&amp;rsquo;s VP of Strategy and Alliances, as he proposes an open standard for the semantic layer, uniting BI tools, embedded analytics, and AI agents.&#xA;Using an open standard will bring together data, enabling data tools to introspect data model definitions and seamlessly interoperate within the data stack.&#xA;By embracing this new approach—data practitioners will reap the benefits with enhanced user experiences, quicker data delivery, and streamlined workloads.</description>
+    </item>
+    <item>
+      <title>Unlocking Advanced Log Analytics With ClickHouse and Kafka</title>
+      <link>http://localhost:1313/sessions/2023/unlocking-advanced-log-analytics-with-clickhouse-and-kafka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/unlocking-advanced-log-analytics-with-clickhouse-and-kafka/</guid>
+      <description>In the landscape of observability, logs reign as a fundamental pillar. Undoubtedly, they are among the most extensively employed telemetry signals. However, beneath their widespread usage by developers lies a complexity that cannot be ignored - logs are verbose, lack structure, and are hard to search and analyze. The pursuit of advanced analytics on this foundation can lead down a costly and intricate path. While tools like OpenSearch offer analytic features, their cost and operational complexity can be prohibitive.</description>
+    </item>
+    <item>
+      <title>Unlocking Financial Data with Real-Time Pipelines</title>
+      <link>http://localhost:1313/sessions/2023/unlocking-financial-data-with-real-time-pipelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/unlocking-financial-data-with-real-time-pipelines/</guid>
+      <description>Financial institutions thrive on accurate and timely data to drive critical decision-making processes, risk assessments, and regulatory compliance. However, managing and processing vast amounts of financial data in real-time can be a daunting task. To overcome this challenge, modern data engineering solutions have emerged, combining powerful technologies like Apache Flink, Apache NiFi, Apache Kafka, and Iceberg to create efficient and reliable real-time data pipelines. In this talk, we will explore how this technology stack can unlock the full potential of financial data, enabling organizations to make data-driven decisions swiftly and with confidence.</description>
+    </item>
+    <item>
+      <title>Unlocking Scalable and Efficient Data Storage with Apache Ozone</title>
+      <link>http://localhost:1313/sessions/2023/unlocking-scalable-and-efficient-data-storage-with-apache-ozone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/unlocking-scalable-and-efficient-data-storage-with-apache-ozone/</guid>
+      <description>In today&amp;rsquo;s data-driven world, organizations are faced with unprecedented volumes of data and increasingly complex storage requirements. To address these challenges, Apache Ozone emerges as a game-changing solution, redefining the landscape of distributed object storage systems.&#xA;Apache Ozone is an open-source, highly scalable, and efficient storage system designed to provide a reliable and cost-effective platform for managing vast amounts of data across distributed clusters. It builds upon the strengths of the Hadoop ecosystem, leveraging existing components and extending them to meet the demands of modern data storage.</description>
+    </item>
+    <item>
+      <title>Unveiling the Power of dbt and DuckDB: Hype vs. Reality</title>
+      <link>http://localhost:1313/sessions/2023/unveiling-the-power-of-dbt-and-duckdb-hype-vs-reality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/unveiling-the-power-of-dbt-and-duckdb-hype-vs-reality/</guid>
+      <description>Data professionals and analysts are constantly searching for efficient ways to streamline their ETL/ELT processes. dbt, with its focus on transformation, modeling, and testing, has gained significant traction in the industry. On the other hand, DuckDB, a high-performance analytical database, has gained recognition for its speed and versatility.&#xA;In this session, we will examine use cases of deploying dbt and DuckDB to execute data transformations. We will analyze the strengths and limitations of this combination, considering factors such as data volume, complexity, and scalability.</description>
+    </item>
+    <item>
+      <title>What the Duck?</title>
+      <link>http://localhost:1313/sessions/2023/what-the-duck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/what-the-duck/</guid>
+      <description>DuckDB is taking the analytics world by storm. This talk will talk about what makes DuckDB so ducking awesome. We&amp;rsquo;ll dig into DuckDB use cases, syntax, connectors, architecture, and features that make it more than just another query engine.</description>
+    </item>
+    <item>
+      <title>Where the Modern Data Stack has Failed and why Engineering-centric Tools will Reshape the Data World</title>
+      <link>http://localhost:1313/sessions/2023/where-the-modern-data-stack-has-failed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/where-the-modern-data-stack-has-failed/</guid>
+      <description>The &amp;ldquo;modern data stack&amp;rdquo; has been a big leap forward for data teams, but it is starting to tear at the seams. It is easy, but it does not scale data teams at demanding organization. Too many tools. Some are too heavy; some are too light. They are not composable or programmable enough, leaving data engineers with a unwieldy set of siloed toosl difficult to program, deploy, and manage in a cohesive fashion.</description>
+    </item>
+    <item>
+      <title>Who needs ChatGPT? Rock solid AI pipelines with Hugging Face and Kedro</title>
+      <link>http://localhost:1313/sessions/2023/who-needs-chatgpt-rock-solid-ai-pipelines-with-hugging-face-and-kedro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/who-needs-chatgpt-rock-solid-ai-pipelines-with-hugging-face-and-kedro/</guid>
+      <description>Artificial Intelligence is all the rage, largely thanks to generative systems like ChatGPT, Midjourney, and the like. These commercial systems are very sophisticated and powerful, but also a bit opaque if you want to learn how they work or adapt them to your needs. What happens inside the &amp;lsquo;black box&amp;rsquo;?&#xA;Luckily there are open AI models that you can download comfortably, study without restrictions, and adjust so that they do what you want.</description>
+    </item>
+    <item>
+      <title>You put OLTP in my OLAP! Analytics and Real-time Converged</title>
+      <link>http://localhost:1313/sessions/2023/you-put-oltp-in-my-olap-analytics-and-real-time-converged/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sessions/2023/you-put-oltp-in-my-olap-analytics-and-real-time-converged/</guid>
+      <description>Analytics (OLAP) and Real-time (OLTP) workloads serve distinctly different purposes. OLAP is optimized for data analysis and reporting, while OLTP is optimized for real-time low-latency traffic.&#xA;Most databases are designed to primarily benefit from one of them. Worse, concurrently running both workloads under the same datastore will frequently introduce resource contention, where the workloads end up hurting each other, considerably dragging down the overall distributed system&amp;rsquo;s performance.&#xA;In this talk, we will share different strategies and approaches to mitigate the performance impacts perceived when OLAP and OLTP workloads are run to the extreme.</description>
+    </item>
+  </channel>
+</rss>

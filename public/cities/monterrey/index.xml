@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monterrey on Best Place to Code</title>
+    <link>http://localhost:1313/cities/monterrey/</link>
+    <description>Recent content in Monterrey on Best Place to Code</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 27 Jan 2025 15:32:40 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/cities/monterrey/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Htech</title>
+      <link>http://localhost:1313/companies/startups--isvs/htech/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/startups--isvs/htech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ensitech</title>
+      <link>http://localhost:1313/companies/tech-consulting-mid/ensitech/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-mid/ensitech/</guid>
+      <description> Hola&#xA;¿Qué hacemos? ¿Que beneficios otorgamos a nuestros colaboradores? ¿Por qué somos un Best Place to Code? </description>
+    </item>
+    <item>
+      <title>Kohmi</title>
+      <link>http://localhost:1313/companies/tech-consulting-mid/kohmi/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-mid/kohmi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>One Card</title>
+      <link>http://localhost:1313/companies/startups--isvs/one-card/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/startups--isvs/one-card/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Onephase</title>
+      <link>http://localhost:1313/companies/tech-consulting-mid/onephase/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-mid/onephase/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Roomie</title>
+      <link>http://localhost:1313/companies/tech-consulting-mid/roomie/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-mid/roomie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>bSide</title>
+      <link>http://localhost:1313/companies/tech-consulting-mid/bside/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-mid/bside/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

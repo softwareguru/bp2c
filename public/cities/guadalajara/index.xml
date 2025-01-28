@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guadalajara on Best Place to Code</title>
+    <link>http://localhost:1313/cities/guadalajara/</link>
+    <description>Recent content in Guadalajara on Best Place to Code</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 27 Jan 2025 15:30:01 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/cities/guadalajara/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kohmi</title>
+      <link>http://localhost:1313/companies/tech-consulting-mid/kohmi/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-mid/kohmi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CONTPAQi</title>
+      <link>http://localhost:1313/companies/startups--isvs/contpaqi/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/startups--isvs/contpaqi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Svitla Systems</title>
+      <link>http://localhost:1313/companies/tech-consulting-large/svitla-systems/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-large/svitla-systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Grid Dynamics</title>
+      <link>http://localhost:1313/companies/tech-consulting-mid/grid-dynamics/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-mid/grid-dynamics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Improving</title>
+      <link>http://localhost:1313/companies/tech-consulting-large/improving/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-large/improving/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>iNBest</title>
+      <link>http://localhost:1313/companies/tech-consulting-mid/inbest/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-mid/inbest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Roomie</title>
+      <link>http://localhost:1313/companies/tech-consulting-mid/roomie/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/companies/tech-consulting-mid/roomie/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
