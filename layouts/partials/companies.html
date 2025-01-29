@@ -24,7 +24,6 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
   
         {{ range sort (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa" "tech-consulting-mid")  }}
-
         <div class="col">
           <div class="card h-100 card-company shadow-sm">
             <div class="card-body">
@@ -46,7 +45,6 @@
               </ul>
             </div>
           </div>
-    
         </div>
         {{ end }}
       </div>
@@ -76,38 +74,29 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
   
         {{ range sort (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa" "tech-consulting-large")  }}
-
         <div class="col">
-          <div class="card h-100 card-cities shadow-sm">
-            <div class="card-body card-cisites-body ">
+          <div class="card h-100 card-company shadow-sm">
+            <div class="card-body">
+                <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
               <a href="{{ .Permalink }}">
-                <h3 class="card-title title-cities">{{ .Title }}</h3>
+                <h3 class="card-title company-name">{{ .Title }}</h3>
               </a>
-
               
-              <a href="{{ .Permalink | relURL }}">
-
-                 <div class="mt-4">
-                  <img class="img-fluid img-location" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
-
+              <a href="{{ .Permalink | relURL }}">      
+                  <img class="img-fluid img-location mt-2" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
                 </a>
-                 </div>
-
-
-                <div class="mt-4">
-
+      
+                <ul class="cities-list">
                   {{ range (.GetTerms "cities") }}
-                <a href="{{ .RelPermalink }}">
-                  <h6 class="cities">{{ .Params.Title }}</h6>
-                </a>
+                  <li class="city"><a href="{{ .RelPermalink }}">
+                    {{ .Params.Title }}</a></li>
                 {{ end }}
                 
-                </div>
-
+              </ul>
             </div>
           </div>
-    
         </div>
+
         {{ end }}
       </div>
     </div>
@@ -136,36 +125,29 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
   
         {{ range sort (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa" "corp")  }}
-
         <div class="col">
-          <div class="card h-100 card-cities shadow-sm">
-            <div class="card-body card-cisites-body ">
+          <div class="card h-100 card-company shadow-sm">
+            <div class="card-body">
+                <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
               <a href="{{ .Permalink }}">
-                <h3 class="card-title title-cities">{{ .Title }}</h3>
+                <h3 class="card-title company-name">{{ .Title }}</h3>
               </a>
-
               
-              <a href="{{ .Permalink | relURL }}">
-                 
-                 <div class="mt-4">
-                  <img class="img-fluid img-location" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
+              <a href="{{ .Permalink | relURL }}">      
+                  <img class="img-fluid img-location mt-2" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
                 </a>
-                 </div>
-                 
-                <div class="mt-4">
-
+      
+                <ul class="cities-list">
                   {{ range (.GetTerms "cities") }}
-                <a href="{{ .RelPermalink }}">
-                  <h6 class="cities">{{ .Params.Title }}</h6>
-                </a>
+                  <li class="city"><a href="{{ .RelPermalink }}">
+                    {{ .Params.Title }}</a></li>
                 {{ end }}
                 
-                </div>
-
+              </ul>
             </div>
           </div>
-    
         </div>
+
         {{ end }}
       </div>
     </div>
@@ -194,34 +176,27 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
   
         {{ range sort (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa" "startups-&-isvs")  }}
-
         <div class="col">
-          <div class="card h-100 card-cities shadow-sm">
-            <div class="card-body card-cisites-body ">
+          <div class="card h-100 card-company shadow-sm">
+            <div class="card-body">
+                <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
               <a href="{{ .Permalink }}">
-                <h3 class="card-title title-cities">{{ .Title }}</h3>
+                <h3 class="card-title company-name">{{ .Title }}</h3>
               </a>
-
               
-              <a href="{{ .Permalink | relURL }}">
-                 
-                 <div class="mt-4">
-                  <img class="img-fluid img-location" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
+              <a href="{{ .Permalink | relURL }}">      
+                  <img class="img-fluid img-location mt-2" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
                 </a>
-                 </div>
-
-                <div class="mt-4">
-
+      
+                <ul class="cities-list">
                   {{ range (.GetTerms "cities") }}
-                <a href="{{ .RelPermalink }}">
-                  <h6 class="cities">{{ .Params.Title }}</h6>
-                </a>
+                  <li class="city"><a href="{{ .RelPermalink }}">
+                    {{ .Params.Title }}</a></li>
                 {{ end }}
                 
-                </div>
+              </ul>
             </div>
           </div>
-    
         </div>
         {{ end }}
       </div>
@@ -251,35 +226,29 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
   
         {{ range sort (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa" "boutiques-&-digital-agencies")  }}
-
         <div class="col">
-          <div class="card h-100 card-cities shadow-sm">
-            <div class="card-body card-cisites-body ">
+          <div class="card h-100 card-company shadow-sm">
+            <div class="card-body">
+                <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
               <a href="{{ .Permalink }}">
-                <h3 class="card-title title-cities">{{ .Title }}</h3>
+                <h3 class="card-title company-name">{{ .Title }}</h3>
               </a>
-
               
-              <a href="{{ .Permalink | relURL }}">
-
-                 <div class="mt-4">
-                  <img class="img-fluid img-location" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
+              <a href="{{ .Permalink | relURL }}">      
+                  <img class="img-fluid img-location mt-2" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
                 </a>
-                 </div>
-
-                <div class="mt-4">
-
+      
+                <ul class="cities-list">
                   {{ range (.GetTerms "cities") }}
-                <a href="{{ .RelPermalink }}">
-                  <h6 class="cities">{{ .Params.Title }}</h6>
-                </a>
+                  <li class="city"><a href="{{ .RelPermalink }}">
+                    {{ .Params.Title }}</a></li>
                 {{ end }}
                 
-                </div>
+              </ul>
             </div>
           </div>
-    
         </div>
+
         {{ end }}
       </div>
     </div>
