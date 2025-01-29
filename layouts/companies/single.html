@@ -6,7 +6,7 @@
   <!-- Imagenes empresa -->
   <section class="bg-companies">
     <div class="container">
-      <img class="img-fluid img-location" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
+      <img class="img-fluid img-location" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy" width="450"  alt="featured image {{.Title }}"/>
   </div>
   </section>
   <!-- Imagenes empresa -->

@@ -3,7 +3,7 @@ title: "Grow IT Consulting"
 description: "Descripcion corta"
 date: 2025-01-01
 images: 
- - "images/companies/grow-it.jpg"
+ - "images/companies/grow-it.png"
 categories: ["Empresas"]
 tipo-empresa: startups-&-isvs
 cities: 

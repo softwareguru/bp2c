@@ -57,55 +57,12 @@ jobslink: https://svitla.com/career
 weight: 4
 ---
 
-Estamos muy contentos de que conozcas a Svitla y deseamos que en nosotros encuentres un empleador agradable, cómodo, y estable, al igual que ¡una comunidad brillante e inspiradora de personas afines!
+Estamos muy contentos de que conozcas a Svitla Systems y deseamos que en nosotros encuentres un empleador agradable, cómodo y estable, al igual que una comunidad brillante e inspiradora.
 
-Continúa navegando aquí y podrás encontrar más acerca de nuestra empresa, el equipo, su cultura, y nuestros procesos. ¡Comencemos!
+Aparte de México (Guadalajara), tenemos oficinas en USA, Ucrania (Kyiv, Lviv), Polonia (Cracovia), India Canadá, Costa Rica (San José), Argentina (Buenos Aires). Contamos con divisiones totalmente remotas en Costa Rica, Argentina y Canadá, brindándote la flexibilidad de elegir la ubicación que mejor se adapte a tus preferencias en coordinación con Recursos Humanos.
 
-Trabaja desde cualquier lugar
-Aparte de México (Guadalajara), tenemos oficinas en Ucrania (Kyiv, Lviv), y Polonia (Cracovia), Costa Rica (San José). También contamos con divisiones totalmente remotas en Costa Rica, Argentina y Canadá. Puedes elegir cualquiera de estas divisiones para tu trabajo, coordinando tus preferencias con Recursos Humanos.
+Estamos comprometidos con el desarrollo profesional y la comunidad de TI que nos rodea. Realizamos nuestros propios seminarios web Svitla Smart Talk y participamos en conferencias externas, ofreciendo oportunidades para aquellos que deseen evolucionar como oradores. Además, publicamos regularmente artículos técnicos en el blog de Svitla y brindamos apoyo integral a nuestros autores.
 
-En Svitla Systems, eres bienvenido a unirte a una amplia gama de actividades destinadas a ayudarte desarrollar tus habilidades y la comunidad de TI que nos rodea.
+En Svitla Systems, creemos en el crecimiento y la capacitación continua. Hemos creado planes de carrera con nuestros compañeros expertos Svitla Stars para que puedas especializarte o mejorar tus habilidades técnicas. También escuchamos tus intereses particulares y hacemos planes a la medida de tus necesidades específicas.
 
-Realizamos nuestros propios seminarios web Svitla Smart Talk y participamos en conferencias externas, por lo que involucramos activamente a aquellos que se ven a sí mismos como oradores y quieren evolucionar en esta dirección.
-
-También publicamos regularmente artículos técnicos en el blog de Svitla. Brindamos a nuestros autores un apoyo integral para encontrar temas, analizar material, corregir, traducir, etc.
-
-Todos los esfuerzos son recompensados a través de nuestro Programa de Bonificación.
-
-Estrellas
-Capacítate
-Sabemos que la capacitación y mantenerte actualizado es muy importante y también conocemos que tus intereses son distintos , así que hemos trabajado con nuestros compañeros expertos Svitla Stars y hemos creado planes de carrera con la finalidad de que te especialices o mejores tus habilidades técnicas.
-
-También escuchamos tus intereses particulares y hacemos planes a la medida que se adapten a tus necesidades específicas.
-
-Todos los esfuerzos son recompensados a través de nuestro Programa de Bonificación. Svitla como asociado, tenemos un interesante plan de certificación y capacitación.
-
-Atrévete a crecer en las tecnologías:
-
-AWS
-Azure
-Salesforce
-Svitla se encargará de pagarte la certificación y además serás acreedor a una interesante BONO extra por dicha certificación.
-
-En Svitla buscamos activamente incrementar el número de mujeres en la Industria de TI.
-
-Nuestras colaboradoras cubren:
-
-33% de posiciones directivas
-28% de posiciones de ingeniería
-Celebramos la diversidad
-
-Discapacidad
-Género
-Origen étnico
-Multiculturalidad
-Preferencias sexuales
-Edad
-
-Si quieres brillar como profesionista ...
-Únete a Svitla a que enciendan ese brillo.
-
-Transparencia
-Comunicación
-Cumplimiento legal
-Son parte de los valores que se permean desde la dirección, generando un entorno confiable, con clientes y colaboradores.
+Todo esfuerzo es recompensado a través de nuestro Programa de Bonificación, que incluye certificaciones en tecnologías como AWS, Azure y Salesforce. Nos encargamos de pagar tu certificación y, además, recibirás un interesante bono extra por dicha certificación.

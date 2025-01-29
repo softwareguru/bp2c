@@ -50,3 +50,11 @@ website: http://www.sciodev.com
 jobslink: https://sciodev.com/open_roles/
 weight: 9
 ---
+
+At Scio, we are driven by a shared passion for leveraging digital technologies to empower organizations and drive innovation. Since our founding in 2004, we’ve been committed to delivering exceptional software development services to help our clients achieve their goals and stay ahead in today’s dynamic market. We derive our success from our collaborative approach, our deep understanding of industry trends, and our ability to tailor solutions that generate measurable results.
+
+We foster a culture of collaboration, creativity, and continuous improvement. Our team members are encouraged to think outside the box, embrace new challenges, and strive for excellence in everything they do. We believe that a positive and inclusive work environment is key to driving innovation and delivering exceptional service to our clients.
+
+We're committed to supporting our employees' health and financial well-being, helping them thrive and achieve their best.
+
+We scioneers advance their professional skills and knowledge. This perk covers costs associated with relevant certifications, courses, and attending key industry events, whether they are local or international.
