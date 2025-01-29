@@ -58,17 +58,50 @@
 
 .card-cities{
     border-radius: 25px;
-}
 
-.card-cisites-body{
-    padding: 35px;
+    .card-body{
+        padding: 35px;
+    }
+    
 }
 
 .title-cities{
     font-weight: 600;
 }
 
-.cities{
+.cities-list {
+    display: inline;
+    list-style: none;
+    padding: 0px;
+
+    li {
+        display: inline;
+        font-family: "Roboto Condensed", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: .8em;    
+    }
+
+    li a {
+        color: blue;
+    }
+    li a:hover{
+        color: rgb(140, 40, 180);
+    }
+
+    li::after {
+        content: ", ";
+    }
+
+    li:last-child::after {
+        content: "";
+    }
+}
+
+
+.cities {
     color: blue;
     text-transform: uppercase;
     font-size: .8em;
