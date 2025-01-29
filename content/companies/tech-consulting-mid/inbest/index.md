@@ -8,6 +8,10 @@ categories: ["Empresas"]
 tipo-empresa: tech-consulting-mid
 cities: 
  - Guadalajara
+ - Ciudad de México
+ - Monterrey
+ - Queretaro
+ - Chicago
 # Porcentajes  
 global: 89
 compensacion: 80
@@ -40,22 +44,23 @@ facebook: https://www.facebook.com/InBest
 x: https://twitter.com/inbestcloud
 
 # Carousel
-img1: /images/carousel/inbest/1.png
-img2: /images/carousel/inbest/2.png
-img3: /images/carousel/inbest/3.png
-img4: /images/carousel/inbest/4.png
-img5: /images/carousel/inbest/5.png
+img1: /images/carousel/inbest/1.jpg
+img2: /images/carousel/inbest/2.jpg
+img3: /images/carousel/inbest/3.jpg
+img4: /images/carousel/inbest/4.jpg
+img5: /images/carousel/inbest/5.jpg
 
 website: https://www.inbest.cloud/
 jobslink: https://www.linkedin.com/company/inbest-cloud/jobs/
 weight: 7
 ---
 
-Somos iNBest powered by Servnet una compañía multicloud integradora de soluciones en las nubes más importantes como AWS, Microsoft Azure y Google. Creamos e implementamos soluciones innovadoras para empresas haciendo uso de tecnología disruptiva, buscando soluciones únicas para hacer que sus procesos sean mucho más eficientes y les permitan lograr un crecimiento exponencial sin importar a qué industria pertenezcan.
+En iNBest, somos apasionados por el poder transformador de la tecnología, ayudando a empresas de todo el mundo a alcanzar sus metas con soluciones únicas y personalizadas. Desde 2005, hemos construido un negocio basado en tecnologías disruptivas, diseñadas para potenciar la seguridad, productividad y eficiencia de nuestros clientes.
 
-Hemos expandido nuestra huella geográfica por todo el continente americano, con oficinas en Guadalajara, CDMX, Monterrey, Querétaro, New York y Chicago.
+Fomentamos un ambiente laboral flexible, colaborativo y motivador, donde valoramos a nuestro equipo tanto como a nuestros clientes. Creemos que, al generar valor dentro de nuestra organización, también lo creamos para quienes confían en nosotros.
 
-En iNBest sabemos y confiamos en la capacidad y talento de nuestro equipo, siempre buscamos impulsarnos y motivarnos a seguir en constante aprendizaje y seguir capacitándonos. 
+Acompañamos a las empresas en cada paso del camino, asegurándonos de que alcancen su máximo potencial con tecnología de primer nivel. En iNBest, transformamos desafíos en oportunidades con innovación, excelencia y compromiso.""En iNBest, somos apasionados por el poder transformador de la tecnología, ayudando a empresas de todo el mundo a alcanzar sus metas con soluciones únicas y personalizadas. Desde 2005, hemos construido un negocio basado en tecnologías disruptivas, diseñadas para potenciar la seguridad, productividad y eficiencia de nuestros clientes.
 
-"Siempre estamos listos para lograr todo lo que nos propongamos y hacer realidad todo aquello que imaginemos." 
-Si te apasiona el tema de la tecnología y eres un lifelong learner iNBest es el lugar perfecto para que puedas crear tu mejor versión y desarrollar tu máximo potencial. 
+Fomentamos un ambiente laboral flexible, colaborativo y motivador, donde valoramos a nuestro equipo tanto como a nuestros clientes. Creemos que, al generar valor dentro de nuestra organización, también lo creamos para quienes confían en nosotros.
+
+Acompañamos a las empresas en cada paso del camino, asegurándonos de que alcancen su máximo potencial con tecnología de primer nivel. En iNBest, transformamos desafíos en oportunidades con innovación, excelencia y compromiso.

@@ -89,7 +89,7 @@ enableEmoji = true
 
 [[menus.main]]
 name = "Acerca de"
-url = "/manifesto"
+url = "/acerca-de"
 weight = 10
 
 [[menus.main]]

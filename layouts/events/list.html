@@ -46,11 +46,9 @@
                         </div>
 
                         <div class="card-text">
-                            {{ with .Params.description }}
-                                {{ . }}
-                            {{ else }}
-                                {{ .Summary | truncate 400 }}
-                            {{ end }}
+       
+                                {{ .Summary | truncate 200 }}
+  
                         </div>
                         
                         <a class="stretched-link" href="{{.Permalink}}"></a>

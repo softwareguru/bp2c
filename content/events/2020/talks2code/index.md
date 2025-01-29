@@ -2,7 +2,7 @@
 title: "Talks 2 Code 2020"
 description: "Descripción t2c 2020"
 time_start: "2020-02-01"
-images: ["fosdem.png"]
+images: ["t2c-card.png"]
 hidedate: false
 ---
 

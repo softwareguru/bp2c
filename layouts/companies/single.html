@@ -162,16 +162,7 @@
     body {
       position: relative;
       height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
+    } 
 
     .swiper {
       width: 100%;
@@ -195,7 +186,7 @@
     }
   </style>
 
-<body>
+
 
   <!-- Swiper -->
   <div class="swiper mySwiper container">
@@ -262,7 +253,6 @@
       },
     });
   </script>
-</body>
 
 
     <!-- /Carousel -->
@@ -316,9 +306,11 @@
         </div>
         <div class="col-lg-4">
           <div class="mb-4">
-            <a href="{{ .Params.Jobslink }}" target="_blank">
+            {{ with .Params.Jobslink}}
+            <a href="{{ . }}" target="_blank">
               <button class="btn text-white btn-lg hero-button">Oportunidades Laborales</button>
             </a>
+            {{ end }}
           </div>
         </div>
       </div>

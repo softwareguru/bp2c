@@ -9,7 +9,7 @@ tipo-empresa: tech-consulting-mid
 cities: 
  - Morelia
 # Porcentajes  
-global: 
+global: 89
 compensacion: 82
 desarrollo: 88
 cultura: 96
@@ -18,7 +18,7 @@ infraestructura: 88
 
 sello: true
 
-location: 
+location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.883733466281!2d-101.16497402500659!3d19.674965081656858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d11a1103a0025%3A0x2d2ad41e05b4b2bc!2sScio%20Mexico!5e0!3m2!1ses-419!2smx!4v1738103091928!5m2!1ses-419!2smx
 
 # Beneficios
 cafeteria: 
@@ -34,10 +34,19 @@ temporalrelocation:
 transportation: 
 
 # Redes Sociales
-linkedin: 
-instagram: 
-facebook: 
+linkedin: https://www.linkedin.com/company/scio-consulting/
+instagram: https://www.instagram.com/scio.team
+facebook: https://www.facebook.com/Scio.consulting/
 x: 
 
+# Carousel
+img1: /images/carousel/scio-consulting/1.jpg
+img2: /images/carousel/scio-consulting/2.jpg
+img3: /images/carousel/scio-consulting/3.jpg
+img4: /images/carousel/scio-consulting/4.jpg
+img5: /images/carousel/scio-consulting/5.png
+
+website: http://www.sciodev.com
+jobslink: https://sciodev.com/open_roles/
 weight: 9
 ---

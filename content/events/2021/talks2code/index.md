@@ -2,7 +2,7 @@
 title: "Talks 2 Code 2021"
 description: "Descripción t2c 2021"
 time_start: "2021-02-01"
-images: ["fosdem.png"]
+images: ["t2c-card.png"]
 hidedate: false
 ---
 

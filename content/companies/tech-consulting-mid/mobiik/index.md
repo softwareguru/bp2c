@@ -40,11 +40,11 @@ facebook: https://www.facebook.com/MobiikES/
 x: 
 
 # Carousel
-img1: /images/carousel/mobiik/1.gif
-img2: /images/carousel/mobiik/2.gif
-img3: /images/carousel/mobiik/3.gif
-img4: /images/carousel/mobiik/4.gif
-img5: /images/carousel/mobiik/5.gif
+img1: /images/carousel/mobiik/1.png
+img2: /images/carousel/mobiik/2.png
+img3: /images/carousel/mobiik/3.png
+img4: /images/carousel/mobiik/4.png
+
 
 website: https://www.mobiik.com/
 jobslink: https://www.mobiik.com/jobs

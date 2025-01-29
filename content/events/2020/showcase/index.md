@@ -2,7 +2,7 @@
 title: "Showcase 2020"
 description: "Descripción showcase 2020"
 time_start: "2020-01-01"
-images: ["fosdem.png"]
+images: ["showcase.png"]
 hidedate: false
 ---
 

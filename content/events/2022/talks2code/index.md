@@ -2,7 +2,7 @@
 title: "Talks 2 Code 2022"
 description: "Descripción t2c 2022"
 time_start: "2022-02-01"
-images: ["fosdem.png"]
+images: ["t2c-card.png"]
 hidedate: false
 ---
 

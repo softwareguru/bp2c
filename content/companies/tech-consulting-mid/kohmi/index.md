@@ -13,6 +13,7 @@ cities:
  - Guadalajara
  - Monterrey
  - Guanajuato
+ - Queretaro
 
 # Porcentajes  
 global: 94
@@ -52,7 +53,7 @@ img4: /images/carousel/kohmi/4.jpg
 img5: /images/carousel/kohmi/5.jpg
 
 website: https://kohmi.net/
-jobslink: https://kohmi.net/
+jobslink: https://www.linkedin.com/company/kohmi/jobs/
 weight: 2
 ---
 

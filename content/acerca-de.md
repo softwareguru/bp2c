@@ -2,7 +2,7 @@
 title: "¿Qué es Best Place To Code?"
 draft: false
 ---
-
+## Acerca de BP2C
 
 Cada vez más empresas reconocen el valor del software y por lo tanto de las personas que lo construyen y mantienen. Es así que desde hace algunos años las empresas han creado o transformado su cultura y prácticas para atraer y retener al talento técnico.
 
