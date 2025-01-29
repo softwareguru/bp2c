@@ -1,4 +1,4 @@
-baseURL = 'https://bestplacetocode.com'
+baseURL = 'https://bestplacetocode.netlify.app'
 title = 'Best Place to Code'
 theme = 'hugo-bootstrap'
 
@@ -29,7 +29,7 @@ enableEmoji = true
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.99.1"
+    min = "0.124.1"
 
   [[module.mounts]]
     source = "assets"

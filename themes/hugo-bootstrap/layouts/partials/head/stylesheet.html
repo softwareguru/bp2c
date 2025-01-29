@@ -11,5 +11,5 @@
   <link rel="stylesheet" href="{{ $css.Permalink | relURL }}" media="screen">
 {{ else -}}
   {{ $secureCSS := $css | resources.Fingerprint "sha512" -}}
-  <link rel="stylesheet" href="{{ $secureCSS.Permalink }}" media="screen" integrity="{{ $secureCSS.Data.Integrity }}" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ $secureCSS.Permalink | relURL }}" media="screen" integrity="{{ $secureCSS.Data.Integrity }}" crossorigin="anonymous">
 {{ end -}}
