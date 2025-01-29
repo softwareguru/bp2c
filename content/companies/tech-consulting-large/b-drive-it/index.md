@@ -3,7 +3,7 @@ title: "B-Drive IT"
 description: "Descripcion corta"
 date: 2025-01-01
 images:
- - "images/companies/bdrive.png"
+ - "images/companies/bdriveit.png"
 categories: ["Empresas"]
 tipo-empresa: tech-consulting-large
 cities: 

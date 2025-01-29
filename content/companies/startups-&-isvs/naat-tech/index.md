@@ -3,7 +3,7 @@ title: "NAAT.TECH"
 description: "Descripcion corta"
 date: 2025-01-01
 images: 
- - "images/companies/naat-tech.jpg"
+ - "images/companies/naat-tech.png"
 categories: ["Empresas"]
 tipo-empresa: startups-&-isvs
 cities: 

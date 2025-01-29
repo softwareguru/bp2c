@@ -19,7 +19,7 @@
     </div>
     
     <section class="section-cities">
-  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
     <div class="accordion-body mt-4">    
       <div class="row row-cols-1 row-cols-md-3 g-4">
   
@@ -41,7 +41,7 @@
                 </a>
                  </div>
       
-                <div>
+                <div class="mt-4">
 
                   {{ range (.GetTerms "cities") }}
                 <a href="{{ .RelPermalink }}">
@@ -100,7 +100,7 @@
                  </div>
 
 
-                <div>
+                <div class="mt-4">
 
                   {{ range (.GetTerms "cities") }}
                 <a href="{{ .RelPermalink }}">
@@ -158,7 +158,7 @@
                 </a>
                  </div>
                  
-                <div>
+                <div class="mt-4">
 
                   {{ range (.GetTerms "cities") }}
                 <a href="{{ .RelPermalink }}">
@@ -216,7 +216,7 @@
                 </a>
                  </div>
 
-                <div>
+                <div class="mt-4">
 
                   {{ range (.GetTerms "cities") }}
                 <a href="{{ .RelPermalink }}">
@@ -273,7 +273,7 @@
                 </a>
                  </div>
 
-                <div>
+                <div class="mt-4">
 
                   {{ range (.GetTerms "cities") }}
                 <a href="{{ .RelPermalink }}">
