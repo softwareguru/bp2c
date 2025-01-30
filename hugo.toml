@@ -1,4 +1,4 @@
-baseURL = 'https://bestplacetocode.netlify.app'
+baseURL = 'https://bestplacetocode.com'
 title = 'Best Place to Code'
 theme = 'hugo-bootstrap'
 defaultContentLanguage = "es"
