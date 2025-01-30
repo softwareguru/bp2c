@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div class="container py-3">
+  <div class="blog-date mb-2">{{ .Date | time.Format ":date_long" }}</div>
+  <h2 class="mb-4">{{.Title}}</h2>
+  <div class="row">
+    <div class="col-12 col-md-4">
+      {{ with .Params.images }}<img src="{{ index . 0 | relURL }}" alt="{{ $.Title }}" class="img-fluid">{{ end }}
+    </div>
+  </div>
+  <div class="blog-content">
+    {{ .Content }}
+  </div>
+</div>
+
+{{ end }}
