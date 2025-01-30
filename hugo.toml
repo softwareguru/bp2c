@@ -1,8 +1,8 @@
 baseURL = 'https://bestplacetocode.netlify.app'
 title = 'Best Place to Code'
 theme = 'hugo-bootstrap'
+defaultContentLanguage = "es"
 
-disableHugoGeneratorInject = true
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
@@ -89,92 +89,88 @@ enableEmoji = true
 
 ############################################## Menú Español #################################################
 
-defaultContentLanguage = 'es'
-defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.es]
-    languageCode = 'es-MX'
-    languageDirection = 'ltr'
-    languageName = 'Español'
+    languageCode = "es-MX"
+    languageDirection = "ltr"
+    languageName = "Español"
     weight = 1
 
-  [[languages.es.menus.main]]
-name = "Acerca de"
-url = "/acerca-de"
-weight = 10
+    [languages.es.menus]
 
-  [[languages.es.menus.main]]
-identifier = "resources"
-name = "Recursos"
-weight = 20
+      [[languages.es.menus.main]]
+        name = "Acerca de"
+        url = "/acerca-de"
+        weight = 10
 
-[[languages.es.menus.main]]
-name = "Blog"
-url = "blog"
-parent="resources"
-weight = 10
+      [[languages.es.menus.main]]
+        identifier = "resources"
+        name = "Recursos"
+        weight = 20
 
-[[languages.es.menus.main]]
-name = "Estudio de Salarios SG"
-url = "https://sg.com.mx/estudios/salarios/2020"
-parent="resources"
-weight = 30
+      [[languages.es.menus.main]]
+        name = "Blog"
+        url = "blog"
+        parent="resources"
+        weight = 10
 
-[[languages.es.menus.main]]
-name = "Vacantes Get on Board"
-url = "https://www.getonbrd.com/"
-parent="resources"
-weight = 40
+      [[languages.es.menus.main]]
+        name = "Estudio de Salarios SG"
+        url = "https://sg.com.mx/estudios/salarios/2020"
+        parent="resources"
+        weight = 30
 
-[[languages.es.menus.main]]
-name = "Alianza Software Guru y Get on Board"
-url = "https://sg.com.mx/buzz/software-guru-get-board-una-alianza-que-potencia-las-empresas-y-al-talento-digital-latino"
-parent="resources"
-weight = 50
+      [[languages.es.menus.main]]
+        name = "Vacantes Get on Board"
+        url = "https://www.getonbrd.com/"
+        parent="resources"
+        weight = 40
 
-[[languages.es.menus.main]]
-name = "Eventos"
-url = "events"
-weight = 30
+      [[languages.es.menus.main]]
+        name = "Alianza Software Guru y Get on Board"
+        url = "https://sg.com.mx/buzz/software-guru-get-board-una-alianza-que-potencia-las-empresas-y-al-talento-digital-latino"
+        parent="resources"
+        weight = 50
 
-[[languages.es.menus.main]]
-identifier = "quiero-ser-bp2c"
-name = "Quiero ser BP2C"
-weight = 30
+      [[languages.es.menus.main]]
+        name = "Eventos"
+        url = "events"
+        weight = 30
 
-[[languages.es.menus.main]]
-name = "Cómo formar parte"
-url = "como-formar-parte"
-parent="quiero-ser-bp2c"
-weight = 10
+      [[languages.es.menus.main]]
+        identifier = "quiero-ser-bp2c"
+        name = "Quiero ser BP2C"
+        weight = 30
 
-[[languages.es.menus.main]]
-name = "Beneficios"
-url = "beneficios"
-parent="quiero-ser-bp2c"
-weight = 30
+      [[languages.es.menus.main]]
+        name = "Cómo formar parte"
+        url = "como-formar-parte"
+        parent="quiero-ser-bp2c"
+        weight = 10
 
-[[languages.es.menus.main]]
-name = "Evaluación y cuestionario"
-url = "evaluacion-y-cuestionario"
-parent="quiero-ser-bp2c"
-weight = 40
+      [[languages.es.menus.main]]
+        name = "Beneficios"
+        url = "beneficios"
+        parent="quiero-ser-bp2c"
+        weight = 30
 
-[[languages.es.menus.main]]
-name = "Preguntas frecuentes"
-url = "faqs"
-parent="quiero-ser-bp2c"
-weight = 50
+      [[languages.es.menus.main]]
+        name = "Evaluación y cuestionario"
+        url = "evaluacion-y-cuestionario"
+        parent="quiero-ser-bp2c"
+        weight = 40
 
-[[languages.es.menus.main]]
-name = "Contacto"
-url = "contacto"
-weight = 50
+      [[languages.es.menus.main]]
+        name = "Preguntas frecuentes"
+        url = "faqs"
+        parent="quiero-ser-bp2c"
+        weight = 50
 
-
-
-############################################## English menu #################################################
+      [[languages.es.menus.main]]
+        name = "Contacto"
+        url = "contacto"
+        weight = 50
 
   [languages.en]
     languageCode = 'en-US'
@@ -182,78 +178,76 @@ weight = 50
     languageName = 'English'
     weight = 2
 
-    
-[[menus.main]]
-name = "About Us"
-url = "/acerca-de"
-weight = 10
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        name = "About Us"
+        url = "/about-us"
+        weight = 10
 
-[[menus.main]]
-identifier = "resources"
-name = "Resources"
-weight = 20
+      [[languages.en.menus.main]]
+        identifier = "resources"
+        name = "Resources"
+        weight = 20
 
-[[menus.main]]
-name = "Blog"
-url = "blog"
-parent="resources"
-weight = 10
+      [[languages.en.menus.main]]
+        name = "Blog"
+        url = "blog"
+        parent="resources"
+        weight = 10
 
-[[menus.main]]
-name = "Estudio de Salarios SG"
-url = "https://sg.com.mx/estudios/salarios/2020"
-parent="resources"
-weight = 30
+      [[languages.en.menus.main]]
+        name = "SG Salary Survey"
+        url = "https://sg.com.mx/estudios/salarios/2020"
+        parent="resources"
+        weight = 30
 
-[[menus.main]]
-name = "Vacantes Get on Board"
-url = "https://www.getonbrd.com/"
-parent="resources"
-weight = 40
+      [[languages.en.menus.main]]
+        name = "Job postings on Get on Board"
+        url = "https://www.getonbrd.com/"
+        parent="resources"
+        weight = 40
 
-[[menus.main]]
-name = "Alianza Software Guru y Get on Board"
-url = "https://sg.com.mx/buzz/software-guru-get-board-una-alianza-que-potencia-las-empresas-y-al-talento-digital-latino"
-parent="resources"
-weight = 50
+      [[languages.en.menus.main]]
+        name = "Alliance with Get on Board"
+        url = "https://sg.com.mx/buzz/software-guru-get-board-una-alianza-que-potencia-las-empresas-y-al-talento-digital-latino"
+        parent="resources"
+        weight = 50
 
-[[menus.main]]
-name = "Events"
-url = "events"
-weight = 30
+      [[languages.en.menus.main]]
+        name = "Events"
+        url = "events"
+        weight = 30
 
-[[menus.main]]
-identifier = "quiero-ser-bp2c"
-name = "I want to be a BP2C"
-weight = 30
+      [[languages.en.menus.main]]
+        identifier = "quiero-ser-bp2c"
+        name = "I want to be a BP2C"
+        weight = 30
 
-[[menus.main]]
-name = "Process"
-url = "como-formar-parte"
-parent="quiero-ser-bp2c"
-weight = 10
+      [[languages.en.menus.main]]
+        name = "Process"
+        url = "como-formar-parte"
+        parent="quiero-ser-bp2c"
+        weight = 10
 
-[[menus.main]]
-name = "Benefits"
-url = "beneficios"
-parent="quiero-ser-bp2c"
-weight = 30
+      [[languages.en.menus.main]]
+        name = "Benefits"
+        url = "beneficios"
+        parent="quiero-ser-bp2c"
+        weight = 30
 
-[[menus.main]]
-name = "Evaluation y survey"
-url = "evaluacion-y-cuestionario"
-parent="quiero-ser-bp2c"
-weight = 40
+      [[languages.en.menus.main]]
+        name = "Evaluation y survey"
+        url = "evaluacion-y-cuestionario"
+        parent="quiero-ser-bp2c"
+        weight = 40
 
-[[menus.main]]
-name = "FAQ"
-url = "faqs"
-parent="quiero-ser-bp2c"
-weight = 50
+      [[languages.en.menus.main]]
+        name = "FAQ"
+        url = "faqs"
+        parent="quiero-ser-bp2c"
+        weight = 50
 
-[[menus.main]]
-name = "Contact"
-url = "contacto"
-weight = 50
-
-
+      [[languages.en.menus.main]]
+        name = "Contact"
+        url = "contacto"
+        weight = 50
