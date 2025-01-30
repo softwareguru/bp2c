@@ -22,7 +22,7 @@ cultura: 100
 friendly: 88
 infraestructura: 98 
 
-sello: 
+sello: true
 
 location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.9214351547985!2d-103.3683565249788!3d20.672775080888883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af76d2c34221%3A0x4a10fb15504e4b30!2sSvitla%20Systems!5e0!3m2!1ses-419!2smx!4v1738039244568!5m2!1ses-419!2smx
 
