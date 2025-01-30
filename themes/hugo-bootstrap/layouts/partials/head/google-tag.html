@@ -18,24 +18,13 @@
 */}}
 {{ with $.Site.Params.googleTag }}
 
-<!-- google-tag-consent.js -->
-{{- $googleTagConsentJs := resources.Get "js/google-tag-consent.js" -}}
-{{- $googleTagConsentJs = $googleTagConsentJs | fingerprint "sha512" -}}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{.}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<!-- google-tag.js -->
-{{- $googleTagJs := resources.Get "js/google-tag.js" -}}
-{{- $opts := dict 
-  "params" (dict "measurementId" .measurementId "googleAds" .googleAds)
--}}
-{{- $googleTagJs = $googleTagJs | js.Build $opts | fingerprint "sha512" -}}
-
-{{ if ne .cookies true }}
-<script async src="{{ $googleTagConsentJs.Permalink }}" integrity="{{ $googleTagConsentJs.Data.Integrity }}" crossorigin="anonymous"></script>
-{{ end }}
-
-{{ if ne .measurementId nil }}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ .measurementId }}" ></script>
-<script async src="{{ $googleTagJs.Permalink }}" integrity="{{ $googleTagJs.Data.Integrity }}" crossorigin="anonymous"></script>
-{{ end }}
-
+  gtag('config', '{{.}}');
+</script>
 {{ end }}

@@ -7,7 +7,6 @@ enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
 #sectionPagesMenu = "main"
-#googleAnalytics = "###########"
 
 [frontmatter]
   date = ["date", "publishDate", "lastmod"]
@@ -79,6 +78,7 @@ enableEmoji = true
   mainMenuLogo = "images/BestPlaceToCode-logo-100h.png"
 
   themeColor = "#fff"
+  googleTag = "G-NXBQTWJD3K"
 
   [params.options]
     bootStrapJs = true

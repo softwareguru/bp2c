@@ -1,7 +1,9 @@
 ---
 title: "Walmart México"
-description: "Descripcion corta"
 date: 2025-01-01
+aliases:
+ - /es/company/walmart-mexico
+
 images: 
  - "images/companies/walmart-mexico.png"
 categories: ["Empresas"]
