@@ -42,11 +42,7 @@ facebook: https://facebook.com/ProsaMx/
 x: https://twitter.com/ProsaMx/
 
 # Carousel
-img1: /images/carousel/prosa/1.png
-img2: /images/carousel/prosa/2.png
-img3: /images/carousel/prosa/3.png
-img4: /images/carousel/prosa/4.png
-img5: /images/carousel/prosa/5.png
+
 
 website: https://www.prosa.com.mx
 jobslink: https://apps-jobs.workbeat.com/jobs/public/tenantData/prosa/Bolsa/bdt996/VacantesFullList.html?idBolsa=996&idTipo=0

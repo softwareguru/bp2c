@@ -5,257 +5,455 @@
 <section id="companies">
   <h2 class="text-center mb-4">Companies</h2>
 
-<!-- Tech consulting (mid) -->
-<div class="container" id="accordionPanelsStayOpenExample">
-  <div class="container accordion-item">
-    <div class="row" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-      <div class="col-lg-3 collapse-img-section">
-        <img src="/images/accordion/tech-consulting-mid.png" class="mb-3" alt="Tech consulting (mid)">
+  <!-- Tech consulting (mid) -->
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 collapse-img-section">
+          <img src="/images/accordion/tech-consulting-mid.png" class="mb-3" alt="Tech consulting (mid)">
+        </div>
+        <div class="col-lg-9 collapse-companies-green">
+          <h4 class="mt-4">Tech consulting (mid)</h4>
+          <p>Technology consulting companies, custom software development, and team augmentation companies with between
+            10 and 100 developers.</p>
+        </div>
       </div>
-      <div class="col-lg-9 collapse-companies-green">
-        <h4 class="mt-4">Tech consulting (mid)</h4>
-            <p>Technology consulting companies, custom software development, and team augmentation companies with between 10 and 100 developers.</p>      
-      </div>
-    </div>
-    
-    <section class="section-cities">
-  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-    <div class="accordion-body mt-4">    
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-  
-        {{ range sort (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa" "tech-consulting-mid")  }}
-        <div class="col">
-          <div class="card h-100 card-company shadow-sm">
-            <div class="card-body">
+
+      <section class="section-cities">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+
+          {{ range first 3 (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa"
+          "tech-consulting-mid") }}
+          <div class="col">
+            <div class="card h-100 card-company shadow-sm">
+              <div class="card-body">
                 <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
-              <a href="{{ .Permalink | relURL }}">
-                <h3 class="card-title company-name">{{ .Title }}</h3>
-              </a>
-              
-              <a href="{{ .Permalink | relURL }}">      
-                  <img class="img-fluid img-location mt-2" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
+                <a href="{{ .Permalink }}">
+                  <h3 class="card-title company-name">{{ .Title }}</h3>
                 </a>
-      
+
+                <a href="{{ .Permalink | relURL }}">
+                  <img class="img-fluid img-location mt-2"
+                    src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
+                    loading="lazy" alt="featured image {{.Title }}" />
+                </a>
+
                 <ul class="cities-list">
                   {{ range (.GetTerms "cities") }}
                   <li class="city"><a href="{{ .RelPermalink }}">
-                    {{ .Params.Title }}</a></li>
-                {{ end }}
-                
-              </ul>
+                      {{ .Params.Title }}</a></li>
+                  {{ end }}
+
+                </ul>
+              </div>
             </div>
           </div>
+          {{ end }}
+
         </div>
-        {{ end }}
-      </div>
+
+        <div class="accordion mt-4 mb-4" id="accordionPanelsStayOpenExample">
+
+
+          <div class="">
+
+            <button type="button" class="btn text-white text-center btn-lg hero-button vstack mx-auto"
+              data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false">
+              See more
+            </button>
+
+
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                {{ range after 3 (where (where .Site.RegularPages.ByWeight "Section" "companies" )
+                ".Params.Tipo-empresa"
+                "tech-consulting-mid") }}
+                <div class="col">
+                  <div class="card h-100 card-company shadow-sm">
+                    <div class="card-body">
+                      <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
+                      <a href="{{ .Permalink }}">
+                        <h3 class="card-title company-name">{{ .Title }}</h3>
+                      </a>
+
+                      <a href="{{ .Permalink | relURL }}">
+                        <img class="img-fluid img-location mt-2"
+                          src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
+                          loading="lazy" alt="featured image {{.Title }}" />
+                      </a>
+
+                      <ul class="cities-list">
+                        {{ range (.GetTerms "cities") }}
+                        <li class="city"><a href="{{ .RelPermalink }}">
+                            {{ .Params.Title }}</a></li>
+                        {{ end }}
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
-    </section>
   </div>
-</div>
-<!-- Tech consulting (mid) -->
+  <!-- Tech consulting (mid) -->
 
 
-<!-- Tech consulting (large) -->
-<div class="container" id="accordionPanelsStayOpenExample">
-  <div class="container accordion-item">
-    <div class="row" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetwo" aria-expanded="true" aria-controls="panelsStayOpen-collapsetwo">
-      <div class="col-lg-9 collapse-companies-blue">
-        <h4 class="mt-4">Tech consulting (large)</h4>
-            <p>Technological outsourcing and systems integration companies, with more than 100 developers.</p>      
+  <!-- Tech consulting (large) -->
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 collapse-companies-blue">
+          <h4 class="mt-4">Tech consulting (large)</h4>
+          <p>Technological outsourcing and systems integration companies, with more than 100 developers.</p>
+        </div>
+        <div class="col-lg-3 collapse-img-section">
+          <img src="/images/accordion/tech-consulting-large.png" class="mb-3" alt="Tech consulting (mid)">
+        </div>
       </div>
-      <div class="col-lg-3 collapse-img-section">
-        <img src="/images/accordion/tech-consulting-large.png" class="mb-3" alt="Tech consulting (mid)">
-      </div>
-    </div>
-    
-    <section class="section-cities">
-  <div id="panelsStayOpen-collapsetwo" class="accordion-collapse collapse">
-    <div class="accordion-body mt-4">    
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-  
-        {{ range sort (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa" "tech-consulting-large")  }}
-        <div class="col">
-          <div class="card h-100 card-company shadow-sm">
-            <div class="card-body">
+
+      <section class="section-cities">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+
+          {{ range first 3 (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa"
+          "tech-consulting-large") }}
+          <div class="col">
+            <div class="card h-100 card-company shadow-sm">
+              <div class="card-body">
                 <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
-              <a href="{{ .Permalink }}">
-                <h3 class="card-title company-name">{{ .Title }}</h3>
-              </a>
-              
-              <a href="{{ .Permalink | relURL }}">      
-                  <img class="img-fluid img-location mt-2" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
+                <a href="{{ .Permalink }}">
+                  <h3 class="card-title company-name">{{ .Title }}</h3>
                 </a>
-      
+
+                <a href="{{ .Permalink | relURL }}">
+                  <img class="img-fluid img-location mt-2"
+                    src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
+                    loading="lazy" alt="featured image {{.Title }}" />
+                </a>
+
                 <ul class="cities-list">
                   {{ range (.GetTerms "cities") }}
                   <li class="city"><a href="{{ .RelPermalink }}">
-                    {{ .Params.Title }}</a></li>
-                {{ end }}
-                
-              </ul>
+                      {{ .Params.Title }}</a></li>
+                  {{ end }}
+
+                </ul>
+              </div>
             </div>
           </div>
+          {{ end }}
+
         </div>
 
-        {{ end }}
-      </div>
+        <div class="accordion mt-4 mb-4" id="accordionPanelsStayOpenExample">
+
+
+          <div class="">
+
+            <button type="button" class="btn text-white text-center btn-lg hero-button vstack mx-auto"
+              data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false">
+              See more
+            </button>
+
+
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                {{ range after 3 (where (where .Site.RegularPages.ByWeight "Section" "companies" )
+                ".Params.Tipo-empresa"
+                "tech-consulting-large") }}
+                <div class="col">
+                  <div class="card h-100 card-company shadow-sm">
+                    <div class="card-body">
+                      <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
+                      <a href="{{ .Permalink }}">
+                        <h3 class="card-title company-name">{{ .Title }}</h3>
+                      </a>
+
+                      <a href="{{ .Permalink | relURL }}">
+                        <img class="img-fluid img-location mt-2"
+                          src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
+                          loading="lazy" alt="featured image {{.Title }}" />
+                      </a>
+
+                      <ul class="cities-list">
+                        {{ range (.GetTerms "cities") }}
+                        <li class="city"><a href="{{ .RelPermalink }}">
+                            {{ .Params.Title }}</a></li>
+                        {{ end }}
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
-    </section>
   </div>
-</div>
-<!-- Tech consulting (large) -->
+  <!-- Tech consulting (large) -->
 
 
-<!-- Corp -->
-<div class="container" id="accordionPanelsStayOpenExample">
-  <div class="container accordion-item">
-    <div class="row" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsethree" aria-expanded="true" aria-controls="panelsStayOpen-collapsethree">
-      <div class="col-lg-3 collapse-img-section">
-        <img src="/images/accordion/corp.png" class="mb-3" alt="Tech consulting (mid)">
+  <!-- Corp -->
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 collapse-img-section">
+          <img src="/images/accordion/corp.png" class="mb-3" alt="Tech consulting (mid)">
+        </div>
+        <div class="col-lg-9 collapse-companies-green">
+          <h4 class="mt-4">Corp</h4>
+          <p>Companies belonging to various sectors. They have an internal technology institution or organization to
+            support their business.</p>
+        </div>
       </div>
-      <div class="col-lg-9 collapse-companies-green">
-        <h4 class="mt-4">Corp</h4>
-            <p>Companies belonging to various sectors. They have an internal technology institution or organization to support their business.</p>      
-      </div>
-    </div>
-    
-    <section class="section-cities">
-  <div id="panelsStayOpen-collapsethree" class="accordion-collapse collapse">
-    <div class="accordion-body mt-4">    
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-  
-        {{ range sort (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa" "corp")  }}
-        <div class="col">
-          <div class="card h-100 card-company shadow-sm">
-            <div class="card-body">
+
+      <section class="section-cities">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+
+          {{ range first 3 (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa"
+          "corp") }}
+          <div class="col">
+            <div class="card h-100 card-company shadow-sm">
+              <div class="card-body">
                 <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
-              <a href="{{ .Permalink }}">
-                <h3 class="card-title company-name">{{ .Title }}</h3>
-              </a>
-              
-              <a href="{{ .Permalink | relURL }}">      
-                  <img class="img-fluid img-location mt-2" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
+                <a href="{{ .Permalink }}">
+                  <h3 class="card-title company-name">{{ .Title }}</h3>
                 </a>
-      
+
+                <a href="{{ .Permalink | relURL }}">
+                  <img class="img-fluid img-location mt-2"
+                    src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
+                    loading="lazy" alt="featured image {{.Title }}" />
+                </a>
+
                 <ul class="cities-list">
                   {{ range (.GetTerms "cities") }}
                   <li class="city"><a href="{{ .RelPermalink }}">
-                    {{ .Params.Title }}</a></li>
-                {{ end }}
-                
-              </ul>
+                      {{ .Params.Title }}</a></li>
+                  {{ end }}
+
+                </ul>
+              </div>
             </div>
           </div>
+          {{ end }}
+
         </div>
 
-        {{ end }}
-      </div>
+        <div class="accordion mt-4 mb-4" id="accordionPanelsStayOpenExample">
+
+
+          <div class="">
+
+            <button type="button" class="btn text-white text-center btn-lg hero-button vstack mx-auto"
+              data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false">
+              See more
+            </button>
+
+
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                {{ range after 3 (where (where .Site.RegularPages.ByWeight "Section" "companies" )
+                ".Params.Tipo-empresa"
+                "corp") }}
+                <div class="col">
+                  <div class="card h-100 card-company shadow-sm">
+                    <div class="card-body">
+                      <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
+                      <a href="{{ .Permalink }}">
+                        <h3 class="card-title company-name">{{ .Title }}</h3>
+                      </a>
+
+                      <a href="{{ .Permalink | relURL }}">
+                        <img class="img-fluid img-location mt-2"
+                          src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
+                          loading="lazy" alt="featured image {{.Title }}" />
+                      </a>
+
+                      <ul class="cities-list">
+                        {{ range (.GetTerms "cities") }}
+                        <li class="city"><a href="{{ .RelPermalink }}">
+                            {{ .Params.Title }}</a></li>
+                        {{ end }}
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
-    </section>
   </div>
-</div>
-<!-- Corp -->
+  <!-- Corp -->
 
 
-<!-- Startups & ISVs -->
-<div class="container" id="accordionPanelsStayOpenExample">
-  <div class="container accordion-item">
-    <div class="row" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
-      <div class="col-lg-9 collapse-companies-blue">
-        <h4 class="mt-4">Startups & ISVs</h4>
-            <p>Companies that build their digital products, either to sell or as part of their core business.</p>      
+  <!-- Startups & ISVs -->
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 collapse-companies-blue">
+          <h4 class="mt-4">Startups & ISVs</h4>
+          <p>Companies that build their digital products, either to sell or as part of their core business.</p>
+        </div>
+        <div class="col-lg-3 collapse-img-section">
+          <img src="/images/accordion/startups-isvs.png" class="mb-3" alt="Tech consulting (mid)">
+        </div>
       </div>
-      <div class="col-lg-3 collapse-img-section">
-        <img src="/images/accordion/startups-isvs.png" class="mb-3" alt="Tech consulting (mid)">
-      </div>
-    </div>
-    
-    <section class="section-cities">
-  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-    <div class="accordion-body mt-4">    
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-  
-        {{ range sort (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa" "startups-&-isvs")  }}
-        <div class="col">
-          <div class="card h-100 card-company shadow-sm">
-            <div class="card-body">
-                <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
-              <a href="{{ .Permalink }}">
-                <h3 class="card-title company-name">{{ .Title }}</h3>
-              </a>
-              
-              <a href="{{ .Permalink | relURL }}">      
-                  <img class="img-fluid img-location mt-2" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
-                </a>
+
       
+      <section class="section-cities">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+
+          {{ range first 3 (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa"
+          "startups-&-isvs") }}
+          <div class="col">
+            <div class="card h-100 card-company shadow-sm">
+              <div class="card-body">
+                <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
+                <a href="{{ .Permalink }}">
+                  <h3 class="card-title company-name">{{ .Title }}</h3>
+                </a>
+
+                <a href="{{ .Permalink | relURL }}">
+                  <img class="img-fluid img-location mt-2"
+                    src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
+                    loading="lazy" alt="featured image {{.Title }}" />
+                </a>
+
                 <ul class="cities-list">
                   {{ range (.GetTerms "cities") }}
                   <li class="city"><a href="{{ .RelPermalink }}">
-                    {{ .Params.Title }}</a></li>
-                {{ end }}
-                
-              </ul>
+                      {{ .Params.Title }}</a></li>
+                  {{ end }}
+
+                </ul>
+              </div>
             </div>
           </div>
+          {{ end }}
+
         </div>
-        {{ end }}
-      </div>
+
+        <div class="accordion mt-4 mb-4" id="accordionPanelsStayOpenExample">
+
+
+          <div class="">
+
+            <button type="button" class="btn text-white text-center btn-lg hero-button vstack mx-auto"
+              data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false">
+              See more
+            </button>
+
+
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                {{ range after 3 (where (where .Site.RegularPages.ByWeight "Section" "companies" )
+                ".Params.Tipo-empresa"
+                "startups-&-isvs") }}
+                <div class="col">
+                  <div class="card h-100 card-company shadow-sm">
+                    <div class="card-body">
+                      <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
+                      <a href="{{ .Permalink }}">
+                        <h3 class="card-title company-name">{{ .Title }}</h3>
+                      </a>
+
+                      <a href="{{ .Permalink | relURL }}">
+                        <img class="img-fluid img-location mt-2"
+                          src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
+                          loading="lazy" alt="featured image {{.Title }}" />
+                      </a>
+
+                      <ul class="cities-list">
+                        {{ range (.GetTerms "cities") }}
+                        <li class="city"><a href="{{ .RelPermalink }}">
+                            {{ .Params.Title }}</a></li>
+                        {{ end }}
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
-    </section>
   </div>
-</div>
-<!-- Startups & ISVs -->
+  <!-- Startups & ISVs -->
 
 
-<!-- Boutiques & digital agencies -->
-<div class="container" id="accordionPanelsStayOpenExample">
-  <div class="container accordion-item">
-    <div class="row" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
-      <div class="col-lg-3 collapse-img-section">
-        <img src="/images/accordion/boutiques-da.png" class="mb-3" alt="Tech consulting (mid)">
+  <!-- Boutiques & digital agencies -->
+  <div class="container" id="accordionPanelsStayOpenExample">
+    <div class="container accordion-item">
+      <div class="row" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true"
+        aria-controls="panelsStayOpen-collapseFive">
+        <div class="col-lg-3 collapse-img-section">
+          <img src="/images/accordion/boutiques-da.png" class="mb-3" alt="Tech consulting (mid)">
+        </div>
+        <div class="col-lg-9 collapse-companies-green">
+          <h4 class="mt-4">Boutiques & digital agencies</h4>
+          <p>Technology consulting companies and digital agencies with 10 or fewer developers.</p>
+        </div>
       </div>
-      <div class="col-lg-9 collapse-companies-green">
-        <h4 class="mt-4">Boutiques & digital agencies</h4>
-            <p>Technology consulting companies and digital agencies with 10 or fewer developers.</p>      
-      </div>
-    </div>
-    
-    <section class="section-cities">
-  <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
-    <div class="accordion-body mt-4">    
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-  
-        {{ range sort (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa" "boutiques-&-digital-agencies")  }}
-        <div class="col">
-          <div class="card h-100 card-company shadow-sm">
-            <div class="card-body">
+
+      <section class="section-cities">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+
+          {{ range first 3 (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa"
+          "boutiques-&-digital-agencies") }}
+          <div class="col">
+            <div class="card h-100 card-company shadow-sm">
+              <div class="card-body">
                 <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
-              <a href="{{ .Permalink }}">
-                <h3 class="card-title company-name">{{ .Title }}</h3>
-              </a>
-              
-              <a href="{{ .Permalink | relURL }}">      
-                  <img class="img-fluid img-location mt-2" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
+                <a href="{{ .Permalink }}">
+                  <h3 class="card-title company-name">{{ .Title }}</h3>
                 </a>
-      
+
+                <a href="{{ .Permalink | relURL }}">
+                  <img class="img-fluid img-location mt-2"
+                    src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
+                    loading="lazy" alt="featured image {{.Title }}" />
+                </a>
+
                 <ul class="cities-list">
                   {{ range (.GetTerms "cities") }}
                   <li class="city"><a href="{{ .RelPermalink }}">
-                    {{ .Params.Title }}</a></li>
-                {{ end }}
-                
-              </ul>
+                      {{ .Params.Title }}</a></li>
+                  {{ end }}
+
+                </ul>
+              </div>
             </div>
           </div>
+          {{ end }}
         </div>
-
-        {{ end }}
-      </div>
+      </section>
     </div>
-    </section>
   </div>
-</div>
-<!-- Boutiques & digital agencies -->
+  <!-- Boutiques & digital agencies -->
 </section>
 
 <!-- Companies -->

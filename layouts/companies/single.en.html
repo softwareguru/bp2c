@@ -1,0 +1,323 @@
+{{ define "main" }}
+
+
+
+<section>
+  <!-- Imagenes empresa -->
+  <section class="bg-companies">
+    <div class="container">
+      <img class="img-fluid img-location" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy" width="450"  alt="featured image {{.Title }}"/>
+  </div>
+  </section>
+  <!-- Imagenes empresa -->
+
+
+
+    <!-- Titulo-->
+    <div class="business-obligations-title text-center">
+        <h2>Bussines Obligations</h2>
+    </div>
+    <!-- /Titulo-->
+
+
+    <!-- Porcentaje general y sello -->
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="col-sm">
+                    <h5 class="text-center mb-4">Global score: {{ .Params.global}}%</h5>
+                    <div id="myProgress-global">
+                        <div id="myBar" {{ with .Params.global }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
+                      </div>             
+                  </div>
+                  <div class="col-sm mt-4 mb-4 text-center">
+                    Compliance with business obligations is key to guarantee the correct functioning and sustainability of any organization.
+                   </div>
+                   {{ with .Params.Sello }}
+                  <div class="col-sm mb-4 ">
+                    <img src="/images/sello.png" class="img-fluid mx-auto d-block">
+                  </div>
+                  {{ end }}
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <h6>Wages and economic benefits: {{ .Params.compensacion }}%</h6>
+                  <div id="progress-bar-beneficios">
+                    <div id="myBar-beneficios" {{ with .Params.compensacion }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
+                  </div>
+                </div>
+
+                <div class="mt-3">
+                    <h6>Career development: {{ .Params.desarrollo }}%</h6>
+                <div id="progress-bar-beneficios">
+                  <div id="myBar-beneficios" {{ with .Params.desarrollo }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
+                </div>
+                </div>
+
+                <div class="mt-3">
+                    <h6>Culture and safe space: {{ .Params.cultura }}%</h6>
+                    <div id="progress-bar-beneficios">
+                        <div id="myBar-beneficios" {{ with .Params.cultura }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
+                      </div>
+                </div>
+                  
+                <div class="mt-3">
+                    <h6>Gender Friendly: {{ .Params.friendly }}%</h6>
+                    <div id="progress-bar-beneficios">
+                        <div id="myBar-beneficios" {{ with .Params.friendly }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
+                      </div>
+                </div>
+                  
+                  <div class="mt-3 mb-4">
+                    <h6>Infrastructure: {{ .Params.infraestructura }}%</h6>
+                    <div id="progress-bar-beneficios">
+                        <div id="myBar-beneficios" {{ with .Params.infraestructura }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-5 d-flex">
+
+                <div class="ratio ratio-16x9 ">
+                    <iframe src="{{ .Params.location}}" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Porcentaje general y sello -->
+
+    <!-- Beneficios -->
+    <div class="container beneficios-section mx-auto d-block mt-4">
+        <div class="row container">
+          {{ with .Params.Cafeteria }}
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="/images/benefits/cafeteria.png" width="190" class="mx-auto d-block">
+            </div>
+          {{ end }}
+          {{ with .Params.Flexiblehours }}
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="/images/benefits/flexiblehours.png" width="190" class="mx-auto d-block">
+            </div>
+          {{ end }}
+          {{ with .Params.Gameroom }}
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="/images/benefits/gameroom.png" width="190" class="mx-auto d-block">
+            </div>
+          {{ end }}
+          {{ with .Params.Healthinsurance }}
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="/images/benefits/healthinsurence.png" width="190" class="mx-auto d-block">
+            </div>
+          {{ end }}
+          {{ with .Params.Languageclasses }}
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="/images/benefits/languageclasses.png" width="190" class="mx-auto d-block">
+            </div>
+          {{ end }}
+          {{ with .Params.Makerspace }}
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="/images/benefits/makerspace.png" width="190" class="mx-auto d-block">
+            </div>
+          {{ end }}
+          {{ with .Params.Petfriendly }}
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="/images/benefits/petfriendly.png" width="190" class="mx-auto d-block">
+            </div>
+          {{ end }}
+          {{ with .Params.Remotework }}
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="/images/benefits/remotework.png" width="190" class="mx-auto d-block">
+            </div>
+          {{ end }}
+          {{ with .Params.Stockoptions }}
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="/images/benefits/stockoptions.png" width="190" class="mx-auto d-block">
+            </div>
+          {{ end }}
+          {{ with .Params.Temporalrelocation }}
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="/images/benefits/temporalrecolocation.png" width="190" class="mx-auto d-block">
+            </div>
+          {{ end }}
+          {{ with .Params.Transportation }}
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="/images/benefits/transportation.png" width="190" class="mx-auto d-block">
+            </div>
+          {{ end }}
+          </div>
+    </div>
+    <!-- /Beneficios -->
+
+    <div class="container mt-4">
+      {{ .Content }}
+    </div>
+
+    <!-- Carousel -->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    } 
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper container">
+    <div class="swiper-wrapper">
+
+
+      {{ with .Params.Img1}}
+      <div class="swiper-slide"><img src="{{ . }}"></div>
+      {{ end}}
+
+      {{ with .Params.Img2}}
+      <div class="swiper-slide"><img src="{{ . }}"></div>
+      {{ end}}
+
+      {{ with .Params.Img3}}
+      <div class="swiper-slide"><img src="{{ . }}"></div>
+      {{ end}}
+
+      {{ with .Params.Img4}}
+      <div class="swiper-slide"><img src="{{ . }}"></div>
+      {{ end}}
+
+      {{ with .Params.Img5}}
+      <div class="swiper-slide"><img src="{{ . }}"></div>
+      {{ end}}
+
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      autoplay: true,
+      autoplaySpeed: 10000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+
+
+    <!-- /Carousel -->
+
+
+    <!-- Info redes -->
+    <div class="container text-center mt-4">
+      <div class="row">
+        <div class="col-lg-4 text-center redes">
+
+        <ul class="d-flex justify-content-evenly mt-2 mb-4">
+          {{ with .Params.Linkedin }}
+          {{ if ne . "" }}
+          <a href="{{ . }}">
+            <img src="/images/icons/linkedin.png" alt="Linkedin" width="52" height="52">
+          </a>
+          {{ end }}
+          {{ end }}
+
+          {{ with .Params.Instagram }}
+          {{ if ne . "" }}
+          <a href="{{ . }}">
+            <img src="/images/icons/instagram.png" alt="Linkedin" width="52" height="52">
+          </a>
+          {{ end }}
+          {{ end }}
+
+          {{ with .Params.Facebook }}
+          {{ if ne . "" }}
+              <a href="{{ . }}">
+                <img src="/images/icons/facebook.png" alt="Linkedin" width="52" height="52">
+              </a>
+          {{ end }}
+          {{ end }}
+
+          {{ with .Params.X }}
+          {{ if ne . "" }}
+              <a href="{{ . }}">
+                <img src="/images/icons/twitter.png" alt="Linkedin" width="52" height="52">
+              </a>
+          {{ end }}
+          {{ end }}
+      </ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="mb-4">
+            <a href="{{ .Params.Website}}" target="_blank">
+              <button class="btn text-white btn-lg hero-button">Website</button>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="mb-4">
+            {{ with .Params.Jobslink}}
+            <a href="{{ . }}" target="_blank">
+              <button class="btn text-white btn-lg hero-button">Job Opportunities</button>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Info redes -->
+
+</section>
+
+{{ end }}
+
