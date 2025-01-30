@@ -3,18 +3,18 @@
 <!-- Companies -->
 
 <section id="companies">
-  <h2 class="text-center mb-4">Empresas</h2>
+  <h2 class="text-center mb-4">Companies</h2>
 
 <!-- Tech consulting (mid) -->
 <div class="container" id="accordionPanelsStayOpenExample">
   <div class="container accordion-item">
     <div class="row" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
       <div class="col-lg-3 collapse-img-section">
-        <img src="../../images/accordion/tech-consulting-mid.png" class="mb-3" alt="Tech consulting (mid)">
+        <img src="/images/accordion/tech-consulting-mid.png" class="mb-3" alt="Tech consulting (mid)">
       </div>
       <div class="col-lg-9 collapse-companies-green">
         <h4 class="mt-4">Tech consulting (mid)</h4>
-            <p>Empresas de consultoría tecnológica, desarrollo de software a la medida y team augmentation con entre 10 y 100 desarrolladores.</p>      
+            <p>Technology consulting companies, custom software development, and team augmentation companies with between 10 and 100 developers.</p>      
       </div>
     </div>
     
@@ -23,13 +23,12 @@
     <div class="accordion-body mt-4">    
       <div class="row row-cols-1 row-cols-md-3 g-4">
   
-        {{ if ne .Kind "taxonomy" }}
         {{ range sort (where (where .Site.RegularPages.ByWeight "Section" "companies" ) ".Params.Tipo-empresa" "tech-consulting-mid")  }}
         <div class="col">
           <div class="card h-100 card-company shadow-sm">
             <div class="card-body">
                 <!--<p class="ranking-numer">{{ .Params.Weight}}</p>-->
-              <a href="/../{{ .Permalink }}">
+              <a href="{{ .Permalink | relURL }}">
                 <h3 class="card-title company-name">{{ .Title }}</h3>
               </a>
               
@@ -48,7 +47,6 @@
           </div>
         </div>
         {{ end }}
-        {{ end }}
       </div>
     </div>
     </section>
@@ -63,10 +61,10 @@
     <div class="row" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetwo" aria-expanded="true" aria-controls="panelsStayOpen-collapsetwo">
       <div class="col-lg-9 collapse-companies-blue">
         <h4 class="mt-4">Tech consulting (large)</h4>
-            <p>Empresas de outsourcing tecnológico e integración de sistemas, con más de 100 desarrolladores.</p>      
+            <p>Technological outsourcing and systems integration companies, with more than 100 developers.</p>      
       </div>
       <div class="col-lg-3 collapse-img-section">
-        <img src="../../images/accordion/tech-consulting-large.png" class="mb-3" alt="Tech consulting (mid)">
+        <img src="/images/accordion/tech-consulting-large.png" class="mb-3" alt="Tech consulting (mid)">
       </div>
     </div>
     
@@ -113,11 +111,11 @@
   <div class="container accordion-item">
     <div class="row" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsethree" aria-expanded="true" aria-controls="panelsStayOpen-collapsethree">
       <div class="col-lg-3 collapse-img-section">
-        <img src="../../images/accordion/corp.png" class="mb-3" alt="Tech consulting (mid)">
+        <img src="/images/accordion/corp.png" class="mb-3" alt="Tech consulting (mid)">
       </div>
       <div class="col-lg-9 collapse-companies-green">
         <h4 class="mt-4">Corp</h4>
-            <p>Empresas pertenecientes a sectores diversos que cuentan con una institución u organización de tecnología interna para soportar su negocio.</p>      
+            <p>Companies belonging to various sectors. They have an internal technology institution or organization to support their business.</p>      
       </div>
     </div>
     
@@ -165,10 +163,10 @@
     <div class="row" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
       <div class="col-lg-9 collapse-companies-blue">
         <h4 class="mt-4">Startups & ISVs</h4>
-            <p>Empresas que construyen sus propios productos digitales, ya sea para vender o como parte de su core de negocio.</p>      
+            <p>Companies that build their digital products, either to sell or as part of their core business.</p>      
       </div>
       <div class="col-lg-3 collapse-img-section">
-        <img src="../../images/accordion/startups-isvs.png" class="mb-3" alt="Tech consulting (mid)">
+        <img src="/images/accordion/startups-isvs.png" class="mb-3" alt="Tech consulting (mid)">
       </div>
     </div>
     
@@ -214,11 +212,11 @@
   <div class="container accordion-item">
     <div class="row" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
       <div class="col-lg-3 collapse-img-section">
-        <img src="../../images/accordion/boutiques-da.png" class="mb-3" alt="Tech consulting (mid)">
+        <img src="/images/accordion/boutiques-da.png" class="mb-3" alt="Tech consulting (mid)">
       </div>
       <div class="col-lg-9 collapse-companies-green">
         <h4 class="mt-4">Boutiques & digital agencies</h4>
-            <p>Empresas de consultoría tecnológica y agencias digitales con 10 o menos desarrolladores.</p>      
+            <p>Technology consulting companies and digital agencies with 10 or fewer developers.</p>      
       </div>
     </div>
     

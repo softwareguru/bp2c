@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <section class="container location-section">
+        <h2 class="text-center mb-4">Locations</h2>  
+        
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+
+
+        {{range ($.Site.GetPage "taxonomyTerm" "cities").Pages.ByTitle }}
+      
+        <div class="col-lg-3">
+            <div class="card h-100 card-location">
+    <a href="{{ .Permalink | relURL  }}">
+
+         <div class="blog-item">
+            <img class="img-fluid img-location" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy"  alt="featured image {{.Title }}"/>
+         </div>
+
+      <div class="blog-caption text-center">
+          <h4 class="card-title text-decoration-none">
+                  {{ .Title }}
+          </h4>
+      </div>
+    </a>
+    </div>
+</div>
+
+    {{ end }}
+</div>
+</section>
+</div>
+
