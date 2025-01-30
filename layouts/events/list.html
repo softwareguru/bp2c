@@ -2,7 +2,7 @@
 
 <div class="container py-3">
 
-    {{ $sortedPages := .Pages.ByParam "time_start" }}
+    {{ $sortedPages := (.Pages.ByParam "time_start").Reverse  }}
     {{ range $sortedPages }}
         <div class="card border-light-subtle mb-3">
             <div class="row g-0">

@@ -163,7 +163,7 @@ enableEmoji = true
 
       [[languages.es.menus.main]]
         name = "Preguntas frecuentes"
-        url = "faqs"
+        url = "faq"
         parent="quiero-ser-bp2c"
         weight = 50
 
@@ -225,29 +225,29 @@ enableEmoji = true
 
       [[languages.en.menus.main]]
         name = "Process"
-        url = "como-formar-parte"
+        url = "process"
         parent="quiero-ser-bp2c"
         weight = 10
 
       [[languages.en.menus.main]]
         name = "Benefits"
-        url = "beneficios"
+        url = "benefits"
         parent="quiero-ser-bp2c"
         weight = 30
 
       [[languages.en.menus.main]]
-        name = "Evaluation y survey"
-        url = "evaluacion-y-cuestionario"
+        name = "Assessment"
+        url = "assessment"
         parent="quiero-ser-bp2c"
         weight = 40
 
       [[languages.en.menus.main]]
         name = "FAQ"
-        url = "faqs"
+        url = "faq"
         parent="quiero-ser-bp2c"
         weight = 50
 
       [[languages.en.menus.main]]
         name = "Contact"
-        url = "contacto"
+        url = "contact"
         weight = 50

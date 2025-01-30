@@ -2,6 +2,8 @@
 title: 'Contacto'
 date: 2025-01-18T02:08:19-06:00
 draft: false
+aliases:
+ - /es/about/contacto
 ---
 
 

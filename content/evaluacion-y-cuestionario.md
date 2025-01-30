@@ -2,6 +2,8 @@
 title: 'Evaluacion Y Cuestionario'
 date: 2025-01-18T02:05:09-06:00
 draft: false
+aliases:
+ - /es/about/cuestionario
 ---
 
 ## Evaluación y cuestionario

@@ -1,6 +1,8 @@
 ---
 title: "¿Qué es Best Place To Code?"
 draft: false
+aliases:
+ - /es/about/que-es
 ---
 ## Acerca de BP2C
 

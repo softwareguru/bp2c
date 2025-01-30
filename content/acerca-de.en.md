@@ -2,6 +2,8 @@
 title: "¿What is Best Place To Code?"
 url: about-us 
 draft: false
+aliases:
+ - /en/about/what-is-best-place-to-code
 ---
 
 ## What is Best Place to Code?
