@@ -40,11 +40,10 @@ facebook:
 x: 
 
 # Carousel
-img1: /images/carousel/htech/1.jpg 
-img2: /images/carousel/htech/2.jpg
-img3: /images/carousel/htech/3.jpg
-img4: /images/carousel/htech/4.jpg
-img5: /images/carousel/htech/5.jpg
+img1: /images/carousel/htech/1.png
+img2: /images/carousel/htech/2.png
+img3: /images/carousel/htech/3.png
+img4: /images/carousel/htech/4.png
 
 website: https://htech.com/
 jobslink: https://www.linkedin.com/company/htechmexico/jobs/
@@ -52,12 +51,11 @@ jobslink: https://www.linkedin.com/company/htechmexico/jobs/
 weight: 1
 ---
 
-Htech es una empresa líder en el procesamiento de pagos en línea e inteligencia antifraude, con presencia internacional. Operamos bajo rigurosos estándares de eficiencia y seguridad, avalados por certificaciones de clase mundial, utilizando tecnología de vanguardia.
+Una compañía mexicana de tecnología con presencia internacional enfocada en la industria de pagos digitales y especializada en la prevención de fraude en línea.
 
-Ofrecemos una gama de servicios tecnológicos diseñados para satisfacer diversas necesidades:
+Ofrecemos una infraestructura de pagos digitales de la más alta calidad, con un enfoque en la eficiencia, la seguridad y la competitividad, para todas las industrias que requieran pagos, tanto en entornos en línea como a través de dispositivos físicos. Nos comprometemos a proporcionar una experiencia profesional y confiable, con una integración rápida y el menor índice de fraude en el mercado. Además, aspiramos a ser un lugar donde nuestro personal pueda alcanzar sus metas profesionales en un entorno de trabajo excepcional y colaborativo.
 
-✔️Pasarela de pagos: Facilita transacciones seguras para el comercio electrónico.
-✔️Pago de servicios: Simplifica el pago de servicios de telefonía.
-✔️Venta de saldo: Permite la compra de saldo para servicios telefónicos.
-
-En Htech, valoramos y fomentamos el talento tecnológico. Nos desempeñamos como una comunidad de conocimiento, compartiendo resultados de investigaciones tecnológicas entre nuestros miembros. Nuestra cultura de aprendizaje continuo mantiene a la empresa a la vanguardia tecnológica. Promovemos un entorno de trabajo colaborativo, innovador y dinámico, donde los desarrolladores pueden crecer profesionalmente y contribuir significativamente al éxito de la empresa.
+En la compañía, nos enorgullece ser reconocidos como un Best Place to Code, es por ello que
+fomentamos una cultura de colaboración y comunicación abierta lo que lo hace un lugar ideal
+para los desarrolladores.
+La empresa valora profundamente el esfuerzo de sus empleados, estamos conscientes de que lo más valioso que tenemos es nuestro personal.

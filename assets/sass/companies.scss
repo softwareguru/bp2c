@@ -56,17 +56,21 @@
     background-color: $blue-section;
 }
 
+
 .card-cities{
     border-radius: 25px;
+}
 
-    .card-body{
-        padding: 35px;
-    }
-    
+.card-body{
+    padding: 35px;
 }
 
 .title-cities{
     font-weight: 600;
+}
+
+.card-company{
+    border-radius: 20px;
 }
 
 .cities-list {
