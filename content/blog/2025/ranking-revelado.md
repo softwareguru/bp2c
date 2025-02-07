@@ -64,7 +64,7 @@ date: 2025-01-30
 	<li><a href="/es/company/grid-dynamics">Grid Dynamics</a></li>
 	<li><a href="/es/company/data-intelligence">Data Intelligence</a></li>
 	<li><a href="/es/company/mobiik">Mobiik</a></li>
-	<li><a href="/es/company/inbestcloud">iNBest</a></li>
+	<li><a href="/es/company/inbest">iNBest</a></li>
 	<li><a href="/es/company/onephase">onephase</a></li>
 	<li><a href="/es/company/scio-consulting">Scio Consulting</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
 	<li><a href="/es/company/roomie">Roomie IT</a></li>
@@ -77,8 +77,8 @@ date: 2025-01-30
 <p>Empresas de outsourcing tecnológico e integración de sistemas, con más de 100 desarrolladores.</p>
 
 <ol>
-	<li><a href="/es/company/b-drive-it-and-engine-core">B-Drive IT</a></li>
-	<li><a href="/es/company/b-drive-it-and-engine-core">Engine Core</a></li>
+	<li><a href="/es/company/b-drive-it">B-Drive IT</a></li>
+	<li><a href="/es/company/engine-core">Engine Core</a></li>
 	<li><a href="/es/company/nova-reboot">Nova by Reboot</a></li>
 	<li><a href="/es/company/svitla-systems">Svitla Systems</a></li>
 	<li><a href="/es/company/improving">Improving</a>&nbsp;</li>
