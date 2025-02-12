@@ -9,7 +9,7 @@ date: 2025-02-11
 
 ---
 
-El Informe sobre el futuro del empleo 2025 que publicó el Foro Económico Mundial revela que la disrupción en el mercado de trabajo equivaldrá a un 22% de los empleos de aquí a 2030, período en el que se crearán 170 millones de nuevos puestos de trabajo y otros 92 millones serán desplazados, dando lugar a un incremento neto de 78 millones de empleos. Los avances tecnológicos, los cambios demográficos, las tensiones geoeconómicas y las presiones económicas son los principales factores que impulsan estos cambios y supondrán una transformación de los sectores y las profesiones en todo el mundo.
+El [Informe sobre el futuro del empleo 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) que publicó el [Foro Económico Mundial](https://es.weforum.org/) revela que la disrupción en el mercado de trabajo equivaldrá a un 22% de los empleos de aquí a 2030, período en el que se crearán 170 millones de nuevos puestos de trabajo y otros 92 millones serán desplazados, dando lugar a un incremento neto de 78 millones de empleos. Los avances tecnológicos, los cambios demográficos, las tensiones geoeconómicas y las presiones económicas son los principales factores que impulsan estos cambios y supondrán una transformación de los sectores y las profesiones en todo el mundo.
 
 ### El mercado de trabajo en 2030
 
