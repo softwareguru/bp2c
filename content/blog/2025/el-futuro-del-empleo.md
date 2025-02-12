@@ -4,7 +4,7 @@ draft: false
 images:
  - /images/blog/BP2C-el futuro del empleo.png
 aliases:
- - /es/blog/mejora-de-la experiencia-del-desarrollador 
+ - /es/blog/el-futuro-del-empleo 
 date: 2025-02-11
 
 ---
