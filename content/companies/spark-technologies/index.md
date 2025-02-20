@@ -61,8 +61,5 @@ weight: 3
 
 Somos un equipo de profesionales en la tecnología con una cultura madura y sólida que genera excelentes resultados ofreciendo soluciones de software a nuestros clientes y superando expectativas. 
 Ofrecemos un ambiente de trabajo flexible, dinámico y retador buscando siempre exceder las expectativas de los miembros del equipo. 
+
 Buscamos vivir nuestros valores y filosofía día con día y ponemos todo nuestro corazón en cada actividad.
-
-
-
-En este webinar, exploraremos cómo las soluciones de HERE pueden potenciar tus aplicaciones con mapas precisos, geocodificación avanzada y herramientas de optimización logística. Descubre cómo nuestras APIs pueden ayudarte a mejorar la experiencia del usuario, optimizar rutas y reducir costos operativos en sectores como logística, e-commerce y movilidad. 
