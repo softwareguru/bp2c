@@ -146,5 +146,5 @@ draft: false
 
 <p dir="ltr">Una vez recibido el pago de la membresía, Software Guru solicitará a la empresa la información necesaria para brindarle los beneficios (ver “<a href="/beneficios">Beneficios del programa</a>”). Esto incluye la información necesaria para crear su perfil dentro del directorio Best Place to Code, así como para generar la información para difusión de la empresa.</p>
 
-<p dir="ltr"><strong>¿Quieres que tu empresa se acredite y&nbsp;sea&nbsp;miembro Best Place to Code? ¡<a href="https://bestplacetocode.com/about/contacto">Contáctanos ahora mismo</a>!</strong></p>
+<p dir="ltr"><strong>¿Quieres que tu empresa se acredite y&nbsp;sea&nbsp;miembro Best Place to Code? ¡<a href="https://bestplacetocode.com/contacto">Contáctanos ahora mismo</a>!</strong></p>
 
