@@ -70,6 +70,7 @@ date: 2025-01-30
 	<li><a href="/es/company/roomie">Roomie IT</a></li>
 	<li><a href="/es/company/ipcom">IPCOM</a></li>
 	<li><a href="/es/company/bside">bSide</a></li>
+🔼 <a href="/es/company/neaxis-people-tech">Neaxis People Tech</a> <strong>¡Nueva!</strong>
 </ol>
 
 <h3>Consultoría global</h3>

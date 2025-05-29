@@ -28,7 +28,14 @@
         <div class="col">
           <div class="card h-100 card-company shadow-sm">
             <div class="card-body">
-                <p class="ranking-number">{{ .Params.Weight}}</p>
+                <p class="ranking-number">
+                  {{ with.Params.weight }}
+                  {{ . }}
+                  {{ end }}
+             
+                  {{ with.Params.new }}
+                  {{ . }}
+                  {{ end }}</p>
               <a href="{{ .Permalink | relURL }}">
                 <h3 class="card-title company-name">{{ .Title }}</h3>
               </a>
