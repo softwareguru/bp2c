@@ -59,3 +59,26 @@ weight: false
 
 new: New!
 ---
+
+
+### Quienes somos:
+
+Neaxis People Tech es una empresa 100% mexicana, apasionada por la tecnología, la innovación y especializada en soluciones ágiles de TI.
+Creemos en las alianzas estratégicas, en el talento de nuestro equipo y en el poder de las conexiones humanas.
+Transformamos experiencias en identidades fuertes que hacen crecer a nuestros clientes y a nuestros consultores.
+
+¿A qué nos dedicamos en Neaxis People Tech?
+Somos expertos en staffing especializado en Ciberseguridad, Big Data, Data Science y Desarrollo, con foco en Fintech y medios de pago.
+Ayudamos a nuestros clientes a tomar decisiones clave, mantenerse protegidos y liderar en un mercado en constante cambio.
+
+¿Por qué somos un Best Place to Code?
+
+En Neaxis People Tech no solo desarrollamos tecnología:
+desarrollamos talento, conexiones reales y proyectos con propósito.
+
+Fomentamos un ambiente donde se valora tu voz, tus ideas y tu crecimiento.
+Impulsamos la innovación con metodologías ágiles y equipos colaborativos.
+Cuidamos a las personas: con flexibilidad, respeto y equilibrio vida-trabajo.
+Te apoyamos para que sigas aprendiendo, creciendo y disfrutando lo que haces.
+
+Aquí puedes ser tú, aportar, y crear tecnología que marca la diferencia.
