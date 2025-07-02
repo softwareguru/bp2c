@@ -10,6 +10,8 @@ categories: ["Empresas"]
 tipo-empresa: tech-consulting-large
 cities: 
  - Ciudad de México
+ - Monterrey 
+ - Querétaro 
 # Porcentajes  
 global: 97
 compensacion: 94
@@ -20,54 +22,45 @@ infraestructura: 100
 
 sello: true
 
-location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.0119754777315!2d-99.18505832108848!3d19.36863413521998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff8e365ebc25%3A0xc1220c194f091c00!2sAv.%20Insurgentes%20Sur%201458-Piso%2021%2C%20Actipan%2C%20%C3%81lvaro%20Obreg%C3%B3n%2C%2003230%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1738037987803!5m2!1ses-419!2smx
+location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.008765367965!2d-99.18486932108848!3d19.36877313521968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff8ed89c7d3f%3A0x48c6796102460fb4!2sB%20Drive%20IT%2C%20S.A.%20De%20C.V.!5e0!3m2!1ses!2smx!4v1751483225281!5m2!1ses!2smx
 
 # Beneficios
 cafeteria: true
 flexiblehours: true
-gameroom: true
+gameroom: 
 healthinsurance: true
-languageclasses: true
-makerspace: true
+languageclasses: 
+makerspace: 
 petfriendly: 
 remotework: true
-stockoptions: true
+stockoptions: 
 temporalrelocation: 
 transportation: true
 
 # Redes Sociales
-linkedin: https://www.linkedin.com/company/b-drive-it/
-instagram: https://www.instagram.com/bdriveit/
-facebook: https://www.facebook.com/bdriveIT
-x: https://twitter.com/i/flow/login?redirect_after_login=%2Fbdriveit
+linkedin: https://www.linkedin.com/company/bdrivemx/
+instagram: https://www.instagram.com/explore/locations/2025768377746852/b-drive/
+facebook: 
+x: 
 
 # Carousel
 img1: /images/carousel/b-drive/1.jpg
-img2: /images/carousel/b-drive/2.png
-img3: /images/carousel/b-drive/3.png
+img2: /images/carousel/b-drive/2.jpg
+img3: /images/carousel/b-drive/3.jpg
 img4: /images/carousel/b-drive/4.png
 
 
-website: https://b-drive.com.mx/
+website: https://bdrive.ai/
 jobslink: https://www.linkedin.com/company/b-drive-it/jobs/
 
 weight: 1
 ---
 
-Somos una empresa conformada por personas jóvenes altamente especializados con ideas innovadoras que han transformado la industria tecnológica en México, porque hemos aprendido cómo se mueve nuestro mercado y hemos generado estrategias para poder abarcar de manera contundente los diferentes segmentos de negocio existentes.
-Contamos con avances tecnológicos que han sido trascendentales en el mejoramiento del día a día para nuestros clientes con más de 700 especialistas.
+Somos una empresa mexicana especializada en servicios de ingeniería tecnológica con enfoque en soluciones de vanguardia como inteligencia artificial, centros de datos, telecomunicaciones, ciberseguridad, redes y desarrollo de software. Nuestro propósito es impulsar la transformación digital de las organizaciones a través de innovación, experiencia y un enfoque consultivo centrado en las necesidades reales de nuestros clientes.
 
-Nuestros valores
+Diseñamos, implementamos y operamos soluciones tecnológicas que permiten a nuestros clientes alcanzar sus objetivos de negocio con mayor eficiencia, seguridad y escalabilidad. 
+A través de nuestras verticales, creamos soluciones integrales a la medida, combinando talento, herramientas y metodología para resolver retos complejos de infraestructura y transformación digital.
 
- * Transparencia y principios.
- * Valoramos la transparencia en nuestros procesos y tomamos decisiones basadas en principios sólidos,
- * Pasión por la innovación,
- * Nuestra motivación surge de la creatividad y la Innovación, esforzándonos por transmitir esta pasión en todo lo que hacemos.
- * Creatividad disruptiva.
- * Impulsamos el cambio y la creatividad constante para generar soluciones únicas y disruptivas.
+En B Drive creemos que el talento es nuestro mayor valor. Fomentamos un ambiente de trabajo colaborativo, flexible y en constante aprendizaje. Apostamos por la innovación, el desarrollo profesional y la autonomía de cada colaborador. Promovemos una cultura donde cada idea cuenta, donde la tecnología se vive con pasión, y donde crecer no solo es posible, sino inevitable.
 
-ÚNETE A NUESTRA TRIBU
-
-Empezamos a sumar esfuerzos por hacer de nuestra comunidad la conformación de nuestra tribu: convertimos en un grupo social integrada de personas que comparten costumbres, creencias y que tiene un mismo propósito.
-
-Hoy representamos un referente de convivencia en la industria, que ha sido ampliamente estudiada por años por nuestros competidores. Ahora, debemos concentrarnos y en destacarnos como grandes exponentes de madurez relacional entre las personas.
+Desde el onboarding hasta los programas de capacitación continua, nuestros equipos se sienten escuchados, reconocidos y parte de una visión compartida. Porque aquí no solo se desarrolla código: se desarrollan personas, carreras y futuros.
