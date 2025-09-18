@@ -6,7 +6,7 @@ draft: false
 
 <div class="container">
 
-<img alt="Evaluaciones Best Place To Code 2025" data-align="center" data-entity-type="file" data-entity-uuid="86fbb100-4579-47b2-9ec1-9d94e2db14bf" src="/images/se-buscan.png" width="788" class="mb-4 mx-auto d-block" />
+<img alt="Evaluaciones Best Place To Code 2025" data-align="center" data-entity-type="file" data-entity-uuid="86fbb100-4579-47b2-9ec1-9d94e2db14bf" src="/images/evaluaciones-se-buscan.png" width="788" class="mb-4 mx-auto d-block" />
 
 
 <h3 style="background-color: #00A0E0; color:#fff; border-radius: 15px; padding: 5px 20px 5px 20px;" class="text-center">¿Qué es Best Place To Code?</h3>
