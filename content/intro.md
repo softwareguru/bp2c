@@ -193,7 +193,7 @@ draft: false
 <!--Cuarta seccion--><br />
 <br />
 <!--Quinta seccion-->
-<h3 style="color:#00A0E0;;"><img alt="" src="https://old.bestplacetocode.com/sites/default/files/2021-08/1.png" /> <strong>CONTRATAR Y DESPLEGAR EVALUACIÓN</strong></h3>
+<h3 style="color:#00A0E0;;">1. <strong>CONTRATAR Y DESPLEGAR EVALUACIÓN</strong></h3>
 
 <div class="row">
 <div class="col">
@@ -245,7 +245,7 @@ draft: false
 <!--Quinta seccion--><br />
 <br />
 <!--Sexta seccion-->
-<h3 style="color:#00A0E0;;"><img alt="" src="https://old.bestplacetocode.com/sites/default/files/2021-08/2.png" /> <strong>VALIDAR EVALUACIÓN</strong></h3>
+<h3 style="color:#00A0E0;;">2. <strong>VALIDAR EVALUACIÓN</strong></h3>
 
 <div class="row">
 <div class="col">
@@ -257,7 +257,7 @@ draft: false
 <br />
 <!--Septima seccion--></p>
 
-<h3 style="color:#00A0E0;"><img alt="" src="https://old.bestplacetocode.com/sites/default/files/2021-08/3.png" width="120" /> <strong>CONTRATAR MEMBRESÍA</strong></h3>
+<h3 style="color:#00A0E0;">3.  <strong>CONTRATAR MEMBRESÍA</strong></h3>
 
 <div class="row">
 <div class="col">
