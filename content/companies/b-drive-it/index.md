@@ -10,7 +10,7 @@ tipo-empresa: tech-consulting-large
 cities: 
  - Ciudad de México
  - Monterrey 
- - Querétaro 
+ - Queretaro 
 # Porcentajes  
 global: 97
 compensacion: 94
