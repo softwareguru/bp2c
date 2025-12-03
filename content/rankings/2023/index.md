@@ -7,13 +7,13 @@ draft: false
 
 ### Mejores empresas para trabajar en tech 2023, por Best Place To Code
 
-<img src="/images/ranking/2023/listado-2023.png" class="img-fluid mx-auto d-block mb-4">
-
 **México, Ciudad de México, 26 de enero de 2023.** - El programa Best Place To Code® dio a conocer a las compañías mejor evaluadas por sus propios colaboradores, las cuales se han convertido en el “paraíso” para las personas que trabajan en tecnología.
 
 Cerca de 3,000 perfiles tecnológicos participaron evaluando de forma secreta y confidencial a la empresa en la que laboran. Como sabemos, existen niveles mínimos de calificación necesarios para aprobar, no todas las empresas evaluadas lograron ser acreditadas como Best Place to Code.
 
 “Este año nos alegra tener nuevas empresas que, en años anteriores, ya habían participado en la evaluación pero que no habían alcanzado la calificación mínima. Eso quiere decir que se han superado y continuaron trabajando por transformar su cultura y ofrecer mejores condiciones laborales a los profesionistas del software. Y claro, también nos enorgullece que varias llevan ya algunos años obteniendo la acreditación. No han dado ni un paso atrás”, destacó Pedro Galván, Director General de Software Guru."
+
+<img src="/images/ranking/2023/listado-2023.png" class="img-fluid mx-auto d-block mb-4">
 
 ### ¿Por qué no hay más empresas?
 

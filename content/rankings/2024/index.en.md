@@ -7,9 +7,9 @@ draft: false
 
 ### 2024 Ranking of the Best Tech Companies to Work For: Best Place To Code
 
-<img src="/images/ranking/2024/listado-2024.png" class="img-fluid mx-auto d-block mb-4">
-
 Mexico City, January 25, 2024 - The wait is over! As always, the Best Place To Code® program is thrilled to unveil the 2024 Ranking of the Best Technology Companies to Work for, where talent and workplace culture are at their peak.
+
+<img src="/images/ranking/2024/listado-2024.png" class="img-fluid mx-auto d-block mb-4">
 
 ### What Sets These Companies Apart?
 

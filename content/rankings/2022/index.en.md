@@ -7,9 +7,9 @@ draft: false
 
 ## Best Place to Code reveals the best companies to work for in technology in 2022
 
-<img src="/images/ranking/2022/listado-2022.png" class="img-fluid mx-auto d-block mb-4">
-
 **Mexico, Mexico City, January 21, 2022.** - The Best Place To Code program, operated by Software Guru, finally revealed the companies best evaluated by its own staff members, which have become the places where many want to work in 2022
+
+<img src="/images/ranking/2022/listado-2022.png" class="img-fluid mx-auto d-block mb-4">
 
 “Despite the pandemic, we have noticed that many companies continue to strive and transform their culture in order to face the great challenge of attracting and retaining talent. Some have achieved it and that is why we see new names on this list”, said Mara Ruvalcaba, Operations Director at Software Guru.
 

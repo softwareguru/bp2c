@@ -7,9 +7,9 @@ draft: false
 
 ### Ranking 2024 de las mejores empresas para trabajar en tech: Best Place To Code.
 
-<img src="/images/ranking/2024/listado-2024.png" class="img-fluid mx-auto d-block mb-4">
-
 **México, Ciudad de México, 25 de enero de 2024.** - ¡La espera ha terminado! Como cada año, el programa Best Place To Code® se complace en presentar el Ranking 2024 de las Mejores Empresas para Trabajar en Tecnología, donde el talento y la cultura laboral se encuentran en su máxima expresión.
+
+<img src="/images/ranking/2024/listado-2024.png" class="img-fluid mx-auto d-block mb-4">
 
 ### ¿En qué destacan estas empresas?
 

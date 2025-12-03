@@ -7,8 +7,6 @@ draft: false
 
 ## Conoce a las empresas Best Place to Code 2020
 
-<img src="/images/ranking/2020/listado-2020.png" class="img-fluid mx-auto d-block mb-4">
-
 En base a las evaluaciones realizadas durante octubre-diciembre 2019, te presentamos el ranqueo de empresas evaluadas como Best Place to Code.
 
 Para hacer una comparación más justa, hemos decidido organizar el ranking de acuerdo al tipo y tamaño de empresa.
@@ -21,6 +19,9 @@ La calificación utilizada para determinar el ranqueo se determina de la siguien
 
 * Como segundo criterio de desempate se considera la cantidad de empleados que contestan la evaluación (mayor cantidad es mejor).
 A continuación compartimos el ranqueo de Best Place to Code 2020 organizado en ctategorías.
+
+<img src="/images/ranking/2020/listado-2020.png" class="img-fluid mx-auto d-block mb-4">
+
 
 ### ISV o startup
 

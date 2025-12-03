@@ -7,11 +7,12 @@ draft: false
 
 ## Las 20 Mejores Empresas para Trabajar en Software 2018-2019
 
-<img src="/images/ranking/2019/listado-2019.jpg" class="img-fluid mx-auto d-block mb-4">
 
 A través de la iniciativa “Best Place to Code”, Software Guru identifica y reconoce a las empresas que se esfuerzan por brindar las mejores condiciones de trabajo y carrera para los profesionistas de software en nuestra región.
 
 A diferencia de las listas generadas en años anteriores por Software Guru, a partir de este año hemos formalizado el proceso de evaluación y establecido controles para asegurar que las personas que participan sí colaboran actualmente en la empresa.
+
+<img src="/images/ranking/2019/listado-2019.png" class="img-fluid mx-auto d-block mb-4">
 
 ### Proceso de evaluación
 

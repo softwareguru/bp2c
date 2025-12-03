@@ -7,13 +7,12 @@ draft: false
 
 ## Best Place to Code da a conocer a las mejores empresas para trabajar en tecnología este 2022 [Actualización junio]
 
-<img src="/images/ranking/2022/listado-2022.png" class="img-fluid mx-auto d-block mb-4">
-
-**[ACTUALIZACIÓN JUNIO 2022]**
-
 **Best Place To Code suma más empresas al listado 2022.**
 
 Como cada año, Software Guru dio a conocer el listado de las organizaciones donde es un placer trabajar como profesionista de tecnologías de información. Y como es de esperarse, otras empresas se han sumado al programa para demostrar que se han esforzado por transformar su cultura para atraer y retener el talento.
+
+<img src="/images/ranking/2022/listado-2022.png" class="img-fluid mx-auto d-block mb-4">
+
 
 <hr>
 

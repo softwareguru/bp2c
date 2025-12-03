@@ -7,13 +7,14 @@ draft: false
 
 ### 42 best companies to work for in technology this 2023
 
-<img src="/images/ranking/2023/listado-2023.png" class="img-fluid mx-auto d-block mb-4">
 
 **Mexico, Mexico City, January 26, 2023.** - The Best Place To Code® program revealed the companies best evaluated by their collaborators, which have become "paradise" for people who work in technology.
 
 Nearly 3,000 technological profiles participated, secretly and confidentially evaluating the company in which they work. As we know, minimum qualifications are in place for the companies in order to be approved, and not all the companies evaluated managed to be accredited as Best Place to Code.
 
 This year we are happy to have new companies that, in previous years, had already participated in the evaluation but had not reached the minimum qualification. This means that they have outdone themselves and continued working to transform their culture and offer better working conditions to software professionals. And of course, we are also proud that several have been obtaining accreditation for some years. “They have not taken a single step back”, highlighted Pedro Galván, General Director of Software Guru."
+
+<img src="/images/ranking/2023/listado-2023.png" class="img-fluid mx-auto d-block mb-4">
 
 ### Why aren't there more companies?
 We know that some people consider other companies good options to work for but they are not on this list. Here are some reasons:
