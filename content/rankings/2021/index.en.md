@@ -7,10 +7,9 @@ draft: false
 
 ### Best Place To Code: Estas son las mejores empresas para trabajar en tecnología en 2021
 
-<img src="/images/ranking/2021/listado-2021.png" class="img-fluid mx-auto d-block mb-4">
-
 **México, Ciudad de México, 25 de enero de 2021.** - Software Guru, el medio y agencia de relacionamiento con desarrolladores de software líder en América Latina, dio a conocer el listado 2021 de las organizaciones donde es un placer trabajar como profesionista de tecnologías de información, independientemente del tamaño, ubicación o sector de la empresa.
 
+<img src="/images/ranking/2021/listado-2021.png" class="img-fluid mx-auto d-block mb-4">
 
 Cientos de perfiles tecnológicos fueron quienes evaluaron de forma secreta y confidencial a la empresa en la que laboran. Como existen niveles mínimos de calificación necesarios para aprobar, no todas las empresas evaluadas lograron ser acreditadas como Best Place to Code®.
 
