@@ -116,6 +116,12 @@ enableEmoji = true
         weight = 10
 
       [[languages.es.menus.main]]
+        name = "Rankings BP2C"
+        url = "rankings"
+        parent="resources"
+        weight = 20
+
+      [[languages.es.menus.main]]
         name = "Estudio de Salarios SG"
         url = "https://sg.com.mx/estudios/salarios/2020"
         parent="resources"
@@ -194,6 +200,12 @@ enableEmoji = true
         url = "blog"
         parent="resources"
         weight = 10
+
+      [[languages.en.menus.main]]
+        name = "Rankings BP2C"
+        url = "rankings"
+        parent="resources"
+        weight = 20
 
       [[languages.en.menus.main]]
         name = "SG Salary Survey"
