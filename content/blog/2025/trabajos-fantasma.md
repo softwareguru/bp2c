@@ -1,6 +1,5 @@
 ---
 title: "Trabajos fantasma: Por qué existen y cómo combatirlos"
-date: 2025-04-15T11:53:07-06:00
 images:
  - /images/blog/trabajos-fantasma.png
 aliases:

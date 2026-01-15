@@ -24,11 +24,11 @@ location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.94958671687
 
 # Beneficios
 cafeteria: 
-flexiblehours: 
+flexiblehours: true
 gameroom: true
-healthinsurance: 
+healthinsurance: true
 languageclasses: 
-makerspace: 
+makerspace: true
 petfriendly: 
 remotework: true
 stockoptions: 
@@ -39,7 +39,7 @@ transportation:
 linkedin: https://www.linkedin.com/company/bitam/?originalSubdomain=mx
 instagram: https://www.instagram.com/bitammx
 facebook: https://www.facebook.com/@BitamMx
-x: https://x.com/BitamMx
+youtube: https://www.youtube.com/@BitamMX
 
 # Carousel
 img1: /images/carousel/bitam/1.png
@@ -54,8 +54,8 @@ jobslink: https://www.linkedin.com/company/bitam/jobs/
 weight: 7
 ---
 
-Somos una empresa orgullosamente mexicana, nacida en Tampico Tamaulipas, Referente en Innovación Tecnológica. Con más de 20 años de experiencia y presencia global en las TI, llevamos la pasión por la innovación en nuestro ADN. Nos especializamos en aplicar tecnologías disruptivas, escuchando y comprendiendo a fondo las necesidades de nuestros clientes. 
+En BITAM® somos referentes en plataformas de analítica y automatización para medianas y grandes empresas. Desde hace más de 25 años, acompañamos a las organizaciones en la automatización de procesos que sus sistemas contables no resuelven y en el descubrimiento de insights que los reportes tradicionales no logran revelar.
 
-Fuimos pioneros en Latinoamérica con la implementación del balance Scorecard, y continuamos liderando la innovación tecnológica con el lanzamiento de KPI Online®️; primer BI en la nube; eBavel®️ la primera solución low code con BI; y bFiskur®️, el primer BI Fiscal en la nube
+Integramos y depuramos la información en una sola fuente de verdad, utilizando tecnologías disruptivas como Inteligencia Artificial, analítica avanzada y low code. Esto nos permite anticipar escenarios, comprender las causas detrás de los resultados y facilitar la toma de decisiones estratégicas basadas en evidencia.
 
-En la Liga de Bitanes, llevamos como estandarte nuestros valores, los cuales reflejan un pensamiento innovador y confiable en cada uno de nuestros miembros. Nuestros colaboradores demuestran compromiso y flexibilidad al crear proyectos tecnológicos que superan las expectativas de nuestros clientes. Estos valores están profundamente integrados en la misión y visión de nuestra empresa, cuyo objetivo es ser referentes en la innovación tecnológica.
+En la Liga de Bitanes, llevamos como estandarte nuestros valores, los cuales reflejan un pensamiento innovador y confiable en cada uno de nuestros miembros. Nuestros colaboradores demuestran compromiso y flexibilidad al crear proyectos tecnológicos que superan las expectativas de nuestros clientes. Estos valores están profundamente integrados en nuestra misión y visión, con el firme propósito de consolidarnos como referentes en innovación tecnológica.

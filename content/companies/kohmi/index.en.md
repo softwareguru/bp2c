@@ -16,6 +16,9 @@ cities:
  - Monterrey
  - Guanajuato
  - Queretaro
+ - Mexicali
+ - Veracruz
+ - Sinaloa
 
 # Porcentajes  
 global: 94
@@ -34,7 +37,7 @@ flexiblehours: true
 gameroom: true
 healthinsurance: true
 languageclasses: 
-makerspace: 
+makerspace: true
 petfriendly: true
 remotework: true
 stockoptions: true
@@ -59,11 +62,18 @@ jobslink: https://www.linkedin.com/company/kohmi/jobs/
 weight: 2
 ---
 
-En Kohmi, siempre hemos buscado posicionarnos como un referente en el mercado de tecnología, destacando tanto por atraer al mejor talento como por ofrecer resultados excepcionales a nuestros clientes.
+En Kohmi creemos firmemente que la tecnología solo es excepcional cuando las personas que la construyen están bien. Por eso, trabajamos para ofrecer un entorno donde cada integrante pueda desarrollarse, sentirse acompañado y crecer profesional y personalmente.
 
-El reconocimiento como ""Best Place to Code"" es un reflejo de nuestro compromiso con la excelencia. Esta acreditación nos permite medir y mejorar los indicadores clave que nos hacen competitivos en un mercado laboral exigente, fortaleciendo nuestra propuesta de valor como empresa.
+Somos un Best Place to Code porque:
 
-Estos esfuerzos nos han convertido en una opción atractiva tanto para los profesionales del sector como para nuestros clientes, quienes reconocen el impacto directo de nuestra cultura y metodologías en los resultados de los proyectos.
+Escuchamos y valoramos a nuestra gente. La retroalimentación es constante, las ideas se impulsan y las puertas siempre están abiertas.
 
-En Kohmi, seguimos trabajando para consolidarnos como un lugar donde todos quieran estar y crecer juntos, mientras llevamos la tecnología al siguiente nivel.
+Fomentamos un ambiente de respeto, colaboración y confianza, donde se reconoce el esfuerzo y se celebran los logros.
 
+Promovemos el crecimiento profesional, brindando oportunidades reales de aprendizaje, certificaciones y participación en proyectos estratégicos.
+
+Cuidamos la estabilidad emocional y económica del equipo, porque sabemos que cada persona tiene una historia, un propósito y una familia que dependen de su bienestar.
+
+Trabajamos con propósito: generar valor en un entorno innovador y apoyar a las empresas que impulsan el crecimiento de México, reafirmando que elegimos una de las profesiones más significativas para la economía global.
+
+En Kohmi, crecemos juntos. Cada logro de la empresa es un logro del equipo, y cada persona contribuye a construir un lugar donde vale la pena trabajar todos los días.

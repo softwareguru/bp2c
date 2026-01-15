@@ -4,7 +4,7 @@ date: 2025-05-28
 aliases:
  - /en/company/neaxis-people-tech
 images:
- - "images/companies/neaxis-people.png"
+ - "images/companies/neaxis.png"
 categories: ["Empresas"]
 tipo-empresa: tech-consulting-mid
 cities: 
@@ -23,7 +23,7 @@ infraestructura: 99
 
 sello: true
 
-location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.785981952565!2d-99.17753154832353!3d19.378417470879775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff557ca3df83%3A0x3b25000de3dbc1d4!2sNEAXIS!5e0!3m2!1ses!2smx!4v1748372260313!5m2!1ses!2smx
+location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.792619847291!2d-99.1755143250146!3d19.378130181889667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff9953899af1%3A0x9a561d3325a5f85e!2sC.%20Tlacoquemecatl%20102%2C%20Tlacoquemecatl%20del%20Valle%2C%20Benito%20Ju%C3%A1rez%2C%2003200%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1766012543734!5m2!1ses-419!2smx
 
 # Beneficios
 cafeteria: true
@@ -32,27 +32,27 @@ gameroom: true
 healthinsurance: true
 languageclasses: 
 makerspace: true
-petfriendly: 
+petfriendly: true
 remotework: true
 stockoptions: 
 temporalrelocation: 
 transportation: true
 
 # Redes Sociales
-linkedin: https://www.linkedin.com/company/neaxis-mx/about/
+linkedin: https://www.linkedin.com/company/neaxis-mx
 instagram: 
 facebook: 
 x: 
 
 # Carousel
 img1: /images/carousel/neaxis-people-tech/1.jpeg
-img2: /images/carousel/neaxis-people-tech/2.jpeg
+img2: /images/carousel/neaxis-people-tech/2.png
 img3: /images/carousel/neaxis-people-tech/3.png
-img4: /images/carousel/neaxis-people-tech/4.png
+img4: /images/carousel/neaxis-people-tech/4.jpeg
 img5: /images/carousel/neaxis-people-tech/5.png
 
 
-website: https://neaxis.mx/people-tech.html
+website: https://neaxis.mx/
 jobslink: https://neaxis.mx/bolsa-de-trabajo.html
 
 weight: false
@@ -60,25 +60,14 @@ weight: false
 new: New!
 ---
 
+## ¿Quiénes somos?
 
-### Quienes somos:
+En Neaxis construimos tecnología con propósito. Somos una empresa mexicana que impulsa la evolución digital de organizaciones que quieren ir más rápido, con más calidad y con mejores experiencias para sus usuarios. Aquí las ideas se escuchan, el talento se forma y los resultados se celebran en equipo.
 
-Neaxis People Tech es una empresa 100% mexicana, apasionada por la tecnología, la innovación y especializada en soluciones ágiles de TI.
-Creemos en las alianzas estratégicas, en el talento de nuestro equipo y en el poder de las conexiones humanas.
-Transformamos experiencias en identidades fuertes que hacen crecer a nuestros clientes y a nuestros consultores.
+## ¿Qué hacemos?
 
-¿A qué nos dedicamos en Neaxis People Tech?
-Somos expertos en staffing especializado en Ciberseguridad, Big Data, Data Science y Desarrollo, con foco en Fintech y medios de pago.
-Ayudamos a nuestros clientes a tomar decisiones clave, mantenerse protegidos y liderar en un mercado en constante cambio.
+Creamos y modernizamos productos y plataformas digitales de alto impacto: desde nuevas funcionalidades hasta la evolución de sistemas existentes. Trabajamos con enfoque en calidad, claridad técnica y entrega continua, conectando lo que construimos con lo que el negocio necesita.
 
-¿Por qué somos un Best Place to Code?
+## ¿Por qué somos un Best Place to Code?
 
-En Neaxis People Tech no solo desarrollamos tecnología:
-desarrollamos talento, conexiones reales y proyectos con propósito.
-
-Fomentamos un ambiente donde se valora tu voz, tus ideas y tu crecimiento.
-Impulsamos la innovación con metodologías ágiles y equipos colaborativos.
-Cuidamos a las personas: con flexibilidad, respeto y equilibrio vida-trabajo.
-Te apoyamos para que sigas aprendiendo, creciendo y disfrutando lo que haces.
-
-Aquí puedes ser tú, aportar, y crear tecnología que marca la diferencia.
+Porque en Neaxis programar significa crecer. Promovemos aprendizaje constante, colaboración real y espacio para tomar ownership desde temprano. Te sumas a un equipo que te reta, te acompaña y te da visibilidad: aquí tu código no se queda en “tareas”, se convierte en soluciones que mueven métricas, clientes y carreras.

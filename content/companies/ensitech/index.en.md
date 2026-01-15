@@ -10,6 +10,10 @@ categories: ["Empresas"]
 tipo-empresa: tech-consulting-mid
 cities: 
  - Monterrey
+ - Hermosillo
+ - Merida
+ - Ciudad de México
+ - USA
 
 # Porcentajes  
 global: 94
@@ -29,17 +33,17 @@ gameroom:
 healthinsurance: true
 languageclasses: true
 makerspace: 
-petfriendly: 
+petfriendly: true
 remotework: true
 stockoptions: 
 temporalrelocation: 
 transportation: 
 
 # Redes Sociales
-linkedin: https://www.linkedin.com/company/ensitech https://www.facebook.com/EnsitechMx/ https://www.instagram.com/ensitech_mx https://twitter.com/EnsitechMx
-instagram: 
-facebook: 
-x: 
+linkedin: https://www.linkedin.com/company/1211774/admin/dashboard/
+instagram: https://www.instagram.com/ensitech_mx/
+facebook: https://www.facebook.com/EnsitechMx  
+x: https://x.com/EnsitechMx
 
 # Carousel
 
@@ -56,7 +60,10 @@ jobslink: https://recruitcrm.io/jobs/Ensitech_Careers
 weight: 1
 ---
 
+Somos una empresa de tecnología con más de 20 años impulsando la innovación desde México hacia el mundo. Nacimos en 2004 dentro del ecosistema del ITESM con la convicción de que la tecnología debe ser un puente, no una barrera. Hoy, el #Ensiteam reúne talento en más de 12 países y trabaja con organizaciones globales como un socio cercano, confiable y orientado a resultados.
 
-Ofrecemos servicios estratégicos de Tecnologías de la Información para organizaciones ágiles e inteligentes. Ayudamos a las empresas a ganar el mercado y convertir sus ideas en oportunidades exitosas de negocio a través de soluciones de Software, Big Data & IA.
+Ayudamos a las empresas a innovar y resolver desafíos tecnológicos mediante soluciones a la medida y talento nearshore altamente especializado. Nuestro trabajo abarca desarrollo de software, talento tecnológico, inteligencia artificial, datos y operaciones en la nube, siempre integrándonos como una extensión real de cada equipo. Contamos con CMMI-DEV Nivel 5, uno de los estándares más altos de calidad en el mundo.
 
-Somos un equipo multidisciplinario con +100 colaboradores en todo LATAM y con +20 años de experiencia en Tecnologías de la Información.
+Construimos tecnología con la misma pasión con la que construimos comunidad. En Ensitech, el talento no solo se contrata: se cuida, se impulsa y se escucha. Creemos en un entorno donde las personas pueden crecer, proponer, equivocarse, aprender y liderar, incluso a la distancia, con una cultura que se vive todos los días a través de la colaboración, el respeto y las oportunidades reales de desarrollo.
+
+Somos un Best Place to Code porque valoramos el crecimiento profesional y humano, ofrecemos proyectos retadores con impacto global, fomentamos autonomía, confianza y flexibilidad, y creamos un espacio donde el talento puede ser auténtico y aportar desde su mejor versión. Ensitech es un lugar donde las ideas se convierten en soluciones y las personas en protagonistas de una historia que sigue evolucionando.

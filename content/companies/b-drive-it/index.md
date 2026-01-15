@@ -1,5 +1,5 @@
 ---
-title: "B-Drive IT"
+title: "B Drive IT"
 date: 2025-01-01
 aliases:
  - /es/company/b-drive-it
@@ -28,9 +28,9 @@ cafeteria: true
 flexiblehours: true
 gameroom: 
 healthinsurance: true
-languageclasses: 
-makerspace: 
-petfriendly: 
+languageclasses: true
+makerspace: true
+petfriendly: true
 remotework: true
 stockoptions: 
 temporalrelocation: 
@@ -38,15 +38,16 @@ transportation: true
 
 # Redes Sociales
 linkedin: https://www.linkedin.com/company/bdrivemx/
-instagram: https://www.instagram.com/explore/locations/2025768377746852/b-drive/
+instagram: https://www.instagram.com/bdrivemx/
 facebook: 
 x: 
 
 # Carousel
-img1: /images/carousel/b-drive/1.jpg
-img2: /images/carousel/b-drive/2.jpg
-img3: /images/carousel/b-drive/3.jpg
+img1: /images/carousel/b-drive/1.png
+img2: /images/carousel/b-drive/2.png
+img3: /images/carousel/b-drive/3.png
 img4: /images/carousel/b-drive/4.png
+img5: /images/carousel/b-drive/5.png
 
 website: https://bdrive.ai/
 jobslink: https://bdrive.ai/
@@ -54,11 +55,9 @@ jobslink: https://bdrive.ai/
 weight: 1
 ---
 
-Somos una empresa mexicana especializada en servicios de ingeniería tecnológica con enfoque en soluciones de vanguardia como inteligencia artificial, centros de datos, telecomunicaciones, ciberseguridad, redes y desarrollo de software. Nuestro propósito es impulsar la transformación digital de las organizaciones a través de innovación, experiencia y un enfoque consultivo centrado en las necesidades reales de nuestros clientes.
+Somos una empresa mexicana especializada en servicios de ingeniería tecnológica con enfoque en soluciones de vanguardia como inteligencia artificial —donde destacamos como la segunda organización en toda América Latina en obtener la certificación ISO/IEC 42001—, centros de datos, telecomunicaciones, ciberseguridad, redes y desarrollo de software. Nuestro propósito es impulsar la transformación digital de las organizaciones a través de innovación, experiencia y un enfoque consultivo centrado en las necesidades reales de nuestros clientes.
 
-Diseñamos, implementamos y operamos soluciones tecnológicas que permiten a nuestros clientes alcanzar sus objetivos de negocio con mayor eficiencia, seguridad y escalabilidad. 
-A través de nuestras verticales, creamos soluciones integrales a la medida, combinando talento, herramientas y metodología para resolver retos complejos de infraestructura y transformación digital.
+Diseñamos, implementamos y operamos soluciones tecnológicas que permiten a nuestros clientes alcanzar sus objetivos de negocio con mayor eficiencia, seguridad y escalabilidad. Bajo el marco de nuestro Sistema de Gestión de Inteligencia Artificial (SGIA) certificado internacionalmente, garantizamos que cada desarrollo se rige por los más altos estándares de ética, transparencia y gestión de riesgos. A través de nuestras verticales, creamos soluciones integrales a la medida, combinando talento, herramientas y metodología para resolver retos complejos de infraestructura y transformación digital con total confiabilidad técnica.
 
-En B Drive creemos que el talento es nuestro mayor valor. Fomentamos un ambiente de trabajo colaborativo, flexible y en constante aprendizaje. Apostamos por la innovación, el desarrollo profesional y la autonomía de cada colaborador. Promovemos una cultura donde cada idea cuenta, donde la tecnología se vive con pasión, y donde crecer no solo es posible, sino inevitable.
-
+En B Drive creemos que el talento es nuestro mayor valor. Logros de prestigio mundial como la ISO/IEC 42001 son el reflejo de la preparación y excelencia de nuestro equipo. Fomentamos un ambiente de trabajo colaborativo, flexible y en constante aprendizaje. Apostamos por la innovación, el desarrollo profesional y la autonomía de cada colaborador. Promovemos una cultura donde cada idea cuenta, donde la tecnología se vive con pasión, y donde crecer no solo es posible, sino inevitable.
 Desde el onboarding hasta los programas de capacitación continua, nuestros equipos se sienten escuchados, reconocidos y parte de una visión compartida. Porque aquí no solo se desarrolla código: se desarrollan personas, carreras y futuros.

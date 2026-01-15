@@ -14,6 +14,8 @@ cities:
  - Buenos Aires
  - San Jose 
  - Kiev
+ - Medellin
+
 # Porcentajes  
 global: 92
 compensacion: 84
@@ -44,14 +46,12 @@ linkedin: https://www.linkedin.com/company/svitla-systems-inc-/?trk=biz-companie
 instagram: https://www.instagram.com/svitlasystems/
 facebook: https://www.facebook.com/SvitlaSystems
 x: https://twitter.com/SvitlaSystemsIn
+youtube: https://www.youtube.com/channel/UC1nu2LV4_08GoZThHEindWA
 
 # Carousel
 img1: /images/carousel/svitla/1.jpg
-img2: /images/carousel/svitla/2.png
-img3: /images/carousel/svitla/3.jpg
-img4: /images/carousel/svitla/4.jpg
-img5: /images/carousel/svitla/5.png
-
+img2: /images/carousel/svitla/2.jpg
+img3: /images/carousel/svitla/3.png
 
 website: https://svitla.com/
 jobslink: https://svitla.com/career
@@ -59,12 +59,10 @@ jobslink: https://svitla.com/career
 weight: 4
 ---
 
-Estamos muy contentos de que conozcas a Svitla Systems y deseamos que en nosotros encuentres un empleador agradable, cómodo y estable, al igual que una comunidad brillante e inspiradora.
+Svitla Systems es una empresa global de soluciones digitales con más de 20 años de experiencia y un equipo de más de 1,000 profesionales de tecnología en 15 países. Trabajamos con startups y empresas consolidadas, principalmente en proyectos de Estados Unidos y Europa, utilizando tecnologías modernas y de alto impacto.
 
-Aparte de México (Guadalajara), tenemos oficinas en USA, Ucrania (Kyiv, Lviv), Polonia (Cracovia), India Canadá, Costa Rica (San José), Argentina (Buenos Aires). Contamos con divisiones totalmente remotas en Costa Rica, Argentina y Canadá, brindándote la flexibilidad de elegir la ubicación que mejor se adapte a tus preferencias en coordinación con Recursos Humanos.
+En Svitla, los desarrolladores colaboran directamente con los equipos de nuestros clientes y participan activamente en la toma de decisiones. Somos una compañía remote-first, con una cultura basada en la confianza, la flexibilidad y la autonomía, sin micromanagement.
 
-Estamos comprometidos con el desarrollo profesional y la comunidad de TI que nos rodea. Realizamos nuestros propios seminarios web Svitla Smart Talk y participamos en conferencias externas, ofreciendo oportunidades para aquellos que deseen evolucionar como oradores. Además, publicamos regularmente artículos técnicos en el blog de Svitla y brindamos apoyo integral a nuestros autores.
+Impulsamos el crecimiento profesional con esquemas de trabajo flexibles, aprendizaje personalizado, compensación competitiva y una comunidad sólida que valora el equilibrio entre la vida personal y profesional.
 
-En Svitla Systems, creemos en el crecimiento y la capacitación continua. Hemos creado planes de carrera con nuestros compañeros expertos Svitla Stars para que puedas especializarte o mejorar tus habilidades técnicas. También escuchamos tus intereses particulares y hacemos planes a la medida de tus necesidades específicas.
-
-Todo esfuerzo es recompensado a través de nuestro Programa de Bonificación, que incluye certificaciones en tecnologías como AWS, Azure y Salesforce. Nos encargamos de pagar tu certificación y, además, recibirás un interesante bono extra por dicha certificación.
+Programemos juntos un mejor futuro.

@@ -55,7 +55,7 @@ jobslink: https://www.linkedin.com/company/bside-microsoft/jobs/
 weight: 12
 ---
 
-Somos una empresa mexicana con más de 23 años de experiencia, especializada en soluciones tecnológicas innovadoras que transforman y potencian los negocios de nuestros clientes. 
+Somos una empresa mexicana con 24 años de experiencia, especializada en soluciones tecnológicas innovadoras que transforman y potencian los negocios de nuestros clientes. 
 Nuestro equipo de más de 200 colaboradores se distingue por su talento, creatividad y compromiso con la excelencia. Trabajamos en un entorno dinámico y colaborativo, donde el desarrollo profesional y el aprendizaje continuo son pilares fundamentales.
 
 Valoramos a nuestra gente y construimos un lugar donde todos pueden crecer y sentirse reconocidos. Fomentamos una cultura basada en nuestros valores organizacionales, promovemos la cercanía y el liderazgo, y ofrecemos oportunidades de desarrollo, certificaciones y proyectos retadores.

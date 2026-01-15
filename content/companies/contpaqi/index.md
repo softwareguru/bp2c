@@ -44,10 +44,10 @@ tiktok: https://www.tiktok.com/@contpaqi
 
 # Carousel
 img1: /images/carousel/contpaqi/1.jpg 
-img2: /images/carousel/contpaqi/2.jpg
-img3: /images/carousel/contpaqi/3.jpg
-img4: /images/carousel/contpaqi/4.jpg
-img5: /images/carousel/contpaqi/5.jpg
+img2: /images/carousel/contpaqi/2.png
+img3: /images/carousel/contpaqi/3.png
+img4: 
+img5: 
 
 website: https://www.contpaqi.com
 jobslink: https://www.linkedin.com/company/contpaqi1/jobs/
@@ -55,10 +55,10 @@ jobslink: https://www.linkedin.com/company/contpaqi1/jobs/
 weight: 3
 ---
 
-Somos una empresa nacida en Guadalajara hace 40 años, con una filosofía centrada en las personas, más de 470 colaboradores a nivel nacional y presencia con 12 oficinas en México. 
+Somos una empresa nacida en Guadalajara hace 41 años, con una filosofía centrada en las personas, más de 470 colaboradores a nivel nacional y presencia con 12 oficinas en México.
 
 En CONTPAQi® desarrollamos y comercializamos software administrativo y contable, logrando impulsar la productividad de las personas y el crecimiento de las empresas.
 
-Obtenemos la acreditación gracias a nuestra cultura y enfoque en las personas, donde buscamos el desarrollo, crecimiento y bienestar de los colaboradores. Nuestra principal característica es ser una empresa con un ambiente cálido, cordial y cercano con todos los colaboradores. 
+Obtenemos la acreditación gracias a nuestra cultura y enfoque en las personas, donde buscamos el desarrollo, crecimiento y bienestar integral de los colaboradores. Nuestra principal característica es ser una empresa con un ambiente cálido, cordial y cercano con todos los colaboradores.
 
 ¡Somos un gran lugar para trabajar en el país! Distinguidos por diversas acreditaciones y certificaciones.

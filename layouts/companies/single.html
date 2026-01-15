@@ -267,7 +267,7 @@
           {{ with .Params.Linkedin }}
           {{ if ne . "" }}
           <a href="{{ . }}">
-            <img src="/images/icons/linkedin.png" alt="Linkedin" width="52" height="52">
+            <img src="/images/icons/linkedin.svg" alt="Linkedin" width="52" height="52">
           </a>
           {{ end }}
           {{ end }}
@@ -275,7 +275,7 @@
           {{ with .Params.Instagram }}
           {{ if ne . "" }}
           <a href="{{ . }}">
-            <img src="/images/icons/instagram.png" alt="Linkedin" width="52" height="52">
+            <img src="/images/icons/instagram.svg" alt="Instagram" width="52" height="52">
           </a>
           {{ end }}
           {{ end }}
@@ -283,7 +283,7 @@
           {{ with .Params.Facebook }}
           {{ if ne . "" }}
               <a href="{{ . }}">
-                <img src="/images/icons/facebook.png" alt="Linkedin" width="52" height="52">
+                <img src="/images/icons/facebook.svg" alt="Facebook" width="52" height="52">
               </a>
           {{ end }}
           {{ end }}
@@ -291,7 +291,15 @@
           {{ with .Params.X }}
           {{ if ne . "" }}
               <a href="{{ . }}">
-                <img src="/images/icons/twitter.png" alt="Linkedin" width="52" height="52">
+                <img src="/images/icons/twitter-x.svg" alt="X" width="52" height="52">
+              </a>
+          {{ end }}
+          {{ end }}
+
+          {{ with .Params.Youtube }}
+          {{ if ne . "" }}
+              <a href="{{ . }}">
+                <img src="/images/icons/youtube.svg" alt="Youtube" width="52" height="52">
               </a>
           {{ end }}
           {{ end }}
