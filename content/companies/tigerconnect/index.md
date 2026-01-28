@@ -7,7 +7,7 @@ aliases:
 images: 
  - "images/companies/tigerconnect.png"
 categories: ["Empresas"]
-tipo-empresa: tech-consulting-mid
+tipo-empresa: startups-&-isvs
 cities: 
  - Ciudad de México
  - USA

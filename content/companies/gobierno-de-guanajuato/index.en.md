@@ -12,12 +12,12 @@ tipo-empresa: corp
 cities: 
  - Guanajuato
 # Porcentajes  
-global: 96
-compensacion: 96
-desarrollo: 96
-cultura: 100
-friendly: 90
-infraestructura: 100
+global: 94
+compensacion: 97
+desarrollo: 94
+cultura: 98
+friendly: 88
+infraestructura: 94
 
 sello: 
 

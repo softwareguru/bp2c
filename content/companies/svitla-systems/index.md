@@ -17,12 +17,12 @@ cities:
  - Medellin
 
 # Porcentajes  
-global: 92
-compensacion: 84
-desarrollo: 88
+global: 93
+compensacion: 86
+desarrollo: 87
 cultura: 100
-friendly: 88
-infraestructura: 98 
+friendly: 92
+infraestructura: 98
 
 sello: true
 

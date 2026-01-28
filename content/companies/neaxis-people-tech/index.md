@@ -14,12 +14,12 @@ cities:
  - Queretaro
  - Toluca
 # Porcentajes  
-global: 96
-compensacion: 92
-desarrollo: 97
-cultura: 99
-friendly: 92
-infraestructura: 99 
+global: 90
+compensacion: 84
+desarrollo: 86
+cultura: 95
+friendly: 88
+infraestructura: 97
 
 sello: true
 

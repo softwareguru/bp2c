@@ -11,12 +11,12 @@ tipo-empresa: corp
 cities: 
  - Ciudad de México
 # Porcentajes  
-global: 92
-compensacion: 94
-desarrollo: 90
-cultura: 92
-friendly: 90
-infraestructura: 92
+global: 89
+compensacion: 92
+desarrollo: 88
+cultura: 91
+friendly: 88
+infraestructura: 88
 
 sello: true
 

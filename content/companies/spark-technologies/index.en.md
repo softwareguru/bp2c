@@ -19,10 +19,10 @@ cities:
  - Canada
  - San Marcos
 # Porcentajes  
-global: 91
+global: 90
 compensacion: 80
 desarrollo: 88
-cultura: 97
+cultura: 96
 friendly: 92
 infraestructura: 96
 
