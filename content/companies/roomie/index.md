@@ -56,6 +56,7 @@ website: https://www.roomie-it.org/
 jobslink: https://www.linkedin.com/company/roomie-it/jobs/
 
 weight: 10
+draft: true
 ---
 
 Desde el año 2014, Hemos impactando empresas en diversos sectores de la industria con más de 100 implementaciones de Soluciones Tecnológicas, más de 50 empresas atendidas en México y en el extranjero con un equipo de más de 60 expertos certificados en las tecnologías más innovadoras.

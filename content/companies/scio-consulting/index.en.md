@@ -14,7 +14,7 @@ cities:
 global: 89
 compensacion: 82
 desarrollo: 88
-cultura: 96
+cultura: 99
 friendly: 90
 infraestructura: 88 
 

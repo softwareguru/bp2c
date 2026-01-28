@@ -12,12 +12,12 @@ cities:
  - Guadalajara
  - Aguascalientes
 # Porcentajes  
-global: 85
-compensacion: 72
-desarrollo: 84
-cultura: 94
-friendly: 86
-infraestructura: 86
+global: 90
+compensacion: 84
+desarrollo: 90
+cultura: 95
+friendly: 87
+infraestructura: 92
 
 sello: true
 

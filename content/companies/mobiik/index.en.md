@@ -11,12 +11,12 @@ tipo-empresa: tech-consulting-mid
 cities: 
  - Ciudad de México
 # Porcentajes  
-global: 90
-compensacion: 82
-desarrollo: 91
-cultura: 96
-friendly: 86
-infraestructura: 96 
+global: 91
+compensacion: 86
+desarrollo: 92
+cultura: 92
+friendly: 90
+infraestructura: 96
 
 sello: true
 

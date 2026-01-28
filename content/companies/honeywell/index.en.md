@@ -51,6 +51,7 @@ img5: /images/carousel/honeywell/5.jpg
 website: https://www.honeywell.com/us/en
 jobslink: https://careers.honeywell.com/mx/es
 weight: 4
+draft: true
 ---
 
 Honeywell Technology Solutions (HTS) is the integral technology and engineering center of Honeywell that leads the global development of products and technological solutions in segments such as: Aerospace, Automation and Control Solutions, Performance Materials and Transportation Technology and Systems, through hardware and software development.

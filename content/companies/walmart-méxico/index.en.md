@@ -50,6 +50,7 @@ x: https://twitter.com/WalmartMXyCAM
 website: https://www.walmex.mx/
 jobslink: https://www.linkedin.com/company/walmartmexico/jobs/
 weight: 3
+draft: true
 ---
 
 ¿Quiénes somos? 

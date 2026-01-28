@@ -12,11 +12,11 @@ cities:
  - Monterrey 
  - Queretaro 
 # Porcentajes  
-global: 97
-compensacion: 94
-desarrollo: 99
+global: 96
+compensacion: 92
+desarrollo: 98
 cultura: 100
-friendly: 94
+friendly: 92
 infraestructura: 100 
 
 sello: true

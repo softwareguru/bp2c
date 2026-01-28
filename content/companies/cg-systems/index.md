@@ -11,12 +11,12 @@ tipo-empresa: boutiques-&-digital-agencies
 cities: 
  - San Luis Potosi
 # Porcentajes  
-global: 87
-compensacion: 84
+global: 86
+compensacion: 86
 desarrollo: 88
-cultura: 99
-friendly: 73
-infraestructura: 92  
+cultura: 96
+friendly: 64
+infraestructura: 96
 
 sello: true
 

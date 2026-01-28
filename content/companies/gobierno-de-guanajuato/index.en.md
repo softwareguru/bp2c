@@ -1,7 +1,8 @@
 ---
-title: "Gobierno de Guanajuato"
+title: "Secretaría de Finanzas de Gobierno de Guanajuato"
 date: 2025-01-01
 aliases:
+ - /en/company/secretaria-de-finanzas-de-gobierno-de-guanajuato
  - /en/company/gobierno-de-guanajuato
 
 images: 
@@ -43,22 +44,23 @@ x:
 
 # Carousel
 img1: /images/carousel/gobierno-de-guanajuato/1.jpg
-img2: /images/carousel/gobierno-de-guanajuato/2.png
-img3: /images/carousel/gobierno-de-guanajuato/3.png
-img4: /images/carousel/gobierno-de-guanajuato/4.png
+img2: /images/carousel/gobierno-de-guanajuato/2.jpeg
+img3: /images/carousel/gobierno-de-guanajuato/3.jpeg
+img4: /images/carousel/gobierno-de-guanajuato/4.jpeg
+img5: /images/carousel/gobierno-de-guanajuato/5.jpg
 
 website: https://finanzas.guanajuato.gob.mx/
-jobslink: 
+jobslink: https://scc.guanajuato.gob.mx/
 
 weight: 1
 ---
 
 El Gobierno del Estado de Guanajuato, a través de la Dirección General de Tecnologías de la Información y Telecomunicaciones provee los servicios necesarios en materia de tecnología para las diversas dependencias y entidades que conforman el Poder Ejecutivo del Estado, ejecuten sus funciones de la mejor manera, lo anterior a través del desarrollo de nuevos sistemas de información, soporte a la infraestructura, administración de datos y servicios de seguridad; mediante esto impulsamos el fortalecimiento de un gobierno digital y abierto que induce a una mayor participación de los ciudadanos.
 
-Actualmente la SFIA opera con un modelo que ha logrado optimizar el desarrollo, implementación y seguimiento de proyectos obteniendo excelentes resultados.
+Actualmente la Secretaría de Finanzas opera con un modelo que ha logrado optimizar el desarrollo, implementación y seguimiento de proyectos obteniendo excelentes resultados.
 
-En SFIA, contamos con un equipo de alto desempeño, capacitado y comprometido en la labor que cada uno desarrolla, respaldados con la constante capacitación en innovación tecnológica, para brindar servicios a diferentes usuarios otorgando una atención profesional y de calidad.
+En la Secretaría de Finanzas, contamos con un equipo de alto desempeño, capacitado y comprometido en la labor que cada uno desarrolla, respaldados con la constante capacitación en innovación tecnológica, para brindar servicios a diferentes usuarios otorgando una atención profesional y de calidad.
 
-Nuestro enfoque vanguardista en el desarrollo del capital humano busca desarrollar un crecimiento personal y profesional adquiriendo habilidades, conocimientos y actitudes a través de la resolución de problemas en los que la Secretaría se enfrenta en el día a día. Para lo cual realizamos eventos  diseñados para potenciar el talento de nuestros colaboradores y fomentar la integración, creando un ambiente propicio para el desarrollo y bienestar.
+Nuestro enfoque vanguardista en el desarrollo del capital humano busca desarrollar un crecimiento personal y profesional adquiriendo habilidades, conocimientos y actitudes a través de la resolución de problemas en los que la Secretaría se enfrenta en el día a día. Para lo cual realizamos eventos  diseñados para potenciar el talento de nuestros colaboradores y fomentar la integración, creando un ambiente propicio para el desarrollo y bienestar.
 
-La Secretaria de Finanzas Inversión y Administración en la búsqueda constante por atraer y retener el mejor talento ofrece beneficios laborales, así mismo, reconocemos el valor de cada uno de nuestros colaboradores y nos esforzamos por brindarles un entorno laboral donde puedan crecer, desarrollarse y alcanzar todo su potencial.
+La Secretaria de Finanzas en la búsqueda constante por atraer y retener el mejor talento ofrece beneficios laborales, así mismo, reconocemos el valor de cada uno de nuestros colaboradores y nos esforzamos por brindarles un entorno laboral donde puedan crecer, desarrollarse y alcanzar todo su potencial.

@@ -16,11 +16,11 @@ cities:
  - Chicago
 # Porcentajes  
 global: 89
-compensacion: 80
-desarrollo: 92
-cultura: 94
+compensacion: 77
+desarrollo: 94
+cultura: 96
 friendly: 88
-infraestructura: 93 
+infraestructura: 88
 
 sello: true
 

@@ -21,12 +21,12 @@ cities:
  - Sinaloa
 
 # Porcentajes  
-global: 94
-compensacion: 94
-desarrollo: 97
-cultura: 100
-friendly: 82
-infraestructura: 98
+global: 89
+compensacion: 88
+desarrollo: 90
+cultura: 91
+friendly: 81
+infraestructura: 96
 
 sello: true
 location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60206.36381631776!2d-99.2268195417969!3d19.41682389999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff7e7215e7c9%3A0x8035d23a433a1c07!2sTecnolog%C3%ADa%20con%20enfoque%20humano%20Kohmi%2C%20S.%20De%20R.L.%20de%20C.V.!5e0!3m2!1ses-419!2smx!4v1738010095458!5m2!1ses-419!2smx

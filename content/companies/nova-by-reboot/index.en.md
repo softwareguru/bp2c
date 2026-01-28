@@ -12,9 +12,9 @@ cities:
  - Ciudad de México
 # Porcentajes  
 global: 95
-compensacion: 92
+compensacion: 90
 desarrollo: 94
-cultura: 100
+cultura: 99
 friendly: 90
 infraestructura: 100
 

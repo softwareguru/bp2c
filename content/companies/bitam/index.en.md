@@ -11,11 +11,11 @@ tipo-empresa: startups-&-isvs
 cities: 
  - Tamaulipas
 # Porcentajes  
-global: 85
-compensacion: 76
-desarrollo: 82
-cultura: 90
-friendly: 85
+global: 86
+compensacion: 82
+desarrollo: 86
+cultura: 91
+friendly: 86
 infraestructura: 86
 
 sello: true

@@ -11,12 +11,12 @@ tipo-empresa: startups-&-isvs
 cities: 
  - Guadalajara
 # Porcentajes  
-global: 93
+global: 94
 compensacion: 88
-desarrollo: 88
-cultura: 98
+desarrollo: 90
+cultura: 99
 friendly: 92
-infraestructura: 98  
+infraestructura: 99
 
 sello: true
 

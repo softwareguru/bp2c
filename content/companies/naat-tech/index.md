@@ -52,6 +52,7 @@ website: https://www.naat.tech/
 jobslink: https://www.naat.tech/vacancies
 
 weight: 5
+draft: true
 ---
 
 Somos una empresa global, líder en soluciones multibiométricas, con oficinas en 7 países y 10 ubicaciones alrededor del mundo, 300 clientes y cerca de 200 empleados con presencia estratégica en 7 países de América: Estados Unidos, México, Brasil, Colombia, Argentina, Chile y Perú.

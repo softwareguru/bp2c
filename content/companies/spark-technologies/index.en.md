@@ -19,12 +19,12 @@ cities:
  - Canada
  - San Marcos
 # Porcentajes  
-global: 94
-compensacion: 84
-desarrollo: 94
-cultura: 99
-friendly: 94
-infraestructura: 98 
+global: 91
+compensacion: 80
+desarrollo: 88
+cultura: 97
+friendly: 92
+infraestructura: 96
 
 sello: 
 

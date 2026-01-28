@@ -14,11 +14,11 @@ cities:
 
 # Porcentajes  
 global: 85
-compensacion: 69
+compensacion: 68
 desarrollo: 86
 cultura: 90
 friendly: 84
-infraestructura: 92 
+infraestructura: 91
 
 sello: true
 

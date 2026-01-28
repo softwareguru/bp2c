@@ -51,6 +51,7 @@ img5: /images/carousel/grid-dynamics/5.jpg
 website: https://www.griddynamics.com/
 jobslink: https://careers.griddynamics.com/
 weight: 4
+draft: true
 ---
 
 At Grid Dynamics, we work with emerging technologies to build world-class software. Through innovation, we foster empowerment and thought leadership. If you're passionate about technology and want to make a real impact on how businesses operate, you'll feel right at home here. Every opportunity has tangible real-world applications and meaningful impact.

@@ -11,12 +11,12 @@ tipo-empresa: startups-&-isvs
 cities: 
  - Monterrey
 # Porcentajes  
-global: 94
-compensacion: 88
-desarrollo: 94
-cultura: 100
-friendly: 92
-infraestructura: 98  
+global: 91
+compensacion: 87
+desarrollo: 85
+cultura: 97
+friendly: 90
+infraestructura: 96
 
 sello: 
 
