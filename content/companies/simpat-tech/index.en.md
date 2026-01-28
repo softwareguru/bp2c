@@ -52,7 +52,7 @@ img5: /images/carousel/simpat-tech/5.png
 website: https://simpat.tech/
 jobslink: https://simpat.tech/
 weight: 9
-draft: true
+draft: false
 ---
 
 ### Who are we? 

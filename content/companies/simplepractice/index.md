@@ -70,7 +70,7 @@ website: https://www.simplepractice.com/
 jobslink: https://www.simplepractice.com/careers/
 
 weight: 10
-draft: true
+draft: false
 ---
 
 En SimplePractice somos un equipo de profesionales de la tecnología que desarrolla software con propósito, enfocado en apoyar a quienes brindan servicios de salud y bienestar. Creamos soluciones digitales intuitivas, seguras y confiables que permiten a nuestros usuarios simplificar su trabajo diario y concentrarse en lo que realmente importa: cuidar a las personas.

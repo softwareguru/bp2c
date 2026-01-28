@@ -72,16 +72,15 @@ youtube:
 tiktok: https://www.tiktok.com/@coderslink
 
 # Carousel
-img1: /images/carousel//1.jpg
-img2: /images/carousel//2.jpg
-img3: /images/carousel//3.png
-
+#img1: /images/carousel//1.jpg
+#img2: /images/carousel//2.jpg
+#img3: /images/carousel//3.png
 website: https://coderslink.com/
 jobslink: https://coderslink.com/talento/portal-de-trabajo/
 
 weight: 10
 
-draft: true
+draft: false
 ---
 
 En CodersLink somos una empresa especializada en conectar talento de software en México con compañías de alto crecimiento en Estados Unidos. Nuestro enfoque está en el nearshore team augmentation, construyendo equipos de ingeniería sólidos, bien acompañados y alineados a los objetivos reales de negocio de nuestros clientes.
