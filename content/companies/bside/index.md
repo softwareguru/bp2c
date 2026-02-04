@@ -49,14 +49,14 @@ img2: /images/carousel/bside/2.jpeg
 img3: /images/carousel/bside/3.jpeg
 img4: /images/carousel/bside/4.jpeg
 img5: /images/carousel/bside/5.jpg
+img6: /images/carousel/bside/6.jpg
+img7: /images/carousel/bside/7.jpg
 
 website: https://www.bside.com.mx/
 jobslink: https://www.linkedin.com/company/bside-microsoft/jobs/
-weight: 12
+weight: 5
 ---
 
-Somos una empresa mexicana con 24 años de experiencia, especializada en soluciones tecnológicas innovadoras que transforman y potencian los negocios de nuestros clientes. 
-Nuestro equipo de más de 200 colaboradores se distingue por su talento, creatividad y compromiso con la excelencia. Trabajamos en un entorno dinámico y colaborativo, donde el desarrollo profesional y el aprendizaje continuo son pilares fundamentales.
+Somos una empresa mexicana con 24 años de experiencia impulsando la transformación digital a través de tecnología, datos, nube e inteligencia artificial. Nuestro equipo está conformado por más de 200 profesionales altamente especializados, cuyo talento, experiencia y mentalidad colaborativa son el motor de todo lo que hacemos. Trabajamos en un entorno donde el aprendizaje continuo, el trabajo en equipo y la experimentación forman parte del día a día, permitiendo que cada persona crezca mientras enfrenta desafíos tecnológicos reales y relevantes.
 
-Valoramos a nuestra gente y construimos un lugar donde todos pueden crecer y sentirse reconocidos. Fomentamos una cultura basada en nuestros valores organizacionales, promovemos la cercanía y el liderazgo, y ofrecemos oportunidades de desarrollo, certificaciones y proyectos retadores.
-En bSide, no solo creamos tecnología, también creamos un entorno donde cada colaborador puede dar lo mejor de sí, porque sabemos que nuestro mayor activo es nuestra gente.
+En bSide creemos que la tecnología se construye mejor cuando las personas se sienten escuchadas, valoradas y empoderadas. Por eso fomentamos una cultura basada en la confianza, la colaboración y el liderazgo cercano, ofreciendo oportunidades constantes de desarrollo, certificaciones, proyectos retadores y participación activa en iniciativas de vanguardia. Aquí no solo desarrollamos soluciones: desarrollamos talento, porque sabemos que nuestra mayor fortaleza es la experiencia y pasión de quienes forman parte de bSide.

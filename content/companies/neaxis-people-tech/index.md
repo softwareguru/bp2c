@@ -1,5 +1,5 @@
 ---
-title: "Neaxis People Tech"
+title: "Neaxis"
 date: 2025-05-28
 aliases:
  - /es/company/neaxis-people-tech
@@ -55,14 +55,13 @@ img5: /images/carousel/neaxis-people-tech/5.png
 website: https://neaxis.mx/
 jobslink: https://neaxis.mx/bolsa-de-trabajo.html
 
-weight: false
+weight: 4
 
-new: ¡Nueva!
 ---
 
 ## ¿Quiénes somos?
 
-En Neaxis construimos tecnología con propósito. Somos una empresa mexicana que impulsa la evolución digital de organizaciones que quieren ir más rápido, con más calidad y con mejores experiencias para sus usuarios. Aquí las ideas se escuchan, el talento se forma y los resultados se celebran en equipo.
+En Neaxis construimos tecnología con propósito. Somos una empresa mexicana que impulsa la evolución digital de organizaciones que quieren ir más rápido, con calidad y con mejores experiencias para sus usuarios. Aquí las ideas se escuchan, el talento se forma y los resultados se celebran en equipo.
 
 ## ¿Qué hacemos?
 
@@ -70,4 +69,4 @@ Creamos y modernizamos productos y plataformas digitales de alto impacto: desde 
 
 ## ¿Por qué somos un Best Place to Code?
 
-Porque en Neaxis programar significa crecer. Promovemos aprendizaje constante, colaboración real y espacio para tomar ownership desde temprano. Te sumas a un equipo que te reta, te acompaña y te da visibilidad: aquí tu código no se queda en “tareas”, se convierte en soluciones que mueven métricas, clientes y carreras.
+Porque en Neaxis programar significa aprender y crecer de verdad. Impulsamos una cultura de colaboración, buenas prácticas y accountability, donde puedes proponer, tomar ownership y ver el impacto de lo que construyes. Te sumas a un equipo que te reta, te acompaña y te da visibilidad: aquí tu código no se queda en “tareas”, se convierte en soluciones que mueven métricas, clientes y tu desarrollo profesional.

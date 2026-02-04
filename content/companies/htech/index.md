@@ -50,7 +50,7 @@ img4: /images/carousel/htech/4.png
 website: https://htech.com/
 jobslink: https://www.linkedin.com/company/htechmexico/jobs/
 
-weight: 1
+weight: 2
 ---
 
 Una compañía mexicana de tecnología con presencia internacional enfocada en la industria de pagos digitales y especializada en la prevención de fraude en línea.

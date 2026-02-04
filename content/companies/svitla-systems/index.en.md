@@ -56,7 +56,7 @@ img3: /images/carousel/svitla/3.png
 website: https://svitla.com/
 jobslink: https://svitla.com/career
 
-weight: 4
+weight: 3
 ---
 
 Svitla Systems es una empresa global de soluciones digitales con más de 20 años de experiencia y un equipo de más de 1,000 profesionales de tecnología en 15 países. Trabajamos con startups y empresas consolidadas, principalmente en proyectos de Estados Unidos y Europa, utilizando tecnologías modernas y de alto impacto.

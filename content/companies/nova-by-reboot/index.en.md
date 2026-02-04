@@ -1,5 +1,5 @@
 ---
-title: "Nova by Reboot"
+title: "Nova"
 date: 2025-01-01
 aliases:
  - /en/company/nova-reboot
@@ -10,6 +10,8 @@ categories: ["Empresas"]
 tipo-empresa: tech-consulting-large
 cities: 
  - Ciudad de México
+ - Costa Rica
+
 # Porcentajes  
 global: 95
 compensacion: 90
@@ -50,35 +52,11 @@ img5: /images/carousel/nova/5.png
 
 
 website: http://novasolutionsystems.com
-jobslink: https://novasolutionsystems.com/unete
+jobslink: https://talento.novasolutionsystems.com/
 
-weight: 3
+weight: 2
 ---
 
-En Nova nuestra principal experiencia se basa en fusionar el conocimiento de trabajar con grandes instituciones y la agilidad que se obtiene en empresas FintTech o empresas nativas digitales.
+Nova es líder en desarrollo y aseguramiento de calidad de software especializado para bancos medianos y grandes en México. Desde nuestra fundación, integramos tecnologías innovadoras, metodologías ágiles y excelencia técnica para ofrecer soluciones seguras, precisas y de alto rendimiento adaptadas específicamente al sector financiero local.
 
-“Aceleramos la adopción digital en el sector financiero en México”.
-
-Principios Operativos 
-
-Buscamos transmitir nuestros valores y creencias en nuestros 4 principios operativos:
-
-People
-
-El auténtico valor de nuestra empresa son las personas que formamos parte de ella, por lo que buscamos cada día mejorar nuestra calidad de vida a través de un equilibrio personal y profesional.
-
-All or nothing
-
-Nos guía la pasión, centramos toda nuestra energía en lograr los retos y cumplir con los objetivos entregando resultados excepcionales.
-
-Team for speed up
-
-Valoramos la fortaleza de trabajar en equipo y la diversidad de pensamiento, siendo transparentes y capaces de adaptarnos para lograr objetivos comunes.
-
-Customer centric
-
-Nos enfocamos en el consumidor que día a día usará los productos de nuestros clientes. ¡El éxito de nuestros clientes, es nuestro éxito!
-
-Equilibrio personal y profesional
-
-En Nova estamos preocupados por incrementar la creatividad, el bienestar y felicidad de nuestros consultores, además de potenciar la interacción y la comunicación, es por eso que Nova  es el mejor lugar para tu crecimiento personal y profesional. Comprometidos en propiciar un ambiente de trabajo libre de violencia y un entorno seguro, trabajando de manera transparente, honesta e íntegra.
+Nuestros clientes prefieren a Nova por nuestra capacidad de entregar soluciones personalizadas que resuelven retos específicos del sector financiero mexicano.

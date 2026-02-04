@@ -46,7 +46,7 @@ cultura: 95
 friendly: 90
 infraestructura: 100 
 
-sello: 
+sello: true
 
 location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.1019340355065!2d-100.3821112748201!3d25.670282727409383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662962761a528eb%3A0x48839a5fadee2495!2sBlvd.%20Antonio%20L.%20Rodr%C3%ADguez%201888%2C%20Santa%20Mar%C3%ADa%2C%2064650%20Monterrey%2C%20N.L.!5e1!3m2!1ses-419!2smx!4v1769465287338!5m2!1ses-419!2sm
 
@@ -72,13 +72,16 @@ youtube:
 tiktok: https://www.tiktok.com/@coderslink
 
 # Carousel
-#img1: /images/carousel//1.jpg
-#img2: /images/carousel//2.jpg
-#img3: /images/carousel//3.png
+img1: /images/carousel/coderslink-llc/1.jpeg
+img2: /images/carousel/coderslink-llc/2.jpeg
+img3: /images/carousel/coderslink-llc/3.jpg
+img4: /images/carousel/coderslink-llc/4.jpg
+img5: /images/carousel/coderslink-llc/5.jpeg
+
 website: https://coderslink.com/
 jobslink: https://coderslink.com/talento/portal-de-trabajo/
 
-weight: 10
+weight: 2
 
 draft: false
 ---

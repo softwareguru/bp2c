@@ -50,7 +50,7 @@ img5: /images/carousel/onephase/5.png
 
 website: https://onephase.com
 jobslink: https://www.linkedin.com/company/onephase/jobs/
-weight: 8
+weight: 9
 ---
 
 Welcome to Onephase!

@@ -30,7 +30,7 @@ location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.90738553856
 cafeteria: 
 flexiblehours: true
 gameroom: true
-healthinsurance: 
+healthinsurance: true
 languageclasses: 
 makerspace: 
 petfriendly: 
@@ -54,15 +54,13 @@ img5: /images/carousel/inbest/5.jpg
 
 website: https://www.inbest.cloud/
 jobslink: https://www.linkedin.com/company/inbest-cloud/jobs/
-weight: 7
+weight: 5
 ---
 
-En iNBest, somos apasionados por el poder transformador de la tecnología, ayudando a empresas de todo el mundo a alcanzar sus metas con soluciones únicas y personalizadas. Desde 2005, hemos construido un negocio basado en tecnologías disruptivas, diseñadas para potenciar la seguridad, productividad y eficiencia de nuestros clientes.
+Somos una empresa consultora experta en soluciones tecnológicas empresariales, con experiencia comprobable en todos los sectores en la industria de Latinoamérica y Estados Unidos.
 
 Fomentamos un ambiente laboral flexible, colaborativo y motivador, donde valoramos a nuestro equipo tanto como a nuestros clientes. Creemos que, al generar valor dentro de nuestra organización, también lo creamos para quienes confían en nosotros.
 
-Acompañamos a las empresas en cada paso del camino, asegurándonos de que alcancen su máximo potencial con tecnología de primer nivel. En iNBest, transformamos desafíos en oportunidades con innovación, excelencia y compromiso.""En iNBest, somos apasionados por el poder transformador de la tecnología, ayudando a empresas de todo el mundo a alcanzar sus metas con soluciones únicas y personalizadas. Desde 2005, hemos construido un negocio basado en tecnologías disruptivas, diseñadas para potenciar la seguridad, productividad y eficiencia de nuestros clientes.
+Ayudamos a las empresas a potenciar su seguridad, productividad, eficiencia, agilidad y flexibilidad para optimizar, reducir costos y fomentar la mejora continua en cada uno de sus procesos internos y comerciales.
 
-Fomentamos un ambiente laboral flexible, colaborativo y motivador, donde valoramos a nuestro equipo tanto como a nuestros clientes. Creemos que, al generar valor dentro de nuestra organización, también lo creamos para quienes confían en nosotros.
-
-Acompañamos a las empresas en cada paso del camino, asegurándonos de que alcancen su máximo potencial con tecnología de primer nivel. En iNBest, transformamos desafíos en oportunidades con innovación, excelencia y compromiso.
+Estamos comprometidos con proporcionar a nuestros clientes soluciones personalizadas que satisfagan las necesidades específicas dentro de su propio entorno. Nuestros expertos los guiarán y acompañarán en todo el camino de implementación para alcanzar su máximo potencial a través de tecnología de primer nivel.

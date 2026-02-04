@@ -52,7 +52,7 @@ img5:
 website: https://www.contpaqi.com
 jobslink: https://www.linkedin.com/company/contpaqi1/jobs/
 
-weight: 3
+weight: 1
 ---
 
 Somos una empresa nacida en Guadalajara hace 41 años, con una filosofía centrada en las personas, más de 470 colaboradores a nivel nacional y presencia con 12 oficinas en México.

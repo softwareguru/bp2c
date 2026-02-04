@@ -50,7 +50,7 @@ img5: /images/carousel/scio-consulting/5.png
 
 website: http://www.sciodev.com
 jobslink: https://sciodev.com/open_roles/
-weight: 9
+weight: 6
 ---
 
 At Scio, we are driven by a shared passion for leveraging digital technologies to empower organizations and drive innovation. Since our founding in 2004, we’ve been committed to delivering exceptional software development services to help our clients achieve their goals and stay ahead in today’s dynamic market. We derive our success from our collaborative approach, our deep understanding of industry trends, and our ability to tailor solutions that generate measurable results.

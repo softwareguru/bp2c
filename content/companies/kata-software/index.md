@@ -49,7 +49,7 @@ img4: /images/carousel/kata-software/4.png
 website: https://kata-software.com/
 jobslink: https://apps-jobs.workbeat.com/jobs/public/tenantData/kata-software/Bolsa/bdt1036/VacantesFullList.html?idBolsa=1036&idTipo=0
 
-weight: 6
+weight: 7
 ---
 
 En Kata Software potenciamos a las instituciones financieras con soluciones tecnológicas innovadoras que agilizan operaciones, mejoran la productividad e impulsan el crecimiento. Con un profundo conocimiento del sector financiero, somos un socio confiable en tu viaje hacia el éxito. 

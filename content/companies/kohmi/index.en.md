@@ -59,7 +59,7 @@ img5: /images/carousel/kohmi/5.jpg
 
 website: https://kohmi.net/
 jobslink: https://www.linkedin.com/company/kohmi/jobs/
-weight: 2
+weight: 7
 ---
 
 En Kohmi creemos firmemente que la tecnología solo es excepcional cuando las personas que la construyen están bien. Por eso, trabajamos para ofrecer un entorno donde cada integrante pueda desarrollarse, sentirse acompañado y crecer profesional y personalmente.

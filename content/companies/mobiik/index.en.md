@@ -50,7 +50,7 @@ img4: /images/carousel/mobiik/4.png
 
 website: https://www.mobiik.com/
 jobslink: https://www.mobiik.com/jobs
-weight: 6
+weight: 1
 ---
 
 En Mobiik, entendemos que la tecnología es el motor de la innovación y el cambio. Nos dedicamos a crear soluciones creativas que impactan positivamente en la vida de las personas. Nuestra pasión nos lleva a trabajar mano a mano con emprendedores, creadores y empresas comprometidas con generar un impacto positivo en el mundo. La colaboración y la innovación son el corazón de nuestros esfuerzos.

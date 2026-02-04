@@ -46,16 +46,16 @@ facebook: https://www.facebook.com/improvingdallas
 x: https://twitter.com/improving
 
 # Carousel
-img1: /images/carousel/improving/1.jpg
-img2: /images/carousel/improving/2.jpg
+img1: /images/carousel/improving/1.png
+img2: /images/carousel/improving/2.png
 img3: /images/carousel/improving/3.jpg
-img4: /images/carousel/improving/4.jpg
-img5: /images/carousel/improving/5.jpg
+img4: /images/carousel/improving/4.png
+img5: /images/carousel/improving/5.png
 
 
 website: https://www.improving.com/
 jobslink: https://www.improving.com/careers/open-positions/?region=mx
-weight: 5
+weight: 4
 ---
 
 Improving Mexico is a modern digital services company with a global presence across North America, LATAM, and beyond. Our mission is simple yet powerful: to change the perception of the IT professional by building trust through excellence, dedication, and involvement. We are proud to lead the nearshore development wave for Improving, delivering world-class solutions while fostering a culture of collaboration and growth.

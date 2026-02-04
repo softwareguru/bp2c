@@ -69,7 +69,7 @@ img5: /images/carousel/simplepractice/5.jpeg
 website: https://www.simplepractice.com/
 jobslink: https://www.simplepractice.com/careers/
 
-weight: 10
+weight: 3
 draft: false
 ---
 

@@ -54,7 +54,7 @@ img5: /images/carousel/tigerconnect/5.png
 website: https://tigerconnect.com/
 jobslink: https://tigerconnect.wd1.myworkdayjobs.com/TC/
 
-weight: 10
+weight: 6
 ---
 
 Somos TigerConnect, una compañía líder en tecnología de salud dedicada a transformar la forma en que los equipos clínicos se comunican y colaboran. Nuestra misión es unificar las comunicaciones dentro y fuera de los hospitales para que los profesionales de la salud, desde médicos y enfermeras hasta pacientes y personal administrativo, estén siempre conectados de manera segura y eficiente. La plataforma de TigerConnect es utilizada por organizaciones de salud en todo Estados Unidos y procesa millones de mensajes todos los días con altos estándares de seguridad, fiabilidad y disponibilidad.

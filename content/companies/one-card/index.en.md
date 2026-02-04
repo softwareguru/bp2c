@@ -9,7 +9,10 @@ images:
 categories: ["Empresas"]
 tipo-empresa: startups-&-isvs
 cities: 
+ - Ciudad de México 
  - Monterrey
+ - Merida
+
 # Porcentajes  
 global: 87
 compensacion: 73
@@ -27,7 +30,7 @@ cafeteria: true
 flexiblehours: 
 gameroom: 
 healthinsurance: true
-languageclasses: 
+languageclasses: true
 makerspace: 
 petfriendly: 
 remotework: true
@@ -51,11 +54,12 @@ jobslink: https://www.linkedin.com/company/onecard-s.i./jobs/
 weight: 4
 ---
 
-Somos una empresa con amplia experiencia en la emisión y administración de tarjetas de prepago. Durante más de 12 años, nuestros ejecutivos han desarrollado y participado en una variedad de programas para diversas instituciones, respaldando cada una de las iniciativas en las que OneCard se involucra.
+Somos una empresa con amplia experiencia en la emisión y administración de tarjetas de prepago. Durante más de 15 años, nuestros ejecutivos han desarrollado y participado en una variedad de programas para diversas instituciones, respaldando cada una de las iniciativas en las que One Card se involucra.
 
-El cúmulo de experiencia entre socios y ejecutivos nos ha permitido desarrollar servicios y productos diferenciados, los cuales han sido determinantes en el crecimiento de la empresa. Nuestros clientes regularmente buscan flexibilidad, servicio y simplicidad. Gracias a nuestra constante innovación y un profundo compromiso con el servicio, OneCard se diferencia de su competencia y cumple con la demanda de nuestros usuarios.
+El cúmulo de experiencia entre socios y ejecutivos nos ha permitido desarrollar servicios y productos diferenciados, los cuales han sido determinantes en el crecimiento de la empresa. Nuestros clientes regularmente buscan flexibilidad, servicio y simplicidad. Gracias a nuestra constante innovación y un profundo compromiso con el servicio, One Card se diferencia de su competencia y cumple con la demanda de nuestros usuarios.
 
-Nuestra organización se destaca por su compromiso y expertise en lo que hace. Sabemos cómo relacionarnos con los demás para crear un entorno colaborativo y productivo.
+Nuestra organización se destaca por su compromiso y expertise en lo que hace. 
+- Sabemos cómo relacionarnos con los demás para crear un entorno colaborativo y productivo.
 
 ✔️ Vocación por el Servicio: Todos nuestros colaboradores tienen una fuerte vocación por el servicio al cliente, tanto interno como externo.
 
