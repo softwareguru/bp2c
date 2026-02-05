@@ -54,7 +54,7 @@ img5: /images/carousel/inbest/5.jpg
 
 website: https://www.inbest.cloud/
 jobslink: https://www.linkedin.com/company/inbest-cloud/jobs/
-weight: 5
+weight: 10
 ---
 
 Somos una empresa consultora experta en soluciones tecnológicas empresariales, con experiencia comprobable en todos los sectores en la industria de Latinoamérica y Estados Unidos.

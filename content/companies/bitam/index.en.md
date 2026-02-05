@@ -51,7 +51,7 @@ img5: /images/carousel/bitam/5.png
 website: https://bitam.com/
 jobslink: https://www.linkedin.com/company/bitam/jobs/
 
-weight: 7
+weight: 5
 ---
 
 En BITAM® somos referentes en plataformas de analítica y automatización para medianas y grandes empresas. Desde hace más de 25 años, acompañamos a las organizaciones en la automatización de procesos que sus sistemas contables no resuelven y en el descubrimiento de insights que los reportes tradicionales no logran revelar.
