@@ -5,6 +5,7 @@ images:
  - /images/blog/2026/ranking-2026.png
 aliases:
  - /es/blog/ranking-2026
+ - /blog/ranking-2026
 draft: false
 ---
 
