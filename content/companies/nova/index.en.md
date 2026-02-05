@@ -2,7 +2,7 @@
 title: "Nova"
 date: 2025-01-01
 aliases:
- - /es/company/nova-reboot
+ - /en/company/nova
 
 images: 
  - "images/companies/nova.png"
@@ -11,6 +11,7 @@ tipo-empresa: tech-consulting-large
 cities: 
  - Ciudad de México
  - Costa Rica
+
 # Porcentajes  
 global: 95
 compensacion: 90

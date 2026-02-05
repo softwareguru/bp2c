@@ -2,7 +2,8 @@
 title: "Neaxis"
 date: 2025-05-28
 aliases:
- - /es/company/neaxis-people-tech
+ - /es/company/neaxis
+ 
 images:
  - "images/companies/neaxis.png"
 categories: ["Empresas"]

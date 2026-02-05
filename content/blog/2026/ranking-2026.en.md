@@ -41,7 +41,7 @@ Technology consulting companies, custom software development, and team augmentat
 1. [Mobiik](/../../../en/company/mobiik)
 2. [CodersLink](/../../..en/company/coderslink-llc/)
 3. [Spark Technologies](/../../../en/company/spark-technologies)
-4. [Neaxis](/../../../en/company/neaxis-people-tech/)
+4. [Neaxis](/../../../en/company/neaxis)
 5. [iNBest](/../../../en/company/inbestcloud)
 6. [Scio Consulting](/../../../en/company/scio-consulting)   
 7. [Kohmi](/../../../en/company/kohmi)
@@ -53,8 +53,8 @@ Technology consulting companies, custom software development, and team augmentat
 
 Technological outsourcing and systems integration companies, with more than 100 developers.
 
-1. [B-Drive IT](/../../../en/company/b-drive-it)
-2. [Nova by Reboot](/../../../en/company/nova-reboot)
+1. [B Drive IT](/../../../en/company/b-drive-it)
+2. [Nova](/../../../en/company/nova)
 3. [Svitla Systems](/../../../en/company/svitla-systems)
 4. [Improving](/../../../en/company/improving)
 

@@ -43,7 +43,7 @@ Empresas de consultoría tecnológica, desarrollo de software a la medida y team
 1. [Mobiik](../../../es/company/mobiik)
 2. [CodersLink](../../../es/company/coderslink-llc/)
 3. [Spark Technologies](../../../es/company/spark-technologies)
-4. [Neaxis](../../..es/company/neaxis-people-tech/)
+4. [Neaxis](../../..es/company/neaxis)
 5. [iNBest](../../../es/company/inbestcloud)
 6. [Scio Consulting](../../../es/company/scio-consulting)   
 7. [Kohmi](../../../es/company/kohmi)
@@ -55,8 +55,8 @@ Empresas de consultoría tecnológica, desarrollo de software a la medida y team
 
 Empresas de outsourcing tecnológico e integración de sistemas, con más de 100 desarrolladores.
 
-1. [B-Drive IT](../../../es/company/b-drive-it)
-2. [Nova by Reboot](../../../es/company/nova-reboot)
+1. [B Drive IT](../../../es/company/b-drive-it)
+2. [Nova](../../../es/company/nova)
 3. [Svitla Systems](../../../es/company/svitla-systems)
 4. [Improving](../../../es/company/improving)
 
