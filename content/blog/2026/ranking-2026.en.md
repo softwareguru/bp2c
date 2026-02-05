@@ -42,7 +42,7 @@ Technology consulting companies, custom software development, and team augmentat
 2. [CodersLink](/../../..en/company/coderslink-llc/)
 3. [Spark Technologies](/../../../en/company/spark-technologies)
 4. [Neaxis](/../../../en/company/neaxis)
-5. [iNBest](/../../../en/company/inbestcloud)
+5. [iNBest](/../../../en/company/inbest)
 6. [Scio Consulting](/../../../en/company/scio-consulting)   
 7. [Kohmi](/../../../en/company/kohmi)
 8. [Ensitech](/../../../en/company/ensitech)
