@@ -6,163 +6,170 @@
   <!-- Imagenes empresa -->
   <section class="bg-companies">
     <div class="container">
-      <img class="img-fluid img-location" src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}" loading="lazy" width="450"  alt="featured image {{.Title }}"/>
-  </div>
+      <img class="img-fluid img-location"
+        src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
+        loading="lazy" width="450" alt="featured image {{.Title }}" />
+    </div>
   </section>
   <!-- Imagenes empresa -->
 
 
 
-    <!-- Titulo-->
-    <div class="business-obligations-title text-center">
-        <h2>Bussines Obligations</h2>
-    </div>
-    <!-- /Titulo-->
+  <!-- Titulo-->
+  <div class="business-obligations-title text-center">
+    <h2>Bussines Obligations</h2>
+  </div>
+  <!-- /Titulo-->
 
 
-    <!-- Porcentaje general y sello -->
-    <div class="container">
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="col-sm">
-                    <h5 class="text-center mb-4">Global score: {{ .Params.global}}%</h5>
-                    <div id="myProgress-global">
-                        <div id="myBar" {{ with .Params.global }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
-                      </div>             
-                  </div>
-                  <div class="col-sm mt-4 mb-4 text-center">
-                    Compliance with business obligations is key to guarantee the correct functioning and sustainability of any organization.
-                   </div>
-                   {{ with .Params.Sello }}
-                  <div class="col-sm mb-4 ">
-                    <img src="/images/sello.png" class="img-fluid mx-auto d-block">
-                  </div>
-                  {{ end }}
-            </div>
-            <div class="col-md-3">
-                <div>
-                    <h6>Wages and economic benefits: {{ .Params.compensacion }}%</h6>
-                  <div id="progress-bar-beneficios">
-                    <div id="myBar-beneficios" {{ with .Params.compensacion }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
-                  </div>
-                </div>
-
-                <div class="mt-3">
-                    <h6>Career development: {{ .Params.desarrollo }}%</h6>
-                <div id="progress-bar-beneficios">
-                  <div id="myBar-beneficios" {{ with .Params.desarrollo }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
-                </div>
-                </div>
-
-                <div class="mt-3">
-                    <h6>Culture and safe space: {{ .Params.cultura }}%</h6>
-                    <div id="progress-bar-beneficios">
-                        <div id="myBar-beneficios" {{ with .Params.cultura }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
-                      </div>
-                </div>
-                  
-                <div class="mt-3">
-                    <h6>Gender Friendly: {{ .Params.friendly }}%</h6>
-                    <div id="progress-bar-beneficios">
-                        <div id="myBar-beneficios" {{ with .Params.friendly }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
-                      </div>
-                </div>
-                  
-                  <div class="mt-3 mb-4">
-                    <h6>Infrastructure: {{ .Params.infraestructura }}%</h6>
-                    <div id="progress-bar-beneficios">
-                        <div id="myBar-beneficios" {{ with .Params.infraestructura }}style="width: {{ . | safeCSS}}%;"{{end}}></div>
-                      </div>
-                </div>
-            </div>
-            <div class="col-md-5 d-flex">
-
-                <div class="ratio ratio-16x9 ">
-                    <iframe src="{{ .Params.location}}" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Porcentaje general y sello -->
-
-    <!-- Beneficios -->
-    <div class="container beneficios-section mx-auto d-block mt-4">
-        <div class="row container">
-          {{ with .Params.Cafeteria }}
-            <div class="col-md-3 col-sm-6 mb-4">
-              <img src="/images/benefits/cafeteria.png" width="190" class="mx-auto d-block">
-            </div>
-          {{ end }}
-          {{ with .Params.Flexiblehours }}
-            <div class="col-md-3 col-sm-6 mb-4">
-              <img src="/images/benefits/flexiblehours.png" width="190" class="mx-auto d-block">
-            </div>
-          {{ end }}
-          {{ with .Params.Gameroom }}
-            <div class="col-md-3 col-sm-6 mb-4">
-              <img src="/images/benefits/gameroom.png" width="190" class="mx-auto d-block">
-            </div>
-          {{ end }}
-          {{ with .Params.Healthinsurance }}
-            <div class="col-md-3 col-sm-6 mb-4">
-              <img src="/images/benefits/healthinsurence.png" width="190" class="mx-auto d-block">
-            </div>
-          {{ end }}
-          {{ with .Params.Languageclasses }}
-            <div class="col-md-3 col-sm-6 mb-4">
-              <img src="/images/benefits/languageclasses.png" width="190" class="mx-auto d-block">
-            </div>
-          {{ end }}
-          {{ with .Params.Makerspace }}
-            <div class="col-md-3 col-sm-6 mb-4">
-              <img src="/images/benefits/makerspace.png" width="190" class="mx-auto d-block">
-            </div>
-          {{ end }}
-          {{ with .Params.Petfriendly }}
-            <div class="col-md-3 col-sm-6 mb-4">
-              <img src="/images/benefits/petfriendly.png" width="190" class="mx-auto d-block">
-            </div>
-          {{ end }}
-          {{ with .Params.Remotework }}
-            <div class="col-md-3 col-sm-6 mb-4">
-              <img src="/images/benefits/remotework.png" width="190" class="mx-auto d-block">
-            </div>
-          {{ end }}
-          {{ with .Params.Stockoptions }}
-            <div class="col-md-3 col-sm-6 mb-4">
-              <img src="/images/benefits/stockoptions.png" width="190" class="mx-auto d-block">
-            </div>
-          {{ end }}
-          {{ with .Params.Temporalrelocation }}
-            <div class="col-md-3 col-sm-6 mb-4">
-              <img src="/images/benefits/temporalrecolocation.png" width="190" class="mx-auto d-block">
-            </div>
-          {{ end }}
-          {{ with .Params.Transportation }}
-            <div class="col-md-3 col-sm-6 mb-4">
-              <img src="/images/benefits/transportation.png" width="190" class="mx-auto d-block">
-            </div>
-          {{ end }}
+  <!-- Porcentaje general y sello -->
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="col-sm">
+          <h5 class="text-center mb-4">Global score: {{ .Params.global}}%</h5>
+          <div id="myProgress-global">
+            <div id="myBar" {{ with .Params.global }}style="width: {{ . | safeCSS}}%;" {{end}}></div>
           </div>
+        </div>
+        <div class="col-sm mt-4 mb-4 text-center">
+          Compliance with business obligations is key to guarantee the correct functioning and sustainability of any
+          organization.
+        </div>
+        {{ with .Params.Sello }}
+        <div class="col-sm mb-4 ">
+          <img src="/images/sello.png" class="img-fluid mx-auto d-block">
+        </div>
+        {{ end }}
+      </div>
+      <div class="col-md-3">
+        <div>
+          <h6>Wages and economic benefits: {{ .Params.compensacion }}%</h6>
+          <div id="progress-bar-beneficios">
+            <div id="myBar-beneficios" {{ with .Params.compensacion }}style="width: {{ . | safeCSS}}%;" {{end}}></div>
+          </div>
+        </div>
+
+        <div class="mt-3">
+          <h6>Career development: {{ .Params.desarrollo }}%</h6>
+          <div id="progress-bar-beneficios">
+            <div id="myBar-beneficios" {{ with .Params.desarrollo }}style="width: {{ . | safeCSS}}%;" {{end}}></div>
+          </div>
+        </div>
+
+        <div class="mt-3">
+          <h6>Culture and safe space: {{ .Params.cultura }}%</h6>
+          <div id="progress-bar-beneficios">
+            <div id="myBar-beneficios" {{ with .Params.cultura }}style="width: {{ . | safeCSS}}%;" {{end}}></div>
+          </div>
+        </div>
+
+        <div class="mt-3">
+          <h6>Gender Friendly: {{ .Params.friendly }}%</h6>
+          <div id="progress-bar-beneficios">
+            <div id="myBar-beneficios" {{ with .Params.friendly }}style="width: {{ . | safeCSS}}%;" {{end}}></div>
+          </div>
+        </div>
+
+        <div class="mt-3 mb-4">
+          <h6>Infrastructure: {{ .Params.infraestructura }}%</h6>
+          <div id="progress-bar-beneficios">
+            <div id="myBar-beneficios" {{ with .Params.infraestructura }}style="width: {{ . | safeCSS}}%;" {{end}}>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="text-center">Headquarters</h5>
+        <div class="d-flex">
+          <div class="ratio ratio-16x9 mt-2">
+            <iframe class="mb-4" src="{{ .Params.location}}" width="400" height="300" style="border:0;"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- /Beneficios -->
+  </div>
+  <!-- /Porcentaje general y sello -->
 
-    <div class="container mt-4">
-      {{ .Content }}
+  <!-- Beneficios -->
+  <div class="container beneficios-section mx-auto d-block mt-4">
+    <div class="row container">
+      {{ with .Params.Cafeteria }}
+      <div class="col-md-3 col-sm-6 mb-4">
+        <img src="/images/benefits/cafeteria.png" width="190" class="mx-auto d-block">
+      </div>
+      {{ end }}
+      {{ with .Params.Flexiblehours }}
+      <div class="col-md-3 col-sm-6 mb-4">
+        <img src="/images/benefits/flexiblehours.png" width="190" class="mx-auto d-block">
+      </div>
+      {{ end }}
+      {{ with .Params.Gameroom }}
+      <div class="col-md-3 col-sm-6 mb-4">
+        <img src="/images/benefits/gameroom.png" width="190" class="mx-auto d-block">
+      </div>
+      {{ end }}
+      {{ with .Params.Healthinsurance }}
+      <div class="col-md-3 col-sm-6 mb-4">
+        <img src="/images/benefits/healthinsurence.png" width="190" class="mx-auto d-block">
+      </div>
+      {{ end }}
+      {{ with .Params.Languageclasses }}
+      <div class="col-md-3 col-sm-6 mb-4">
+        <img src="/images/benefits/languageclasses.png" width="190" class="mx-auto d-block">
+      </div>
+      {{ end }}
+      {{ with .Params.Makerspace }}
+      <div class="col-md-3 col-sm-6 mb-4">
+        <img src="/images/benefits/makerspace.png" width="190" class="mx-auto d-block">
+      </div>
+      {{ end }}
+      {{ with .Params.Petfriendly }}
+      <div class="col-md-3 col-sm-6 mb-4">
+        <img src="/images/benefits/petfriendly.png" width="190" class="mx-auto d-block">
+      </div>
+      {{ end }}
+      {{ with .Params.Remotework }}
+      <div class="col-md-3 col-sm-6 mb-4">
+        <img src="/images/benefits/remotework.png" width="190" class="mx-auto d-block">
+      </div>
+      {{ end }}
+      {{ with .Params.Stockoptions }}
+      <div class="col-md-3 col-sm-6 mb-4">
+        <img src="/images/benefits/stockoptions.png" width="190" class="mx-auto d-block">
+      </div>
+      {{ end }}
+      {{ with .Params.Temporalrelocation }}
+      <div class="col-md-3 col-sm-6 mb-4">
+        <img src="/images/benefits/temporalrecolocation.png" width="190" class="mx-auto d-block">
+      </div>
+      {{ end }}
+      {{ with .Params.Transportation }}
+      <div class="col-md-3 col-sm-6 mb-4">
+        <img src="/images/benefits/transportation.png" width="190" class="mx-auto d-block">
+      </div>
+      {{ end }}
     </div>
+  </div>
+  <!-- /Beneficios -->
 
-    <!-- Carousel -->
+  <div class="container mt-4">
+    {{ .Content }}
+  </div>
+
+  <!-- Carousel -->
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
   <!-- Demo styles -->
   <style>
     html,
     body {
       position: relative;
       height: 100%;
-    } 
+    }
 
     .swiper {
       width: 100%;
@@ -255,13 +262,52 @@
   </script>
 
 
-    <!-- /Carousel -->
+  <!-- /Carousel -->
 
 
-    <!-- Info redes -->
-    <div class="container text-center mt-4">
-      <div class="row">
-        <div class="col-lg-4 text-center redes">
+  <br><br>
+
+  <!-- Ubicaciones -->
+
+  <div class="container-fluid">
+    <section class="container location-section">
+      <h2 class="text-center mb-4">More locations of {{ .Title }}:</h2>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+
+        {{ range (.GetTerms "cities") }}
+
+        <div class="col-lg-3">
+          <div class="card h-100 card-location">
+            <a href="{{ .Permalink }}">
+
+              <div class="blog-item">
+                <img class="img-fluid img-location"
+                  src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
+                  loading="lazy" alt="featured image {{.Title }}" />
+              </div>
+
+              <div class="blog-caption text-center">
+                <h4 class="card-title text-decoration-none">
+                  {{ .Title }}
+                </h4>
+              </div>
+            </a>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+  </div>
+
+
+  <!-- /Ubicaciones -->
+
+
+  <!-- Info redes -->
+  <div class="container text-center mt-4">
+    <div class="row">
+      <div class="col-lg-4 text-center redes">
 
 
         <ul class="d-flex justify-content-evenly mt-2 mb-4">
@@ -283,50 +329,49 @@
 
           {{ with .Params.Facebook }}
           {{ if ne . "" }}
-              <a href="{{ . }}">
-                <img src="/images/icons/facebook.svg" alt="Facebook" width="52" height="52">
-              </a>
+          <a href="{{ . }}">
+            <img src="/images/icons/facebook.svg" alt="Facebook" width="52" height="52">
+          </a>
           {{ end }}
           {{ end }}
 
           {{ with .Params.X }}
           {{ if ne . "" }}
-              <a href="{{ . }}">
-                <img src="/images/icons/twitter-x.svg" alt="X" width="52" height="52">
-              </a>
+          <a href="{{ . }}">
+            <img src="/images/icons/twitter-x.svg" alt="X" width="52" height="52">
+          </a>
           {{ end }}
           {{ end }}
 
           {{ with .Params.Youtube }}
           {{ if ne . "" }}
-              <a href="{{ . }}">
-                <img src="/images/icons/youtube.svg" alt="Youtube" width="52" height="52">
-              </a>
+          <a href="{{ . }}">
+            <img src="/images/icons/youtube.svg" alt="Youtube" width="52" height="52">
+          </a>
           {{ end }}
           {{ end }}
-      </ul>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="mb-4">
+          <a href="{{ .Params.Website}}" target="_blank">
+            <button class="btn text-white btn-lg hero-button">Website</button>
+          </a>
         </div>
-        <div class="col-lg-4">
-          <div class="mb-4">
-            <a href="{{ .Params.Website}}" target="_blank">
-              <button class="btn text-white btn-lg hero-button">Website</button>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="mb-4">
-            {{ with .Params.Jobslink}}
-            <a href="{{ . }}" target="_blank">
-              <button class="btn text-white btn-lg hero-button">Job Opportunities</button>
-            </a>
-            {{ end }}
-          </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="mb-4">
+          {{ with .Params.Jobslink}}
+          <a href="{{ . }}" target="_blank">
+            <button class="btn text-white btn-lg hero-button">Job Opportunities</button>
+          </a>
+          {{ end }}
         </div>
       </div>
     </div>
-    <!-- /Info redes -->
+  </div>
+  <!-- /Info redes -->
 
 </section>
 
 {{ end }}
-
