@@ -54,7 +54,7 @@ img7: /images/carousel/bside/7.jpg
 
 website: https://www.bside.com.mx/
 jobslink: https://www.linkedin.com/company/bside-microsoft/jobs/
-weight: 5
+weight: 10
 ---
 
 Somos una empresa mexicana con 24 años de experiencia impulsando la transformación digital a través de tecnología, datos, nube e inteligencia artificial. Nuestro equipo está conformado por más de 200 profesionales altamente especializados, cuyo talento, experiencia y mentalidad colaborativa son el motor de todo lo que hacemos. Trabajamos en un entorno donde el aprendizaje continuo, el trabajo en equipo y la experimentación forman parte del día a día, permitiendo que cada persona crezca mientras enfrenta desafíos tecnológicos reales y relevantes.

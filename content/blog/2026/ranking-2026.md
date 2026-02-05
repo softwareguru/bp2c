@@ -1,6 +1,6 @@
 ---
 title: "Best Place To Code publica el Ranking BP2C 2026: las empresas que están definiendo el futuro del trabajo en tecnología"
-date: 2026-02-05T10:00:39-06:00
+date: 2026-02-05T09:00:39-06:00
 images:
  - /images/blog/2026/ranking-2026.png
 aliases:
