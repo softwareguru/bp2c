@@ -55,7 +55,7 @@ Empresas de consultoría tecnológica, desarrollo de software a la medida y team
 
 Empresas de outsourcing tecnológico e integración de sistemas, con más de 100 desarrolladores.
 
-1. [B-Drive IT](../../../es/company/b-drive-it-and-engine-core)
+1. [B-Drive IT](../../../es/company/b-drive-it)
 2. [Nova by Reboot](../../../es/company/nova-reboot)
 3. [Svitla Systems](../../../es/company/svitla-systems)
 4. [Improving](../../../es/company/improving)

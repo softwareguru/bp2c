@@ -53,7 +53,7 @@ Technology consulting companies, custom software development, and team augmentat
 
 Technological outsourcing and systems integration companies, with more than 100 developers.
 
-1. [B-Drive IT](/../../../en/company/b-drive-it-and-engine-core)
+1. [B-Drive IT](/../../../en/company/b-drive-it)
 2. [Nova by Reboot](/../../../en/company/nova-reboot)
 3. [Svitla Systems](/../../../en/company/svitla-systems)
 4. [Improving](/../../../en/company/improving)
