@@ -24,7 +24,7 @@ Companies that build their digital products, either to sell or as part of their 
 3. [SimplePractice](/../../../en/company/simplepractice/)
 4. [One Card](/../../..//en/company/one-card)
 5. [BITAM](/../../..//en/company/bitam)
-6. [TigerConnet](/../../../en/company/tigerconnect/)
+6. [TigerConnect](/../../../en/company/tigerconnect/)
 7. [Kata Software](/../../../en/company/kata-software)
 
 
