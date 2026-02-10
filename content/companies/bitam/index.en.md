@@ -1,5 +1,5 @@
 ---
-title: "BITAM"
+title: "BITAM®"
 date: 2025-01-01
 aliases:
  - /en/company/bitam
