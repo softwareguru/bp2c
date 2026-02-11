@@ -25,7 +25,7 @@ Empresas que construyen sus propios productos digitales, ya sea para venderlos o
 2. [Htech](../../../es/company/htech)
 3. [SimplePractice](../../../es/company/simplepractice/)
 4. [One Card](../../..//es/company/one-card)
-5. [BITAM](../../..//es/company/bitam)
+5. [BITAM®](../../..//es/company/bitam)
 6. [TigerConnect](../../../es/company/tigerconnect/)
 7. [Kata Software](../../../es/company/kata-software)
 
