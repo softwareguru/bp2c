@@ -53,24 +53,12 @@ jobslink: https://www.linkedin.com/company/onephase/jobs/
 weight: 9
 ---
 
-Welcome to Onephase!
+Somos una empresa de consultoría tecnológica comprometida con ayudar a las empresas a navegar su Transformación Digital mediante soluciones personalizadas y centradas en el cliente. Con centros de entrega en Monterrey, México, y San Antonio, EE. UU., atendemos a clientes en Estados Unidos, Canadá y Latinoamérica, brindando soluciones de alta calidad y rentables.
 
-We're a Technology Consulting Company committed to helping businesses navigate their Digital Transformation Journey with tailored, customer-centric solutions.
-With delivery centers in Monterrey, Mexico, and San Antonio, USA, we serve clients across USA, Canada, and Latin America, providing high-quality, cost-effective solutions.
-Our Culture
+Fomentamos un entorno de trabajo que prioriza a nuestras personas, respeta al planeta y fortalece a nuestra comunidad. Al vivir nuestros valores fundamentales día con día, generamos resultados significativos para nuestros colaboradores, clientes y la sociedad.
 
-We foster a work environment that prioritizes our people, respects our planet, and uplifts our community.By living our core values every day, we create meaningful results for our employees, clients, and society.
+Empoderamos a las empresas para prosperar en un mundo digital moderno a través de Smart Software Solutions, superando las expectativas con procesos eficientes y tecnologías de vanguardia. Utilizando la metodología Design Thinking, colaboramos para ayudar a nuestros clientes a alcanzar sus objetivos, manteniendo siempre los más altos estándares y mejores prácticas de la industria.
 
-Our Mission
+Nuestro equipo trabaja de forma remota en cinco estados de México, fomentando una cultura positiva a través de eventos virtuales y presenciales. Valoramos la colaboración, la conexión y un entorno laboral de apoyo mutuo.
 
-We empower businesses to thrive in a modern, digital world through Smart Software Solutions, exceeding expectations with efficient processes and cutting-edge technologies.
-Using the Design Thinking Method, we collaborate to help our clients achieve their goals while maintaining industry best practices and standards.
-Healthy workplace
-
-Our team works remotely across five states in Mexico while fostering a positive culture through virtual and in-person events. We value collaboration, connection, and a supportive work environment.
-
-We have certifications and career development opportunities, as well as a Onephase suggestion box for anonymous feedback. These initiatives ensure continuous Improvement and reflect our commitment to growth and employee satisfaction.
-
-Our vision for a new industry
-
-We will transform the way IT services are delivered, working closely with the industry to bring more benefits to our offers, while keeping our Customer- Centric approach.
+Contamos con certificaciones y oportunidades de desarrollo profesional, así como un buzón de sugerencias de Onephase para recibir retroalimentación anónima. Estas iniciativas aseguran la mejora continua y reflejan nuestro compromiso con el crecimiento y la satisfacción de nuestros empleados.

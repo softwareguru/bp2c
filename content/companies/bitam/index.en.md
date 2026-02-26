@@ -54,8 +54,8 @@ jobslink: https://www.linkedin.com/company/bitam/jobs/
 weight: 5
 ---
 
-En BITAM® somos referentes en plataformas de analítica y automatización para medianas y grandes empresas. Desde hace más de 25 años, acompañamos a las organizaciones en la automatización de procesos que sus sistemas contables no resuelven y en el descubrimiento de insights que los reportes tradicionales no logran revelar.
+At BITAM®, we are a benchmark in analytics and automation platforms for medium and large-sized enterprises. For over 25 years, we have guided organizations in automating processes that traditional accounting systems cannot solve and in discovering insights that standard reports fail to reveal.
 
-Integramos y depuramos la información en una sola fuente de verdad, utilizando tecnologías disruptivas como Inteligencia Artificial, analítica avanzada y low code. Esto nos permite anticipar escenarios, comprender las causas detrás de los resultados y facilitar la toma de decisiones estratégicas basadas en evidencia.
+We integrate and refine information into a single 'source of truth,' utilizing disruptive technologies such as Artificial Intelligence, advanced analytics, and low-code. This allows us to anticipate scenarios, understand the root causes behind results, and facilitate evidence-based strategic decision-making.
 
-En la Liga de Bitanes, llevamos como estandarte nuestros valores, los cuales reflejan un pensamiento innovador y confiable en cada uno de nuestros miembros. Nuestros colaboradores demuestran compromiso y flexibilidad al crear proyectos tecnológicos que superan las expectativas de nuestros clientes. Estos valores están profundamente integrados en nuestra misión y visión, con el firme propósito de consolidarnos como referentes en innovación tecnológica.
+Our League of Bitans culture is driven by innovation and reliability. We take pride in a team that blends flexibility with deep commitment to deliver tech projects that push boundaries. Our values aren't just words; they are the foundation of our mission to be a global benchmark for technological excellence.

@@ -59,10 +59,14 @@ jobslink: https://svitla.com/career
 weight: 3
 ---
 
-Svitla Systems es una empresa global de soluciones digitales con más de 20 años de experiencia y un equipo de más de 1,000 profesionales de tecnología en 15 países. Trabajamos con startups y empresas consolidadas, principalmente en proyectos de Estados Unidos y Europa, utilizando tecnologías modernas y de alto impacto.
+Svitla Systems is a global digital solutions company with more than 20 years of experience and over 1,000 tech professionals across 15 countries. We partner with startups and established enterprises across the US and EU, building modern products that people actually use.
 
-En Svitla, los desarrolladores colaboran directamente con los equipos de nuestros clientes y participan activamente en la toma de decisiones. Somos una compañía remote-first, con una cultura basada en la confianza, la flexibilidad y la autonomía, sin micromanagement.
+What sets us apart is how we work.
 
-Impulsamos el crecimiento profesional con esquemas de trabajo flexibles, aprendizaje personalizado, compensación competitiva y una comunidad sólida que valora el equilibrio entre la vida personal y profesional.
+From the very beginning, Svitla was built as a remote-first company. Long before distributed teams became the norm, we designed our culture around trust, autonomy, and clear communication. Today, you can work fully remote, hybrid, or from one of our offices — whatever helps you do your best work.
 
-Programemos juntos un mejor futuro.
+Our engineers don’t sit on the sidelines. They collaborate directly with clients, join real decision-making processes, and become part of the product journey. Most of our team is senior-level, which means ownership, maturity, and no micromanagement.
+
+We support growth through learning programs, certifications, and competitive compensation. But just as important is the environment: respectful, flexible, and built around professionals who value balance as much as ambition.
+
+If you’re looking for meaningful projects, real autonomy, and a team that trusts you — Svitla might feel like home.

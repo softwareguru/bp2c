@@ -52,8 +52,9 @@ jobslink: https://forms.gle/YZNt5RDoumbhU87F6
 weight: 1
 ---
 
-Somos un equipo de programadores apasionados y dedicados, siempre en constante aprendizaje de nuevas herramientas y mejores procesos para el desarrollo de software.
+We are a team of passionate and dedicated programmers, constantly learning new tools and better processes for software development.
 
-Nuestras especialidades incluyen la creación de sistemas para la automatización empresarial, mejorando la eficiencia operativa de tu empresa, y el desarrollo de aplicaciones adaptadas a las necesidades de nuestros clientes, abarcando plataformas como Windows, web, dispositivos móviles y tablets.
+Our specialties include creating systems for business automation, improving your company’s operational efficiency, and developing applications tailored to our clients’ needs across platforms such as Windows, web, mobile devices, and tablets.
 
-Nos enorgullecemos de ser un ""Best Place to Code"" porque apoyamos a nuestro equipo en su crecimiento profesional y personal. Ofrecemos cursos y certificaciones que les permiten desarrollarse y alcanzar su máximo potencial, tanto como profesionales como personas.
+We take pride in being a “Best Place to Code” because we support our team in their professional and personal growth. We offer courses and certifications that allow them to develop and reach their full
+potential, both as professionals and as individuals.

@@ -54,15 +54,12 @@ jobslink: https://www.linkedin.com/company/onecard-s.i./jobs/
 weight: 4
 ---
 
-Somos una empresa con amplia experiencia en la emisión y administración de tarjetas de prepago. Durante más de 15 años, nuestros ejecutivos han desarrollado y participado en una variedad de programas para diversas instituciones, respaldando cada una de las iniciativas en las que One Card se involucra.
+We are a Financial Technology Company with extensive experience in the issuance and administration of prepaid cards for the B2B segment. For over 15 years, our executives have developed and participated in a variety of programs for diverse institutions, backing every initiative in which One Card is involved.
 
-El cúmulo de experiencia entre socios y ejecutivos nos ha permitido desarrollar servicios y productos diferenciados, los cuales han sido determinantes en el crecimiento de la empresa. Nuestros clientes regularmente buscan flexibilidad, servicio y simplicidad. Gracias a nuestra constante innovación y un profundo compromiso con el servicio, One Card se diferencia de su competencia y cumple con la demanda de nuestros usuarios.
+The collective expertise of our partners and executives has allowed us to develop differentiated products and services, which have been instrumental in our company's growth. Our clients consistently look for flexibility, service, and simplicity. Thanks to our constant innovation and deep commitment to service, One Card stands out from the competition and meets the demands of our users.
 
-Nuestra organización se destaca por su compromiso y expertise en lo que hace. 
-- Sabemos cómo relacionarnos con los demás para crear un entorno colaborativo y productivo.
+Our organization is defined by commitment and expertise in everything we do. We know how to build relationships to create a collaborative and productive environment:
 
-✔️ Vocación por el Servicio: Todos nuestros colaboradores tienen una fuerte vocación por el servicio al cliente, tanto interno como externo.
-
-✔️ Preparación Continua: Fomentamos el desarrollo personal y profesional. Cada miembro se prepara a sí mismo y a su equipo para enfrentar sus asignaciones con éxito.
-
-✔️ Cumplimiento y Logros: Nos enfrentamos a los retos con determinación y alcanzamos logros significativos, impulsando tanto el crecimiento individual como el de la organización.
+✔️ Service Vocation: All our team members have a strong dedication to customer service, both internally and externally.
+✔️ Continuous Preparation: We encourage personal and professional development. Each member prepares themselves and their team to tackle assignments successfully.
+✔️ Compliance and Achievement: We face challenges with determination and reach significant milestones, driving both individual and organizational growth.

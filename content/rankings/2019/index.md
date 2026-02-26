@@ -18,17 +18,18 @@ A diferencia de las listas generadas en años anteriores por Software Guru, a pa
 
 La evaluación se realizó por medio de un cuestionario contestado por los colaboradores de cada empresa, que considera cinco categorías:
 
-* Compensación económica, que toma en cuenta tanto el salario como prestaciones adicionales, la posibilidad de adquirir participación (stock options), y el proceso para revisar y ajustar la compensación.
+ * Compensación económica, que toma en cuenta tanto el salario como prestaciones adicionales, la posibilidad de adquirir participación (stock options), y el proceso para revisar y ajustar la compensación.
 
-* Desarrollo profesional, donde se incluyen aspectos como planes de carrera, capacitación, mentoría entre pares, y vinculación hacia el exterior de la organización.
+ * Desarrollo profesional, donde se incluyen aspectos como planes de carrera, capacitación, mentoría entre pares, y vinculación hacia el exterior de la organización.
 
-* Cultura laboral, que mide aspectos como el ambiente de trabajo, la relación con los superiores, la forma en que se resuelven conflictos, y la responsabilidad social.
+ * Cultura laboral, que mide aspectos como el ambiente de trabajo, la relación con los superiores, la forma en que se resuelven conflictos, y la responsabilidad social.
 
-* Diversidad y equidad de género, para identificar a las organizaciones que brindan las mejores condiciones a mujeres y personas de género no binario.
+ * Diversidad y equidad de género, para identificar a las organizaciones que brindan las mejores condiciones a mujeres y personas de género no binario.
 
-* Infraestructura, que considera aspectos como la ubicación de las oficinas, instalaciones, y disponibilidad de herramientas de trabajo.
+ * Infraestructura, que considera aspectos como la ubicación de las oficinas, instalaciones, y disponibilidad de herramientas de trabajo.
 
 Las evaluaciones se realizaron durante el 4to trimestre del 2018, y participaron 33 empresas. De estas, solamente 26 obtuvieron el puntaje necesario para ser acreditadas como “Best Place to Code”.
+
 
 ### El top 20
 
@@ -47,8 +48,8 @@ La lista está ordenada en base al resultado de la evaluación, siendo el númer
 9. Ordico
 10. BBVA Bancomer
 11. Nova Solutions
-13. iTexico
-13.Tacit Knowledge Guadalajara
+12. iTexico
+13. Tacit Knowledge Guadalajara
 14. Abraxas Ventures
 15. Platzi
 16. Scio Consulting
@@ -56,6 +57,7 @@ La lista está ordenada en base al resultado de la evaluación, siendo el númer
 18. CONTPAQi
 19. Intelimétrica
 20. Experiencias Xcaret
+21. One Card
 
 Felicitamos a estas empresas que a través de su liderazgo y esfuerzo han logrado ser parte de este muy selecto grupo. En Software Guru estamos convencidos de que los profesionistas de software pueden encontrar “trabajos de ensueño” en nuestra región, y estas empresas son prueba de ello.
 

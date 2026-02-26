@@ -52,7 +52,7 @@ temporalrelocation:
 transportation: true
 
 # Redes Sociales
-linkedin: https://www.linkedin.com/company/simplepractice/
+linkedin: https://www.linkedin.com/showcase/simplepractice-in-mexico/
 instagram: https://www.instagram.com/simplepractice/
 facebook: https://www.facebook.com/simplepractice/
 x: https://x.com/simplepractice
@@ -73,6 +73,6 @@ weight: 3
 draft: false
 ---
 
-En SimplePractice somos un equipo de profesionales de la tecnología que desarrolla software con propósito, enfocado en apoyar a quienes brindan servicios de salud y bienestar. Creamos soluciones digitales intuitivas, seguras y confiables que permiten a nuestros usuarios simplificar su trabajo diario y concentrarse en lo que realmente importa: cuidar a las personas.
+At SimplePractice, we are a team of technology professionals developing software with a purpose, dedicated to supporting health and wellness providers. We create intuitive, secure, and reliable digital solutions that empower our users to simplify their daily operations and focus on what truly matters: caring for people.
 
-Nuestro entorno de trabajo fomenta la colaboración, la autonomía y el aprendizaje continuo, en un espacio flexible, seguro y humano. Valoramos el trabajo bien hecho, el impacto real y el crecimiento de nuestro equipo, porque creemos que cuando las personas se sienten escuchadas, motivadas y retadas, el valor que generan internamente se refleja directamente en la calidad de nuestros productos y en la confianza de quienes los usan.
+Our work environment fosters collaboration, autonomy, and continuous learning within a flexible, safe, and human-centric space. We value excellence, real impact, and the growth of our team, because we believe that when people feel heard, motivated, and challenged, the value they generate internally is directly reflected in the quality of our products and the trust of those who use them.

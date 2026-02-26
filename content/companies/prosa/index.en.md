@@ -49,3 +49,11 @@ jobslink: https://apps-jobs.workbeat.com/jobs/public/tenantData/prosa/Bolsa/bdt9
 
 weight: 2
 ---
+
+#WeAreProsa, a leading technology company in Mexico’s electronic payments ecosystem and one of the top 10 payment processors in Latin America. We process more than 12.5 billion transactions through our Switch, benefiting over 70 million card users.
+
+We are committed to developing innovative, efficient, secure, and agile solutions for all participants in the payments ecosystem, while maintaining the high availability of our services. More than 200 clients—including banks, Fintech, payment facilitators, department stores, retailers, and savings institutions—trust in our technology and expertise.
+
+Our infrastructure and security are backed by certifications such as PCI DSS, PCI PIN, ISO 9001:2015, and ISO 27001:2013.
+
+As a #BestPlaceToCode, Prosa is a true #TalentIgniter, a place where technology talent grows, innovates and builds high-impact solutions that move the payments ecosystem forward.

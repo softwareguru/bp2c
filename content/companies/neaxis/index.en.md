@@ -58,14 +58,8 @@ jobslink: https://neaxis.mx/bolsa-de-trabajo.html
 weight: 4
 ---
 
-## ¿Quiénes somos?
+At Neaxis, we build technology with purpose. We’re a Mexico-based team helping organizations accelerate their digital evolution—moving faster without compromising quality, and creating better experiences for the people who use their products every day. Here, good ideas get airtime, talent is continuously developed, and wins are celebrated together.
 
-En Neaxis construimos tecnología con propósito. Somos una empresa mexicana que impulsa la evolución digital de organizaciones que quieren ir más rápido, con calidad y con mejores experiencias para sus usuarios. Aquí las ideas se escuchan, el talento se forma y los resultados se celebran en equipo.
+We design, build, and modernize high-impact digital products and platforms. That can mean shipping new features, rethinking existing systems, or taking legacy tech to the next level. We operate with a strong commitment to quality, clean engineering, and continuous delivery—always aligning what we build with what the business truly needs.
 
-## ¿Qué hacemos?
-
-Creamos y modernizamos productos y plataformas digitales de alto impacto: desde nuevas funcionalidades hasta la evolución de sistemas existentes. Trabajamos con enfoque en calidad, claridad técnica y entrega continua, conectando lo que construimos con lo que el negocio necesita.
-
-## ¿Por qué somos un Best Place to Code?
-
-Porque en Neaxis programar significa aprender y crecer de verdad. Impulsamos una cultura de colaboración, buenas prácticas y accountability, donde puedes proponer, tomar ownership y ver el impacto de lo que construyes. Te sumas a un equipo que te reta, te acompaña y te da visibilidad: aquí tu código no se queda en “tareas”, se convierte en soluciones que mueven métricas, clientes y tu desarrollo profesional.
+Because at Neaxis, writing code is about real growth. We’ve built a culture rooted in collaboration, strong engineering practices, and accountability—where you’re encouraged to speak up, take ownership, and see your work make a measurable difference. You’ll be part of a team that pushes you, supports you, and gives you visibility. Your code won’t just close tickets—it will power solutions that move metrics, delight customers, and accelerate your career.

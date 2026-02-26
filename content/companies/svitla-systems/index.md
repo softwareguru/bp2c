@@ -59,10 +59,14 @@ jobslink: https://svitla.com/career
 weight: 3
 ---
 
-Svitla Systems es una empresa global de soluciones digitales con más de 20 años de experiencia y un equipo de más de 1,000 profesionales de tecnología en 15 países. Trabajamos con startups y empresas consolidadas, principalmente en proyectos de Estados Unidos y Europa, utilizando tecnologías modernas y de alto impacto.
+Svitla Systems es una empresa global de soluciones digitales con más de 20 años de experiencia y más de 1.000 profesionales tecnológicos en 15 países. Colaboramos con startups y empresas consolidadas en EE. UU. y Europa, desarrollando productos modernos que las personas realmente utilizan.
 
-En Svitla, los desarrolladores colaboran directamente con los equipos de nuestros clientes y participan activamente en la toma de decisiones. Somos una compañía remote-first, con una cultura basada en la confianza, la flexibilidad y la autonomía, sin micromanagement.
+Lo que nos diferencia es cómo trabajamos.
 
-Impulsamos el crecimiento profesional con esquemas de trabajo flexibles, aprendizaje personalizado, compensación competitiva y una comunidad sólida que valora el equilibrio entre la vida personal y profesional.
+Desde el inicio, Svitla se construyó como una compañía remote-first. Mucho antes de que los equipos distribuidos se volvieran la norma, diseñamos nuestra cultura en torno a la confianza, la autonomía y la comunicación clara. Hoy puedes trabajar 100 % remoto, en formato híbrido o desde una de nuestras oficinas — lo que mejor te funcione para dar lo mejor de ti.
 
-Programemos juntos un mejor futuro.
+Nuestros ingenieros no están al margen. Colaboran directamente con los clientes, participan en la toma de decisiones y forman parte real del proceso del producto. La mayoría de nuestro equipo es senior, lo que significa responsabilidad, madurez profesional y cero micromanagement.
+
+Apoyamos el crecimiento a través de programas de aprendizaje, certificaciones y una compensación competitiva. Pero igual de importante es el entorno: respetuoso, flexible y construido para profesionales que valoran el equilibrio tanto como la ambición.
+
+Si buscas proyectos con impacto real, verdadera autonomía y un equipo que confía en ti, Svitla puede sentirse como tu lugar.

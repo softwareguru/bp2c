@@ -52,10 +52,10 @@ jobslink: https://apps-jobs.workbeat.com/jobs/public/tenantData/kata-software/Bo
 weight: 7
 ---
 
-En Kata Software potenciamos a las instituciones financieras con soluciones tecnológicas innovadoras que agilizan operaciones, mejoran la productividad e impulsan el crecimiento. Con un profundo conocimiento del sector financiero, somos un socio confiable en tu viaje hacia el éxito. 
+At Kata Software, we empower financial institutions with innovative technology solutions that streamline operations, enhance productivity, and drive sustainable growth. With a deep understanding of the financial sector, we serve as a trusted partner in your journey toward long-term success.
 
-Nuestro propósito es que cada persona que lo desee, tenga acceso a servicios financieros confiables.
-
-En Kata Software entendemos que el éxito de cualquier empresa radica en las personas que la conforman. Por eso, fomentamos un ambiente de trabajo colaborativo y de apoyo, donde cada individuo puede prosperar y alcanzar su máximo potencial.
-
-¡Únete a Kata Software y sé parte de una comunidad comprometida con la excelencia, la innovación y el bienestar!
+Our purpose is to ensure that everyone who seeks it has access to reliable and inclusive financial services.
+ 
+At Kata Software, we recognize that a company’s success is built on the people who make it possible. That is why we foster a collaborative and supportive work environment where every individual can thrive, grow, and reach their full potential.
+ 
+Join Kata Software and become part of a community committed to excellence, innovation, and well-being.

@@ -53,10 +53,10 @@ jobslink: https://sciodev.com/open_roles/
 weight: 6
 ---
 
-At Scio, we are driven by a shared passion for leveraging digital technologies to empower organizations and drive innovation. Since our founding in 2004, we’ve been committed to delivering exceptional software development services to help our clients achieve their goals and stay ahead in today’s dynamic market. We derive our success from our collaborative approach, our deep understanding of industry trends, and our ability to tailor solutions that generate measurable results.
+En Scio, nos impulsa una pasión compartida por aprovechar las tecnologías digitales para empoderar a las organizaciones e impulsar la innovación. Desde nuestra fundación en 2004, nos hemos comprometido a ofrecer servicios de desarrollo de software excepcionales para ayudar a nuestros clientes a alcanzar sus metas y mantenerse a la vanguardia en el dinámico mercado actual. Nuestro éxito proviene de nuestro enfoque colaborativo, nuestro profundo conocimiento de las tendencias de la industria y nuestra capacidad para diseñar soluciones a medida que generen resultados medibles.
 
-We foster a culture of collaboration, creativity, and continuous improvement. Our team members are encouraged to think outside the box, embrace new challenges, and strive for excellence in everything they do. We believe that a positive and inclusive work environment is key to driving innovation and delivering exceptional service to our clients.
+Fomentamos una cultura de colaboración, creatividad y mejora continua. Alentamos a los miembros de nuestro equipo a pensar fuera de la caja, aceptar nuevos retos y buscar la excelencia en todo lo que hacen. Creemos que un entorno de trabajo positivo e inclusivo es clave para impulsar la innovación y brindar un servicio excepcional a nuestros clientes.
 
-We're committed to supporting our employees' health and financial well-being, helping them thrive and achieve their best.
+Estamos comprometidos con el apoyo a la salud y el bienestar financiero de nuestros empleados, ayudándoles a prosperar y alcanzar su máximo potencial.
 
-We scioneers advance their professional skills and knowledge. This perk covers costs associated with relevant certifications, courses, and attending key industry events, whether they are local or international.
+Nosotros, los scioneers, impulsamos nuestras habilidades y conocimientos profesionales. Este beneficio cubre los costos asociados con certificaciones relevantes, cursos y la asistencia a eventos clave de la industria, ya sean locales o internacionales.

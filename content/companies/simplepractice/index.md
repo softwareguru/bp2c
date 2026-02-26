@@ -52,7 +52,7 @@ temporalrelocation:
 transportation: true
 
 # Redes Sociales
-linkedin: https://www.linkedin.com/company/simplepractice/
+linkedin: https://www.linkedin.com/showcase/simplepractice-in-mexico/
 instagram: https://www.instagram.com/simplepractice/
 facebook: https://www.facebook.com/simplepractice/
 x: https://x.com/simplepractice

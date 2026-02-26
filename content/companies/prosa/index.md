@@ -48,3 +48,11 @@ jobslink: https://apps-jobs.workbeat.com/jobs/public/tenantData/prosa/Bolsa/bdt9
 
 weight: 2
 ---
+
+En PROSA somo una empresa tecnológica líder en el ecosistema de pagos electrónicos en México y uno de los 10 procesadores de pago más importantes de Latinoamérica. Procesamos más de 12,500 millones de transacciones a través de nuestro Switch, beneficiando a más de 70 millones de tarjetahabientes.
+
+Estamos comprometidos con el desarrollo de soluciones innovadoras, eficientes, seguras y ágiles para todos los participantes del ecosistema de pagos, manteniendo siempre una alta disponibilidad en nuestros servicios. Más de 200 clientes —incluyendo bancos, Fintechs, agregadores, tiendas departamentales, comercios y cajas de ahorro— confían en nuestra tecnología y experiencia.
+
+Nuestra infraestructura y seguridad están respaldadas por certificaciones internacionales como PCI DSS, PCI PIN, ISO 9001:2015 e ISO 27001:2013.
+
+Como un #BestPlaceToCode, Prosa es un verdadero #TalentIgniter: un lugar donde el talento tecnológico crece, innova y construye soluciones de alto impacto que impulsan la evolución del ecosistema de pagos.
