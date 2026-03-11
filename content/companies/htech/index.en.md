@@ -53,11 +53,8 @@ jobslink: https://www.linkedin.com/company/htechmexico/jobs/
 weight: 2
 ---
 
-Una compañía mexicana de tecnología con presencia internacional enfocada en la industria de pagos digitales y especializada en la prevención de fraude en línea.
+We are a Mexican technology company with a global presence, focused on the digital payments industry and specialized in online fraud prevention.
 
-Ofrecemos una infraestructura de pagos digitales de la más alta calidad, con un enfoque en la eficiencia, la seguridad y la competitividad, para todas las industrias que requieran pagos, tanto en entornos en línea como a través de dispositivos físicos. Nos comprometemos a proporcionar una experiencia profesional y confiable, con una integración rápida y el menor índice de fraude en el mercado. Además, aspiramos a ser un lugar donde nuestro personal pueda alcanzar sus metas profesionales en un entorno de trabajo excepcional y colaborativo.
+Our high-quality digital payments infrastructure is designed for efficiency, security, and competitiveness, serving industries that require reliable payment solutions—both online and through physical devices. We are committed to delivering a professional experience with rapid integration and the lowest fraud rate in the market. At the same time, we strive to provide an exceptional and collaborative environment where our team can achieve their professional goals.
 
-En la compañía, nos enorgullece ser reconocidos como un Best Place to Code, es por ello que
-fomentamos una cultura de colaboración y comunicación abierta lo que lo hace un lugar ideal
-para los desarrolladores.
-La empresa valora profundamente el esfuerzo de sus empleados, estamos conscientes de que lo más valioso que tenemos es nuestro personal.
+Proudly recognized as a Best Place to Code, we foster a culture of collaboration and open communication, making us an ideal home for developers. Above all, we value the dedication of our people, recognizing that they are our most important asset.

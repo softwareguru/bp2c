@@ -55,12 +55,10 @@ jobslink: https://scc.guanajuato.gob.mx/
 weight: 1
 ---
 
-El Gobierno del Estado de Guanajuato, a través de la Dirección General de Tecnologías de la Información y Telecomunicaciones provee los servicios necesarios en materia de tecnología para las diversas dependencias y entidades que conforman el Poder Ejecutivo del Estado, ejecuten sus funciones de la mejor manera, lo anterior a través del desarrollo de nuevos sistemas de información, soporte a la infraestructura, administración de datos y servicios de seguridad; mediante esto impulsamos el fortalecimiento de un gobierno digital y abierto que induce a una mayor participación de los ciudadanos.
+The Government of the State of Guanajuato, through the General Directorate of Information Technologies and Telecommunications, provides essential technological services that enable the departments and agencies of the Executive Branch to perform their duties effectively. This includes developing new information systems, supporting infrastructure, managing data, and delivering security services—strengthening a digital and open government that fosters citizen participation.
 
-Actualmente la Secretaría de Finanzas opera con un modelo que ha logrado optimizar el desarrollo, implementación y seguimiento de proyectos obteniendo excelentes resultados.
+Today, the Ministry of Finance operates under a model that optimizes the development, implementation, and monitoring of projects, consistently achieving excellent results.
 
-En la Secretaría de Finanzas, contamos con un equipo de alto desempeño, capacitado y comprometido en la labor que cada uno desarrolla, respaldados con la constante capacitación en innovación tecnológica, para brindar servicios a diferentes usuarios otorgando una atención profesional y de calidad.
+At the Ministry of Finance, we rely on a high-performance team that is skilled, committed, and continuously trained in technological innovation to deliver professional, high-quality services to our users.
 
-Nuestro enfoque vanguardista en el desarrollo del capital humano busca desarrollar un crecimiento personal y profesional adquiriendo habilidades, conocimientos y actitudes a través de la resolución de problemas en los que la Secretaría se enfrenta en el día a día. Para lo cual realizamos eventos  diseñados para potenciar el talento de nuestros colaboradores y fomentar la integración, creando un ambiente propicio para el desarrollo y bienestar.
-
-La Secretaria de Finanzas en la búsqueda constante por atraer y retener el mejor talento ofrece beneficios laborales, así mismo, reconocemos el valor de cada uno de nuestros colaboradores y nos esforzamos por brindarles un entorno laboral donde puedan crecer, desarrollarse y alcanzar todo su potencial.
+Our forward-looking approach to human capital emphasizes both personal and professional growth. Team members acquire new skills and perspectives by addressing the daily challenges of the Ministry. To support this, we organize events that boost talent and foster integration, creating an environment of development and well-being. The Ministry of Finance is committed to attracting and retaining the best talent by offering competitive benefits and a workplace where every collaborator can thrive and reach their full potential—contributing directly to the success of the institution and the state.

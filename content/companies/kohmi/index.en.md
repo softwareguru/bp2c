@@ -62,18 +62,13 @@ jobslink: https://www.linkedin.com/company/kohmi/jobs/
 weight: 7
 ---
 
-En Kohmi creemos firmemente que la tecnología solo es excepcional cuando las personas que la construyen están bien. Por eso, trabajamos para ofrecer un entorno donde cada integrante pueda desarrollarse, sentirse acompañado y crecer profesional y personalmente.
+At Kohmi, we believe technology is truly exceptional when the people behind it are thriving. That’s why we create an environment where every member feels supported, grows professionally and personally, and contributes with purpose.
 
-Somos un Best Place to Code porque:
+We are a Best Place to Code because:
+- We listen and value our people—feedback is constant, ideas are encouraged, and our doors are always open.
+- We foster respect, collaboration, and trust, recognizing effort and celebrating achievements.
+- We promote growth through real learning opportunities, certifications, and strategic projects.
+- We care for the emotional and financial stability of our team, knowing each person has a story, a purpose, and loved ones who depend on them.
+- We work with purpose, generating value in an innovative environment and supporting the companies that drive Mexico’s growth.
 
-Escuchamos y valoramos a nuestra gente. La retroalimentación es constante, las ideas se impulsan y las puertas siempre están abiertas.
-
-Fomentamos un ambiente de respeto, colaboración y confianza, donde se reconoce el esfuerzo y se celebran los logros.
-
-Promovemos el crecimiento profesional, brindando oportunidades reales de aprendizaje, certificaciones y participación en proyectos estratégicos.
-
-Cuidamos la estabilidad emocional y económica del equipo, porque sabemos que cada persona tiene una historia, un propósito y una familia que dependen de su bienestar.
-
-Trabajamos con propósito: generar valor en un entorno innovador y apoyar a las empresas que impulsan el crecimiento de México, reafirmando que elegimos una de las profesiones más significativas para la economía global.
-
-En Kohmi, crecemos juntos. Cada logro de la empresa es un logro del equipo, y cada persona contribuye a construir un lugar donde vale la pena trabajar todos los días.
+At Kohmi, we grow together. Every milestone is a shared achievement, and every individual helps build a workplace worth being part of every day.

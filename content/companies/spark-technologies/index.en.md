@@ -59,7 +59,6 @@ jobslink: https://www.linkedin.com/company/spark-technologies/jobs/
 weight: 3
 ---
 
-Somos un equipo de profesionales en la tecnología con una cultura madura y sólida que genera excelentes resultados ofreciendo soluciones de software a nuestros clientes y superando expectativas. 
-Ofrecemos un ambiente de trabajo flexible, dinámico y retador buscando siempre exceder las expectativas de los miembros del equipo. 
+We are a team of technology professionals with a well-established culture, delivering excellent results through innovative software solutions that consistently exceed client expectations.
 
-Buscamos vivir nuestros valores y filosofía día con día y ponemos todo nuestro corazón en cada actividad.
+We foster a flexible, dynamic, and challenging work environment, encouraging our team members to grow and thrive. Guided by our values and philosophy, we put our hearts into everything we do.

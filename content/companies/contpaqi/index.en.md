@@ -55,10 +55,10 @@ jobslink: https://www.linkedin.com/company/contpaqi1/jobs/
 weight: 1
 ---
 
-Somos una empresa nacida en Guadalajara hace 41 años, con una filosofía centrada en las personas, más de 470 colaboradores a nivel nacional y presencia con 12 oficinas en México.
+We are a Mexican company founded in Guadalajara 41 years ago, built on a philosophy that puts people first. Today, we have more than 470 team members nationwide and a presence through 12 offices across Mexico.
 
-En CONTPAQi® desarrollamos y comercializamos software administrativo y contable, logrando impulsar la productividad de las personas y el crecimiento de las empresas.
+At CONTPAQi®, we design and market administrative and accounting software that enhances individual productivity and drives business growth.
 
-Obtenemos la acreditación gracias a nuestra cultura y enfoque en las personas, donde buscamos el desarrollo, crecimiento y bienestar integral de los colaboradores. Nuestra principal característica es ser una empresa con un ambiente cálido, cordial y cercano con todos los colaboradores.
+Our success stems from a culture focused on people, where we promote comprehensive development, growth, and well-being. What defines us is a warm, friendly, and close-knit environment that makes every collaborator feel valued.
 
-¡Somos un gran lugar para trabajar en el país! Distinguidos por diversas acreditaciones y certificaciones.
+Recognized as one of the best places to work in the country, we are distinguished by numerous accreditations and certifications that reflect our commitment to excellence and our people.

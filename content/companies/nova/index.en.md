@@ -57,6 +57,6 @@ jobslink: https://talento.novasolutionsystems.com/
 weight: 2
 ---
 
-Nova es líder en desarrollo y aseguramiento de calidad de software especializado para bancos medianos y grandes en México. Desde nuestra fundación, integramos tecnologías innovadoras, metodologías ágiles y excelencia técnica para ofrecer soluciones seguras, precisas y de alto rendimiento adaptadas específicamente al sector financiero local.
+Nova is a leader in software development and quality assurance, specializing in medium and large banks in Mexico. Since our founding, we have combined innovative technologies, agile methodologies, and technical excellence to create secure, precise, and high-performance solutions tailored to the local financial sector.
 
-Nuestros clientes prefieren a Nova por nuestra capacidad de entregar soluciones personalizadas que resuelven retos específicos del sector financiero mexicano.
+Our clients choose Nova because we deliver customized solutions that address the unique challenges of the Mexican financial industry, helping them operate with greater efficiency, security, and confidence.
