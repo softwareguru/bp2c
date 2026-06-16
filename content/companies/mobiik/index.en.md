@@ -53,8 +53,16 @@ jobslink: https://www.mobiik.com/jobs
 weight: 1
 ---
 
-At Mobiik, we believe technology is the driving force behind innovation and meaningful change. We are committed to building creative solutions that make a positive impact on people’s lives. Our passion leads us to collaborate closely with entrepreneurs, creators, and organizations determined to make a difference in the world. Collaboration and innovation are at the core of everything we do.
+### Looking for a place where your work truly matters?
 
-Our team is our greatest source of inspiration and a true reflection of the power of a growth mindset. Every day, they show how a growth-oriented mentality fuels both personal and professional development, fostering an environment where possibilities are limitless. We provide clear and meaningful career paths focused on what truly matters: real opportunities for advancement, continuous learning, and a culture that supports holistic growth. This commitment to ongoing development drives our success and is reflected in the excellence of our work.
+At Mobiik, we don't build flashy demos. We operate production-grade AI solutions 24/7 for companies such as BBVA, Bimbo, Sigma, Totalplay, and CNBV. What you build here works, scales, and creates measurable impact for real businesses.
 
-We proudly call ourselves “coding wizards”—a team of tech experts deeply passionate about our craft. We value diversity and inclusion, and we strive to cultivate a positive, collaborative work environment. Working at Mobiik means embracing constant challenges, learning continuously, and maintaining a healthy work–life balance.
+It doesn't matter whether you're an engineer, strategist, operator, or part of an administrative team.
+
+What we're looking for is a way of thinking: a results-oriented mindset, sound judgment, and the drive to make things happen, with or without AI involved.
+
+You'll work with real-world technologies including Azure, AWS, Google Cloud, and OpenAI on projects ranging from Agentic Contact Centers to Intelligent Recruitment and Operational Intelligence Platforms. More than 95% of our projects achieve their KPIs. That doesn't happen by accident. It happens because of the people who make it possible.
+
+For more than 23 years, we've been building technology solutions in Mexico. Along the way, we've learned that the strongest career path isn't the one promised on paper. It's the one you build every day by working on projects that challenge you to grow.
+
+If you have the mindset, this is the place for you.

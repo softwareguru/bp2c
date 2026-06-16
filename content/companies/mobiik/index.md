@@ -53,8 +53,16 @@ jobslink: https://www.mobiik.com/jobs
 weight: 1
 ---
 
-En Mobiik, entendemos que la tecnología es el motor de la innovación y el cambio. Nos dedicamos a crear soluciones creativas que impactan positivamente en la vida de las personas. Nuestra pasión nos lleva a trabajar mano a mano con emprendedores, creadores y empresas comprometidas con generar un impacto positivo en el mundo. La colaboración y la innovación son el corazón de nuestros esfuerzos.
+### ¿Buscas un lugar donde tu trabajo realmente importe?
 
-Nuestros colaboradores son la fuente de inspiración y un claro ejemplo del poder del 'growth mindset'. Cada día, ellos demuestran cómo una mentalidad orientada al crecimiento impulsa tanto la innovación personal como profesional, creando un ambiente donde todo es posible. Nos enfocamos en ofrecer un plan de carrera concreto, centrado en lo que realmente importa: oportunidades reales de progreso, aprendizaje continuo y un entorno que favorece el desarrollo personal y profesional. Este enfoque en el desarrollo continuo es vital para nuestro éxito y se refleja en la calidad y excelencia de nuestros proyectos.
+En Mobiik no hacemos demos bonitas. Operamos inteligencia artificial en producción 24/7 para empresas como BBVA, Bimbo, Sigma, Totalplay y CNBV. Lo que construyes aquí funciona, escala y genera impacto real en negocios reales.
 
-Nos autonombramos 'coding wizards', un equipo de expertos en tecnología apasionados por lo que hacemos. Creemos en la diversidad y la inclusión, esforzándonos por cultivar un ambiente de trabajo positivo y colaborativo. Trabajar en Mobiik significa enfrentar desafíos constantes, aprender sin parar y desarrollar un equilibrio saludable entre el trabajo y la vida personal.
+No importa si eres ingeniero, estratega, operador o administrativo. 
+Lo que buscamos es una forma de pensar: orientación al resultado, criterio para tomar decisiones y las ganas de hacer que las cosas pasen, con o sin IA de por medio.
+
+Vas a trabajar con tecnologías reales (Azure, AWS, Google, OpenAI) en proyectos que van desde Contact Centers Agénticos hasta Reclutamiento Inteligente y Cerebros Operativos. El 95% de nuestros proyectos 
+cumplen sus KPIs. Eso no pasa solo, pasa porque la gente que trabaja aquí lo hace posible.
+
+Tenemos más de 23 años construyendo tecnología en México. Hemos aprendido que el plan de carrera más sólido no es el que te prometemos en papel, es el que construyes día a día trabajando en proyectos que te exigen crecer.
+
+Si tienes el mindset, aquí está el lugar.
