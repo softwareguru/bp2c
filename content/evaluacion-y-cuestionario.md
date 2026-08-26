@@ -41,59 +41,120 @@ aliases:
 
 <p>Software Guru se encarga de aplicar este cuestionarios de manera segura y confiable, y asegurando la confidencialidad de las respuestas.</p>
 
-<hr />
-<h3>Compensación</h3>
+<hr/>
+
+<h3>Fundamentos del empleador</h3>
 
 <ol>
-	<li>Evalúa el salario que percibes en esta empresa.</li>
-	<li>Evalúa las prestaciones e incentivos económicos adicionales al salario a las que tienes derecho en esta empresa.</li>
-	<li>Evalúa el proceso para revisión de compensación.</li>
-	<li>Evalúa los mecanismos orientados a compartir la propiedad y/o ganancias de la empresa (ej. reparto de utilidades, stock options, phantom stocks).</li>
-	<li>Evalúa el proceso para recibir tu compensación (¿es sencillo, conveniente, confiable, puntual?).</li>
-</ol>
-
-<h3>Desarrollo profesional</h3>
-
-<ol start="6">
-	<li>Evalúa qué tanto crecimiento profesional crees poder lograr con esta empresa.</li>
-	<li>Evalúa que tan buen reto intelectual es el trabajo que haces y qué tanto aprendes al hacerlo.</li>
-	<li>Evalúa qué tanto puedes aprender de tus compañeros de trabajo.</li>
-	<li>Evalúa qué tanta oportunidad tienes con tu trabajo para vincularte con personas e instituciones fuera de la empresa.</li>
-	<li>Evalúa qué tanto te apoya la empresa para capacitarte.</li>
-</ol>
-
-<h3>Cultura y espacio seguro</h3>
-
-<ol start="11">
-	<li>Evalúa qué tan agradable es el ambiente de trabajo en la empresa.</li>
-	<li>Evalúa los directivos son una influencia positiva y dirijen con el ejemplo.</li>
-	<li>Evalúa se respeta y da oportunidad a todas las personas por igual, independientemente de su género, edad, etnia o nivel socioeconómico.</li>
-	<li>Evalúa los conflictos entre integrantes o equipos se atienden y resuelven de forma adecuada.</li>
-	<li>Evalúa es socialmente responsable y contribuye a mejorar la comunidad más allá de la empresa.</li>
-	<li>Me siento empoderada(o) para tomar decisiones en el trabajo y que la empresa o mi equipo me apoyarán.</li>
-	<li>Evalúa me siento comoda(o) de pedir ayuda.</li>
-	<li>Evalúa siento que mis ideas y propuestas son tomadas en cuenta.</li>
-</ol>
-
-<h3>Diversidad y empoderamiento de género</h3>
-
-<ol start="19">
-	<li>Evalúa se trata con respeto a las mujeres y personas con género no binario</li>
-	<li>Evalúa qué tanto la empresa aplica políticas para promover la equidad de género dentro de la empresa.</li>
-	<li>Evalúa qué tanto la empresa colabora en iniciativas externas para apoyar la inclusión y equidad de mujeres en el área de tecnología.</li>
-	<li>¿Cuál es el porcentaje aproximado de mujeres en roles técnicos?</li>
-	<li>¿Cuál es el porcentaje aproximado de mujeres en roles directivos?</li>
-</ol>
-
-<h3>Otros</h3>
-
-<ol start="24">
+	<li>Qué tan buen reto intelectual es el trabajo que haces y qué tanto aprendes al hacerlo.</li>
+	<li>Los directivos son una influencia positiva y dirigen con el ejemplo.</li>
+	<li>Qué tanto crecimiento profesional crees poder lograr con esta empresa.</li>
+	<li>Qué tan agradable es el ambiente de trabajo en la empresa.</li>
 	<li>Qué tan satisfecha(o) estás con la política de trabajo en sitio vs remoto de la empresa.</li>
-	<li>Qué tan conveniente es la ubicación donde debes desempeñar tu trabajo.</li>
+	<li>Se respeta y da oportunidad a todas las personas por igual, independientemente de su género, edad, etnia o nivel socioeconómico.</li>
+	<li>Competitividad del salario que percibes.</li>
+	<li>¿Cuál es el porcentaje aproximado de mujeres o personas con género no binario en roles directivos?</li>
+	<li>Mecanismos orientados a compartir la propiedad y/o ganancias de la empresa (ej. reparto de utilidades, stock options, phantom stocks).</li>
 	<li>Qué tanto te ayuda la empresa a llevar un estilo de vida saludable.</li>
-	<li>Equipo y herramientas que la empresa te provee para realizar tu trabajo (hardware, mobiliario, software, conectividad).</li>
+	<li>Me siento empoderada(o) para tomar decisiones en el trabajo y que la empresa o mi equipo me apoyarán.</li>
+	<li>Me siento cómoda(o) de pedir ayuda.</li>
+	<li>Siento que mis ideas y propuestas son tomadas en cuenta.</li>
 	<li>Qué tanta seguridad sientes de mantener tu trabajo en esta empresa.</li>
 </ol>
+
+<h3>Adopción IA</h3>
+
+<ol start="15">
+	<li>Mi empresa me proporciona herramientas potenciadas por IA para mi trabajo diario</li>
+	<li>Las herramientas de IA proporcionadas son relevantes para mi rol</li>
+	<li>¿Tu empleador ha creado roles formales de IA (GenAI/LLM/Agent Engineer, ML Engineer, AI Product Manager, Prompt Engineering, AI Governance) en los últimos 2 años?</li>
+	<li>¿Tu empleador ofrece programas de reskilling o capacitación para transicionar hacia roles o tareas de IA?</li>
+	<li>¿Tu empleador ha rediseñado procesos o flujos de trabajo para incorporar IA (no solo dar herramientas)?</li>
+	<li>Si tu rol se transformó hacia IA, ¿tu empleador ajustó tu compensación, título o nivel para reflejarlo?</li>
+</ol>
+
+<h3>Ancla de mercado</h3>
+
+<ol start="21">
+	<li>¿Cómo utilizas la IA para crear código?</li>
+	<li>¿Qué tan seguro/a estás de que tus habilidades actuales seguirán siendo relevantes dentro de 3 años?</li>
+</ol>
+
+<h3>Gestión de la tecnoansiedad</h3>
+
+<ol start="23">
+	<li>Me preocupa que la IA reduzca la demanda de mis habilidades en mi empresa</li>
+	<li>Siento presión por actualizar mis habilidades más rápido debido a la IA en mi trabajo actual</li>
+	<li>La IA ha aumentado mi carga de trabajo en lugar de reducirla</li>
+</ol>
+
+<h3>Justicia algorítmica</h3>
+
+<ol start="26">
+	<li>Mi empresa usa la IA de forma responsable en las evaluaciones de desempeño</li>
+	<li>Confío en las decisiones impulsadas por IA que afectan mi trabajo</li>
+	<li>Mi empresa ha comunicado con claridad el impacto de la IA en los roles</li>
+</ol>
+
+<h3>Autonomía del empleado</h3>
+
+<ol start="29">
+	<li>Mi jefe me da autonomía sobre CÓMO realizo mi trabajo</li>
+	<li>Mi compensación es transparente y entiendo cómo se determina</li>
+	<li>Tengo influencia real en las decisiones de la empresa que me afectan</li>
+	<li>La colaboración entre equipos es sencilla en mi empresa</li>
+</ol>
+
+<h3>Confianza en el futuro</h3>
+
+<ol start="33">
+	<li>Creo que mi empresa crecerá en los próximos 12 meses</li>
+	<li>Espero que la contratación en mi empresa aumente en el próximo año</li>
+	<li>Me preocupan los despidos en mi empresa en los próximos 6 meses</li>
+	<li>El mercado laboral de TI se siente fuerte en este momento</li>
+	<li>Mi empresa está invirtiendo más en tecnología este año que el anterior</li>
+	<li>Mi empresa está invirtiendo más en las personas este año que el anterior</li>
+	<li>La cartera de clientes/proyectos se siente estable o en crecimiento</li>
+</ol>
+
+<h3>Indicadores de Retención</h3>
+
+<ol start="40">
+	<li>Tengo la intención de quedarme en esta empresa 2 años o más</li>
+	<li>¿Qué tan probable es que le recomiendes a un amigo/a trabajar en la empresa donde estás?</li>
+	<li>He considerado irme en los últimos 6 meses</li>
+	<li>Si decidieras dejar tu trabajo actual, ¿cuál sería la principal razón?</li>
+	<li>Mi productividad ha cambiado en el último año</li>
+</ol>
+
+<h3>Perfil Demográfico</h3>
+
+<ol start="45">
+	<li>Categoría de tamaño de empresa</li>
+	<li>Número aproximado de empleados de la empresa</li>
+	<li>Stack tecnológico principal</li>
+	<li>Política de trabajo remoto</li>
+	<li>Despidos recientes en los últimos 12 meses</li>
+	<li>¿Con qué género te identificas?</li>
+	<li>¿Cuál es tu nivel dentro de esta organización?</li>
+	<li>¿Cuál es tu función o actividad principal?</li>
+</ol>
+
+<h3>Beneficios y Soporte del Empleador</h3>
+
+<ol start="53">
+	<li>¿Tu empleador te asigna explícitamente un mentor o patrocinador que impulsa tu desarrollo profesional?</li>
+</ol>
+
+<h3>Experiencia de la Mujer y Equidad de Género</h3>
+
+<ol start="54">
+	<li>¿Cómo calificarías la política de maternidad de tu empleador?</li>
+	<li>¿Te sientes insegura o has sufrido acoso en la empresa donde trabajas actualmente?</li>
+	<li>¿Tu empresa cuenta con programas formales para guiar o promover a las mujeres a puestos de liderazgo?</li>
+	<li>¿Tu empleador ofrece apoyo económico para programas de fertilidad (IVF, estudios médicos, etc.)?</li>
+</ol>
+
 
 <h3>&nbsp;</h3>
 
