@@ -4,7 +4,7 @@ date: 2026-09-23T13:30:26-06:00
 images:
  - /images/blog/2026/empleo-remoto.jpg
 aliases:
- - /es/blog/moco-conseguir-trabajo-remoto-en-tech
+ - /es/blog/como-conseguir-trabajo-remoto-en-tech
 draft: false
 ---
 
