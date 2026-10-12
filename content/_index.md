@@ -1,16 +1,13 @@
 ---
 title: "Inicio"
 seo_title: "Best Place to Create · Acreditación para organizaciones tech"
-description: "Diagnóstico y acreditación del entorno de trabajo de tus personas de tecnología. Evaluación anónima, criterio exigente y datos del sector."
-# Orden del recorrido de quien decide: qué es → por qué ahora → qué obtengo →
-# ¿funciona? (testimonios) → qué me cuesta hacerlo → ¿puedo confiar? →
-# objeciones → decidir. El talento va al final, como audiencia secundaria.
+description: "Tus personas de tecnología califican su entorno de trabajo en anónimo. Recibes el diagnóstico y, si alcanzas el criterio, la acreditación."
 blocks:
-  # 1 · Qué es esto, en diez segundos
+  # 1 · Qué gano yo, en diez segundos
   - type: hero
     kicker: "Antes Best Place to Code"
-    h1: "El estándar de diagnóstico y acreditación para organizaciones tech en Latinoamérica"
-    subtitulo: "Diagnosticamos las condiciones que permiten a tus personas de tecnología pensar, aprender, colaborar y crear valor. Y acreditamos a las organizaciones que las cumplen."
+    h1: "Descubre qué frena a tu equipo técnico y demuestra lo que ya haces bien"
+    subtitulo: "Tus personas de tecnología califican su entorno de trabajo en una evaluación anónima. Tú recibes el diagnóstico, con las áreas donde conviene actuar. Si tu organización alcanza el criterio, puede acreditarse."
     foto: "fotos/inicio-hero.jpg"
     palabra: "Personas."
     cifras_reales: true
@@ -18,22 +15,22 @@ blocks:
       - texto: "Evalúa a tu organización"
         url: "/contacto/?interes=evaluar"
         variant: "primary"
-      - texto: "Conoce cómo funciona"
+      - texto: "Mira cómo funciona"
         url: "/como-funciona/"
         variant: "outline"
 
-  # 2 · Prueba social inmediata, antes de pedir nada
+  # 2 · Prueba antes de pedir nada
   - type: logos
     compacto: true
     fondo: "bp-section--white"
-    rotulo: "Ya se acreditaron"
+    rotulo: "Ya pasaron el criterio"
     etiqueta: "Algunas organizaciones acreditadas"
 
   # 3 · Por qué ahora
   - type: dato
     cifra: "50 %"
-    frase: "de quienes crean código en México dice que, sobre todo, instruye a agentes de IA y revisa el resultado."
-    remate: "Cuando cambia el trabajo, cambia lo que hace bueno a un lugar para trabajar."
+    frase: "de quienes crean código en México dice que su trabajo consiste, sobre todo, en instruir a agentes de IA y revisar lo que producen."
+    remate: "Si el trabajo técnico ya no es solo escribir código, lo que hace bueno a un lugar para trabajar tampoco es lo de antes."
     fuente_n: "189 personas que crean código"
 
   - type: frases
@@ -43,23 +40,24 @@ blocks:
       - "Best place to make"
       - "Best place to code"
       - "Best place to create"
-    texto: "Durante cerca de diez años reconocimos a los mejores lugares para programar. Hoy el trabajo técnico también es pensar, decidir, aprender y colaborar con IA. Por eso Best Place to Code evoluciona a Best Place to Create."
+    texto: "Durante casi diez años reconocimos a los mejores lugares para programar. Hoy el trabajo técnico también es decidir, aprender y trabajar con IA. Por eso Best Place to Code se convierte en Best Place to Create."
 
-  # 4 · Qué obtiene tu organización
+  # 4 · Qué me llevo
   - type: cards
-    h2: "Diagnóstico, acreditación y datos del sector"
+    kicker: "Qué te llevas"
+    h2: "Un diagnóstico siempre; el sello, solo si lo alcanzas"
     tarjetas:
-      - titulo: "Diagnóstico"
-        texto: "Tus personas de tecnología evalúan su entorno de trabajo, de forma anónima, en seis categorías."
-      - titulo: "Acreditación"
-        texto: "Si tu organización cumple el criterio en Fundamentos, puede acreditarse y recibir el reconocimiento."
-      - titulo: "Datos del sector"
-        texto: "Cada evaluación alimenta el Observatorio Tech Talent de Software Guru con datos agregados del sector."
+      - titulo: "Lo que tu equipo no te diría firmando"
+        texto: "Las respuestas son anónimas, así que sale a la luz lo que una encuesta interna no alcanza. Verás la calificación de las seis categorías y en cuáles estás flojo."
+      - titulo: "Un sello que no se consigue pagando"
+        texto: "Pagar la evaluación te da el diagnóstico. La acreditación depende de lo que respondan tus personas de tecnología: si tu organización no alcanza el criterio, nadie publica el resultado."
+      - titulo: "Con quién te estás comparando"
+        texto: "Las organizaciones acreditadas se comparan con su cohorte, no con un promedio general. Y los resultados agregados alimentan el Observatorio Tech Talent de Software Guru, el panorama del sector."
     enlace:
-      texto: "Qué medimos"
+      texto: "Ver las seis categorías y el criterio exacto"
       url: "/que-medimos/"
 
-  # 5 · ¿Funciona? Lo dice quien ya pasó por el proceso
+  # 5 · ¿Funciona? Que lo digan ellas
   - type: testimonios
     ancla: "testimonios"
     enlace:
@@ -69,63 +67,69 @@ blocks:
   # 6 · Qué me cuesta hacerlo
   - type: pasos
     fondo: "bp-section--paper"
+    kicker: "El proceso"
     h2: "Cinco pasos, dos pagos"
     pasos:
       - titulo: "Contratas la evaluación"
+        texto: "Acuerdas la propuesta y pagas. Te entregamos el Kit de despliegue: los materiales para invitar a tu equipo."
         pago: "Pago 1"
-      - titulo: "Invitas a tu equipo"
-      - titulo: "Monitoreas en vivo"
-      - titulo: "Recibes tu resultado"
+      - titulo: "Tu equipo responde"
+        texto: "Tus personas de tecnología contestan en anónimo. Tienen dos semanas."
+      - titulo: "Sigues el avance en vivo"
+        texto: "Durante esas dos semanas ves cuántas personas respondieron y cómo va la calificación por categoría."
+      - titulo: "Recibes el resultado"
+        texto: "Sabes si alcanzaste el criterio y dónde están tus puntos débiles. Eso lo recibes cumplas o no."
       - titulo: "Te acreditas"
+        texto: "Si lo alcanzaste, pagas la acreditación y entras al Listado 2027 con el sello y los materiales para comunicarlo."
         pago: "Pago 2"
-    nota: "Pagar la evaluación te da acceso al diagnóstico. La acreditación depende del resultado."
+    nota: "Pagar la evaluación te da el diagnóstico. La acreditación depende del resultado, no del pago."
     enlace:
-      texto: "Ver el proceso completo"
+      texto: "Ver el proceso completo y las fechas"
       url: "/como-funciona/"
 
   - type: fechas
     corta: true
     fondo: "bp-section--white"
 
-  # 7 · ¿Puedo confiar en el criterio?
+  # 7 · ¿Puedo confiar en esto?
   - type: cards
     fondo: "bp-section--sky"
     kicker: "Por qué es creíble"
-    h2: "El criterio no lo ponemos nosotros solos"
+    h2: "Por qué este sello sí dice algo"
     cols: 3
     tarjetas:
-      - titulo: "Lo responden tus personas, en anónimo"
-        texto: "La calificación sale de las respuestas anónimas de quienes trabajan ahí. Con menos de 10 respuestas, los resultados se muestran en rangos más amplios para que nadie pueda ser identificado."
-      - titulo: "El criterio es público y exigente"
-        texto: "85 % de promedio agregado en Fundamentos y mínimo 75 % en cada uno de sus 14 reactivos. Igual para todas, sin importar el tamaño."
-      - titulo: "No todas lo logran"
-        texto: "El directorio y el listado incluyen solo a las organizaciones acreditadas. Si no alcanzas el criterio, el resultado no se publica."
+      - titulo: "Responde tu equipo, no tú"
+        texto: "La calificación sale de las respuestas anónimas de quienes trabajan ahí. Con menos de 10 respuestas, los resultados se muestran en rangos amplios para que nadie pueda ser identificado."
+      - titulo: "El criterio está publicado"
+        texto: "85 % de promedio en Fundamentos y ninguna de sus 14 preguntas por debajo de 75 %. El mismo número para una startup de ocho personas y para un corporativo."
+      - titulo: "No todas pasan"
+        texto: "Quien no alcanza el criterio no aparece en ninguna parte: el directorio y el Listado 2027 solo incluyen a las organizaciones acreditadas."
     enlace:
-      texto: "Ver la metodología completa"
+      texto: "Ver cómo se calcula"
       url: "/que-medimos/"
 
-  # 8 · Las objeciones que frenan la decisión, resueltas aquí
+  # 8 · Las objeciones, resueltas aquí mismo
   - type: faq
     fondo: "bp-section--paper"
-    h2: "Lo que suelen preguntarnos antes de decidir"
+    h2: "Lo que nos preguntan antes de decidir"
     preguntas:
       - "costo"
       - "pago-garantiza"
       - "anonimato"
       - "no-alcanzamos"
     enlace:
-      texto: "Ver todas las preguntas frecuentes"
+      texto: "Ver todas las preguntas"
       url: "/faq/"
 
-  # 9 · Audiencia secundaria: el talento
+  # 9 · Audiencia secundaria
   - type: texto
     fondo: "bp-section--white"
     kicker: "Si trabajas en tecnología"
-    h2: "Un sello que deciden tus colegas"
+    h2: "Este sello lo ponen tus colegas"
     parrafos:
-      - "Una organización acreditada es una donde sus propias personas de tecnología calificaron, de forma anónima, los aspectos fundamentales de su entorno de trabajo con un criterio exigente."
+      - "Cuando ves el sello, la gente de tecnología de esa organización calificó su propio entorno de trabajo en anónimo. Y esa calificación pasó un criterio público: 85 % de promedio, y ninguna pregunta por debajo de 75 %."
     boton:
-      texto: "Lo que significa para ti"
+      texto: "Qué significa para ti"
       url: "/para-talento/"
     foto: "fotos/inicio-talento.jpg"
     palabra: "Crear."

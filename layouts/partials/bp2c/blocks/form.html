@@ -23,7 +23,7 @@
   </div>
 
   <fieldset>
-    <legend>Sobre ti</legend>
+    <legend>Quién eres</legend>
   <div class="bp-field">
     <label for="f-nombre">Nombre <span class="bp-req">(requerido)</span></label>
     <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
@@ -37,7 +37,7 @@
   </fieldset>
 
   <fieldset>
-    <legend>Sobre tu organización</legend>
+    <legend>Tu organización</legend>
   <div class="bp-field">
     <label for="f-organizacion">Organización <span class="bp-req">(requerido)</span></label>
     <input id="f-organizacion" name="organizacion" type="text" autocomplete="organization" required>
@@ -57,19 +57,19 @@
       <option>Entre 101 y 200</option>
       <option>Más de 200</option>
     </select>
-    <span class="bp-hint" id="f-tamano-ayuda">Define la propuesta comercial, no la categoría en la que compites.</span>
+    <span class="bp-hint" id="f-tamano-ayuda">Con esto armamos la propuesta. No define la categoría en la que compites.</span>
   </div>
 
   </fieldset>
 
   <div class="bp-field">
-    <label for="f-mensaje">¿Algo que debamos saber?</label>
+    <label for="f-mensaje">¿Hay algo que debamos saber antes de llamarte?</label>
     <textarea id="f-mensaje" name="mensaje" rows="4"></textarea>
   </div>
 
   <div>
     <button class="bp-btn bp-btn--primary" type="submit">Enviar</button>
-    <p class="bp-hint" style="margin:14px 0 0">Te contactamos al correo que dejes. No compartimos tus datos con las organizaciones del directorio.</p>
+    <p class="bp-hint" style="margin:14px 0 0">Te escribimos al correo que dejes. No compartimos tus datos con las organizaciones del directorio ni con nadie más.</p>
   </div>
 </form>
 {{- $formjs := resources.Get "js/form.js" | minify | fingerprint }}

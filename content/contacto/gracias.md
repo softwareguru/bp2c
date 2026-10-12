@@ -1,5 +1,5 @@
 ---
-title: "Listo, recibimos tus datos"
+title: "Recibimos tus datos"
 type: bp2c
 description: "Recibimos tus datos. Nuestro equipo te contacta pronto."
 noindex: true
@@ -7,16 +7,16 @@ sin_cta: true
 blocks:
   - type: hero
     h1: "Listo, recibimos tus datos"
-    subtitulo: "Nuestro equipo te contacta pronto. <span class=\"bp-pendiente\">PENDIENTE D4: tiempo de respuesta</span> Mientras tanto:"
+    subtitulo: "Te contactamos pronto. <span class=\"bp-pendiente\">PENDIENTE D4: tiempo de respuesta</span> Mientras esperas, esto te puede servir:"
 
   - type: enlaces
     enlaces:
-      - texto: "Conoce a las organizaciones acreditadas"
+      - texto: "Mira quién ya se acreditó"
         url: "/companies/"
+      - texto: "Revisa qué preguntamos y cuál es el criterio"
+        url: "/que-medimos/"
       - texto: "Lee el blog"
         url: "/blog/"
-      - texto: "Revisa qué mide la evaluación"
-        url: "/que-medimos/"
 ---
 
 <script>

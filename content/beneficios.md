@@ -1,16 +1,14 @@
 ---
 title: "Beneficios de la acreditación Best Place to Create"
 type: bp2c
-description: "Qué recibe una organización evaluada y qué recibe una acreditada: Radiografía del Empleador, reconocimiento, visibilidad y talento."
+description: "Qué te llevas al evaluarte y qué se suma al acreditarte: la Radiografía del Empleador, el sello, el perfil en el directorio y difusión de tus vacantes."
 aliases:
   - /es/about/beneficios
-# Este copy reemplaza todo el contenido anterior: fuera "membresía",
-# Showcases y SafeSpace Plus, que no están en el programa 2027.
 blocks:
   - type: hero
     kicker: "Beneficios"
-    h1: "Qué recibe tu organización"
-    subtitulo: "Toda organización evaluada obtiene un diagnóstico. Las acreditadas, además, obtienen una herramienta de gestión, reconocimiento y visibilidad frente al talento técnico."
+    h1: "Qué te llevas de todo esto"
+    subtitulo: "Evaluarte te da un diagnóstico que no podrías conseguir de otra forma. Acreditarte añade una herramienta para gestionar, un sello que comunicar y visibilidad frente al talento técnico."
     foto: "fotos/beneficios.jpg"
     palabra: "Valor."
     botones:
@@ -19,70 +17,72 @@ blocks:
         variant: "primary"
 
   - type: comparativa
-    h2: "Evaluada o acreditada"
+    h2: "Qué recibes en cada caso"
     filas:
-      - que: "Dashboard de monitoreo durante las 2 semanas de evaluación"
+      - que: "Dashboard de monitoreo durante las dos semanas de evaluación"
         evaluada: true
         acreditada: true
       - que: "Calificación de Fundamentos y de las seis categorías"
         evaluada: true
         acreditada: true
-      - que: "Análisis corto de las palancas"
+      - que: "Análisis corto de las cinco palancas"
         evaluada: true
         acreditada: true
-      - que: "Radiografía del Empleador: hallazgos, acciones recomendadas y comparación con tu cohorte"
+      - que: "Radiografía del Empleador: hallazgos, qué hacer con cada palanca y comparación con organizaciones parecidas a la tuya"
         evaluada: false
         acreditada: true
-      - que: "Reconocimiento físico, constancia digital y sello Best Place to Create"
+      - que: "Reconocimiento físico, constancia digital y derecho a usar el sello"
         evaluada: false
         acreditada: true
       - que: "Perfil en el directorio de bestplacetocreate.com"
         evaluada: false
         acreditada: true
-      - que: "Inclusión en el Listado 2027, con mención en newsletters y redes de Best Place to Create y Software Guru"
+      - que: "Entrada al Listado 2027, con mención en los newsletters y redes de Best Place to Create y Software Guru"
         evaluada: false
         acreditada: true
 
   - type: cards
     fondo: "bp-section--paper"
-    h2: "Beneficios de la acreditación"
+    kicker: "Al acreditarte"
+    h2: "Cuatro cosas que puedes hacer con el sello"
     cols: 4
     tarjetas:
-      - titulo: "Gestión"
+      - titulo: "Decidir con datos"
         lista:
-          - "Radiografía del Empleador con la acción recomendada para cada palanca"
-          - "Comparación con tu cohorte"
-          - "Reporte del ecosistema"
-      - titulo: "Reconocimiento"
+          - "La Radiografía del Empleador, con qué hacer en cada palanca"
+          - "Cómo te ves frente a tu cohorte"
+          - "El reporte del ecosistema"
+      - titulo: "Comunicarlo"
         lista:
           - "Reconocimiento físico y constancia digital"
-          - "Uso del sello Best Place to Create en materiales impresos y digitales"
-          - "Perfil en el directorio de bestplacetocreate.com"
-          - "Inclusión en el Listado 2027"
-      - titulo: "Talento"
+          - "El sello Best Place to Create en tus materiales, impresos y digitales"
+          - "Perfil propio en el directorio"
+          - "Entrada al Listado 2027"
+      - titulo: "Contratar mejor"
         lista:
           - "2 vacantes destacadas al mes en el newsletter de Software Guru, SG4 Women, el sitio de Software Guru y Get on Board"
-          - "Perk especial para reclutar con Get on Board durante el primer año"
-      - titulo: "Comunidad"
+          - "Un perk para reclutar con Get on Board durante el primer año"
+      - titulo: "Estar en la conversación"
         lista:
-          - "Mención en newsletters y redes de Best Place to Create y Software Guru"
-          - "Posibilidad de publicar contenido en el blog de Best Place to Create"
+          - "Mención en los newsletters y redes de Best Place to Create y Software Guru"
+          - "Puedes publicar en el blog de Best Place to Create"
           - "20 % de descuento en patrocinios de eventos de Software Guru"
-          - "30 % de descuento en asistencia a eventos de Software Guru"
+          - "30 % de descuento para asistir a esos eventos"
 
   - type: cards
     fondo: "bp-section--white"
-    h2: "Dos kits para acompañarte"
+    kicker: "No te dejamos solo"
+    h2: "Dos kits, uno en cada momento"
     cols: 2
     tarjeta_crema: true
     tarjetas:
       - titulo: "Kit de despliegue"
-        texto: "Todo lo que necesitas para invitar a tu equipo a responder la evaluación. Lo recibes al contratar."
+        texto: "Los materiales y el enlace para invitar a tu equipo a responder, más lo que necesitas para explicarles de qué se trata. Lo recibes al contratar."
       - titulo: "Kit de acreditación"
-        texto: "Materiales y lineamientos para comunicar tu acreditación. Lo recibes al acreditarte."
+        texto: "Las piezas y los lineamientos para anunciar tu acreditación sin equivocarte en cómo se nombra. Lo recibes al acreditarte."
 
   - type: callout
-    titulo: "Una regla importante"
+    titulo: "Cómo se comunica el reconocimiento"
     parrafos:
-      - "El reconocimiento se comunica con el nombre oficial del listado. Las posiciones por categoría no se publican como un ranking independiente (por ejemplo, “#1 en Consultoría mediana”)."
+      - "Siempre con el nombre oficial del listado. No publicamos posiciones dentro de cada categoría, así que no existe un “#1 en Consultoría mediana” que anunciar."
 ---

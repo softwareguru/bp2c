@@ -14,9 +14,9 @@
 publicar: true
 
 kicker: "Testimonios"
-titulo: "Lo que cuentan quienes ya pasaron por el proceso"
-entrada: "No lo que opinamos nosotros: lo que dicen las organizaciones que se evaluaron y se acreditaron."
-nota: "Estos testimonios se grabaron en el ciclo de Best Place to Code, la acreditación que evoluciona a Best Place to Create."
+titulo: "Que lo cuenten ellas"
+entrada: "Tres organizaciones que ya pasaron por la evaluación, contando qué encontraron y qué hicieron con eso."
+nota: "Grabados durante el ciclo de Best Place to Code, el programa que ahora se llama Best Place to Create."
 
 testimonios:
   - empresa: "Svitla Systems"
