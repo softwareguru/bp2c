@@ -1,0 +1,44 @@
+# Fechas del ciclo 2027. `resaltar: true` pinta la fila en lima.
+# `corta: true` marca las filas que aparecen en la versión breve (Inicio).
+titulo: "Fechas 2027"
+filas:
+  - fecha: "Desde octubre de 2026"
+    hito: "Evaluaciones abiertas"
+    hito_corto: "Evaluaciones abiertas"
+    resaltar: false
+    corta: false
+  - fecha: "8 de enero"
+    hito: "Fecha sugerida para contratar y pagar tu evaluación: tu equipo tiene dos semanas completas para responder"
+    hito_corto: "Fecha sugerida para contratar tu evaluación"
+    resaltar: false
+    corta: true
+  - fecha: "15 de enero"
+    hito: "Último día para pagar la evaluación"
+    hito_corto: "Último día para pagar la evaluación"
+    resaltar: true
+    corta: true
+  - fecha: "22 de enero"
+    hito: "Cierran las respuestas de la evaluación"
+    hito_corto: "Cierran las respuestas"
+    resaltar: false
+    corta: true
+  - fecha: "27 de enero"
+    hito: "Las organizaciones evaluadas reciben el listado previo"
+    hito_corto: ""
+    resaltar: false
+    corta: false
+  - fecha: "29 de enero"
+    hito: "Último día para pagar la acreditación"
+    hito_corto: "Último día para pagar la acreditación"
+    resaltar: true
+    corta: true
+  - fecha: "4 de febrero"
+    hito: "Publicación del Listado 2027"
+    hito_corto: "Publicación del Listado 2027"
+    resaltar: true
+    corta: true
+  - fecha: "Después del 4 de febrero"
+    hito: "Entrega de reconocimientos en un evento para organizaciones y comunidad tech (fecha por anunciar)"
+    hito_corto: ""
+    resaltar: false
+    corta: false

@@ -1,0 +1,29 @@
+{{- /* C9 · Acordeón con <details>: cero JavaScript. Las preguntas salen de
+       data/bp2c/faq.yaml, igual que el schema FAQPage. */ -}}
+{{- $b := .block -}}
+{{- $d := hugo.Data.bp2c.faq -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--paper" }}">
+  <div class="bp-shell">
+    {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
+    {{- range $d.grupos }}
+    {{- $enGrupo := slice -}}
+    {{- range .preguntas }}{{ if or $b.todas (in ($b.preguntas | default slice) .id) }}{{ $enGrupo = $enGrupo | append . }}{{ end }}{{ end }}
+    {{- with $enGrupo }}
+    <div class="bp-faq__group">
+      {{- if $b.todas }}<h3 class="bp-faq__groupname">{{ $.nombre }}</h3>{{ end }}
+      <div class="bp-faq">
+        {{- range . }}
+        <details class="bp-q">
+          <summary>{{ .p }}</summary>
+          <div class="bp-q__a"><p>{{ .r }}</p></div>
+        </details>
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+    {{- end }}
+    {{- with $b.enlace }}
+    <p style="margin:28px 0 0"><a class="bp-textlink" href="{{ .url }}">{{ .texto }} →</a></p>
+    {{- end }}
+  </div>
+</section>

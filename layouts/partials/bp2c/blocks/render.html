@@ -1,0 +1,33 @@
+{{- /* Despachador de bloques. Cada página declara su estructura en el
+       frontmatter y aquí se resuelve al partial que corresponde. */ -}}
+{{- $p := .page -}}
+{{- range $p.Params.blocks -}}
+  {{- $arg := dict "page" $p "block" . -}}
+  {{- if eq .type "hero" }}{{ partial "bp2c/blocks/hero.html" $arg }}
+  {{- else if eq .type "frases" }}{{ partial "bp2c/blocks/frases.html" $arg }}
+  {{- else if eq .type "dato" }}{{ partial "bp2c/blocks/dato.html" $arg }}
+  {{- else if eq .type "cards" }}{{ partial "bp2c/blocks/cards.html" $arg }}
+  {{- else if eq .type "pasos" }}{{ partial "bp2c/blocks/pasos.html" $arg }}
+  {{- else if eq .type "fechas" }}{{ partial "bp2c/blocks/fechas.html" $arg }}
+  {{- else if eq .type "comparativa" }}{{ partial "bp2c/blocks/comparativa.html" $arg }}
+  {{- else if eq .type "logos" }}{{ partial "bp2c/blocks/logos.html" $arg }}
+  {{- else if eq .type "faq" }}{{ partial "bp2c/blocks/faq.html" $arg }}
+  {{- else if eq .type "form" }}{{ partial "bp2c/blocks/form.html" $arg }}
+  {{- else if eq .type "esno" }}{{ partial "bp2c/blocks/esno.html" $arg }}
+  {{- else if eq .type "texto" }}{{ partial "bp2c/blocks/texto.html" $arg }}
+  {{- else if eq .type "feature" }}{{ partial "bp2c/blocks/feature.html" $arg }}
+  {{- else if eq .type "palancas" }}{{ partial "bp2c/blocks/palancas.html" $arg }}
+  {{- else if eq .type "dos_columnas" }}{{ partial "bp2c/blocks/dos_columnas.html" $arg }}
+  {{- else if eq .type "callout" }}{{ partial "bp2c/blocks/callout.html" $arg }}
+  {{- else if eq .type "cifras" }}{{ partial "bp2c/blocks/cifras.html" $arg }}
+  {{- else if eq .type "enlaces" }}{{ partial "bp2c/blocks/enlaces.html" $arg }}
+  {{- else if eq .type "recomienda" }}{{ partial "bp2c/blocks/recomienda.html" $arg }}
+  {{- else if eq .type "directorio" }}{{ partial "bp2c/blocks/directorio.html" $arg }}
+  {{- else if eq .type "contacto" }}{{ partial "bp2c/blocks/contacto.html" $arg }}
+  {{- else if eq .type "cuerpo" }}
+<section class="bp-section bp-section--paper">
+  <div class="bp-shell bp-prose">{{ $p.Content }}</div>
+</section>
+  {{- else }}{{ warnf "bp2c: bloque sin partial: %q en %s" .type $p.Path }}
+  {{- end }}
+{{- end -}}

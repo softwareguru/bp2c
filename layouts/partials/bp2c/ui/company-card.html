@@ -1,0 +1,19 @@
+{{- /* Tarjeta de empresa. Un componente dentro de un solo range, en lugar
+       de la tarjeta copiada cinco veces (una por categoría). */ -}}
+{{- $p := .page -}}
+{{- $g := hugo.Data.bp2c.global -}}
+<article class="bp-company">
+  <div class="bp-company__top">
+    {{- with (index ($p.Params.images | default slice) 0) }}
+    <img class="bp-company__logo" src="{{ . | absURL }}" alt="{{ $p.Title }}" loading="lazy" width="160" height="46">
+    {{- else }}
+    <h3 class="bp-company__name">{{ $p.Title }}</h3>
+    {{- end }}
+    {{ partial "bp2c/ui/badge.html" (dict "nivel" "acreditada" "texto" "Acreditada") }}
+  </div>
+  {{- with (index ($p.Params.images | default slice) 0) }}
+  <h3 class="bp-company__name">{{ $p.Title }}</h3>
+  {{- end }}
+  <p class="bp-company__meta">{{ delimit ($p.Params.cities | default slice) " · " }}</p>
+  <a class="bp-textlink" href="{{ $p.RelPermalink }}">Ver perfil</a>
+</article>

@@ -1,0 +1,23 @@
+{{- /* C8 · Muro de logos. Solo perfiles con acreditación vigente.
+       D10 abierta: hoy el filtro es `sello: true` en el frontmatter. */ -}}
+{{- $b := .block -}}
+{{- $empresas := where (where site.RegularPages "Section" "companies") "Params.sello" true -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--white" }}">
+  <div class="bp-shell">
+    {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
+    {{- with $b.texto }}<p class="bp-lead" style="margin-bottom:32px">{{ . | safeHTML }}</p>{{ end }}
+    <ul class="bp-logos">
+      {{- range $empresas }}
+      {{- $nombre := .Title }}
+      <li>
+        {{- with (index (.Params.images | default slice) 0) }}
+        <img src="{{ . | absURL }}" alt="{{ $nombre }}" loading="lazy" width="140" height="44">
+        {{- else }}<span style="font-weight:700;color:var(--bp-ink-3)">{{ $nombre }}</span>{{ end }}
+      </li>
+      {{- end }}
+    </ul>
+    {{- with $b.enlace }}
+    <p style="margin:28px 0 0"><a class="bp-textlink" href="{{ .url }}">{{ .texto }} →</a></p>
+    {{- end }}
+  </div>
+</section>

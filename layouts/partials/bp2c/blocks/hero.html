@@ -1,0 +1,27 @@
+{{- /* C1 · Hero. El bloque marca .bp-dark para que el texto herede el color
+       del contexto oscuro: era la causa del texto ilegible del hero. */ -}}
+{{- $b := .block -}}
+<section class="bp-hero bp-section--navy bp-dark">
+  <div class="bp-shell bp-hero__inner">
+    <div class="bp-hero__text">
+      {{- with $b.kicker }}<p class="bp-hero__chip">{{ partial "bp2c/ui/icon.html" (dict "name" "destello" "size" 16 "color" "#AFD235") }}{{ . }}</p>{{ end }}
+      <h1 class="bp-display">{{ $b.h1 | safeHTML }}</h1>
+      {{- with $b.subtitulo }}<p class="bp-lead">{{ . | safeHTML }}</p>{{ end }}
+      {{- with $b.botones }}
+      <div class="bp-btn-row">
+        {{- range . }}{{ partial "bp2c/ui/button.html" (dict "texto" .texto "url" .url "variant" (.variant | default "primary")) }}{{ end }}
+      </div>
+      {{- end }}
+      {{- with $b.nota }}<p class="bp-note" style="margin-top:24px;max-width:42em">{{ . | safeHTML }}</p>{{ end }}
+      {{- with $b.stats }}
+      <div class="bp-hero__stats">
+        {{- range . }}<div><b>{{ .cifra }}</b><span>{{ .texto }}</span></div>{{ end }}
+      </div>
+      {{- end }}
+    </div>
+    <div class="bp-hero__media">
+      {{ partial "bp2c/blocks/foto.html" (dict "foto" $b.foto "palabra" ($b.palabra | default "Personas.") "alt" ($b.foto_alt | default "")) }}
+      <span class="bp-blob" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>

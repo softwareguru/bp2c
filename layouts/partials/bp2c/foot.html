@@ -1,0 +1,39 @@
+{{- $g := hugo.Data.bp2c.global -}}
+</main>
+
+{{- /* Banda CTA (C10). La página puede declarar su propia variante en
+       front matter con `cta:`; si no, se usa la banda por defecto. */ -}}
+{{- if not .Params.sin_cta }}
+{{- $default := $g.cta_default -}}
+{{- if eq .Section "companies" }}{{ $default = $g.cta_talento }}{{ end -}}
+{{ partial "bp2c/blocks/cta.html" (dict "page" . "cta" (.Params.cta | default $default)) }}
+{{- end }}
+
+<footer class="bp-footer">
+  <div class="bp-shell">
+    <div class="bp-footer__grid">
+      <div>
+        <a class="bp-logo" href="/" style="margin-bottom:14px">
+          {{ partial "bp2c/ui/icon.html" (dict "name" "despegue" "size" 34 "color" "#AFD235") }}
+          <span><b>Best Place</b><i>to Create</i></span>
+        </a>
+        <p style="margin:0;max-width:26em">{{ $g.footer.bajo_logo }}</p>
+      </div>
+      {{- range $g.footer_columnas }}
+      <div>
+        <h2>{{ .titulo }}</h2>
+        <ul>
+          {{- range .enlaces }}
+          <li><a href="{{ .url }}">{{ .nombre }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+      {{- end }}
+    </div>
+    <div class="bp-footer__legal">
+      <p>&copy; {{ now.Year }} Software Guru. {{ $g.footer.legal }}</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

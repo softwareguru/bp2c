@@ -1,0 +1,24 @@
+{{- /* C5 · Los cinco pasos y los dos pagos. */ -}}
+{{- $b := .block -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--navy bp-dark" }}">
+  <div class="bp-shell">
+    {{- with $b.kicker }}<p class="bp-kicker">{{ . }}</p>{{ end }}
+    {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
+    <ol class="bp-pasos">
+      {{- range $i, $p := $b.pasos }}
+      <li class="bp-paso">
+        <span class="bp-card__n" style="margin-bottom:0" aria-hidden="true">{{ add $i 1 }}</span>
+        <div>
+          <h3 class="bp-h3" style="margin-bottom:{{ if $p.texto }}6px{{ else }}0{{ end }}">{{ $p.titulo }}</h3>
+          {{- with $p.texto }}<p>{{ . | safeHTML }}</p>{{ end }}
+        </div>
+        {{- with $p.pago }}<span class="bp-paso__pago">{{ . }}</span>{{ else }}<span></span>{{ end }}
+      </li>
+      {{- end }}
+    </ol>
+    {{- with $b.nota }}<p class="bp-note" style="margin-top:22px;max-width:48em">{{ . | safeHTML }}</p>{{ end }}
+    {{- with $b.enlace }}
+    <p style="margin:28px 0 0"><a class="bp-textlink" href="{{ .url }}">{{ .texto }} →</a></p>
+    {{- end }}
+  </div>
+</section>

@@ -1,0 +1,17 @@
+{{- /* Lo que permanece y lo que evoluciona. */ -}}
+{{- $b := .block -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--white" }}">
+  <div class="bp-shell">
+    {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
+    <div class="bp-cols">
+      <div class="bp-col bp-col--no">
+        <h3 class="bp-h3">{{ $b.titulo_a }}</h3>
+        <ul>{{ range $b.columna_a }}<li>{{ partial "bp2c/ui/icon.html" (dict "name" "destello" "size" 16 "color" "#5A6E7A") }}<span>{{ . | safeHTML }}</span></li>{{ end }}</ul>
+      </div>
+      <div class="bp-col bp-col--si">
+        <h3 class="bp-h3">{{ $b.titulo_b }}</h3>
+        <ul>{{ range $b.columna_b }}<li>{{ partial "bp2c/ui/icon.html" (dict "name" "flecha" "size" 16 "color" "#08293A") }}<span>{{ . | safeHTML }}</span></li>{{ end }}</ul>
+      </div>
+    </div>
+  </div>
+</section>

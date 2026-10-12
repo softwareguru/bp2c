@@ -1,0 +1,21 @@
+{{- /* Las cinco palancas. D15 abierta: mientras `publicar_descripcion` sea
+       false se muestra solo el nombre, no la descripción sin validar. */ -}}
+{{- $b := .block -}}
+{{- $d := hugo.Data.bp2c.palancas -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--white" }}">
+  <div class="bp-shell">
+    {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
+    {{- with $b.texto }}<p class="bp-lead" style="margin-bottom:36px">{{ . | safeHTML }}</p>{{ end }}
+    <div class="bp-grid bp-grid--3">
+      {{- range $d.palancas }}
+      <article class="bp-card bp-card--paper">
+        <h3 class="bp-h3" style="margin-bottom:{{ if $d.publicar_descripcion }}10px{{ else }}0{{ end }}">{{ .nombre }}</h3>
+        {{- if $d.publicar_descripcion }}<p>{{ .descripcion }}</p>{{ end }}
+      </article>
+      {{- end }}
+    </div>
+    {{- if not $d.publicar_descripcion }}
+    <p class="bp-note" style="margin:22px 0 0">Las descripciones de las palancas están en revisión y se publican cuando queden validadas.</p>
+    {{- end }}
+  </div>
+</section>

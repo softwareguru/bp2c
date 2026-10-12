@@ -1,0 +1,11 @@
+{{- /* C10 · Banda CTA. */ -}}
+{{- $c := .cta -}}
+<section class="bp-cta bp-dark">
+  <div class="bp-shell bp-cta__inner">
+    <div class="bp-cta__text">
+      <h2 class="bp-h2">{{ $c.titulo | safeHTML }}</h2>
+      {{- with $c.texto }}<p>{{ . | safeHTML }}</p>{{ end }}
+    </div>
+    {{ partial "bp2c/ui/button.html" (dict "texto" $c.boton.texto "url" $c.boton.url "variant" "primary") }}
+  </div>
+</section>

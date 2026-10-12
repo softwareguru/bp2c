@@ -1,0 +1,70 @@
+{{- /* C11 · Formulario. 03-medicion-y-formularios.md no está en el repo, así
+       que los campos son una propuesta: los rangos de tamaño son los del
+       "mientras tanto" de D12 y el destino de los leads sigue abierto (D4).
+       Sustituye el iframe de Google Forms de la página actual. */ -}}
+{{- $b := .block -}}
+{{- $d := hugo.Data.bp2c.global -}}
+<form class="bp-form" name="contacto-bp2c" method="POST" action="/contacto/gracias/"
+      data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contacto-bp2c">
+  <p hidden><label>No llenar <input name="bot-field"></label></p>
+
+  <div class="bp-field">
+    <label for="f-interes">Me interesa <span class="bp-req">(requerido)</span></label>
+    <select id="f-interes" name="interes" required>
+      <option value="evaluar">Evaluar a mi organización</option>
+      <option value="recomendar">Recomendar una organización</option>
+      <option value="prensa">Prensa o alianzas</option>
+    </select>
+  </div>
+
+  <div class="bp-field">
+    <label for="f-nombre">Nombre <span class="bp-req">(requerido)</span></label>
+    <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+  </div>
+
+  <div class="bp-field">
+    <label for="f-correo">Correo de trabajo <span class="bp-req">(requerido)</span></label>
+    <input id="f-correo" name="correo" type="email" autocomplete="email" required>
+  </div>
+
+  <div class="bp-field">
+    <label for="f-organizacion">Organización <span class="bp-req">(requerido)</span></label>
+    <input id="f-organizacion" name="organizacion" type="text" autocomplete="organization" required>
+  </div>
+
+  <div class="bp-field">
+    <label for="f-puesto">Tu puesto</label>
+    <input id="f-puesto" name="puesto" type="text" autocomplete="organization-title">
+  </div>
+
+  <div class="bp-field">
+    <label for="f-tamano">Tamaño de tu equipo de tecnología</label>
+    <select id="f-tamano" name="tamano">
+      <option value="">Selecciona una opción</option>
+      <option>Menos de 10</option>
+      <option>Entre 10 y 100</option>
+      <option>Entre 101 y 200</option>
+      <option>Más de 200</option>
+    </select>
+    <span class="bp-hint">Define la propuesta comercial, no la categoría en la que compites.</span>
+  </div>
+
+  <div class="bp-field">
+    <label for="f-mensaje">¿Algo que debamos saber?</label>
+    <textarea id="f-mensaje" name="mensaje" rows="4"></textarea>
+  </div>
+
+  <div>
+    <button class="bp-btn bp-btn--primary" type="submit">Enviar</button>
+  </div>
+</form>
+<script>
+/* Preselecciona el interés con el que llegó la persona desde el CTA
+   (/contacto/?interes=evaluar). Sin esto el parámetro no significa nada. */
+(function () {
+  var v = new URLSearchParams(location.search).get('interes');
+  var s = document.getElementById('f-interes');
+  if (v && s && s.querySelector('option[value="' + CSS.escape(v) + '"]')) { s.value = v; }
+})();
+</script>

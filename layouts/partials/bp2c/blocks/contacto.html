@@ -1,0 +1,35 @@
+{{- /* Contacto: texto a la izquierda, formulario a la derecha. */ -}}
+{{- $b := .block -}}
+<section class="bp-section bp-section--paper">
+  <div class="bp-shell" style="display:flex;flex-wrap:wrap;gap:clamp(32px,4vw,56px);align-items:flex-start">
+    <div style="flex:1 1 360px;min-width:0">
+      {{- with $b.kicker }}<p class="bp-kicker">{{ . }}</p>{{ end }}
+      <h1 class="bp-display" style="font-size:clamp(30px,4.2vw,44px)">{{ $b.h1 | safeHTML }}</h1>
+      {{- with $b.texto }}<p class="bp-lead" style="margin-bottom:32px">{{ . | safeHTML }}</p>{{ end }}
+
+      {{- with $b.pasos }}
+      <h2 class="bp-h3">{{ $b.pasos_titulo | default "Qué pasa después" }}</h2>
+      <ol style="margin:0 0 28px;padding-left:22px">
+        {{- range . }}<li style="margin-bottom:10px;color:var(--bp-ink-2)">{{ . | safeHTML }}</li>{{ end }}
+      </ol>
+      {{- end }}
+
+      {{- with $b.recordatorio }}
+      <div class="bp-callout" style="margin-bottom:24px"><p>{{ . | safeHTML }}</p></div>
+      {{- end }}
+
+      {{- with $b.nota }}<p class="bp-note" style="max-width:40em">{{ . | safeHTML }}</p>{{ end }}
+
+      {{- with $b.foto }}
+      {{- /* Oculta en móvil para acortar la página, como pide el copy. */ -}}
+      <div style="margin-top:32px;max-width:340px" class="bp-solo-escritorio">
+        {{ partial "bp2c/blocks/foto.html" (dict "foto" . "palabra" ($b.palabra | default "Hablemos.")) }}
+      </div>
+      {{- end }}
+    </div>
+
+    <div style="flex:999 1 420px;min-width:min(320px,100%)">
+      {{ partial "bp2c/blocks/form.html" (dict "page" .page "block" $b) }}
+    </div>
+  </div>
+</section>

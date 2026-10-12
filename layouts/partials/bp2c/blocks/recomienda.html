@@ -1,0 +1,41 @@
+{{- /* Recomienda a tu organización. Dispara el evento GA4 compartir_pagina. */ -}}
+{{- $b := .block -}}
+{{- $msg := $b.mensaje -}}
+<section class="bp-section bp-section--sky" id="{{ $b.ancla | default "recomienda" }}">
+  <div class="bp-shell">
+    <h2 class="bp-h2">{{ $b.h2 | safeHTML }}</h2>
+    {{- with $b.texto }}<p class="bp-lead" style="margin-bottom:28px">{{ . | safeHTML }}</p>{{ end }}
+
+    <div class="bp-card" style="max-width:52em">
+      <p id="bp-mensaje" style="margin:0 0 18px;color:var(--bp-ink-2)">{{ $msg }}</p>
+      <div class="bp-btn-row">
+        <button class="bp-btn bp-btn--primary" type="button" id="bp-copiar" data-copiar="{{ $msg }}">Copiar mensaje</button>
+        <a class="bp-btn bp-btn--outline" href="https://www.linkedin.com/sharing/share-offsite/?url={{ $b.url_compartir | urlquery }}" target="_blank" rel="noopener" data-compartir="linkedin">Compartir en LinkedIn</a>
+        <a class="bp-btn bp-btn--outline" href="https://wa.me/?text={{ $msg | urlquery }}" target="_blank" rel="noopener" data-compartir="whatsapp">Compartir por WhatsApp</a>
+      </div>
+      {{- with $b.enlace }}
+      <p style="margin:20px 0 0"><a class="bp-textlink" href="{{ .url }}">{{ .texto }} →</a></p>
+      {{- end }}
+    </div>
+  </div>
+</section>
+<script>
+(function () {
+  function evento(medio) {
+    if (typeof gtag === 'function') { gtag('event', 'compartir_pagina', { medio: medio }); }
+  }
+  var b = document.getElementById('bp-copiar');
+  if (b) {
+    b.addEventListener('click', function () {
+      navigator.clipboard.writeText(b.dataset.copiar).then(function () {
+        var t = b.textContent; b.textContent = 'Mensaje copiado';
+        setTimeout(function () { b.textContent = t; }, 2400);
+        evento('copiar');
+      });
+    });
+  }
+  document.querySelectorAll('[data-compartir]').forEach(function (a) {
+    a.addEventListener('click', function () { evento(a.dataset.compartir); });
+  });
+})();
+</script>

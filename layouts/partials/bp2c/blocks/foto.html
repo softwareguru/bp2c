@@ -1,0 +1,16 @@
+{{- /* Marco en arco de la marca. Las fotos del kit 2027 todavía no existen
+       en el repo (D5, Pamela entrega), así que el hueco se marca de forma
+       visible en lugar de rellenarlo con una imagen inventada. */ -}}
+{{- $foto := .foto -}}
+{{- $palabra := .palabra -}}
+{{- $alt := .alt | default "" -}}
+{{- $ruta := printf "/images/bp2c27/%s" $foto -}}
+{{- $existe := and $foto (fileExists (printf "static%s" $ruta)) -}}
+<div class="bp-arch">
+  {{- if $existe }}
+  <img src="{{ $ruta }}" alt="{{ $alt }}" loading="lazy" width="420" height="525">
+  {{- else }}
+  {{- with $palabra }}<p class="bp-arch__word bp-accent-type">{{ . }}</p>{{ end }}
+  <p class="bp-arch__ph">[ FOTO {{ with $foto }}{{ . }}{{ else }}PENDIENTE{{ end }} ]</p>
+  {{- end }}
+</div>

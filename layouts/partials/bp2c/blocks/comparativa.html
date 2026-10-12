@@ -1,0 +1,27 @@
+{{- /* C7 · Qué recibe una organización evaluada y qué recibe una acreditada. */ -}}
+{{- $b := .block -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--white" }}">
+  <div class="bp-shell">
+    {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
+    <div class="bp-tablewrap">
+      <table class="bp-table bp-table--compara">
+        <thead>
+          <tr>
+            <th scope="col">Qué recibes</th>
+            <th scope="col">Evaluada</th>
+            <th scope="col">Acreditada</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{- range $b.filas }}
+          <tr>
+            <th scope="row" style="font-weight:700;text-transform:none;letter-spacing:0;font-size:16px;color:var(--bp-ink);border-bottom:1px solid var(--bp-rule)">{{ .que | safeHTML }}</th>
+            <td>{{ if .evaluada }}<span class="bp-table__si">{{ partial "bp2c/ui/icon.html" (dict "name" "check" "size" 20 "color" "#08293A" "label" "Sí") }}</span>{{ else }}<span class="bp-table__no" aria-label="No">—</span>{{ end }}</td>
+            <td>{{ if .acreditada }}<span class="bp-table__si">{{ partial "bp2c/ui/icon.html" (dict "name" "check" "size" 20 "color" "#08293A" "label" "Sí") }}</span>{{ else }}<span class="bp-table__no" aria-label="No">—</span>{{ end }}</td>
+          </tr>
+          {{- end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

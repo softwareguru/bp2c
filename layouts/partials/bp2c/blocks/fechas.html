@@ -1,0 +1,26 @@
+{{- /* C6 · Fechas 2027. Las filas salen de data/bp2c/fechas.yaml: la versión
+       corta de Inicio y la completa de Cómo funciona no se desincronizan. */ -}}
+{{- $b := .block -}}
+{{- $d := hugo.Data.bp2c.fechas -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--paper" }}">
+  <div class="bp-shell">
+    <h2 class="bp-h2">{{ $b.h2 | default $d.titulo }}</h2>
+    <div class="bp-tablewrap">
+      <table class="bp-table">
+        <thead>
+          <tr><th scope="col">Fecha</th><th scope="col">{{ if $b.corta }}Hito{{ else }}Qué pasa{{ end }}</th></tr>
+        </thead>
+        <tbody>
+          {{- range $d.filas }}
+          {{- if or (not $b.corta) .corta }}
+          <tr{{ if .resaltar }} class="is-hito"{{ end }}>
+            <td>{{ .fecha }}</td>
+            <td>{{ if and $b.corta .hito_corto }}{{ .hito_corto }}{{ else }}{{ .hito }}{{ end }}</td>
+          </tr>
+          {{- end }}
+          {{- end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,70 @@
+{{- /* Datos estructurados. Los puntajes y las preguntas ya viven en el
+       frontmatter y en data/: aquí solo se exponen, así que el bloque
+       visible y el marcado no se pueden desincronizar. */ -}}
+{{- $g := hugo.Data.bp2c.global -}}
+
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{{ dict
+  "@context" "https://schema.org"
+  "@graph" (slice
+    (dict
+      "@type" "Organization"
+      "@id" (printf "%s#organizacion" site.BaseURL)
+      "name" site.Title
+      "url" site.BaseURL
+      "description" site.Params.description
+      "parentOrganization" (dict "@type" "Organization" "name" "Software Guru" "url" "https://sg.com.mx/")
+    )
+    (dict
+      "@type" "Service"
+      "name" "Diagnóstico y acreditación Best Place to Create"
+      "serviceType" "Diagnóstico del entorno de trabajo y acreditación de organizaciones tech"
+      "provider" (dict "@id" (printf "%s#organizacion" site.BaseURL))
+      "areaServed" (dict "@type" "Place" "name" "Latinoamérica")
+      "description" "Tus personas de tecnología evalúan su entorno de trabajo de forma anónima en seis categorías. Si la organización cumple el criterio en Fundamentos, puede acreditarse."
+    )
+  ) | jsonify (dict "indent" "  ") | safeJS
+}}
+</script>
+{{- end -}}
+
+{{- /* FAQPage: se arma con las preguntas que la página realmente muestra. */ -}}
+{{- $ids := slice -}}
+{{- range .Params.blocks -}}
+  {{- if eq .type "faq" -}}
+    {{- with .preguntas }}{{ $ids = $ids | append . }}{{ end -}}
+    {{- if .todas }}{{ $ids = $ids | append "__todas__" }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- if $ids -}}
+  {{- $qs := slice -}}
+  {{- range hugo.Data.bp2c.faq.grupos -}}
+    {{- range .preguntas -}}
+      {{- if or (in $ids .id) (in $ids "__todas__") -}}
+        {{- $qs = $qs | append (dict
+            "@type" "Question"
+            "name" .p
+            "acceptedAnswer" (dict "@type" "Answer" "text" .r)) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $qs }}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" . | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+  {{- end -}}
+{{- end -}}
+
+{{- if and .IsPage (not .IsHome) -}}
+<script type="application/ld+json">
+{{ dict
+  "@context" "https://schema.org"
+  "@type" "BreadcrumbList"
+  "itemListElement" (slice
+    (dict "@type" "ListItem" "position" 1 "name" "Inicio" "item" site.Home.Permalink)
+    (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink)
+  ) | jsonify (dict "indent" "  ") | safeJS
+}}
+</script>
+{{- end -}}

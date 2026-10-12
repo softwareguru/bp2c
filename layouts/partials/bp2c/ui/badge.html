@@ -1,0 +1,13 @@
+{{- /* Distinción. Los tres niveles se distinguen por forma del icono y
+       luminosidad, no solo por color: se leen en escala de grises. */ -}}
+{{- $nivel := .nivel | default "acreditada" -}}
+{{- $texto := .texto -}}
+<span class="bp-badge bp-badge--{{ $nivel }}">
+{{- if eq $nivel "acreditada" -}}
+  <span class="bp-badge__dot" aria-hidden="true"></span>
+{{- else if eq $nivel "participante" -}}
+  {{ partial "bp2c/ui/icon.html" (dict "name" "crear" "size" 17 "color" "#08293A") }}
+{{- else if eq $nivel "fundadora" -}}
+  {{ partial "bp2c/ui/icon.html" (dict "name" "destello" "size" 17 "color" "#08293A") }}
+{{- end -}}
+{{ $texto }}</span>

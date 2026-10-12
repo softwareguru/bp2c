@@ -1,370 +1,162 @@
-{{ define "main" }}
+{{- /* Perfil de organización. Orden de bloques según el copy aprobado.
+       Los puntajes del ciclo 2026 se muestran como históricos y etiquetados
+       con su metodología; los de 2027 esperan D2. */ -}}
+{{- $g := hugo.Data.bp2c.global -}}
+{{- $cats := hugo.Data.bp2c.categorias -}}
+{{- $cat := "" -}}
+{{- $tipo := index .Params "tipo-empresa" -}}
+{{- range $cats }}{{ if eq .slug $tipo }}{{ $cat = .nombre }}{{ end }}{{ end -}}
+{{- $puntajes := slice
+    (dict "campo" "global" "etiqueta" "Global")
+    (dict "campo" "compensacion" "etiqueta" "Compensación")
+    (dict "campo" "desarrollo" "etiqueta" "Desarrollo profesional")
+    (dict "campo" "cultura" "etiqueta" "Cultura")
+    (dict "campo" "friendly" "etiqueta" "Gender Friendly")
+    (dict "campo" "infraestructura" "etiqueta" "Infraestructura") -}}
+{{- $fotos := slice -}}
+{{- range (seq 1 7) }}{{ with (index $.Params (printf "img%d" .)) }}{{ $fotos = $fotos | append . }}{{ end }}{{ end -}}
+{{- $redes := slice
+    (dict "campo" "linkedin" "nombre" "LinkedIn")
+    (dict "campo" "instagram" "nombre" "Instagram")
+    (dict "campo" "facebook" "nombre" "Facebook")
+    (dict "campo" "x" "nombre" "X")
+    (dict "campo" "tiktok" "nombre" "TikTok") -}}
 
+{{ partial "bp2c/head.html" . }}
 
+{{- with .Params.global }}
+<script type="application/ld+json">
+{{ dict
+  "@context" "https://schema.org"
+  "@type" "Organization"
+  "name" $.Title
+  "url" ($.Params.website | default $.Permalink)
+  "description" ($.Summary | plainify | chomp)
+  "aggregateRating" (dict
+    "@type" "AggregateRating"
+    "ratingValue" .
+    "bestRating" 100
+    "worstRating" 0
+    "ratingCount" 1
+    "reviewAspect" "Entorno de trabajo de las personas de tecnología")
+  | jsonify (dict "indent" "  ") | safeJS
+}}
+</script>
+{{- end }}
 
-<section>
-  <!-- Imagenes empresa -->
-  <section class="bg-companies">
-    <div class="container">
-      <img class="img-fluid img-location"
-        src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
-        loading="lazy" width="450" alt="featured image {{.Title }}" />
-    </div>
-  </section>
-  <!-- Imagenes empresa -->
-
-
-
-  <!-- Titulo-->
-  <div class="business-obligations-title text-center">
-    <h2>Obligaciones Empresariales</h2>
-  </div>
-  <!-- /Titulo-->
-
-
-  <!-- Porcentaje general y sello -->
-  <div class="container">
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <div class="col-sm">
-          <h5 class="text-center mb-4">Porcentaje general: {{ .Params.global}}%</h5>
-          <div id="myProgress-global">
-            <div id="myBar" {{ with .Params.global }}style="width: {{ . | safeCSS}}%;" {{end}}></div>
-          </div>
+<!-- 1 · Encabezado -->
+<section class="bp-section--navy bp-dark" style="padding-block:clamp(40px,5vw,64px)">
+  <div class="bp-shell">
+    <div style="display:flex;flex-wrap:wrap;gap:28px;align-items:center">
+      {{- with (index (.Params.images | default slice) 0) }}
+      <span style="display:inline-flex;align-items:center;justify-content:center;min-height:96px;padding:16px 24px;background:#fff;border-radius:16px">
+        <img src="{{ . | absURL }}" alt="{{ $.Title }}" width="200" height="64" style="max-height:64px;width:auto;object-fit:contain">
+      </span>
+      {{- end }}
+      <div style="flex:999 1 320px;min-width:0">
+        <h1 class="bp-display" style="font-size:clamp(30px,4.4vw,48px);margin-bottom:16px">{{ .Title }}</h1>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+          {{ partial "bp2c/ui/badge.html" (dict "nivel" "acreditada" "texto" $g.etiquetas.distincion_2026) }}
+          {{- with $cat }}<span class="bp-badge bp-badge--participante">{{ . }}</span>{{ end }}
         </div>
-        <div class="col-sm mt-4 mb-4 text-center">
-          El cumplimiento de las obligaciones empresariales es un aspecto clave para garantizar el correcto
-          funcionamiento y la sostenibilidad de cualquier organización.
-        </div>
-        {{ with .Params.Sello }}
-        <div class="col-sm mb-4 ">
-          <img src="/images/sello.png" class="img-fluid mx-auto d-block">
-        </div>
-        {{ end }}
-      </div>
-      <div class="col-md-3">
-        <div>
-          <h6>Compensación: {{ .Params.compensacion }}%</h6>
-          <div id="progress-bar-beneficios">
-            <div id="myBar-beneficios" {{ with .Params.compensacion }}style="width: {{ . | safeCSS}}%;" {{end}}></div>
-          </div>
-        </div>
-
-        <div class="mt-3">
-          <h6>Desarrollo profesional: {{ .Params.desarrollo }}%</h6>
-          <div id="progress-bar-beneficios">
-            <div id="myBar-beneficios" {{ with .Params.desarrollo }}style="width: {{ . | safeCSS}}%;" {{end}}></div>
-          </div>
-        </div>
-
-        <div class="mt-3">
-          <h6>Cultura: {{ .Params.cultura }}%</h6>
-          <div id="progress-bar-beneficios">
-            <div id="myBar-beneficios" {{ with .Params.cultura }}style="width: {{ . | safeCSS}}%;" {{end}}></div>
-          </div>
-        </div>
-
-        <div class="mt-3">
-          <h6>Gender Friendly: {{ .Params.friendly }}%</h6>
-          <div id="progress-bar-beneficios">
-            <div id="myBar-beneficios" {{ with .Params.friendly }}style="width: {{ . | safeCSS}}%;" {{end}}></div>
-          </div>
-        </div>
-
-        <div class="mt-3 mb-4">
-          <h6>Infraestructura: {{ .Params.infraestructura }}%</h6>
-          <div id="progress-bar-beneficios">
-            <div id="myBar-beneficios" {{ with .Params.infraestructura }}style="width: {{ . | safeCSS}}%;" {{end}}>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <h5 class="text-center">Oficinas Centrales</h5>
-        <div class="d-flex">
-          <div class="ratio ratio-16x9 mt-2">
-            <iframe class="mb-4" src="{{ .Params.location}}" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
+        {{- with .Params.cities }}
+        <p style="margin:16px 0 0;color:var(--bp-sky)">{{ delimit . " · " }}</p>
+        {{- end }}
       </div>
     </div>
-  </div>
-  <!-- /Porcentaje general y sello -->
 
-  <!-- Beneficios -->
-  <div class="container beneficios-section mx-auto d-block mt-4">
-    <div class="row container">
-      {{ with .Params.Cafeteria }}
-      <div class="col-md-3 col-sm-6 mb-4">
-        <img src="/images/benefits/cafeteria.png" width="190" class="mx-auto d-block">
-      </div>
-      {{ end }}
-      {{ with .Params.Flexiblehours }}
-      <div class="col-md-3 col-sm-6 mb-4">
-        <img src="/images/benefits/flexiblehours.png" width="190" class="mx-auto d-block">
-      </div>
-      {{ end }}
-      {{ with .Params.Gameroom }}
-      <div class="col-md-3 col-sm-6 mb-4">
-        <img src="/images/benefits/gameroom.png" width="190" class="mx-auto d-block">
-      </div>
-      {{ end }}
-      {{ with .Params.Healthinsurance }}
-      <div class="col-md-3 col-sm-6 mb-4">
-        <img src="/images/benefits/healthinsurence.png" width="190" class="mx-auto d-block">
-      </div>
-      {{ end }}
-      {{ with .Params.Languageclasses }}
-      <div class="col-md-3 col-sm-6 mb-4">
-        <img src="/images/benefits/languageclasses.png" width="190" class="mx-auto d-block">
-      </div>
-      {{ end }}
-      {{ with .Params.Makerspace }}
-      <div class="col-md-3 col-sm-6 mb-4">
-        <img src="/images/benefits/makerspace.png" width="190" class="mx-auto d-block">
-      </div>
-      {{ end }}
-      {{ with .Params.Petfriendly }}
-      <div class="col-md-3 col-sm-6 mb-4">
-        <img src="/images/benefits/petfriendly.png" width="190" class="mx-auto d-block">
-      </div>
-      {{ end }}
-      {{ with .Params.Remotework }}
-      <div class="col-md-3 col-sm-6 mb-4">
-        <img src="/images/benefits/remotework.png" width="190" class="mx-auto d-block">
-      </div>
-      {{ end }}
-      {{ with .Params.Stockoptions }}
-      <div class="col-md-3 col-sm-6 mb-4">
-        <img src="/images/benefits/stockoptions.png" width="190" class="mx-auto d-block">
-      </div>
-      {{ end }}
-      {{ with .Params.Temporalrelocation }}
-      <div class="col-md-3 col-sm-6 mb-4">
-        <img src="/images/benefits/temporalrecolocation.png" width="190" class="mx-auto d-block">
-      </div>
-      {{ end }}
-      {{ with .Params.Transportation }}
-      <div class="col-md-3 col-sm-6 mb-4">
-        <img src="/images/benefits/transportation.png" width="190" class="mx-auto d-block">
-      </div>
-      {{ end }}
+    <!-- 2 · Botones -->
+    <div class="bp-btn-row" style="margin-top:32px">
+      {{- with .Params.jobslink }}{{ partial "bp2c/ui/button.html" (dict "texto" "Ver vacantes" "url" . "variant" "primary") }}{{ end }}
+      {{- with .Params.website }}{{ partial "bp2c/ui/button.html" (dict "texto" "Sitio web" "url" . "variant" "outline") }}{{ end }}
     </div>
   </div>
-  <!-- /Beneficios -->
-
-  <div class="container mt-4">
-    {{ .Content }}
-  </div>
-
-  <!-- Carousel -->
-
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-  <!-- Demo styles -->
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
-
-  <!-- Swiper -->
-  <div class="swiper mySwiper container">
-    <div class="swiper-wrapper">
-
-
-      {{ with .Params.Img1}}
-      <div class="swiper-slide"><img src="{{ . }}"></div>
-      {{ end}}
-
-      {{ with .Params.Img2}}
-      <div class="swiper-slide"><img src="{{ . }}"></div>
-      {{ end}}
-
-      {{ with .Params.Img3}}
-      <div class="swiper-slide"><img src="{{ . }}"></div>
-      {{ end}}
-
-      {{ with .Params.Img4}}
-      <div class="swiper-slide"><img src="{{ . }}"></div>
-      {{ end}}
-
-      {{ with .Params.Img5}}
-      <div class="swiper-slide"><img src="{{ . }}"></div>
-      {{ end}}
-
-
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      autoplay: true,
-      autoplaySpeed: 10000,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        "@0.00": {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        "@0.75": {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        "@1.00": {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        "@1.50": {
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
-      },
-    });
-  </script>
-
-  <!-- /Carousel -->
-
-  <br><br>
-
-  <!-- Ubicaciones -->
-
-  <div class="container-fluid">
-    <section class="container location-section">
-        <h2 class="text-center mb-4">{{ .Title }} tiene presencia en:</h2>
-
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
-
-            {{ range (.GetTerms "cities") }}
-
-            <div class="col-lg-3">
-                <div class="card h-100 card-location">
-                    <a href="{{ .Permalink }}">
-
-                        <div class="blog-item">
-                            <img class="img-fluid img-location"
-                                src="{{ with .Params.images }}{{ index . 0 | relURL }}{{else}}{{ .Params.Image | relURL }}{{ end }}"
-                                loading="lazy" alt="featured image {{.Title }}" />
-                        </div>
-
-                        <div class="blog-caption text-center">
-                            <h4 class="card-title text-decoration-none">
-                                {{ .Title }}
-                            </h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-    </section>
-</div>
-
-
-  <!-- /Ubicaciones -->
-
-  <!-- Info redes -->
-  <div class="container text-center mt-4">
-    <div class="row">
-      <div class="col-lg-4 text-center redes">
-
-        <ul class="d-flex justify-content-evenly mt-2 mb-4">
-          {{ with .Params.Linkedin }}
-          {{ if ne . "" }}
-          <a href="{{ . }}">
-            <img src="/images/icons/linkedin.svg" alt="Linkedin" width="52" height="52">
-          </a>
-          {{ end }}
-          {{ end }}
-
-          {{ with .Params.Instagram }}
-          {{ if ne . "" }}
-          <a href="{{ . }}">
-            <img src="/images/icons/instagram.svg" alt="Instagram" width="52" height="52">
-          </a>
-          {{ end }}
-          {{ end }}
-
-          {{ with .Params.Facebook }}
-          {{ if ne . "" }}
-          <a href="{{ . }}">
-            <img src="/images/icons/facebook.svg" alt="Facebook" width="52" height="52">
-          </a>
-          {{ end }}
-          {{ end }}
-
-          {{ with .Params.X }}
-          {{ if ne . "" }}
-          <a href="{{ . }}">
-            <img src="/images/icons/twitter-x.svg" alt="X" width="52" height="52">
-          </a>
-          {{ end }}
-          {{ end }}
-
-          {{ with .Params.Youtube }}
-          {{ if ne . "" }}
-          <a href="{{ . }}">
-            <img src="/images/icons/youtube.svg" alt="Youtube" width="52" height="52">
-          </a>
-          {{ end }}
-          {{ end }}
-        </ul>
-      </div>
-      <div class="col-lg-4">
-        <div class="mb-4">
-          <a href="{{ .Params.Website}}" target="_blank">
-            <button class="btn text-white btn-lg hero-button">Sitio web</button>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="mb-4">
-          {{ with .Params.Jobslink}}
-          <a href="{{ . }}" target="_blank">
-            <button class="btn text-white btn-lg hero-button">Oportunidades Laborales</button>
-          </a>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /Info redes -->
-
 </section>
 
-{{ end }}
+<!-- 3 · Sobre la organización -->
+{{- with .Content }}
+<section class="bp-section bp-section--paper">
+  <div class="bp-shell">
+    <h2 class="bp-h2">Sobre la organización</h2>
+    <div class="bp-prose">{{ . }}</div>
+  </div>
+</section>
+{{- end }}
+
+<!-- 4 · Fotos · scroll-snap nativo, sin Swiper -->
+{{- with $fotos }}
+<section class="bp-section bp-section--white">
+  <div class="bp-shell">
+    <h2 class="bp-h2">La organización por dentro</h2>
+    <div class="bp-carousel" tabindex="0" role="group" aria-label="Fotografías de {{ $.Title }}">
+      {{- range . }}
+      <div><img src="{{ . }}" alt="" loading="lazy" width="420" height="315"></div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
+<!-- 5 · Beneficios que ofrece -->
+{{- $bens := slice -}}
+{{- range hugo.Data.bp2c.beneficios }}{{ if eq (index $.Params .campo) true }}{{ $bens = $bens | append . }}{{ end }}{{ end -}}
+{{- with $bens }}
+<section class="bp-section bp-section--sky">
+  <div class="bp-shell">
+    <h2 class="bp-h2">Beneficios que ofrece</h2>
+    <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px">
+      {{- range . }}
+      <li style="display:inline-flex;align-items:center;gap:10px;padding:12px 20px;background:#fff;border-radius:999px;font-weight:700;font-size:15px">
+        {{ partial "bp2c/ui/icon.html" (dict "name" "check" "size" 18 "color" "#08293A") }}{{ .texto }}
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+</section>
+{{- end }}
+
+<!-- 6 · Evaluación histórica -->
+{{- with .Params.global }}
+<section class="bp-section bp-section--paper">
+  <div class="bp-shell">
+    <h2 class="bp-h2" style="margin-bottom:8px">{{ $g.etiquetas.puntajes_historicos }}</h2>
+    <p class="bp-note" style="margin:0 0 32px;max-width:46em">Resultados de la evaluación anónima de las personas de tecnología de {{ $.Title }} en el ciclo 2025-2026.</p>
+    <div class="bp-grid bp-grid--2" style="max-width:860px">
+      {{- range $puntajes }}
+      {{- $et := .etiqueta }}
+      {{- $v := index $.Params .campo }}
+      {{- if $v }}{{ partial "bp2c/ui/score-bar.html" (dict "etiqueta" $et "valor" $v) }}{{ end }}
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
+<!-- 7 · Ubicación -->
+{{- with .Params.location }}
+<section class="bp-section bp-section--white">
+  <div class="bp-shell">
+    <h2 class="bp-h2">Ubicación</h2>
+    <iframe src="{{ . }}" title="Ubicación de {{ $.Title }}" loading="lazy" width="100%" height="420"
+      style="border:0;border-radius:16px;max-width:100%" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+{{- end }}
+
+<!-- 8 · Redes -->
+{{- $rs := slice -}}
+{{- range $redes }}{{ $nb := .nombre }}{{ with (index $.Params .campo) }}{{ $rs = $rs | append (dict "nombre" $nb "url" .) }}{{ end }}{{ end -}}
+{{- with $rs }}
+<section class="bp-section bp-section--paper" style="padding-block:clamp(32px,4vw,48px)">
+  <div class="bp-shell">
+    <h2 class="bp-h3" style="margin-bottom:16px">Redes</h2>
+    <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px">
+      {{- range . }}
+      <li><a class="bp-btn bp-btn--outline" href="{{ .url }}" target="_blank" rel="noopener">{{ .nombre }}</a></li>
+      {{- end }}
+    </ul>
+  </div>
+</section>
+{{- end }}
+
+{{ partial "bp2c/foot.html" . }}

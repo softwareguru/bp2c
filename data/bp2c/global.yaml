@@ -1,0 +1,107 @@
+# Elementos globales del sitio BP2C 2027.
+# Fuente: "BP2C 2027 · Sitio web: copy por página (para aprobación)".
+
+cta_principal:
+  texto: "Evalúa a tu organización"
+  url: "/contacto/?interes=evaluar"
+
+# Banda CTA por defecto (C10). Se usa al final de todas las páginas,
+# salvo que la página declare su propio bloque cta.
+cta_default:
+  titulo: "Las evaluaciones 2027 ya están abiertas"
+  texto: "Te sugerimos contratar tu evaluación antes del 8 de enero, para que tu equipo tenga dos semanas completas para responder."
+  boton:
+    texto: "Habla con nuestro equipo"
+    url: "/contacto/?interes=evaluar"
+
+# Banda CTA de talento (C10, variante). La usan los perfiles de empresa
+# y el cierre de Para talento.
+cta_talento:
+  titulo: "Busca tu próximo lugar para crear"
+  texto: "Conoce a las organizaciones acreditadas y sus vacantes."
+  boton:
+    texto: "Ver organizaciones acreditadas"
+    url: "/companies/"
+
+# CTA al final de cada post del blog (C10, variante).
+cta_blog:
+  titulo: "¿Tu organización crea estas condiciones?"
+  texto: "Best Place to Create diagnostica el entorno de trabajo de tus personas de tecnología y acredita a las organizaciones que cumplen el criterio."
+  boton:
+    texto: "Conoce cómo funciona"
+    url: "/como-funciona/"
+
+footer:
+  bajo_logo: "El estándar de diagnóstico y acreditación para organizaciones tech en Latinoamérica."
+  legal: "Best Place to Create es una iniciativa de Software Guru y la evolución de Best Place to Code."
+
+# Etiquetas que se repiten
+etiquetas:
+  distincion_2027: "Acreditada · Best Place to Create 2027"
+  distincion_2026: "Acreditada como Best Place to Code 2026"
+  puntajes_historicos: "Evaluación 2026 · metodología Best Place to Code"
+
+# Fuente de datos de SG Tech Pulse. El valor de n cambia por corte.
+tech_pulse:
+  plantilla: "Dato preliminar · Fuente: SG Tech Pulse 2026, corte de México al 12 de octubre de 2026 (n = %s). Muestra autoseleccionada."
+  n_codigo: "189 personas que crean código"
+  url: "https://salarios.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
+
+software_guru:
+  url: "https://sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral"
+
+# Menú principal. 01-arquitectura.md (sección 4) no está en el repo, así que
+# este orden es una propuesta construida con las páginas que define el copy.
+menu:
+  - nombre: "Qué es"
+    url: "/que-es/"
+  - nombre: "Cómo funciona"
+    url: "/como-funciona/"
+  - nombre: "Qué medimos"
+    url: "/que-medimos/"
+  - nombre: "Beneficios"
+    url: "/beneficios/"
+  - nombre: "Organizaciones"
+    url: "/companies/"
+  - nombre: "Para talento"
+    url: "/para-talento/"
+  - nombre: "Blog"
+    url: "/blog/"
+
+footer_columnas:
+  - titulo: "El programa"
+    enlaces:
+      - nombre: "Qué es"
+        url: "/que-es/"
+      - nombre: "Cómo funciona"
+        url: "/como-funciona/"
+      - nombre: "Qué medimos"
+        url: "/que-medimos/"
+      - nombre: "Beneficios"
+        url: "/beneficios/"
+  - titulo: "Organizaciones"
+    enlaces:
+      - nombre: "Organizaciones acreditadas"
+        url: "/companies/"
+      - nombre: "Para talento"
+        url: "/para-talento/"
+      - nombre: "Preguntas frecuentes"
+        url: "/faq/"
+  - titulo: "Recursos"
+    enlaces:
+      - nombre: "Blog"
+        url: "/blog/"
+      - nombre: "Rankings anteriores"
+        url: "/rankings/"
+      - nombre: "SG Tech Pulse"
+        url: "https://salarios.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
+      - nombre: "Software Guru"
+        url: "https://sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral"
+  - titulo: "Contacto"
+    enlaces:
+      - nombre: "Evalúa a tu organización"
+        url: "/contacto/?interes=evaluar"
+      - nombre: "Prensa o alianzas"
+        url: "/contacto/?interes=prensa"
+      - nombre: "Aviso de privacidad"
+        url: "/privacidad/"

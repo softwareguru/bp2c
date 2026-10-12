@@ -1,0 +1,31 @@
+{{- /* Directorio agrupado por categoría de reconocimiento, orden alfabético
+       y sin número de posición (D2 abierta). Un solo range sobre los datos,
+       en lugar de la tarjeta repetida una vez por categoría.
+       D10 abierta: el filtro de acreditación vigente es `sello: true`. */ -}}
+{{- $b := .block -}}
+{{- $cats := hugo.Data.bp2c.categorias -}}
+{{- $todas := where (where site.RegularPages "Section" "companies") "Params.sello" true -}}
+<section class="bp-section bp-section--paper">
+  <div class="bp-shell">
+    {{- range $cats }}
+    {{- $nombre := .nombre }}
+    {{- $desc := .descripcion }}
+    {{- $grupo := where $todas "Params.tipo-empresa" .slug -}}
+    {{- with $grupo }}
+    <div style="margin-bottom:56px">
+      <h2 class="bp-h2" style="margin-bottom:8px">{{ $nombre }}</h2>
+      <p class="bp-note" style="margin:0 0 26px;max-width:46em">{{ $desc }}</p>
+      <div class="bp-grid bp-grid--4">
+        {{- range (sort . "Title") }}
+        {{ partial "bp2c/ui/company-card.html" (dict "page" .) }}
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+    {{- end }}
+    {{- $sinCat := where $todas "Params.tipo-empresa" nil -}}
+    {{- with $sinCat }}
+    <p class="bp-note">{{ len . }} perfiles acreditados no tienen categoría de reconocimiento en su frontmatter y no se muestran arriba.</p>
+    {{- end }}
+  </div>
+</section>
