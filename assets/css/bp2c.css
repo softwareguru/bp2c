@@ -582,3 +582,16 @@ a:hover { color: var(--bp-navy-hover); }
 .bp-form__errores li { margin-bottom: 6px; font-size: 15px; }
 .bp-form__errores a { color: #7A2A20; font-weight: 700; }
 .bp-field input[aria-invalid="true"], .bp-field select[aria-invalid="true"], .bp-field textarea[aria-invalid="true"] { border-color: #9A3328; border-width: 2px; }
+
+/* Rejilla de testimonios en vídeo */
+.bp-testi-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.bp-testi-card { height: 100%; display: flex; flex-direction: column; gap: 18px;
+  background: rgba(191, 216, 239, 0.10); border: 1px solid rgba(191, 216, 239, 0.22);
+  border-radius: 20px; padding: 18px; }
+.bp-testi-card__body { display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.bp-testi-card__top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.bp-testi-card__quote { margin: 0; flex: 1; }
+.bp-testi-card__quote p { margin: 0; font-size: 18px; line-height: 1.5; font-weight: 500; color: var(--bp-white); }
+.bp-testi-card__who { margin: 0; font-size: 14px; color: var(--bp-sky); }
+.bp-testi-card__titulo { margin: 0; flex: 1; font-size: 17px; line-height: 1.5; color: var(--bp-sky); }

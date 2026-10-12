@@ -63,8 +63,8 @@ blocks:
   - type: testimonios
     ancla: "testimonios"
     enlace:
-      texto: "Ver todos los testimonios"
-      url: "/testimonios/"
+      texto: "Ver el directorio de organizaciones acreditadas"
+      url: "/companies/"
 
   # 6 · Qué me cuesta hacerlo
   - type: pasos
