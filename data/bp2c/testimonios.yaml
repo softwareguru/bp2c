@@ -1,0 +1,44 @@
+# Testimonios. Todavía no hay ninguno grabado: mientras `publicar` sea false
+# la sección solo se dibuja en local (hugo server), con los huecos marcados,
+# para que se vea el diseño y se sepa qué hay que producir. En producción no
+# se publica hasta que haya material real.
+publicar: false
+
+kicker: "Testimonios"
+titulo: "Lo que cambió para quienes ya se acreditaron"
+entrada: "No lo que opinamos nosotros: lo que cuentan las personas que tomaron la decisión."
+
+# Especificaciones para grabar: 30–45 s, vertical 1080×1920, menos de 3 MB,
+# H.264 a ~2 Mbps. Los subtítulos son obligatorios (criterio 1.2.2 de WCAG,
+# nivel A): sin ellos el sitio deja de cumplir.
+#
+# Tres preguntas que suelen dar buen material:
+#   1. ¿Qué estaba pasando en tu equipo que te hizo buscar esto?
+#   2. ¿Qué encontró el diagnóstico que no esperabas?
+#   3. ¿Qué cambió desde entonces, en números si puedes?
+# La respuesta a la tercera suele ser la cita que va bajo el vídeo.
+
+destacado:
+  cita: ""
+  nombre: ""
+  cargo: ""
+  empresa: ""
+  acreditada: true
+  video: ""          # ruta a un mp4 propio, o el ID de YouTube en `youtube`
+  youtube: ""
+  poster: ""
+  subtitulos: ""     # archivo .vtt; obligatorio si hay vídeo
+  duracion: ""
+  transcripcion: ""
+
+apoyo:
+  - cita: ""
+    nombre: ""
+    empresa: ""
+    tono: "sky"
+  - cita: ""
+    nombre: ""
+    empresa: ""
+    tono: "outline"
+    # Idealmente, alguien que no alcanzó el criterio la primera vez y habla
+    # del valor del diagnóstico: eso da credibilidad al estándar.

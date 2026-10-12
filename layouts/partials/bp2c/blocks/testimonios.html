@@ -1,0 +1,70 @@
+{{- /* Testimonios: un vídeo protagonista y citas de apoyo. Se sostiene con
+       un solo vídeo bueno, que es el caso habitual; las citas de texto
+       rellenan sin obligar a producir más material. */ -}}
+{{- $b := .block -}}
+{{- $d := hugo.Data.bp2c.testimonios -}}
+{{- if or $d.publicar (not hugo.IsProduction) -}}
+{{- $pendiente := not $d.publicar -}}
+<section class="bp-section bp-section--navy bp-dark" aria-labelledby="testi-titulo"{{ with $b.ancla }} id="{{ . }}"{{ end }}>
+  <div class="bp-shell">
+    <div style="max-width:46ch;margin-bottom:40px">
+      <p class="bp-kicker" style="color:var(--bp-lime)">{{ $d.kicker }}</p>
+      <h2 class="bp-h2" id="testi-titulo" style="color:#fff">{{ $b.h2 | default $d.titulo }}</h2>
+      {{- with $d.entrada }}<p class="bp-lead" style="color:var(--bp-sky);max-width:none">{{ . }}</p>{{ end }}
+    </div>
+
+    {{- if $pendiente }}
+    <div class="bp-callout" style="margin-bottom:28px">
+      <p><b>Sección construida, a la espera de material.</b> Así se verá en cuanto haya un vídeo y dos citas. Mientras tanto solo aparece en local: en producción no se publica.</p>
+      <p>Hace falta, por testimonio: la cita, nombre, cargo, empresa, el vídeo de 30–45 s en vertical, su miniatura y el archivo <code>.vtt</code> de subtítulos. Todo va en <code>data/bp2c/testimonios.yaml</code>; la plantilla no se vuelve a tocar.</p>
+    </div>
+    {{- end }}
+
+    <div class="bp-testi">
+      <figure class="bp-testi__main">
+        {{ partial "bp2c/ui/video.html" (dict "testimonio" $d.destacado "vertical" false) }}
+
+        <blockquote class="bp-testi__quote">
+          <p>{{ with $d.destacado.cita }}{{ . }}{{ else }}[ CITA EXTRAÍDA DEL VÍDEO — la frase que mejor resume el resultado concreto: vacantes cerradas, rotación, tiempo de contratación. ]{{ end }}</p>
+        </blockquote>
+
+        <figcaption class="bp-testi__cite">
+          {{- with $d.destacado.poster }}<img class="bp-testi__avatar" src="{{ . | relURL }}" alt="" loading="lazy" width="46" height="46">
+          {{- else }}<span class="bp-testi__avatar" aria-hidden="true"></span>{{ end }}
+          <span class="bp-testi__who">
+            <b>{{ $d.destacado.nombre | default "[ NOMBRE ]" }}</b>
+            <span>{{ $d.destacado.cargo | default "[ CARGO ]" }} · {{ $d.destacado.empresa | default "[ EMPRESA ]" }}</span>
+          </span>
+          {{- if $d.destacado.acreditada }}
+          <span class="bp-testi__flag"><span aria-hidden="true"></span>Acreditada</span>
+          {{- end }}
+        </figcaption>
+
+        {{- with $d.destacado.transcripcion }}
+        <details class="bp-transcripcion">
+          <summary>Leer la transcripción completa</summary>
+          <div>{{ . | markdownify }}</div>
+        </details>
+        {{- else }}
+        <p class="bp-note" style="margin:0;color:var(--bp-sky)">La transcripción va aquí: es texto indexable y además cubre a quien no puede ver el vídeo.</p>
+        {{- end }}
+      </figure>
+
+      <div class="bp-testi__aside">
+        {{- range $d.apoyo }}
+        <figure class="bp-quote bp-quote--{{ .tono | default "outline" }}">
+          <blockquote><p>{{ with .cita }}{{ . }}{{ else }}[ CITA DE TEXTO — otra empresa, otra categoría, otro beneficio del que habla. ]{{ end }}</p></blockquote>
+          <figcaption>
+            <span class="bp-testi__avatar" aria-hidden="true"></span>
+            <span><b>{{ .nombre | default "[ NOMBRE ]" }}</b><span>{{ .empresa | default "[ EMPRESA ]" }}</span></span>
+          </figcaption>
+        </figure>
+        {{- end }}
+        {{- with $b.enlace }}
+        <a class="bp-btn bp-btn--outline" href="{{ .url }}">{{ .texto }}</a>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{- end -}}

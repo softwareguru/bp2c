@@ -2,8 +2,9 @@
        D10 abierta: hoy el filtro es `sello: true` en el frontmatter. */ -}}
 {{- $b := .block -}}
 {{- $empresas := where (where site.RegularPages "Section" "companies") "Params.sello" true -}}
-<section class="bp-section {{ $b.fondo | default "bp-section--white" }}">
-  <div class="bp-shell">
+<section class="{{ if $b.compacto }}bp-barra{{ else }}bp-section{{ end }} {{ $b.fondo | default "bp-section--white" }}" aria-label="{{ $b.etiqueta | default "Organizaciones acreditadas" }}">
+  <div class="bp-shell{{ if $b.compacto }} bp-barra__inner{{ end }}">
+    {{- with $b.rotulo }}<p class="bp-barra__rotulo">{{ . }}</p>{{ end }}
     {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
     {{- with $b.texto }}<p class="bp-lead" style="margin-bottom:32px">{{ . | safeHTML }}</p>{{ end }}
     <ul class="bp-logos">

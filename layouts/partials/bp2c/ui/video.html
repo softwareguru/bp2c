@@ -1,0 +1,28 @@
+{{- /* Fachada de vídeo. Sin vídeo todavía, dibuja el hueco con lo que hace
+       falta producir. Los subtítulos no son opcionales: criterio 1.2.2 de
+       WCAG, nivel A, más estricto que el AA al que apunta el sitio. */ -}}
+{{- $t := .testimonio -}}
+{{- $vertical := .vertical -}}
+{{- $hay := or $t.video $t.youtube -}}
+{{- $quien := printf "%s%s" ($t.nombre | default "la persona del testimonio") (cond (eq $t.empresa "") "" (printf " de %s" $t.empresa)) -}}
+<div class="bp-video{{ if $vertical }} bp-video--vertical{{ end }}"
+     {{ if $hay }}data-video
+     {{ with $t.youtube }}data-youtube="{{ . }}"{{ end }}
+     {{ with $t.video }}data-src="{{ . | relURL }}"{{ end }}
+     {{ with $t.subtitulos }}data-track="{{ . | relURL }}"{{ end }}
+     data-titulo="Testimonio de {{ $quien }}"{{ end }}>
+  {{- with $t.poster }}
+  <img class="bp-video__poster" src="{{ . | relURL }}" alt="" loading="lazy" width="640" height="360">
+  {{- else }}
+  <p class="bp-video__ph">[ MINIATURA DEL VÍDEO · WebP, ~40 KB ]</p>
+  {{- end }}
+
+  {{- if $hay }}
+  <button class="bp-video__play" type="button" data-video-play
+          aria-label="Reproducir el testimonio de {{ $quien }}{{ with $t.duracion }}, {{ . }}{{ end }}">
+    {{ partial "bp2c/ui/icon.html" (dict "name" "play" "size" 30 "color" "#08293A") }}
+  </button>
+  {{- with $t.duracion }}<span class="bp-video__dur">{{ . }}</span>{{ end }}
+  {{- if $t.subtitulos }}<span class="bp-video__cc">CC Subtítulos</span>{{ else }}<span class="bp-video__cc" style="background:var(--bp-mist)">Falta .vtt</span>{{ end }}
+  {{- end }}
+</div>

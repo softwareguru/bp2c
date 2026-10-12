@@ -2,15 +2,18 @@
 title: "Inicio"
 seo_title: "Best Place to Create · Acreditación para organizaciones tech"
 description: "Diagnóstico y acreditación del entorno de trabajo de tus personas de tecnología. Evaluación anónima, criterio exigente y datos del sector."
-# Objetivo: que quien decide entienda la evolución en 10 segundos y llegue a
-# contacto, y que el talento encuentre su camino.
+# Orden del recorrido de quien decide: qué es → por qué ahora → qué obtengo →
+# ¿funciona? (testimonios) → qué me cuesta hacerlo → ¿puedo confiar? →
+# objeciones → decidir. El talento va al final, como audiencia secundaria.
 blocks:
+  # 1 · Qué es esto, en diez segundos
   - type: hero
     kicker: "Antes Best Place to Code"
     h1: "El estándar de diagnóstico y acreditación para organizaciones tech en Latinoamérica"
     subtitulo: "Diagnosticamos las condiciones que permiten a tus personas de tecnología pensar, aprender, colaborar y crear valor. Y acreditamos a las organizaciones que las cumplen."
     foto: "fotos/inicio-hero.jpg"
     palabra: "Personas."
+    cifras_reales: true
     botones:
       - texto: "Evalúa a tu organización"
         url: "/contacto/?interes=evaluar"
@@ -18,6 +21,20 @@ blocks:
       - texto: "Conoce cómo funciona"
         url: "/como-funciona/"
         variant: "outline"
+
+  # 2 · Prueba social inmediata, antes de pedir nada
+  - type: logos
+    compacto: true
+    fondo: "bp-section--white"
+    rotulo: "Ya se acreditaron"
+    etiqueta: "Algunas organizaciones acreditadas"
+
+  # 3 · Por qué ahora
+  - type: dato
+    cifra: "50 %"
+    frase: "de quienes crean código en México dice que, sobre todo, instruye a agentes de IA y revisa el resultado."
+    remate: "Cuando cambia el trabajo, cambia lo que hace bueno a un lugar para trabajar."
+    fuente_n: "189 personas que crean código"
 
   - type: frases
     frases:
@@ -28,12 +45,7 @@ blocks:
       - "Best place to create"
     texto: "Durante cerca de diez años reconocimos a los mejores lugares para programar. Hoy el trabajo técnico también es pensar, decidir, aprender y colaborar con IA. Por eso Best Place to Code evoluciona a Best Place to Create."
 
-  - type: dato
-    cifra: "50 %"
-    frase: "de quienes crean código en México dice que, sobre todo, instruye a agentes de IA y revisa el resultado."
-    remate: "Cuando cambia el trabajo, cambia lo que hace bueno a un lugar para trabajar."
-    fuente_n: "189 personas que crean código"
-
+  # 4 · Qué obtiene tu organización
   - type: cards
     h2: "Diagnóstico, acreditación y datos del sector"
     tarjetas:
@@ -47,7 +59,16 @@ blocks:
       texto: "Qué medimos"
       url: "/que-medimos/"
 
+  # 5 · ¿Funciona? Lo dice quien ya pasó por el proceso
+  - type: testimonios
+    ancla: "testimonios"
+    enlace:
+      texto: "Ver todos los testimonios"
+      url: "/testimonios/"
+
+  # 6 · Qué me cuesta hacerlo
   - type: pasos
+    fondo: "bp-section--paper"
     h2: "Cinco pasos, dos pagos"
     pasos:
       - titulo: "Contratas la evaluación"
@@ -62,15 +83,43 @@ blocks:
       texto: "Ver el proceso completo"
       url: "/como-funciona/"
 
-  - type: logos
-    h2: "Organizaciones que ya crean las condiciones"
-    texto: "Acreditadas con base en la evaluación anónima de sus personas de tecnología. Ciclo 2025-2026, como Best Place to Code."
-    enlace:
-      texto: "Ver todas las organizaciones"
-      url: "/companies/"
+  - type: fechas
+    corta: true
+    fondo: "bp-section--white"
 
-  - type: texto
+  # 7 · ¿Puedo confiar en el criterio?
+  - type: cards
+    fondo: "bp-section--sky"
+    kicker: "Por qué es creíble"
+    h2: "El criterio no lo ponemos nosotros solos"
+    cols: 3
+    tarjetas:
+      - titulo: "Lo responden tus personas, en anónimo"
+        texto: "La calificación sale de las respuestas anónimas de quienes trabajan ahí. Con menos de 10 respuestas, los resultados se muestran en rangos más amplios para que nadie pueda ser identificado."
+      - titulo: "El criterio es público y exigente"
+        texto: "85 % de promedio agregado en Fundamentos y mínimo 75 % en cada uno de sus 14 reactivos. Igual para todas, sin importar el tamaño."
+      - titulo: "No todas lo logran"
+        texto: "El directorio y el listado incluyen solo a las organizaciones acreditadas. Si no alcanzas el criterio, el resultado no se publica."
+    enlace:
+      texto: "Ver la metodología completa"
+      url: "/que-medimos/"
+
+  # 8 · Las objeciones que frenan la decisión, resueltas aquí
+  - type: faq
     fondo: "bp-section--paper"
+    h2: "Lo que suelen preguntarnos antes de decidir"
+    preguntas:
+      - "costo"
+      - "pago-garantiza"
+      - "anonimato"
+      - "no-alcanzamos"
+    enlace:
+      texto: "Ver todas las preguntas frecuentes"
+      url: "/faq/"
+
+  # 9 · Audiencia secundaria: el talento
+  - type: texto
+    fondo: "bp-section--white"
     kicker: "Si trabajas en tecnología"
     h2: "Un sello que deciden tus colegas"
     parrafos:
@@ -80,8 +129,4 @@ blocks:
       url: "/para-talento/"
     foto: "fotos/inicio-talento.jpg"
     palabra: "Crear."
-
-  - type: fechas
-    corta: true
-    fondo: "bp-section--white"
 ---

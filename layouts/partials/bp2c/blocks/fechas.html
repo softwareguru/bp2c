@@ -2,9 +2,9 @@
        corta de Inicio y la completa de Cómo funciona no se desincronizan. */ -}}
 {{- $b := .block -}}
 {{- $d := hugo.Data.bp2c.fechas -}}
-<section class="bp-section {{ $b.fondo | default "bp-section--paper" }}">
+<section class="bp-section {{ $b.fondo | default "bp-section--paper" }}" id="{{ $b.ancla | default "fechas" }}" aria-labelledby="{{ $b.ancla | default "fechas" }}-titulo">
   <div class="bp-shell">
-    <h2 class="bp-h2">{{ $b.h2 | default $d.titulo }}</h2>
+    <h2 class="bp-h2" id="{{ $b.ancla | default "fechas" }}-titulo">{{ $b.h2 | default $d.titulo }}</h2>
     <div class="bp-tablewrap">
       <table class="bp-table">
         <thead>

@@ -24,6 +24,7 @@
   {{- else if eq .type "recomienda" }}{{ partial "bp2c/blocks/recomienda.html" $arg }}
   {{- else if eq .type "directorio" }}{{ partial "bp2c/blocks/directorio.html" $arg }}
   {{- else if eq .type "contacto" }}{{ partial "bp2c/blocks/contacto.html" $arg }}
+  {{- else if eq .type "testimonios" }}{{ partial "bp2c/blocks/testimonios.html" $arg }}
   {{- else if eq .type "cuerpo" }}
 <section class="bp-section bp-section--paper">
   <div class="bp-shell bp-prose">{{ $p.Content }}</div>

@@ -5,9 +5,13 @@
 {{- $b := .block -}}
 {{- $d := hugo.Data.bp2c.global -}}
 <form class="bp-form" name="contacto-bp2c" method="POST" action="/contacto/gracias/"
-      data-netlify="true" netlify-honeypot="bot-field">
+      data-netlify="true" netlify-honeypot="bot-field" data-form>
   <input type="hidden" name="form-name" value="contacto-bp2c">
   <p hidden><label>No llenar <input name="bot-field"></label></p>
+
+  {{- /* Resumen de errores: aparece al intentar enviar con campos sin
+         resolver, con un enlace a cada uno. */ -}}
+  <div class="bp-form__errores" data-form-errores role="alert" tabindex="-1" hidden></div>
 
   <div class="bp-field">
     <label for="f-interes">Me interesa <span class="bp-req">(requerido)</span></label>
@@ -18,6 +22,8 @@
     </select>
   </div>
 
+  <fieldset>
+    <legend>Sobre ti</legend>
   <div class="bp-field">
     <label for="f-nombre">Nombre <span class="bp-req">(requerido)</span></label>
     <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
@@ -28,6 +34,10 @@
     <input id="f-correo" name="correo" type="email" autocomplete="email" required>
   </div>
 
+  </fieldset>
+
+  <fieldset>
+    <legend>Sobre tu organización</legend>
   <div class="bp-field">
     <label for="f-organizacion">Organización <span class="bp-req">(requerido)</span></label>
     <input id="f-organizacion" name="organizacion" type="text" autocomplete="organization" required>
@@ -40,15 +50,17 @@
 
   <div class="bp-field">
     <label for="f-tamano">Tamaño de tu equipo de tecnología</label>
-    <select id="f-tamano" name="tamano">
+    <select id="f-tamano" name="tamano" aria-describedby="f-tamano-ayuda">
       <option value="">Selecciona una opción</option>
       <option>Menos de 10</option>
       <option>Entre 10 y 100</option>
       <option>Entre 101 y 200</option>
       <option>Más de 200</option>
     </select>
-    <span class="bp-hint">Define la propuesta comercial, no la categoría en la que compites.</span>
+    <span class="bp-hint" id="f-tamano-ayuda">Define la propuesta comercial, no la categoría en la que compites.</span>
   </div>
+
+  </fieldset>
 
   <div class="bp-field">
     <label for="f-mensaje">¿Algo que debamos saber?</label>
@@ -57,8 +69,11 @@
 
   <div>
     <button class="bp-btn bp-btn--primary" type="submit">Enviar</button>
+    <p class="bp-hint" style="margin:14px 0 0">Te contactamos al correo que dejes. No compartimos tus datos con las organizaciones del directorio.</p>
   </div>
 </form>
+{{- $formjs := resources.Get "js/form.js" | minify | fingerprint }}
+<script defer src="{{ $formjs.RelPermalink }}" integrity="{{ $formjs.Data.Integrity }}"></script>
 <script>
 /* Preselecciona el interés con el que llegó la persona desde el CTA
    (/contacto/?interes=evaluar). Sin esto el parámetro no significa nada. */

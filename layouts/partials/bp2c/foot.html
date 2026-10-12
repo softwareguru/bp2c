@@ -1,6 +1,14 @@
 {{- $g := hugo.Data.bp2c.global -}}
 </main>
 
+{{- /* La fachada de vídeo solo se carga en las páginas que tienen vídeo. */ -}}
+{{- $conVideo := false -}}
+{{- range .Params.blocks }}{{ if eq .type "testimonios" }}{{ $conVideo = true }}{{ end }}{{ end -}}
+{{- if $conVideo }}
+{{- $videojs := resources.Get "js/video.js" | minify | fingerprint }}
+<script defer src="{{ $videojs.RelPermalink }}" integrity="{{ $videojs.Data.Integrity }}"></script>
+{{- end }}
+
 {{- /* Banda CTA (C10). La página puede declarar su propia variante en
        front matter con `cta:`; si no, se usa la banda por defecto. */ -}}
 {{- if not .Params.sin_cta }}

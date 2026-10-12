@@ -50,23 +50,72 @@ tech_pulse:
 software_guru:
   url: "https://sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral"
 
-# Menú principal. 01-arquitectura.md (sección 4) no está en el repo, así que
-# este orden es una propuesta construida con las páginas que define el copy.
+# Navegación. Cuatro entradas de primer nivel en lugar de siete planas
+# (ley de Hick), agrupadas por lo que la persona quiere hacer y con
+# etiquetas que anticipan el contenido (olor a información).
+# Cada grupo lleva como máximo cinco hijos (Miller).
 menu:
-  - nombre: "Qué es"
-    url: "/que-es/"
-  - nombre: "Cómo funciona"
-    url: "/como-funciona/"
-  - nombre: "Qué medimos"
-    url: "/que-medimos/"
-  - nombre: "Beneficios"
-    url: "/beneficios/"
-  - nombre: "Organizaciones"
-    url: "/companies/"
+  - nombre: "El programa"
+    grupo: true
+    enlaces:
+      - nombre: "Qué es"
+        url: "/que-es/"
+        resumen: "La evolución de Best Place to Code"
+      - nombre: "Cómo funciona"
+        url: "/como-funciona/"
+        resumen: "Cinco pasos, dos pagos y las fechas 2027"
+      - nombre: "Qué medimos"
+        url: "/que-medimos/"
+        resumen: "Fundamentos decide; cinco palancas señalan"
+      - nombre: "Beneficios"
+        url: "/beneficios/"
+        resumen: "Qué recibes evaluada y qué recibes acreditada"
+  - nombre: "Quién ya se acreditó"
+    grupo: true
+    enlaces:
+      - nombre: "Organizaciones acreditadas"
+        url: "/companies/"
+        resumen: "Directorio por categoría"
+      - nombre: "Testimonios"
+        url: "/testimonios/"
+        resumen: "Lo que cuentan quienes ya pasaron el proceso"
   - nombre: "Para talento"
     url: "/para-talento/"
-  - nombre: "Blog"
-    url: "/blog/"
+  - nombre: "Recursos"
+    grupo: true
+    enlaces:
+      - nombre: "Preguntas frecuentes"
+        url: "/faq/"
+        resumen: "Criterio, anonimato, pagos y fechas"
+      - nombre: "Blog"
+        url: "/blog/"
+      - nombre: "Rankings anteriores"
+        url: "/rankings/"
+        resumen: "Ocho ediciones, de 2019 a 2026"
+      - nombre: "SG Tech Pulse"
+        url: "https://salarios.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
+        resumen: "La encuesta abierta de salarios y condiciones"
+
+# Franja de urgencia. La oferta tiene fecha límite y vivía solo en el pie:
+# aquí está siempre visible, para no obligar a recordarla.
+franja:
+  texto: "Evaluaciones 2027 abiertas"
+  detalle: "Último día para pagar la evaluación: 15 de enero de 2027"
+  enlace:
+    texto: "Ver fechas"
+    url: "/como-funciona/#fechas"
+
+# Cifras reales del repositorio, para el hero.
+cifras:
+  - cifra: "25"
+    texto: "organizaciones con acreditación vigente"
+  - cifra: "34"
+    texto: "organizaciones evaluadas"
+  - cifra: "52"
+    texto: "ciudades"
+  - cifra: "8"
+    texto: "ediciones del listado"
+
 
 footer_columnas:
   - titulo: "El programa"
@@ -83,6 +132,8 @@ footer_columnas:
     enlaces:
       - nombre: "Organizaciones acreditadas"
         url: "/companies/"
+      - nombre: "Testimonios"
+        url: "/testimonios/"
       - nombre: "Para talento"
         url: "/para-talento/"
       - nombre: "Preguntas frecuentes"

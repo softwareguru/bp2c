@@ -22,6 +22,10 @@
   <path d="M4 12.5l5 5L20 6.5" stroke="{{ $color }}" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
 {{- else if eq $name "cruz" -}}
   <path d="M6 6l12 12M18 6L6 18" stroke="{{ $color }}" stroke-width="2.6" stroke-linecap="round"/>
+{{- else if eq $name "chevron" -}}
+  <path d="M6 9l6 6 6-6" stroke="{{ $color }}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+{{- else if eq $name "play" -}}
+  <path d="M8 5l12 7-12 7z" fill="{{ $color }}"/>
 {{- else if eq $name "flecha" -}}
   <path d="M5 12h13M12 6l6 6-6 6" stroke="{{ $color }}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
 {{- end -}}
