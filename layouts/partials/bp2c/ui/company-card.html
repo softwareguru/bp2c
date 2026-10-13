@@ -1,7 +1,7 @@
 {{- /* Tarjeta de empresa. Un componente dentro de un solo range, en lugar
        de la tarjeta copiada cinco veces (una por categoría). */ -}}
 {{- $p := .page -}}
-{{- $g := hugo.Data.bp2c.global -}}
+{{- $g := site.Data.bp2c.global -}}
 <article class="bp-company">
   <div class="bp-company__top">
     {{- with (index ($p.Params.images | default slice) 0) }}

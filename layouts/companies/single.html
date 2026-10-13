@@ -1,8 +1,8 @@
 {{- /* Perfil de organización. Orden de bloques según el copy aprobado.
        Los puntajes del ciclo 2026 se muestran como históricos y etiquetados
        con su metodología; los de 2027 esperan D2. */ -}}
-{{- $g := hugo.Data.bp2c.global -}}
-{{- $cats := hugo.Data.bp2c.categorias -}}
+{{- $g := site.Data.bp2c.global -}}
+{{- $cats := site.Data.bp2c.categorias -}}
 {{- $cat := "" -}}
 {{- $tipo := index .Params "tipo-empresa" -}}
 {{- range $cats }}{{ if eq .slug $tipo }}{{ $cat = .nombre }}{{ end }}{{ end -}}
@@ -99,7 +99,7 @@
 
 <!-- 5 · Beneficios que ofrece -->
 {{- $bens := slice -}}
-{{- range hugo.Data.bp2c.beneficios }}{{ if eq (index $.Params .campo) true }}{{ $bens = $bens | append . }}{{ end }}{{ end -}}
+{{- range site.Data.bp2c.beneficios }}{{ if eq (index $.Params .campo) true }}{{ $bens = $bens | append . }}{{ end }}{{ end -}}
 {{- with $bens }}
 <section class="bp-section bp-section--sky">
   <div class="bp-shell">

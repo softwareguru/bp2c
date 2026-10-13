@@ -1,7 +1,7 @@
 {{- /* Las cinco palancas. D15 abierta: mientras `publicar_descripcion` sea
        false se muestra solo el nombre, no la descripción sin validar. */ -}}
 {{- $b := .block -}}
-{{- $d := hugo.Data.bp2c.palancas -}}
+{{- $d := site.Data.bp2c.palancas -}}
 <section class="bp-section {{ $b.fondo | default "bp-section--white" }}">
   <div class="bp-shell">
     {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}

@@ -1,7 +1,7 @@
 {{- /* C3 · Dato. La cifra, su frase y la fuente con fecha y etiqueta de
        preliminar, que es lo que un asistente puede citar sin inventar. */ -}}
 {{- $b := .block -}}
-{{- $g := hugo.Data.bp2c.global -}}
+{{- $g := site.Data.bp2c.global -}}
 {{- $fuente := $b.fuente -}}
 {{- if and (not $fuente) $b.fuente_n -}}
   {{- $fuente = printf $g.tech_pulse.plantilla $b.fuente_n -}}

@@ -4,8 +4,8 @@
        no se afirma aquí: así la tarjeta no puede decir "acreditada" de
        quien no lo está. */ -}}
 {{- $b := .block -}}
-{{- $d := hugo.Data.bp2c.testimonios -}}
-{{- $g := hugo.Data.bp2c.global -}}
+{{- $d := site.Data.bp2c.testimonios -}}
+{{- $g := site.Data.bp2c.global -}}
 {{- if and (or $d.publicar (not hugo.IsProduction)) $d.testimonios -}}
 <section class="bp-section bp-section--navy bp-dark" aria-labelledby="testi-titulo"{{ with $b.ancla }} id="{{ . }}"{{ end }}>
   <div class="bp-shell">

@@ -3,7 +3,7 @@
        en lugar de la tarjeta repetida una vez por categoría.
        D10 abierta: el filtro de acreditación vigente es `sello: true`. */ -}}
 {{- $b := .block -}}
-{{- $cats := hugo.Data.bp2c.categorias -}}
+{{- $cats := site.Data.bp2c.categorias -}}
 {{- $todas := where (where site.RegularPages "Section" "companies") "Params.sello" true -}}
 <section class="bp-section bp-section--paper">
   <div class="bp-shell">

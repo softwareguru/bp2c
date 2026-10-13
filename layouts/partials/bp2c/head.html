@@ -1,7 +1,7 @@
-{{- $g := hugo.Data.bp2c.global -}}
+{{- $g := site.Data.bp2c.global -}}
 {{- $css := resources.Get "css/bp2c.css" | minify | fingerprint -}}
 <!doctype html>
-<html lang="{{ .Language.Locale | default "es-MX" }}">
+<html lang="{{ .Language.LanguageCode | default "es-MX" }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
 {{- end }}
 <link rel="canonical" href="{{ .Permalink }}">
 {{- range .AllTranslations }}
-<link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
 {{- end }}
 <link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}">
 
@@ -21,7 +21,7 @@
 <meta property="og:title" content="{{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title | default site.Title }}{{ end }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:locale" content="{{ .Language.Locale | default "es-MX" }}">
+<meta property="og:locale" content="{{ .Language.LanguageCode | default "es-MX" }}">
 <meta property="og:site_name" content="{{ site.Title }}">
 {{- with (index (.Params.images | default site.Params.images) 0) }}
 <meta property="og:image" content="{{ . | absURL }}">

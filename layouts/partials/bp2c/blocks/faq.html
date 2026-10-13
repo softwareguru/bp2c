@@ -1,7 +1,7 @@
 {{- /* C9 · Acordeón con <details>: cero JavaScript. Las preguntas salen de
        data/bp2c/faq.yaml, igual que el schema FAQPage. */ -}}
 {{- $b := .block -}}
-{{- $d := hugo.Data.bp2c.faq -}}
+{{- $d := site.Data.bp2c.faq -}}
 <section class="bp-section {{ $b.fondo | default "bp-section--paper" }}">
   <div class="bp-shell">
     {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}

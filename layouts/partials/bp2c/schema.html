@@ -1,7 +1,7 @@
 {{- /* Datos estructurados. Los puntajes y las preguntas ya viven en el
        frontmatter y en data/: aquí solo se exponen, así que el bloque
        visible y el marcado no se pueden desincronizar. */ -}}
-{{- $g := hugo.Data.bp2c.global -}}
+{{- $g := site.Data.bp2c.global -}}
 
 {{- if .IsHome -}}
 <script type="application/ld+json">
@@ -39,7 +39,7 @@
 {{- end -}}
 {{- if $ids -}}
   {{- $qs := slice -}}
-  {{- range hugo.Data.bp2c.faq.grupos -}}
+  {{- range site.Data.bp2c.faq.grupos -}}
     {{- range .preguntas -}}
       {{- if or (in $ids .id) (in $ids "__todas__") -}}
         {{- $qs = $qs | append (dict

@@ -1,7 +1,7 @@
 {{- /* C1 · Hero. El bloque marca .bp-dark para que el texto herede el color
        del contexto oscuro: era la causa del texto ilegible del hero. */ -}}
 {{- $b := .block -}}
-{{- $g := hugo.Data.bp2c.global -}}
+{{- $g := site.Data.bp2c.global -}}
 {{- $stats := $b.stats }}{{ if $b.cifras_reales }}{{ $stats = $g.cifras }}{{ end -}}
 <section class="bp-hero bp-section--navy bp-dark" aria-labelledby="hero-titulo">
   <div class="bp-shell bp-hero__inner">
