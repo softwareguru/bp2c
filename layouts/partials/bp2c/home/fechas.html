@@ -1,7 +1,10 @@
 {{- /* Sección «fechas» de la portada 2027. Portada del diseño aprobado.
-       El contador se calcula al construir (para que funcione sin JS y en el
+       Las filas salen de data/bp2c/fechas.yaml (las marcadas `corta`), para
+       que no haya dos listas de fechas que mantener. El contador se calcula
+       al construir (para que funcione sin JS y en el
        HTML servido) y se refresca en el navegador, porque el sitio es
        estático y el número cambia cada día. */ -}}
+{{- $f := site.Data.bp2c.fechas -}}
 {{- $limite := time.AsTime "2027-01-15T00:00:00Z" -}}
 {{- $dias := int (math.Ceil (div (float (sub $limite.Unix now.Unix)) 86400.0)) -}}
 {{- if lt $dias 0 }}{{ $dias = 0 }}{{ end -}}
@@ -17,12 +20,12 @@
 <p style="margin: 12px 0 0; font-size: 18px; line-height: 1.5; color: #C0D6EB; max-width: 22em;">para el último día de pago de la evaluación. Si contratas antes del 8 de enero, tu equipo tiene dos semanas completas para responder.</p>
 </div>
 <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 12px;">
-<div style="display: flex; gap: 18px; align-items: center; padding: 18px 22px; border-radius: 18px; border: 1.5px solid rgba(244,240,233,.22);"><span class="mono" style="min-width: 90px; font-size: 16px; font-weight: 700; color: #C0D6EB;">8 ene</span><span style="font-size: 18px;">Ideal para contratar tu evaluación</span></div>
-<div style="display: flex; gap: 18px; align-items: center; padding: 18px 22px; border-radius: 18px; background: #B1D635; color: #012233;"><span class="mono" style="min-width: 90px; font-size: 16px; font-weight: 700;">15 ene</span><span style="font-size: 18px; font-weight: 800;">Último día para pagar la evaluación</span></div>
-<div style="display: flex; gap: 18px; align-items: center; padding: 18px 22px; border-radius: 18px; border: 1.5px solid rgba(244,240,233,.22);"><span class="mono" style="min-width: 90px; font-size: 16px; font-weight: 700; color: #C0D6EB;">22 ene</span><span style="font-size: 18px;">Cierran las respuestas</span></div>
-<div style="display: flex; gap: 18px; align-items: center; padding: 18px 22px; border-radius: 18px; background: #B1D635; color: #012233;"><span class="mono" style="min-width: 90px; font-size: 16px; font-weight: 700;">29 ene</span><span style="font-size: 18px; font-weight: 800;">Último día para pagar la acreditación</span></div>
-<div style="display: flex; gap: 18px; align-items: center; padding: 18px 22px; border-radius: 18px; background: #F4F0E9; color: #012233;"><span class="mono" style="min-width: 90px; font-size: 16px; font-weight: 700;">4 feb</span><span style="font-size: 18px; font-weight: 800;">Sale el Listado 2027</span></div>
-</div>
+{{- $cortas := where $f.filas "corta" true }}
+{{- range $i, $r := $cortas }}
+{{- $ultima := eq $i (sub (len $cortas) 1) }}
+<div style="display: flex; gap: 18px; align-items: center; padding: 18px 22px; border-radius: 18px; {{ if $ultima }}background: #F4F0E9; color: #012233;{{ else if $r.resaltar }}background: #B1D635; color: #012233;{{ else }}border: 1.5px solid rgba(244,240,233,.22);{{ end }}"><span class="mono" style="min-width: 90px; font-size: 16px; font-weight: 700;{{ if not (or $ultima $r.resaltar) }} color: #C0D6EB;{{ end }}">{{ $r.fecha_corta }}</span><span style="font-size: 18px;{{ if or $ultima $r.resaltar }} font-weight: 800;{{ end }}">{{ $r.hito_corto }}</span></div>
+{{- end }}
+</div></div>
 </div>
 </section>
 

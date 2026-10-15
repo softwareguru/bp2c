@@ -1,23 +1,20 @@
-{{- /* Sección «testimonios» de la portada 2027. Portada del diseño aprobado. */ -}}
+{{- /* Sección «testimonios» de la portada 2027. Marcado del diseño aprobado.
+       Los vídeos salen de data/bp2c/testimonios.yaml, la misma fuente que
+       usa el bloque de testimonios del resto del sitio. */ -}}
+{{- $t := site.Data.bp2c.testimonios -}}
 <section style="background: #012233; color: #F4F0E9; padding: 112px 32px;">
 <div style="max-width: 1320px; margin: 0 auto;">
 <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: end; justify-content: space-between;">
 <h2 style="margin: 0; font-weight: 800; font-size: clamp(40px, 5vw, 76px); line-height: 1.02; letter-spacing: -0.035em;">No nos creas <span class="hand" style="font-weight: 400; letter-spacing: .01em; color: #B1D635;">a nosotros.</span></h2></div>
 <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-<a class="vid tilt" href="https://www.youtube.com/watch?v=VX_tX_AsiNU" style="display: block; text-decoration: none; color: #F4F0E9; background: #0A2E42; border-radius: 22px; overflow: hidden;">
-<div style="position: relative;"><img src="/images/home/testimonios/svitla.jpg" alt="Video de Svitla Systems" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;"><span class="play" style="position: absolute; left: 50%; top: 50%; width: 68px; height: 68px; margin: -34px 0 0 -34px; border-radius: 50%; background: #B1D635; display: flex; align-items: center; justify-content: center;"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#012233"></path></svg></span></div>
-<div style="padding: 20px 22px 24px;"><p style="margin: 0; font-weight: 800; font-size: 20px;">Svitla Systems</p><p style="margin: 8px 0 0; font-size: 16px; line-height: 1.45; color: #C0D6EB;">Trabajando por ofrecer las mejores condiciones laborales en tech</p></div>
+{{- range $tm := $t.testimonios }}
+<a class="vid tilt" href="https://www.youtube.com/watch?v={{ $tm.youtube }}" style="display: block; text-decoration: none; color: #F4F0E9; background: #0A2E42; border-radius: 22px; overflow: hidden;">
+<div style="position: relative;"><img src="/{{ $tm.poster }}" alt="Video de {{ $tm.empresa }}" loading="lazy" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;"><span class="play" style="position: absolute; left: 50%; top: 50%; width: 68px; height: 68px; margin: -34px 0 0 -34px; border-radius: 50%; background: #B1D635; display: flex; align-items: center; justify-content: center;"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#012233"></path></svg></span></div>
+<div style="padding: 20px 22px 24px;"><p style="margin: 0; font-weight: 800; font-size: 20px;">{{ $tm.empresa }}</p><p style="margin: 6px 0 0; font-size: 16px; color: #C0D6EB; line-height: 1.45;">{{ $tm.titulo }}</p></div>
 </a>
-<a class="vid tilt tilt--r" href="https://www.youtube.com/watch?v=Jdlq9Ce0VGI" style="display: block; text-decoration: none; color: #F4F0E9; background: #0A2E42; border-radius: 22px; overflow: hidden;">
-<div style="position: relative;"><img src="/images/home/testimonios/spark.jpg" alt="Video de Spark Technologies" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;"><span class="play" style="position: absolute; left: 50%; top: 50%; width: 68px; height: 68px; margin: -34px 0 0 -34px; border-radius: 50%; background: #B1D635; display: flex; align-items: center; justify-content: center;"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#012233"></path></svg></span></div>
-<div style="padding: 20px 22px 24px;"><p style="margin: 0; font-weight: 800; font-size: 20px;">Spark Technologies</p><p style="margin: 8px 0 0; font-size: 16px; line-height: 1.45; color: #C0D6EB;">Una empresa que busca la excelencia en la codificación</p></div>
-</a>
-<a class="vid tilt" href="https://www.youtube.com/watch?v=L4kfzlnlHtQ" style="display: block; text-decoration: none; color: #F4F0E9; background: #0A2E42; border-radius: 22px; overflow: hidden;">
-<div style="position: relative;"><img src="/images/home/testimonios/onephase.jpg" alt="Video de Onephase" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;"><span class="play" style="position: absolute; left: 50%; top: 50%; width: 68px; height: 68px; margin: -34px 0 0 -34px; border-radius: 50%; background: #B1D635; display: flex; align-items: center; justify-content: center;"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#012233"></path></svg></span></div>
-<div style="padding: 20px 22px 24px;"><p style="margin: 0; font-weight: 800; font-size: 20px;">Onephase</p><p style="margin: 8px 0 0; font-size: 16px; line-height: 1.45; color: #C0D6EB;">Creando un entorno donde los devs quieren estar</p></div>
-</a>
+{{- end }}
 </div>
-<p style="margin: 20px 0 0; font-size: 14px; color: #C0D6EB;">Grabados durante el ciclo de Best Place to Code.</p>
+<p style="margin: 20px 0 0; font-size: 14px; color: #C0D6EB;">{{ $t.nota }}</p>
 </div>
 </section>
 

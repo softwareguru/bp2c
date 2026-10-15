@@ -1,4 +1,7 @@
-{{- /* Sección «medimos» de la portada 2027. Portada del diseño aprobado. */ -}}
+{{- /* Sección «medimos» de la portada 2027. Marcado del diseño aprobado.
+       Las cinco palancas salen de data/bp2c/palancas.yaml, la misma fuente
+       que usa /que-medimos/. */ -}}
+{{- $pal := site.Data.bp2c.palancas -}}
 <section class="pat-iconos" style="background-color: #012233; color: #F4F0E9; padding: 112px 32px; position: relative;">
 <div style="max-width: 1320px; margin: 0 auto;">
 <p class="mono" style="margin: 0 0 14px; font-size: 13px; letter-spacing: .1em; color: #C0D6EB;">QUÉ MEDIMOS</p>
@@ -13,11 +16,9 @@
 <div style="flex: 2 1 520px; border: 1.5px solid rgba(244,240,233,.25); border-radius: 22px; padding: 26px;">
 <p class="mono" style="margin: 0; font-size: 12px; letter-spacing: .1em; font-weight: 700; color: #C0D6EB;">CINCO PALANCAS · DÓNDE MOVER PRIMERO</p>
 <div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px;">
-<span style="padding: 10px 16px; border-radius: 999px; background: rgba(192,214,235,.12); color: #F4F0E9; border: 1.5px solid #C0D6EB; font-weight: 700; font-size: 16px;">Habilitación de IA</span>
-<span style="padding: 10px 16px; border-radius: 999px; background: rgba(192,214,235,.12); color: #F4F0E9; border: 1.5px solid #C0D6EB; font-weight: 700; font-size: 16px;">Gestión de Tecno-Ansiedad</span>
-<span style="padding: 10px 16px; border-radius: 999px; background: rgba(192,214,235,.12); color: #F4F0E9; border: 1.5px solid #C0D6EB; font-weight: 700; font-size: 16px;">Justicia Algorítmica</span>
-<span style="padding: 10px 16px; border-radius: 999px; background: rgba(192,214,235,.12); color: #F4F0E9; border: 1.5px solid #C0D6EB; font-weight: 700; font-size: 16px;">Agencia del Empleado</span>
-<span style="padding: 10px 16px; border-radius: 999px; background: rgba(192,214,235,.12); color: #F4F0E9; border: 1.5px solid #C0D6EB; font-weight: 700; font-size: 16px;">Confianza en el Futuro</span>
+{{- range $p := $pal.palancas }}
+<span style="padding: 10px 16px; border-radius: 999px; background: rgba(192,214,235,.12); color: #F4F0E9; border: 1.5px solid #C0D6EB; font-weight: 700; font-size: 16px;">{{ $p.nombre }}</span>
+{{- end }}
 </div>
 <p style="margin: 18px 0 0; font-size: 15px; color: #C0D6EB;">No deciden la acreditación. Te dicen qué condición mover primero.</p>
 </div>

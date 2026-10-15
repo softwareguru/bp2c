@@ -1,12 +1,15 @@
-{{- /* Barra superior y navegación de la portada 2027. Marcado portado del
-       diseño aprobado; los enlaces apuntan a las rutas reales del sitio. */ -}}
+{{- /* Barra superior y navegación de la portada 2027. Marcado del diseño
+       aprobado. La franja y el CTA salen de data/bp2c/global.yaml, que es
+       la misma fuente que usa el resto del sitio; el enlace "Ver fechas"
+       apunta a la sección de fechas de esta misma página. */ -}}
+{{- $g := site.Data.bp2c.global -}}
 <div style="width: 100%; overflow: hidden; background: #012233;">
 
 <!-- BARRA SUPERIOR -->
 <div style="background: #B1D635; color: #012233; padding: 10px 24px; font-size: 14px; font-weight: 700; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; align-items: center;">
-<span class="mono" style="font-size: 12px; letter-spacing: .08em;">● EVALUACIONES 2027 ABIERTAS</span>
-<span>Último día para pagar tu evaluación: 15 de enero</span>
-<a href="#fechas" style="color: #012233; text-decoration: underline; text-underline-offset: 3px;">Ver fechas</a>
+<span class="mono" style="font-size: 12px; letter-spacing: .08em;">● {{ upper $g.franja.texto }}</span>
+<span>{{ $g.franja.detalle }}</span>
+<a href="#fechas" style="color: #012233; text-decoration: underline; text-underline-offset: 3px;">{{ $g.franja.enlace.texto }}</a>
 </div>
 
 <!-- HEADER -->
@@ -18,7 +21,7 @@
 <a href="#acreditadas" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;">Acreditadas</a>
 <a href="/faq/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;">FAQ</a>
 </nav>
-<a href="/contacto/?interes=evaluar" class="btn cta-top" style="background: #B1D635; color: #012233; text-decoration: none; font-weight: 800; font-size: 16px; padding: 14px 22px; border-radius: 999px; white-space: nowrap;"><span class="cta-long">Evalúa a tu organización</span><span class="cta-short">Evalúate</span></a>
+<a href="{{ $g.cta_principal.url }}" class="btn cta-top" style="background: #B1D635; color: #012233; text-decoration: none; font-weight: 800; font-size: 16px; padding: 14px 22px; border-radius: 999px; white-space: nowrap;"><span class="cta-long">{{ $g.cta_principal.texto }}</span><span class="cta-short">Evalúate</span></a>
 </header>
 
 <!-- HERO -->

@@ -1,10 +1,12 @@
-{{- /* Sección «hero» de la portada 2027. Portada del diseño aprobado. */ -}}
+{{- /* Sección «hero» de la portada 2027. Marcado del diseño aprobado.
+       El CTA sale de data/bp2c/global.yaml. */ -}}
+{{- $g := site.Data.bp2c.global -}}
 <section style="position: relative; max-width: 1320px; margin: 0 auto; padding: 48px 32px 40px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
 <div style="flex: 999 1 560px; min-width: 0; position: relative; z-index: 2;">
 <h1 style="margin: 0; color: #F4F0E9; font-weight: 800; font-size: clamp(56px, 8.4vw, 132px); line-height: 1.02; letter-spacing: -0.035em;">Best place <span style="white-space: nowrap;">to <span class="rot" aria-hidden="true"><span class="rot__list"><span style="color: #C0D6EB;">think</span><span style="color: #C6C0CA;">be</span><span style="color: #C0D6EB;">make</span><span style="color: #C6C0CA;">code</span><span class="hand" style="color: #B1D635; letter-spacing: .01em;">create</span></span></span></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);">create</span></h1>
 <p style="margin: 32px 0 0; max-width: 34em; color: #F4F0E9; opacity: .92; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5;">Evaluamos y acreditamos a las organizaciones que ofrecen un gran entorno para crear con tecnología en Latinoamérica. <strong style="color: #B1D635;">Lo decide tu equipo, en anónimo.</strong></p>
 <div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center;">
-<a href="/contacto/?interes=evaluar" class="btn" style="background: #B1D635; color: #012233; text-decoration: none; font-weight: 800; font-size: 18px; padding: 18px 28px; border-radius: 999px;">Evalúa a tu organización</a>
+<a href="{{ $g.cta_principal.url }}" class="btn" style="background: #B1D635; color: #012233; text-decoration: none; font-weight: 800; font-size: 18px; padding: 18px 28px; border-radius: 999px;">{{ $g.cta_principal.texto }}</a>
 <a href="#talento" style="color: #F4F0E9; text-decoration: none; font-weight: 700; font-size: 18px; padding: 16px 24px; border-radius: 999px; border: 2px solid rgba(244,240,233,.4);">Trabajo en tech, ¿y esto qué?</a>
 </div>
 </div>

@@ -1,10 +1,12 @@
-{{- /* Sección «cifras» de la portada 2027. Portada del diseño aprobado. */ -}}
+{{- /* Sección «cifras» de la portada 2027. Marcado del diseño aprobado.
+       Las cifras salen de data/bp2c/global.yaml, que es donde ya vivían:
+       así no hay que actualizarlas en dos lugares. La primera va en lima. */ -}}
+{{- $g := site.Data.bp2c.global -}}
 <section style="max-width: 1320px; margin: 0 auto; padding: 8px 32px 64px;">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0; border-top: 1.5px solid rgba(244,240,233,.18);">
-<div style="padding: 24px 8px 0; text-align: center;"><p class="hand" style="margin: 0; color: #B1D635; font-weight: 400; font-size: 60px; line-height: 1.1; letter-spacing: .01em;">25</p><p style="margin: 4px 0 0; color: #F4F0E9; font-size: 16px;">organizaciones acreditadas hoy</p></div>
-<div style="padding: 24px 8px 0; text-align: center;"><p class="hand" style="margin: 0; color: #F4F0E9; font-weight: 400; font-size: 60px; line-height: 1.1; letter-spacing: .01em;">34</p><p style="margin: 4px 0 0; color: #F4F0E9; font-size: 16px;">se han evaluado</p></div>
-<div style="padding: 24px 8px 0; text-align: center;"><p class="hand" style="margin: 0; color: #F4F0E9; font-weight: 400; font-size: 60px; line-height: 1.1; letter-spacing: .01em;">52</p><p style="margin: 4px 0 0; color: #F4F0E9; font-size: 16px;">ciudades</p></div>
-<div style="padding: 24px 8px 0; text-align: center;"><p class="hand" style="margin: 0; color: #F4F0E9; font-weight: 400; font-size: 60px; line-height: 1.1; letter-spacing: .01em;">8</p><p style="margin: 4px 0 0; color: #F4F0E9; font-size: 16px;">años haciéndolo</p></div>
+{{- range $i, $c := $g.cifras }}
+<div style="padding: 24px 8px 0; text-align: center;"><p class="hand" style="margin: 0; color: {{ if eq $i 0 }}#B1D635{{ else }}#F4F0E9{{ end }}; font-weight: 400; font-size: 60px; line-height: 1.1; letter-spacing: .01em;">{{ $c.cifra }}</p><p style="margin: 4px 0 0; color: #F4F0E9; font-size: 16px;">{{ $c.texto }}</p></div>
+{{- end }}
 </div>
 </section>
 

@@ -1,4 +1,5 @@
 # Fechas del ciclo 2027. `resaltar: true` pinta la fila en lima.
+# `fecha_corta` es la etiqueta breve que usa la portada.
 # `corta: true` marca las filas que aparecen en la versión breve (Inicio).
 titulo: "Fechas 2027"
 filas:
@@ -8,16 +9,19 @@ filas:
     resaltar: false
     corta: false
   - fecha: "8 de enero"
+    fecha_corta: "8 ene"
     hito: "Fecha sugerida para contratar y pagar tu evaluación: tu equipo tiene dos semanas completas para responder"
-    hito_corto: "Fecha sugerida para contratar tu evaluación"
+    hito_corto: "Ideal para contratar tu evaluación"
     resaltar: false
     corta: true
   - fecha: "15 de enero"
+    fecha_corta: "15 ene"
     hito: "Último día para pagar la evaluación"
     hito_corto: "Último día para pagar la evaluación"
     resaltar: true
     corta: true
   - fecha: "22 de enero"
+    fecha_corta: "22 ene"
     hito: "Cierran las respuestas de la evaluación"
     hito_corto: "Cierran las respuestas"
     resaltar: false
@@ -28,13 +32,15 @@ filas:
     resaltar: false
     corta: false
   - fecha: "29 de enero"
+    fecha_corta: "29 ene"
     hito: "Último día para pagar la acreditación"
     hito_corto: "Último día para pagar la acreditación"
     resaltar: true
     corta: true
   - fecha: "4 de febrero"
+    fecha_corta: "4 feb"
     hito: "Publicación del Listado 2027"
-    hito_corto: "Publicación del Listado 2027"
+    hito_corto: "Sale el Listado 2027"
     resaltar: true
     corta: true
   - fecha: "Después del 4 de febrero"
