@@ -37,8 +37,8 @@
   --bp-shell: 1200px;
   --bp-gutter: 32px;
   --bp-section-y: clamp(56px, 7vw, 88px);
-  --bp-radius: 16px;
-  --bp-radius-lg: 18px;
+  --bp-radius: 22px;
+  --bp-radius-lg: 24px;
   --bp-radius-pill: 999px;
   --bp-arch: 210px 210px 24px 24px;
 }
@@ -105,7 +105,8 @@ img { max-width: 100%; height: auto; }
    -------------------------------------------------------------------------- */
 .bp-kicker {
   display: block; margin: 0 0 14px;
-  font-size: var(--bp-text-kicker); font-weight: 800;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px; font-weight: 700;
   letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--bp-ink-3);
 }
@@ -613,4 +614,37 @@ a:hover { color: var(--bp-navy-hover); }
   .cta-short { display: inline; }
   .bp-cab .cta-top { padding: 12px 18px !important; font-size: 15px !important; }
   .bp-cab .hide-sm { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Gestos del diseño 2027. Los mismos que usa la portada, para que los bloques
+   del resto del sitio se sientan de la misma pieza.
+   -------------------------------------------------------------------------- */
+
+/* Los botones se levantan y giran un grado, con sombra sólida. */
+.bp-btn { transition: transform .2s, box-shadow .2s, background-color .2s, border-color .2s; }
+.bp-btn--primary:hover, .bp-btn--secondary:hover {
+  transform: translateY(-2px) rotate(-1deg);
+  box-shadow: 0 8px 0 var(--bp-navy);
+}
+.bp-dark .bp-btn--primary:hover { box-shadow: 0 8px 0 rgba(0,0,0,.35); }
+
+/* Las tarjetas se elevan al pasar encima. Las pares giran al otro lado, para
+   que una rejilla no se mueva toda igual. */
+.bp-card { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+.bp-card:hover { transform: translateY(-8px) rotate(-1.5deg); box-shadow: 0 18px 40px rgba(1,34,51,.18); }
+.bp-card:nth-child(even):hover { transform: translateY(-8px) rotate(1.5deg); }
+
+/* Resalte lima detrás de unas palabras, como «Te evalúas:» en la portada.
+   Se usa en el copy: <span class="bp-hl">palabras</span>. */
+.bp-hl {
+  background: linear-gradient(transparent 36%, var(--bp-lime) 36%, var(--bp-lime) 86%, transparent 86%);
+  padding: 0 .06em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+
+/* Quien prefiere menos movimiento no lo recibe. */
+@media (prefers-reduced-motion: reduce) {
+  .bp-btn, .bp-card { transition: none; }
+  .bp-btn--primary:hover, .bp-btn--secondary:hover, .bp-card:hover { transform: none; }
 }

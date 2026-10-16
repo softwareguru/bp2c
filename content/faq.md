@@ -1,5 +1,5 @@
 ---
-title: "Preguntas frecuentes · Best Place to Create"
+title: "Preguntas frecuentes"
 type: bp2c
 description: "Cuánto cuesta, quién responde, si el pago garantiza la acreditación, cómo se cuida el anonimato, qué pasa si no alcanzas el criterio y cómo se renueva."
 aliases:

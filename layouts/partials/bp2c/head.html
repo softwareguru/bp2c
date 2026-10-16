@@ -5,7 +5,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ with .Params.seo_title }}{{ . }}{{ else }}{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}{{ end }}</title>
+{{- /* La marca se añade al título solo si no la trae ya: varias páginas la
+       llevan dentro de la frase y se repetía ("… Best Place to Create ·
+       Best Place to Create"). */ -}}
+<title>{{ with .Params.seo_title }}{{ . }}{{ else }}{{ if .IsHome }}{{ site.Title }}{{ else if in .Title site.Title }}{{ .Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <meta name="theme-color" content="{{ site.Params.themeColor | default "#012233" }}">
 {{- if .Params.noindex }}

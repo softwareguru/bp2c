@@ -1,5 +1,5 @@
 ---
-title: "Listado 2027 · Best Place to Create"
+title: "Listado 2027"
 type: bp2c
 draft: true
 description: ""
