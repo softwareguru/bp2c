@@ -42,7 +42,8 @@
 {{- end }}
 </head>
 <body>
-{{ partial "bp2c/home/cabecera.html" . }}
+<div style="width: 100%; overflow: hidden; background: #012233;">
+{{ partial "bp2c/cabecera.html" . }}
 <main id="contenido">
 {{ partial "bp2c/home/hero.html" . }}
 {{ partial "bp2c/home/cifras.html" . }}
@@ -58,6 +59,7 @@
 {{ partial "bp2c/home/fechas.html" . }}
 {{ partial "bp2c/home/cierre.html" . }}
 </main>
-{{ partial "bp2c/home/pie.html" . }}
+{{ partial "bp2c/pie.html" . }}
+</div>
 </body>
 </html>

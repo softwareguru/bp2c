@@ -1,0 +1,33 @@
+{{- /* Encabezado único del sitio: la barra superior y el menú de la portada,
+       usados también en el resto de las páginas para que el salto entre una y
+       otra no se note.
+       Los dos enlaces de sección son anclas dentro de la portada y rutas
+       reales fuera de ella, así el mismo menú sirve en todos lados. */ -}}
+{{- $g := site.Data.bp2c.global -}}
+{{- $inicio := .IsHome -}}
+{{- /* La portada usa una rejilla de 1320 y el resto del sitio la de 1200:
+       el encabezado se alinea con el contenido de cada una. */ -}}
+{{- $ancho := cond $inicio "1320px" "1200px" -}}
+<div class="bp-barra-sup" style="background: #B1D635; color: #012233; padding: 10px 24px; font-size: 14px; font-weight: 700; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; align-items: center;">
+<span class="mono" style="font-size: 12px; letter-spacing: .08em;">● {{ upper $g.franja.texto }}</span>
+<span>{{ $g.franja.detalle }}</span>
+<a href="{{ if $inicio }}#fechas{{ else }}{{ $g.franja.enlace.url }}{{ end }}" style="color: #012233; text-decoration: underline; text-underline-offset: 3px;">{{ $g.franja.enlace.texto }}</a>
+</div>
+<header class="bp-cab" style="background: #012233; margin: 0; padding: 22px calc(max(0px, (100% - {{ $ancho }}) / 2) + 32px); display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;">
+<a href="/" aria-label="Best Place to Create, inicio" style="display: flex;"{{ if $inicio }} aria-current="page"{{ end }}><img src="/images/home/logo-best-place-to-create.png" alt="Best Place to Create" width="196" height="46" style="height: 46px; width: auto; display: block;"></a>
+<nav class="nav-links" aria-label="Principal">
+{{- /* «Para organizaciones» queda oculto por ahora: llevaba a /que-es/, que
+       todavía tiene el diseño anterior. Reactivarlo es descomentar la línea. */ -}}
+{{- /* <a href="/que-es/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;">Para organizaciones</a> */ -}}
+<a href="{{ if $inicio }}#talento{{ else }}/para-talento/{{ end }}" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/para-talento/" }} aria-current="page"{{ end }}>Para ti</a>
+<a href="{{ if $inicio }}#acreditadas{{ else }}/companies/{{ end }}" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/companies/" }} aria-current="page"{{ end }}>Acreditadas</a>
+<a href="/faq/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/faq/" }} aria-current="page"{{ end }}>FAQ</a>
+</nav>
+<span style="display: flex; align-items: center; gap: 16px;">
+<span class="hide-sm" style="display: flex; gap: 8px; font-size: 14px; font-weight: 700;">
+<a href="/" hreflang="es" style="color: {{ if eq .Language.Lang "es" }}#B1D635{{ else }}#F4F0E9{{ end }}; text-decoration: none;">ES</a>
+<a href="/en/" hreflang="en" style="color: {{ if eq .Language.Lang "en" }}#B1D635{{ else }}#F4F0E9{{ end }}; text-decoration: none;">EN</a>
+</span>
+<a href="{{ $g.cta_principal.url }}" class="btn cta-top" style="background: #B1D635; color: #012233; text-decoration: none; font-weight: 800; font-size: 16px; padding: 14px 22px; border-radius: 999px; white-space: nowrap;"><span class="cta-long">{{ $g.cta_principal.texto }}</span><span class="cta-short">Evalúate</span></a>
+</span>
+</header>
