@@ -1,5 +1,146 @@
-{{- /* Directorio de organizaciones acreditadas (solo español: el sitio en
-       inglés sigue en el tema anterior mientras D3 esté abierta). */ -}}
+{{- /* Directorio de organizaciones acreditadas · diseño 2027 (artboard
+       «Acreditadas»). Sustituye al despachador de bloques genérico: esta
+       página tiene su propio diseño, igual que la portada y las FAQ.
+
+       Todo lo que se pinta sale de donde ya vivía:
+       · la copia del hero y del CTA, del frontmatter de content/companies/
+       · las categorías y sus descripciones, de data/bp2c/categorias.yaml
+       · las organizaciones, de las fichas con `sello: true`
+       · los vídeos, de data/bp2c/testimonios.yaml
+       Las cuentas del filtro se calculan; no hay números escritos a mano.
+
+       Solo en español: el sitio en inglés sigue en el tema anterior. */ -}}
 {{ partial "bp2c/head.html" . }}
-{{ partial "bp2c/blocks/render.html" (dict "page" .) }}
+
+{{- $g := site.Data.bp2c.global -}}
+{{- $cats := site.Data.bp2c.categorias -}}
+{{- $t := site.Data.bp2c.testimonios -}}
+{{- $todas := where (where site.RegularPages "Section" "companies") "Params.sello" true -}}
+{{- $hero := dict -}}
+{{- range .Params.blocks }}{{ if eq .type "hero" }}{{ $hero = . }}{{ end }}{{ end -}}
+
+<!-- HERO -->
+<section style="background: #012233; padding: 40px 32px 96px; color: #F4F0E9; overflow: hidden;">
+<div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
+<div style="flex: 999 1 560px; min-width: 0;">
+<p class="kicker" style="color: #C0D6EB; text-transform: uppercase;">{{ $hero.kicker }}</p>
+<h1 style="margin: 18px 0 0; font-weight: 800; font-size: clamp(46px, 6.6vw, 100px); line-height: 1.02; letter-spacing: -0.04em;">Organizaciones <span style="color: #B1D635;">acreditadas</span></h1>
+<p style="margin: 26px 0 0; font-size: 20px; line-height: 1.55; max-width: 33em; opacity: .92;">{{ $hero.subtitulo | safeHTML }}</p>
+<p style="margin: 18px 0 0; font-size: 15px; line-height: 1.55; color: #C0D6EB; max-width: 40em;">{{ $hero.nota | safeHTML }}</p>
+{{- range $hero.botones }}
+<a href="{{ .url }}" style="display: inline-block; margin-top: 32px; color: #F4F0E9; text-decoration: none; font-weight: 700; font-size: 18px; padding: 16px 24px; border-radius: 999px; border: 2px solid rgba(244,240,233,.4);">{{ .texto }}</a>
+{{- end }}
+</div>
+<div class="deco" style="flex: 1 1 420px; min-width: 0; max-width: 560px; margin: 0 auto; position: relative;">
+<div style="border-radius: 28px; overflow: hidden; border: 3px solid #F4F0E9; transform: rotate(2deg); position: relative;">
+<img src="/images/bp2c27/fotos/organizaciones.jpg" alt="Un equipo trabaja en sus computadoras en una oficina con luz natural" width="1400" height="927" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+<p class="hand" style="position: absolute; left: 20px; bottom: 14px; margin: 0; color: #B1D635; font-size: clamp(32px, 4vw, 48px); transform: rotate(-6deg); text-shadow: 0 2px 14px rgba(1,34,51,.8);">{{ $hero.palabra }}</p>
+</div>
+<p style="position: absolute; right: -10px; top: -30px; margin: 0; width: 132px; height: 132px; border-radius: 50%; background: #B1D635; color: #012233; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; transform: rotate(-8deg);"><span class="hand" style="font-size: 52px; line-height: 1;">{{ len $todas }}</span><span style="font-weight: 800; font-size: 13px; line-height: 1.2;">acreditadas<br>hoy</span></p>
+</div>
+</div>
+</section>
+
+<!-- FILTROS POR CATEGORÍA -->
+{{- /* Enlaces a cada grupo, no un filtro con JavaScript: la lista completa
+       sigue en el documento, que es lo que leen los buscadores y los motores
+       generativos, y cada grupo tiene su propia ancla para enlazar desde
+       fuera. La cuenta se calcula de las fichas. */ -}}
+<nav class="filtros" aria-label="Categorías">
+<div class="filtros__in">
+<a href="#directorio" aria-current="true">Todas <b>{{ len $todas }}</b></a>
+{{- range $c := $cats }}
+{{- $grupo := where $todas "Params.tipo-empresa" $c.slug -}}
+{{- with $grupo }}
+<a href="#{{ $c.ancla }}">{{ $c.nombre }} <b>{{ len . }}</b></a>
+{{- end }}
+{{- end }}
+</div>
+</nav>
+
+<!-- DIRECTORIO -->
+<section id="directorio" style="background: #F4F0E9; color: #012233; padding: 80px 32px 120px;">
+<div style="max-width: 1320px; margin: 0 auto;">
+{{- range $c := $cats }}
+{{- $grupo := where $todas "Params.tipo-empresa" $c.slug -}}
+{{- with $grupo }}
+<div class="cat" id="{{ $c.ancla }}">
+<div class="cat-cab"><h2 style="margin: 0; font-weight: 800; font-size: clamp(28px, 3vw, 42px); letter-spacing: -0.03em;">{{ $c.nombre }}</h2><p style="margin: 0; font-size: 16px; color: #4A5B68;">{{ $c.descripcion }}</p></div>
+<div class="grid-emp">
+{{- range (sort . "Title") }}
+<article class="emp">
+{{- with (index (.Params.images | default slice) 0) }}
+<div class="emp-logo"><img src="{{ . | absURL }}" alt="" loading="lazy" width="170" height="56"></div>
+{{- end }}
+<h3 class="emp-n">{{ .Title }}</h3>
+{{- with (index (.Params.cities | default slice) 0) }}
+<p class="emp-c"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 1 0-14 0C5 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>{{ . }}</p>
+{{- end }}
+<span class="emp-d">{{ $g.etiquetas.sello_2026 }}</span>
+<div class="emp-l"><a href="{{ .RelPermalink }}">Ver perfil</a>
+{{- with .Params.jobslink }}<a href="{{ . }}" rel="noopener" target="_blank">Vacantes ↗</a>{{ end }}</div>
+</article>
+{{- end }}
+</div>
+</div>
+{{- end }}
+{{- end }}
+{{- $sinCat := where $todas "Params.tipo-empresa" nil -}}
+{{- with $sinCat }}
+<p style="margin: 48px 0 0; font-size: 16px; color: #4A5B68;">{{ len . }} perfiles acreditados no tienen categoría de reconocimiento en su frontmatter y no se muestran arriba.</p>
+{{- end }}
+</div>
+</section>
+
+<!-- TESTIMONIOS -->
+{{- /* Las tarjetas son las del artboard, pero el vídeo entra por la fachada
+       que ya usa el resto del sitio: en reposo no hay ninguna petición a
+       YouTube y los subtítulos vienen activados. Por eso la tarjeta no es un
+       enlace: el botón de reproducir vive dentro. */ -}}
+{{- if or $t.publicar (not hugo.IsProduction) }}
+<section id="testimonios" style="background: #012233; color: #F4F0E9; padding: 112px 32px;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<p class="kicker" style="color: #C0D6EB; text-transform: uppercase;">{{ $t.kicker }}</p>
+<h2 style="margin: 14px 0 0; font-weight: 800; font-size: clamp(40px, 5vw, 76px); line-height: 1.02; letter-spacing: -0.035em;">Que lo cuenten <span class="hand" style="font-weight: 400; color: #B1D635;">ellas</span></h2>
+<p style="margin: 22px 0 0; font-size: 20px; line-height: 1.55; max-width: 34em; color: #C0D6EB;">{{ $t.entrada }}</p>
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+{{- range $i, $tm := $t.testimonios }}
+{{- $perfil := "" }}{{ with $tm.perfil }}{{ $perfil = site.GetPage . }}{{ end }}
+<article class="vid tilt{{ if eq (mod $i 2) 1 }} tilt--r{{ end }}" style="background: #0A2E42; border-radius: 22px; overflow: hidden;">
+{{ partial "bp2c/ui/video.html" (dict "testimonio" $tm "vertical" false) }}
+<div style="padding: 20px 22px 24px;">
+<h3 style="margin: 0; font-weight: 800; font-size: 20px;">{{ $tm.empresa }}</h3>
+{{- with $tm.cita }}
+<blockquote style="margin: 8px 0 0;"><p style="margin: 0; font-size: 16px; line-height: 1.45; color: #C0D6EB;">{{ . }}</p></blockquote>
+{{- else }}
+<p style="margin: 8px 0 0; font-size: 16px; line-height: 1.45; color: #C0D6EB;">{{ $tm.titulo }}</p>
+{{- end }}
+{{- with $perfil }}
+<p style="margin: 14px 0 0;"><a href="{{ .RelPermalink }}" style="color: #F4F0E9; font-weight: 800; font-size: 15px; text-underline-offset: 3px;">Ver el perfil de {{ $tm.empresa }}</a></p>
+{{- end }}
+</div>
+</article>
+{{- end }}
+</div>
+<p style="margin: 20px 0 0; font-size: 14px; color: #C0D6EB;">{{ $t.nota }}</p>
+</div>
+</section>
+{{- end }}
+
+<!-- CTA -->
+{{- /* La banda del artboard, con la copia que ya estaba en el frontmatter.
+       Por eso la página lleva `sin_cta: true`: el pie no debe añadir otra. */ -}}
+{{- with .Params.cta }}
+<section style="background: #B1D635; color: #012233; padding: 112px 32px; border-top: 3px solid #012233; overflow: hidden;">
+<div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between;">
+<div style="flex: 1 1 640px; min-width: 0;">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(42px, 5.6vw, 88px); line-height: 1.02; letter-spacing: -0.04em; max-width: 12em;">¿Quieres que tu organización esté en <span class="hand sticker" style="font-weight: 400;">esta lista?</span></h2>
+<p style="margin: 26px 0 0; font-size: 21px; line-height: 1.5; max-width: 28em; font-weight: 500;">{{ .texto }}</p>
+<a href="{{ .boton.url }}" class="btn" style="display: inline-block; margin-top: 34px; background: #012233; color: #B1D635; text-decoration: none; font-weight: 800; font-size: 20px; padding: 20px 32px; border-radius: 999px;">{{ .boton.texto }}</a>
+</div>
+<img class="float deco" src="/images/home/sello-acreditada.png" alt="" aria-hidden="true" width="260" height="260" style="--r: -8deg; flex: 0 0 auto; width: clamp(160px, 18vw, 260px); height: auto; filter: drop-shadow(0 8px 18px rgba(1,34,51,.3));">
+</div>
+</section>
+{{- end }}
+
 {{ partial "bp2c/foot.html" . }}

@@ -37,8 +37,8 @@
   --bp-shell: 1200px;
   --bp-gutter: 32px;
   --bp-section-y: clamp(56px, 7vw, 88px);
-  --bp-radius: 16px;
-  --bp-radius-lg: 18px;
+  --bp-radius: 22px;
+  --bp-radius-lg: 24px;
   --bp-radius-pill: 999px;
   --bp-arch: 210px 210px 24px 24px;
 }
@@ -105,7 +105,8 @@ img { max-width: 100%; height: auto; }
    -------------------------------------------------------------------------- */
 .bp-kicker {
   display: block; margin: 0 0 14px;
-  font-size: var(--bp-text-kicker); font-weight: 800;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px; font-weight: 700;
   letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--bp-ink-3);
 }
@@ -614,3 +615,175 @@ a:hover { color: var(--bp-navy-hover); }
   .bp-cab .cta-top { padding: 12px 18px !important; font-size: 15px !important; }
   .bp-cab .hide-sm { display: none; }
 }
+
+/* --------------------------------------------------------------------------
+   Gestos del diseño 2027. Los mismos que usa la portada, para que los bloques
+   del resto del sitio se sientan de la misma pieza.
+   -------------------------------------------------------------------------- */
+
+/* Los botones se levantan y giran un grado, con sombra sólida. */
+.bp-btn { transition: transform .2s, box-shadow .2s, background-color .2s, border-color .2s; }
+.bp-btn--primary:hover, .bp-btn--secondary:hover {
+  transform: translateY(-2px) rotate(-1deg);
+  box-shadow: 0 8px 0 var(--bp-navy);
+}
+.bp-dark .bp-btn--primary:hover { box-shadow: 0 8px 0 rgba(0,0,0,.35); }
+
+/* Las tarjetas se elevan al pasar encima. Las pares giran al otro lado, para
+   que una rejilla no se mueva toda igual. */
+.bp-card { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+.bp-card:hover { transform: translateY(-8px) rotate(-1.5deg); box-shadow: 0 18px 40px rgba(1,34,51,.18); }
+.bp-card:nth-child(even):hover { transform: translateY(-8px) rotate(1.5deg); }
+
+/* Resalte lima detrás de unas palabras, como «Te evalúas:» en la portada.
+   Se usa en el copy: <span class="bp-hl">palabras</span>. */
+.bp-hl {
+  background: linear-gradient(transparent 36%, var(--bp-lime) 36%, var(--bp-lime) 86%, transparent 86%);
+  padding: 0 .06em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+
+/* Quien prefiere menos movimiento no lo recibe. */
+@media (prefers-reduced-motion: reduce) {
+  .bp-btn, .bp-card { transition: none; }
+  .bp-btn--primary:hover, .bp-btn--secondary:hover, .bp-card:hover { transform: none; }
+}
+
+/* Listados de blog y de ediciones anteriores. */
+.bp-card--nota, .bp-card--edicion { display: block; text-decoration: none; color: inherit; }
+.bp-card--nota img, .bp-card--edicion img {
+  display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+  border-radius: 14px; margin: 0 0 16px;
+}
+.bp-card--edicion img { aspect-ratio: 4 / 3; }
+.bp-card--nota .bp-h3, .bp-card--edicion .bp-h3 { margin: 0 0 8px; }
+.bp-paginacion { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: center; margin-top: 40px; }
+
+/* Menú de móvil del diseño: un botón ≡ en vez de una cabecera de tres filas. */
+.menu-movil { display: none; position: relative; }
+.menu-movil > summary {
+  list-style: none; width: 46px; height: 46px; border-radius: 999px;
+  border: 2px solid rgba(244,240,233,.45);
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+}
+.menu-movil > summary::-webkit-details-marker { display: none; }
+.menu-panel {
+  position: absolute; right: 0; top: calc(100% + 8px); min-width: 240px;
+  background: var(--bp-paper); border-radius: 22px; padding: 10px;
+  display: flex; flex-direction: column; z-index: 60;
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+.menu-panel a { padding: 14px 16px; border-radius: 14px; color: var(--bp-navy); text-decoration: none; font-weight: 700; font-size: 18px; }
+.menu-panel a[aria-current] { background: var(--bp-lime); }
+@media (max-width: 900px) {
+  .bp-cab .nav-links { display: none; }
+  .menu-movil { display: block; }
+}
+
+/* --------------------------------------------------------------------------
+   Preguntas frecuentes · diseño 2027 (artboard FAQ)
+   -------------------------------------------------------------------------- */
+.kicker { margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; letter-spacing: .1em; font-weight: 700; }
+.faq-lay { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: 300px minmax(0,1fr); gap: 48px 72px; align-items: start; }
+.indice { position: sticky; top: 24px; display: flex; flex-direction: column; gap: 8px; }
+.indice a { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 14px 18px; border-radius: 16px; border: 1.5px solid var(--bp-navy); text-decoration: none; font-weight: 700; font-size: 16px; }
+.indice a:hover { background: var(--bp-navy); color: var(--bp-paper); }
+.indice a:hover span { color: var(--bp-sky) !important; }
+.grupo { scroll-margin-top: 24px; }
+.grupo + .grupo { margin-top: 64px; }
+details.faq { border-top: 1.5px solid rgba(1,34,51,.18); }
+details.faq:last-child { border-bottom: 1.5px solid rgba(1,34,51,.18); }
+details.faq > summary { list-style: none; cursor: pointer; display: flex; gap: 18px; align-items: center; justify-content: space-between; padding: 22px 0; font-weight: 800; font-size: 20px; line-height: 1.35; }
+details.faq > summary::-webkit-details-marker { display: none; }
+details.faq .mas { flex: 0 0 40px; height: 40px; border-radius: 50%; background: var(--bp-navy); color: var(--bp-lime); display: flex; align-items: center; justify-content: center; transition: transform .25s; }
+details.faq[open] .mas { transform: rotate(45deg); }
+details.faq p { margin: 0 0 24px; font-size: 18px; line-height: 1.6; max-width: 40em; }
+@media (max-width: 900px) {
+  .faq-lay { grid-template-columns: minmax(0,1fr); }
+  .indice { position: static; flex-direction: row; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; }
+  .indice a { flex: 0 0 auto; border-radius: 999px; padding: 10px 16px; font-size: 15px; }
+  .indice a span, .indice .kicker { display: none; }
+}
+@media (max-width: 520px) { details.faq > summary { font-size: 18px; } }
+@media (prefers-reduced-motion: reduce) { details.faq .mas { transition: none; } }
+
+/* --------------------------------------------------------------------------
+   Gestos de la portada que también usan las páginas con diseño propio
+   (acreditadas, FAQ). Viven aquí porque ya no son solo de la portada.
+   -------------------------------------------------------------------------- */
+.hand { font-family: var(--bp-font-accent); font-weight: 400; text-transform: uppercase; letter-spacing: .01em; }
+.sticker { display: inline-block; background: var(--bp-navy); color: var(--bp-lime); padding: .04em .2em .02em; border-radius: 14px; transform: rotate(-2deg); }
+.btn { transition: transform .2s, box-shadow .2s; }
+.btn:hover { transform: translateY(-2px) rotate(-1deg); box-shadow: 0 8px 0 var(--bp-navy); }
+.tilt { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+.tilt:hover { transform: translateY(-8px) rotate(-1.5deg); box-shadow: 0 18px 40px rgba(1,34,51,.18); }
+.tilt--r:hover { transform: translateY(-8px) rotate(1.5deg); }
+.float { animation: float 6s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateY(0) rotate(var(--r,0deg)); } 50% { transform: translateY(-14px) rotate(calc(var(--r,0deg) + 4deg)); } }
+@media (prefers-reduced-motion: reduce) {
+  .btn, .tilt { transition: none; }
+  .btn:hover, .tilt:hover, .tilt--r:hover { transform: none; }
+  .float { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Organizaciones acreditadas · diseño 2027 (artboard «Acreditadas»)
+   -------------------------------------------------------------------------- */
+
+/* El filtro se queda a la vista mientras se recorre el directorio. */
+.filtros { position: sticky; top: 0; z-index: 30; background: var(--bp-paper); border-bottom: 1.5px solid rgba(1,34,51,.14); }
+.filtros__in { max-width: 1320px; margin: 0 auto; padding: 12px 32px; display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; }
+.filtros__in::-webkit-scrollbar { display: none; }
+.filtros a { flex: 0 0 auto; display: flex; gap: 8px; align-items: center; padding: 10px 18px; border-radius: 999px; border: 1.5px solid var(--bp-navy); color: var(--bp-navy); text-decoration: none; font-weight: 700; font-size: 15px; white-space: nowrap; }
+.filtros a b { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; background: var(--bp-navy); color: var(--bp-paper); border-radius: 999px; padding: 2px 8px; }
+.filtros a[aria-current] { background: var(--bp-navy); color: var(--bp-paper); }
+.filtros a[aria-current] b { background: var(--bp-lime); color: var(--bp-navy); }
+
+.cat { scroll-margin-top: 80px; }
+.cat + .cat { margin-top: 80px; }
+.cat-cab { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between; border-bottom: 2px solid var(--bp-navy); padding-bottom: 16px; }
+
+.grid-emp { margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.emp { background: #FFFFFF; border-radius: var(--bp-radius); padding: 22px; display: flex; flex-direction: column; gap: 14px; transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+.emp:hover { transform: translateY(-6px) rotate(-1deg); box-shadow: 0 18px 40px rgba(1,34,51,.16); }
+.emp-logo { height: 72px; display: flex; align-items: center; justify-content: flex-start; }
+.emp-logo img { max-height: 56px; max-width: 170px; width: auto; height: auto; object-fit: contain; }
+.emp-n { margin: 0; font-weight: 800; font-size: 20px; line-height: 1.2; }
+.emp-c { margin: -6px 0 0; display: flex; gap: 6px; align-items: center; font-size: 15px; color: var(--bp-ink-3); }
+.emp-d { align-self: flex-start; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; background: var(--bp-sky); border-radius: 999px; padding: 5px 10px; }
+.emp-l { margin-top: auto; display: flex; flex-wrap: wrap; gap: 16px; padding-top: 12px; border-top: 1px solid rgba(1,34,51,.12); }
+.emp-l a { font-weight: 800; font-size: 15px; text-underline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) { .emp { transition: none; } .emp:hover { transform: none; } }
+@media (max-width: 520px) {
+  .filtros__in { padding: 10px 16px; }
+  .grid-emp { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+  .emp { padding: 16px; border-radius: 18px; }
+  .emp-logo { height: 52px; }
+  .emp-logo img { max-height: 40px; max-width: 120px; }
+  .emp-n { font-size: 16px; }
+  .emp-d { display: none; }
+  .emp-l { flex-direction: column; gap: 8px; }
+  /* Lo decorativo no compite con el contenido en pantalla estrecha. */
+  .deco { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Ediciones anteriores del listado. El cuerpo es el comunicado original,
+   así que la prosa necesita encabezados, listas y enlaces con estilo propio.
+   -------------------------------------------------------------------------- */
+.bp-prose--ancha { max-width: 46em; }
+.bp-prose h2, .bp-prose h3 { margin: 48px 0 12px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.bp-prose h2 { font-size: clamp(26px, 3vw, 38px); }
+.bp-prose h3 { font-size: clamp(22px, 2.4vw, 30px); }
+.bp-prose h2:first-child, .bp-prose h3:first-child { margin-top: 0; }
+.bp-prose ol, .bp-prose ul { margin: 0 0 24px; padding-left: 24px; color: var(--bp-ink-2); }
+.bp-prose li { margin: 0 0 8px; line-height: 1.5; }
+.bp-prose a { color: var(--bp-navy); font-weight: 700; text-underline-offset: 3px; }
+.bp-prose img { max-width: 100%; height: auto; border-radius: 14px; }
+
+/* La serie de años, para recorrerla sin volver al índice. */
+.bp-anios { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.bp-anios a { padding: 10px 20px; border-radius: 999px; border: 1.5px solid var(--bp-navy); color: var(--bp-navy); text-decoration: none; font-weight: 800; font-size: 17px; }
+.bp-anios a:hover { background: var(--bp-navy); color: var(--bp-paper); }
+.bp-anios a[aria-current] { background: var(--bp-lime); }

@@ -12,8 +12,10 @@
 <div class="marquee__track marquee__track--slow" style="gap: 16px;">
 {{- /* La lista va dos veces: la marquesina se desplaza media pista, así
        el ciclo queda sin costura. */ -}}
+{{- /* La segunda vuelta es decorativa: se oculta a lectores de pantalla y
+       a los buscadores para no repetir los nombres de cada organización. */ -}}
 {{- range $vuelta := (seq 2) }}{{ range $e := $acreditadas }}
-<span style="background: #FFFFFF; border-radius: 18px; padding: 18px 26px; display: flex; align-items: center;"><img src="{{ (index $e.Params.images 0) | absURL }}" alt="{{ $e.Title }}" loading="lazy" style="height: 44px; width: auto;"></span>
+<span{{ if eq $vuelta 2 }} aria-hidden="true"{{ end }} style="background: #FFFFFF; border-radius: 18px; padding: 18px 26px; display: flex; align-items: center;"><img src="{{ (index $e.Params.images 0) | absURL }}" alt="{{ if eq $vuelta 1 }}{{ $e.Title }}{{ end }}" loading="lazy" style="height: 44px; width: auto;"></span>
 {{- end }}{{ end }}
 </div>
 </div>
