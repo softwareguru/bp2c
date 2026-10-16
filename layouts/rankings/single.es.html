@@ -1,0 +1,55 @@
+{{- /* Landing de una edición del listado · diseño 2027.
+
+       Son páginas históricas: el cuerpo es el comunicado tal como se publicó
+       ese año y no se toca. Lo que cambia es el envoltorio, para que al
+       llegar desde la portada no parezca otro sitio: la misma cabecera, el
+       mismo pie y el hero del diseño nuevo.
+
+       Debajo del comunicado van todas las ediciones, para que se pueda
+       recorrer la serie completa sin volver al índice.
+
+       Solo en español: el sitio en inglés sigue en el tema anterior. */ -}}
+{{ partial "bp2c/head.html" . }}
+
+{{- $ediciones := sort (where site.RegularPages "Section" "rankings") "Title" "desc" -}}
+{{- $portada := index (.Params.images | default slice) 0 -}}
+
+<section class="bp-section bp-section--navy bp-dark">
+  <div class="bp-shell" style="display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
+    <div style="flex: 999 1 520px; min-width: 0;">
+      <p class="bp-kicker">Listado anterior</p>
+      <h1 class="bp-display">{{ .Title }}</h1>
+      <p class="bp-lead">Las organizaciones que alcanzaron el criterio en esta edición, por categoría. El comunicado es el que se publicó entonces.</p>
+      <div class="bp-btn-row">
+        {{ partial "bp2c/ui/button.html" (dict "texto" "Ver las acreditadas de hoy" "url" "/companies/" "variant" "primary") }}
+        {{ partial "bp2c/ui/button.html" (dict "texto" "Todos los listados" "url" "/rankings/" "variant" "outline") }}
+      </div>
+    </div>
+    {{- with $portada }}
+    <div class="deco" style="flex: 1 1 380px; min-width: 0; max-width: 520px;">
+      <img src="{{ . | absURL }}" alt="Portada del {{ $.Title }}" loading="lazy" style="display: block; width: 100%; height: auto; border-radius: 28px; border: 3px solid var(--bp-paper); transform: rotate(2deg);">
+    </div>
+    {{- end }}
+  </div>
+</section>
+
+<section class="bp-section bp-section--paper">
+  <div class="bp-shell">
+    <div class="bp-prose bp-prose--ancha">{{ .Content }}</div>
+  </div>
+</section>
+
+{{- with $ediciones }}
+<section class="bp-section bp-section--paper" style="padding-top: 0;">
+  <div class="bp-shell">
+    <h2 class="bp-h2">Todas las ediciones</h2>
+    <nav class="bp-anios" aria-label="Listados anteriores">
+      {{- range . }}
+      <a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $.RelPermalink }} aria-current="page"{{ end }}>{{ replace .Title "Ranking " "" }}</a>
+      {{- end }}
+    </nav>
+  </div>
+</section>
+{{- end }}
+
+{{ partial "bp2c/foot.html" . }}

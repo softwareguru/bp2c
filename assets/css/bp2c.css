@@ -767,3 +767,23 @@ details.faq p { margin: 0 0 24px; font-size: 18px; line-height: 1.6; max-width: 
   /* Lo decorativo no compite con el contenido en pantalla estrecha. */
   .deco { display: none; }
 }
+
+/* --------------------------------------------------------------------------
+   Ediciones anteriores del listado. El cuerpo es el comunicado original,
+   así que la prosa necesita encabezados, listas y enlaces con estilo propio.
+   -------------------------------------------------------------------------- */
+.bp-prose--ancha { max-width: 46em; }
+.bp-prose h2, .bp-prose h3 { margin: 48px 0 12px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.bp-prose h2 { font-size: clamp(26px, 3vw, 38px); }
+.bp-prose h3 { font-size: clamp(22px, 2.4vw, 30px); }
+.bp-prose h2:first-child, .bp-prose h3:first-child { margin-top: 0; }
+.bp-prose ol, .bp-prose ul { margin: 0 0 24px; padding-left: 24px; color: var(--bp-ink-2); }
+.bp-prose li { margin: 0 0 8px; line-height: 1.5; }
+.bp-prose a { color: var(--bp-navy); font-weight: 700; text-underline-offset: 3px; }
+.bp-prose img { max-width: 100%; height: auto; border-radius: 14px; }
+
+/* La serie de años, para recorrerla sin volver al índice. */
+.bp-anios { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.bp-anios a { padding: 10px 20px; border-radius: 999px; border: 1.5px solid var(--bp-navy); color: var(--bp-navy); text-decoration: none; font-weight: 800; font-size: 17px; }
+.bp-anios a:hover { background: var(--bp-navy); color: var(--bp-paper); }
+.bp-anios a[aria-current] { background: var(--bp-lime); }
