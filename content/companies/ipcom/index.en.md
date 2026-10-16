@@ -53,7 +53,7 @@ website: https://ipcom.ai/
 jobslink: https://ipcom.ai/carreras/
 
 weight: 11
-draft: true
+draft: false
 ---
 
 Somos IPCOM, un laboratorio de los sentidos donde entramos nuevas soluciones comunitarias que representen un mayor entendimiento de cómo nos relacionamos con los demás.

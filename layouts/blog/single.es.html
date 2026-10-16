@@ -1,0 +1,27 @@
+{{- /* Nota del blog · diseño 2027. El cuerpo es el texto tal como se escribió;
+       lo que cambia es el envoltorio, para que una nota no se sienta otro
+       sitio al llegar desde la portada.
+       Solo en español: el sitio en inglés sigue en el tema anterior. */ -}}
+{{ partial "bp2c/head.html" . }}
+
+{{- $portada := index (.Params.images | default slice) 0 -}}
+
+<section class="bp-section bp-section--navy bp-dark">
+  <div class="bp-shell">
+    <p class="bp-kicker">Blog</p>
+    <h1 class="bp-display">{{ .Title }}</h1>
+    <p class="bp-note" style="color: var(--bp-sky); margin-top: 18px;"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 de enero, 2006" }}</time>{{ with .ReadingTime }} · {{ . }} min de lectura{{ end }}</p>
+  </div>
+</section>
+
+<section class="bp-section bp-section--paper">
+  <div class="bp-shell">
+    {{- with $portada }}
+    <img src="{{ . | absURL }}" alt="" loading="lazy" style="display: block; width: 100%; max-width: 820px; height: auto; border-radius: var(--bp-radius-lg); margin: 0 0 48px;">
+    {{- end }}
+    <div class="bp-prose bp-prose--ancha">{{ .Content }}</div>
+    <p style="margin: 48px 0 0;"><a class="bp-textlink" href="/blog/">← Todas las notas</a></p>
+  </div>
+</section>
+
+{{ partial "bp2c/foot.html" . }}

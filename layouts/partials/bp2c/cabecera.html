@@ -6,7 +6,9 @@
 {{- $g := site.Data.bp2c.global -}}
 {{- $inicio := .IsHome -}}
 {{- /* La portada usa una rejilla de 1320 y el resto del sitio la de 1200:
-       el encabezado se alinea con el contenido de cada una. */ -}}
+       el encabezado se alinea con el contenido de cada una.
+       Los enlaces del menú llevan siempre a su página: una ancla que solo
+       funciona en la portada confunde al llegar desde otra. */ -}}
 {{- $ancho := cond $inicio "1320px" "1200px" -}}
 <div class="bp-barra-sup" style="background: #B1D635; color: #012233; padding: 10px 24px; font-size: 14px; font-weight: 700; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; align-items: center;">
 <span class="mono" style="font-size: 12px; letter-spacing: .08em;">● {{ upper $g.franja.texto }}</span>
@@ -19,8 +21,9 @@
 {{- /* «Para organizaciones» queda oculto por ahora: llevaba a /que-es/, que
        todavía tiene el diseño anterior. Reactivarlo es descomentar la línea. */ -}}
 {{- /* <a href="/que-es/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;">Para organizaciones</a> */ -}}
-<a href="{{ if $inicio }}#talento{{ else }}/para-talento/{{ end }}" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/para-talento/" }} aria-current="page"{{ end }}>Para ti</a>
-<a href="{{ if $inicio }}#acreditadas{{ else }}/companies/{{ end }}" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/companies/" }} aria-current="page"{{ end }}>Acreditadas</a>
+<a href="/para-talento/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/para-talento/" }} aria-current="page"{{ end }}>Para ti</a>
+<a href="/companies/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/companies/" }} aria-current="page"{{ end }}>Acreditadas</a>
+<a href="/rankings/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/rankings/" }} aria-current="page"{{ end }}>Listados</a>
 <a href="/faq/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/faq/" }} aria-current="page"{{ end }}>FAQ</a>
 </nav>
 <span style="display: flex; align-items: center; gap: 16px;">
@@ -28,6 +31,16 @@
 <a href="/" hreflang="es" style="color: {{ if eq .Language.Lang "es" }}#B1D635{{ else }}#F4F0E9{{ end }}; text-decoration: none;">ES</a>
 <a href="/en/" hreflang="en" style="color: {{ if eq .Language.Lang "en" }}#B1D635{{ else }}#F4F0E9{{ end }}; text-decoration: none;">EN</a>
 </span>
+<details class="menu-movil">
+<summary aria-label="Menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F4F0E9" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></summary>
+<nav class="menu-panel" aria-label="Menú">
+<a href="/para-talento/"{{ if eq .RelPermalink "/para-talento/" }} aria-current="page"{{ end }}>Para ti</a>
+<a href="/companies/"{{ if eq .RelPermalink "/companies/" }} aria-current="page"{{ end }}>Acreditadas</a>
+<a href="/rankings/"{{ if eq .RelPermalink "/rankings/" }} aria-current="page"{{ end }}>Listados anteriores</a>
+<a href="/faq/"{{ if eq .RelPermalink "/faq/" }} aria-current="page"{{ end }}>Preguntas frecuentes</a>
+<a href="/contacto/"{{ if eq .RelPermalink "/contacto/" }} aria-current="page"{{ end }}>Contacto</a>
+</nav>
+</details>
 <a href="{{ $g.cta_principal.url }}" class="btn cta-top" style="background: #B1D635; color: #012233; text-decoration: none; font-weight: 800; font-size: 16px; padding: 14px 22px; border-radius: 999px; white-space: nowrap;"><span class="cta-long">{{ $g.cta_principal.texto }}</span><span class="cta-short">Evalúate</span></a>
 </span>
 </header>
