@@ -1,4 +1,10 @@
-{{- /* Página de contenido BP2C 2027. La estructura vive en el frontmatter. */ -}}
+{{- /* Páginas del sitio BP2C. Las que ya tienen maqueta propia del diseño
+       2027 usan su partial; el resto sigue con el sistema de bloques. */ -}}
 {{ partial "bp2c/head.html" . }}
+{{- $pagina := printf "bp2c/paginas/%s.html" (path.Base .RelPermalink) -}}
+{{- if templates.Exists (printf "partials/%s" $pagina) }}
+{{ partial $pagina . }}
+{{- else }}
 {{ partial "bp2c/blocks/render.html" (dict "page" .) }}
+{{- end }}
 {{ partial "bp2c/foot.html" . }}

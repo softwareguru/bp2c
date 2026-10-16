@@ -648,3 +648,61 @@ a:hover { color: var(--bp-navy-hover); }
   .bp-btn, .bp-card { transition: none; }
   .bp-btn--primary:hover, .bp-btn--secondary:hover, .bp-card:hover { transform: none; }
 }
+
+/* Listados de blog y de ediciones anteriores. */
+.bp-card--nota, .bp-card--edicion { display: block; text-decoration: none; color: inherit; }
+.bp-card--nota img, .bp-card--edicion img {
+  display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+  border-radius: 14px; margin: 0 0 16px;
+}
+.bp-card--edicion img { aspect-ratio: 4 / 3; }
+.bp-card--nota .bp-h3, .bp-card--edicion .bp-h3 { margin: 0 0 8px; }
+.bp-paginacion { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: center; margin-top: 40px; }
+
+/* Menú de móvil del diseño: un botón ≡ en vez de una cabecera de tres filas. */
+.menu-movil { display: none; position: relative; }
+.menu-movil > summary {
+  list-style: none; width: 46px; height: 46px; border-radius: 999px;
+  border: 2px solid rgba(244,240,233,.45);
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+}
+.menu-movil > summary::-webkit-details-marker { display: none; }
+.menu-panel {
+  position: absolute; right: 0; top: calc(100% + 8px); min-width: 240px;
+  background: var(--bp-paper); border-radius: 22px; padding: 10px;
+  display: flex; flex-direction: column; z-index: 60;
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+.menu-panel a { padding: 14px 16px; border-radius: 14px; color: var(--bp-navy); text-decoration: none; font-weight: 700; font-size: 18px; }
+.menu-panel a[aria-current] { background: var(--bp-lime); }
+@media (max-width: 900px) {
+  .bp-cab .nav-links { display: none; }
+  .menu-movil { display: block; }
+}
+
+/* --------------------------------------------------------------------------
+   Preguntas frecuentes · diseño 2027 (artboard FAQ)
+   -------------------------------------------------------------------------- */
+.kicker { margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; letter-spacing: .1em; font-weight: 700; }
+.faq-lay { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: 300px minmax(0,1fr); gap: 48px 72px; align-items: start; }
+.indice { position: sticky; top: 24px; display: flex; flex-direction: column; gap: 8px; }
+.indice a { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 14px 18px; border-radius: 16px; border: 1.5px solid var(--bp-navy); text-decoration: none; font-weight: 700; font-size: 16px; }
+.indice a:hover { background: var(--bp-navy); color: var(--bp-paper); }
+.indice a:hover span { color: var(--bp-sky) !important; }
+.grupo { scroll-margin-top: 24px; }
+.grupo + .grupo { margin-top: 64px; }
+details.faq { border-top: 1.5px solid rgba(1,34,51,.18); }
+details.faq:last-child { border-bottom: 1.5px solid rgba(1,34,51,.18); }
+details.faq > summary { list-style: none; cursor: pointer; display: flex; gap: 18px; align-items: center; justify-content: space-between; padding: 22px 0; font-weight: 800; font-size: 20px; line-height: 1.35; }
+details.faq > summary::-webkit-details-marker { display: none; }
+details.faq .mas { flex: 0 0 40px; height: 40px; border-radius: 50%; background: var(--bp-navy); color: var(--bp-lime); display: flex; align-items: center; justify-content: center; transition: transform .25s; }
+details.faq[open] .mas { transform: rotate(45deg); }
+details.faq p { margin: 0 0 24px; font-size: 18px; line-height: 1.6; max-width: 40em; }
+@media (max-width: 900px) {
+  .faq-lay { grid-template-columns: minmax(0,1fr); }
+  .indice { position: static; flex-direction: row; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; }
+  .indice a { flex: 0 0 auto; border-radius: 999px; padding: 10px 16px; font-size: 15px; }
+  .indice a span, .indice .kicker { display: none; }
+}
+@media (max-width: 520px) { details.faq > summary { font-size: 18px; } }
+@media (prefers-reduced-motion: reduce) { details.faq .mas { transition: none; } }

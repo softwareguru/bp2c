@@ -1,0 +1,36 @@
+{{- /* Blog. Usa la cabecera y el pie compartidos, para que no se sienta otro
+       sitio al llegar desde la portada. */ -}}
+{{ partial "bp2c/head.html" . }}
+
+<section class="bp-section bp-section--navy bp-dark">
+  <div class="bp-shell">
+    <p class="bp-kicker">Blog</p>
+    <h1 class="bp-display">Lo que vamos aprendiendo</h1>
+    <p class="bp-lead">Notas sobre el trabajo técnico, la IA y qué hace que un lugar sea bueno para crear.</p>
+  </div>
+</section>
+
+<section class="bp-section bp-section--paper">
+  <div class="bp-shell">
+    <div class="bp-grid bp-grid--3">
+      {{- range .Paginator.Pages }}
+      <a class="bp-card bp-card--nota" href="{{ .RelPermalink }}">
+        {{- with (index (.Params.images | default slice) 0) }}
+        <img src="{{ . | absURL }}" alt="" loading="lazy" width="520" height="293">
+        {{- end }}
+        <h2 class="bp-h3">{{ .Title }}</h2>
+        <p class="bp-note"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 de enero, 2006" }}</time></p>
+      </a>
+      {{- end }}
+    </div>
+    {{- if gt .Paginator.TotalPages 1 }}
+    <nav class="bp-paginacion" aria-label="Paginación">
+      {{- with .Paginator.Prev }}<a class="bp-btn bp-btn--outline" href="{{ .URL }}">← Anteriores</a>{{ end }}
+      <span class="bp-note">Página {{ .Paginator.PageNumber }} de {{ .Paginator.TotalPages }}</span>
+      {{- with .Paginator.Next }}<a class="bp-btn bp-btn--outline" href="{{ .URL }}">Siguientes →</a>{{ end }}
+    </nav>
+    {{- end }}
+  </div>
+</section>
+
+{{ partial "bp2c/foot.html" . }}
