@@ -1,0 +1,9 @@
+{{- $b := .block -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--paper" }}" style="padding-block:clamp(32px,4vw,48px)">
+  <div class="bp-shell">
+    <div class="bp-callout">
+      {{- with $b.titulo }}<p style="font-weight:800;color:var(--bp-ink)">{{ . }}</p>{{ end }}
+      {{- range $b.parrafos }}<p>{{ . | safeHTML }}</p>{{ end }}
+    </div>
+  </div>
+</section>

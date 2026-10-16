@@ -1,0 +1,67 @@
+{{- $g := site.Data.bp2c.global -}}
+{{- $css := resources.Get "css/bp2c.css" | minify | fingerprint -}}
+<!doctype html>
+<html lang="{{ .Language.LanguageCode | default "es-MX" }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ with .Params.seo_title }}{{ . }}{{ else }}{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta name="theme-color" content="{{ site.Params.themeColor | default "#012233" }}">
+{{- if .Params.noindex }}
+<meta name="robots" content="noindex, follow">
+{{- end }}
+<link rel="canonical" href="{{ .Permalink }}">
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+{{- end }}
+<link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}">
+
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ with .Params.seo_title }}{{ . }}{{ else }}{{ .Title | default site.Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:locale" content="{{ .Language.LanguageCode | default "es-MX" }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+{{- with (index (.Params.images | default site.Params.images) 0) }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+
+{{ partial "bp2c/schema.html" . }}
+{{- with site.Params.googleTag }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ . }}');</script>
+{{- end }}
+</head>
+<body>
+<a class="bp-skip" href="#contenido">Saltar al contenido</a>
+
+{{ partial "bp2c/cabecera.html" . }}
+
+{{- if not .IsHome }}
+{{- /* El grupo de navegación al que pertenece la página, para que las migas
+       reflejen la estructura y no solo "Inicio / título". */ -}}
+{{- $grupo := "" -}}
+{{- range $g.menu }}{{ $n := .nombre }}{{ range .enlaces }}{{ if eq $.RelPermalink .url }}{{ $grupo = $n }}{{ end }}{{ end }}{{ end -}}
+<nav class="bp-breadcrumb bp-shell" aria-label="Migas de pan">
+  <ol>
+    <li><a href="/">Inicio</a> <span aria-hidden="true">/</span></li>
+    {{- with $grupo }}
+    <li>{{ . }} <span aria-hidden="true">/</span></li>
+    {{- end }}
+    {{- with $.Parent }}{{ if and (not .IsHome) (ne $.Kind "section") }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span aria-hidden="true">/</span></li>
+    {{- end }}{{ end }}
+    <li aria-current="page">{{ .Title }}</li>
+  </ol>
+</nav>
+{{- end }}
+
+<main id="contenido">

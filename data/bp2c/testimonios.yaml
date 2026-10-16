@@ -1,0 +1,53 @@
+# Testimonios en vídeo del canal de Software Guru.
+# Los títulos y las miniaturas son los reales del vídeo; las miniaturas están
+# descargadas en assets/ para que Hugo genere WebP y el reposo no haga
+# ninguna petición a YouTube.
+#
+# PENDIENTE: la cita de cada tarjeta. Mientras `cita` esté vacía, la tarjeta
+# muestra el título real del vídeo. La frase que convierte es la que nombra un
+# resultado concreto, y hay que sacarla viendo cada vídeo; no se inventa aquí.
+#
+# PENDIENTE: confirmar en YouTube Studio que los tres tienen subtítulos en
+# español y revisados. El criterio 1.2.2 de WCAG es nivel A: sin subtítulos,
+# publicar estos vídeos deja al sitio fuera de norma. No se puede comprobar
+# desde fuera del canal.
+publicar: true
+
+kicker: "Testimonios"
+titulo: "Que lo cuenten ellas"
+entrada: "Tres organizaciones que ya pasaron por la evaluación, contando qué encontraron y qué hicieron con eso."
+nota: "Grabados durante el ciclo de Best Place to Code, el programa que ahora se llama Best Place to Create."
+
+testimonios:
+  - empresa: "Svitla Systems"
+    perfil: "/companies/svitla-systems/"
+    titulo: "Trabajando por ofrecer las mejores condiciones laborales en tech"
+    youtube: "VX_tX_AsiNU"
+    poster: "images/testimonios/svitla.jpg"
+    cita: ""
+    nombre: ""
+    cargo: ""
+    duracion: ""
+
+  - empresa: "Spark Technologies"
+    perfil: "/companies/spark-technologies/"
+    titulo: "Una empresa que busca la excelencia en la codificación"
+    youtube: "Jdlq9Ce0VGI"
+    poster: "images/testimonios/spark.jpg"
+    cita: ""
+    nombre: ""
+    cargo: ""
+    duracion: ""
+
+  - empresa: "Onephase"
+    perfil: "/companies/onephase/"
+    titulo: "Creando un entorno donde los devs quieren estar"
+    youtube: "L4kfzlnlHtQ"
+    poster: "images/testimonios/onephase.jpg"
+    cita: ""
+    nombre: ""
+    cargo: ""
+    duracion: ""
+
+# Citas de texto de apoyo, para mezclar con los vídeos cuando existan.
+apoyo: []

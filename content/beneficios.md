@@ -1,43 +1,88 @@
 ---
-title: 'Beneficios'
-date: 2025-01-18T02:03:31-06:00
-draft: false
+title: "Beneficios de la acreditación Best Place to Create"
+type: bp2c
+description: "Qué te llevas al evaluarte y qué se suma al acreditarte: la Radiografía del Empleador, el sello, el perfil en el directorio y difusión de tus vacantes."
 aliases:
- - /es/about/beneficios
+  - /es/about/beneficios
+blocks:
+  - type: hero
+    kicker: "Beneficios"
+    h1: "Qué te llevas de todo esto"
+    subtitulo: "Evaluarte te da un diagnóstico que no podrías conseguir de otra forma. Acreditarte añade una herramienta para gestionar, un sello que comunicar y visibilidad frente al talento técnico."
+    foto: "fotos/beneficios.jpg"
+    palabra: "Valor."
+    botones:
+      - texto: "Evalúa a tu organización"
+        url: "/contacto/?interes=evaluar"
+        variant: "primary"
+
+  - type: comparativa
+    h2: "Qué recibes en cada caso"
+    filas:
+      - que: "Dashboard de monitoreo durante las dos semanas de evaluación"
+        evaluada: true
+        acreditada: true
+      - que: "Calificación de Fundamentos y de las seis categorías"
+        evaluada: true
+        acreditada: true
+      - que: "Análisis corto de las cinco palancas"
+        evaluada: true
+        acreditada: true
+      - que: "Radiografía del Empleador: hallazgos, qué hacer con cada palanca y comparación con organizaciones parecidas a la tuya"
+        evaluada: false
+        acreditada: true
+      - que: "Reconocimiento físico, constancia digital y derecho a usar el sello"
+        evaluada: false
+        acreditada: true
+      - que: "Perfil en el directorio de bestplacetocreate.com"
+        evaluada: false
+        acreditada: true
+      - que: "Entrada al Listado 2027, con mención en los newsletters y redes de Best Place to Create y Software Guru"
+        evaluada: false
+        acreditada: true
+
+  - type: cards
+    fondo: "bp-section--paper"
+    kicker: "Al acreditarte"
+    h2: "Cuatro cosas que puedes hacer con el sello"
+    cols: 4
+    tarjetas:
+      - titulo: "Decidir con datos"
+        lista:
+          - "La Radiografía del Empleador, con qué hacer en cada palanca"
+          - "Cómo te ves frente a tu cohorte"
+          - "El reporte del ecosistema"
+      - titulo: "Comunicarlo"
+        lista:
+          - "Reconocimiento físico y constancia digital"
+          - "El sello Best Place to Create en tus materiales, impresos y digitales"
+          - "Perfil propio en el directorio"
+          - "Entrada al Listado 2027"
+      - titulo: "Contratar mejor"
+        lista:
+          - "2 vacantes destacadas al mes en el newsletter de Software Guru, SG4 Women, el sitio de Software Guru y Get on Board"
+          - "Un perk para reclutar con Get on Board durante el primer año"
+      - titulo: "Estar en la conversación"
+        lista:
+          - "Mención en los newsletters y redes de Best Place to Create y Software Guru"
+          - "Puedes publicar en el blog de Best Place to Create"
+          - "20 % de descuento en patrocinios de eventos de Software Guru"
+          - "30 % de descuento para asistir a esos eventos"
+
+  - type: cards
+    fondo: "bp-section--white"
+    kicker: "No te dejamos solo"
+    h2: "Dos kits, uno en cada momento"
+    cols: 2
+    tarjeta_crema: true
+    tarjetas:
+      - titulo: "Kit de despliegue"
+        texto: "Los materiales y el enlace para invitar a tu equipo a responder, más lo que necesitas para explicarles de qué se trata. Lo recibes al contratar."
+      - titulo: "Kit de acreditación"
+        texto: "Las piezas y los lineamientos para anunciar tu acreditación sin equivocarte en cómo se nombra. Lo recibes al acreditarte."
+
+  - type: callout
+    titulo: "Cómo se comunica el reconocimiento"
+    parrafos:
+      - "Siempre con el nombre oficial del listado. No publicamos posiciones dentro de cada categoría, así que no existe un “#1 en Consultoría mediana” que anunciar."
 ---
-
-## Beneficios
-
-<h3>Ser un Best Place to Code te brinda excelentes beneficios como:</h3>
-
-<ol>
-	<li>Posicionamiento entre la comunidad tecnológica como una de las mejores empresas para trabajar.</li>
-	<li>Visibilidad entre los profesionistas que desarrollan software, lo que se traduce en atracción de talento técnico.</li>
-	<li>Reconocimiento como una organización que ofrece las mejores condiciones de trabajo y carrera para los profesionistas de software en nuestra región.</li>
-</ol>
-
-<p>&nbsp;</p>
-
-<h3>Una vez que tu organización se acredita como Best Place to Code, puede adquirir una membresía que le da los siguientes beneficios:</h3>
-
-<ul>
-	<li>Constancia y reconocimiento acreditando a la empresa como Best Place to Code.</li>
-	<li>Permiso para utilizar el sello “Best Place to Code” en sus materiales impresos y online.</li>
-	<li>Perfil de la empresa en directorio (https://bestplacetocode.com).</li>
-	<li>Inclusión dentro del listado de las empresas mejor evaluadas durante ese año calendario.</li>
-	<li>Difusión en redes sociales de Best Place to Code durante período de acreditación.</li>
-	<li>Inclusión en el reporte de “Las mejores empresas para trabajar como desarrollador”, publicado en Software Guru (sitio web, newsletter y redes sociales).</li>
-	<li>Publicaciones&nbsp;en el blog de Best Place To Code.</li>
-	<li>La posibilidad de participar en los Showcases. Los showcases son eventos donde las empresas Best Place to Code comparten lo que hacen, son una combinación de pláticas cortas y espacios para networking con los asistentes. La participación en estos eventos es opcional y tiene un costo adicional, pero solo está abierto para miembros de Best Place to Code.</li>
-	<li>Descuento del 20% en patrocinios de eventos organizados por SG.</li>
-	<li>Descuento del 30% en asistencias a eventos organizados por SG.</li>
-	<li>En el primer año de acreditación aplicarás a un <a href="https://docsend.com/view/yiw3rxsvw24cjkhb">perk especial</a> para reclutar profesionales usando <a href="https://www.getonbrd.com.mx/">Get on Board</a>,&nbsp;</li>
-	<li>Difusión de vacantes en newsletter SG, SG4 Women, sitio web <a href="https://sg.com.mx/">SG</a> y sitio <a href="https://www.getonbrd.com.mx/">getonboard</a> (2 vacantes destacadas mensual).&nbsp;</li>
-	<li>Reporte de incidencias de <a href="https://safespace.global/">SafeSpace Plus</a> para la creación de un entorno organizacional inclusivo.&nbsp;</li>
-</ul>
-
-<p>¿Quieres que tu empresa se acredite y sea miembro Best Place to Code? ¡<a href="https://bestplacetocode.com/about/contacto">Contáctanos ahora mismo</a>!</p>
-
-<div id="gtx-trans" style="position: absolute; left: 173px; top: 384px;">
-<div class="gtx-trans-icon">&nbsp;</div>
-</div>

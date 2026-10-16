@@ -1,0 +1,58 @@
+{{- /* Testimonios en vídeo. Tres tarjetas de calidad pareja, cada una con
+       fachada: en reposo solo una imagen, ninguna petición a YouTube.
+       La distinción se deriva del perfil de cada organización en el repo,
+       no se afirma aquí: así la tarjeta no puede decir "acreditada" de
+       quien no lo está. */ -}}
+{{- $b := .block -}}
+{{- $d := site.Data.bp2c.testimonios -}}
+{{- $g := site.Data.bp2c.global -}}
+{{- if and (or $d.publicar (not hugo.IsProduction)) $d.testimonios -}}
+<section class="bp-section bp-section--navy bp-dark" aria-labelledby="testi-titulo"{{ with $b.ancla }} id="{{ . }}"{{ end }}>
+  <div class="bp-shell">
+    <div style="max-width:52ch;margin-bottom:40px">
+      <p class="bp-kicker" style="color:var(--bp-lime)">{{ $d.kicker }}</p>
+      <h2 class="bp-h2" id="testi-titulo" style="color:#fff">{{ $b.h2 | default $d.titulo }}</h2>
+      {{- with $d.entrada }}<p class="bp-lead" style="color:var(--bp-sky);max-width:none">{{ . }}</p>{{ end }}
+    </div>
+
+    <ul class="bp-testi-grid">
+      {{- range $d.testimonios }}
+      {{- $perfil := "" }}{{ with .perfil }}{{ $perfil = site.GetPage . }}{{ end }}
+      {{- $acreditada := and $perfil (eq $perfil.Params.sello true) }}
+      <li>
+        <article class="bp-testi-card">
+          {{ partial "bp2c/ui/video.html" (dict "testimonio" . "vertical" false) }}
+
+          <div class="bp-testi-card__body">
+            <div class="bp-testi-card__top">
+              <h3 class="bp-h3" style="margin:0;color:#fff">{{ .empresa }}</h3>
+              {{- if $acreditada }}
+              <span class="bp-testi__flag"><span aria-hidden="true"></span>Acreditada</span>
+              {{- end }}
+            </div>
+
+            {{- /* Mientras no haya cita aprobada, la tarjeta muestra el
+                   título real del vídeo en lugar de una frase inventada. */ -}}
+            {{- with .cita }}
+            <blockquote class="bp-testi-card__quote"><p>{{ . }}</p></blockquote>
+            {{- with $.nombre }}<p class="bp-testi-card__who">{{ . }}{{ with $.cargo }} · {{ . }}{{ end }}</p>{{ end }}
+            {{- else }}
+            <p class="bp-testi-card__titulo">{{ .titulo }}</p>
+            {{- end }}
+
+            {{- with $perfil }}
+            <a class="bp-textlink" style="color:#fff" href="{{ .RelPermalink }}">Ver el perfil de {{ $.empresa }}</a>
+            {{- end }}
+          </div>
+        </article>
+      </li>
+      {{- end }}
+    </ul>
+
+    {{- with $d.nota }}<p class="bp-fuente" style="margin-top:28px">{{ . }}</p>{{ end }}
+    {{- with $b.enlace }}
+    <p style="margin:24px 0 0"><a class="bp-textlink" style="color:#fff" href="{{ .url }}">{{ .texto }} →</a></p>
+    {{- end }}
+  </div>
+</section>
+{{- end -}}

@@ -1,0 +1,27 @@
+{{- /* Texto + foto. Sirve para los bloques narrativos de varias páginas. */ -}}
+{{- $b := .block -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--paper" }}{{ if $b.oscuro }} bp-dark{{ end }}"{{ with $b.ancla }} id="{{ . }}"{{ end }}>
+  <div class="bp-shell {{ if $b.foto }}bp-split{{ end }}">
+    <div class="{{ if $b.foto }}bp-split__text{{ else }}bp-prose{{ end }}">
+      {{- with $b.kicker }}<p class="bp-kicker">{{ . }}</p>{{ end }}
+      {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
+      {{- range $b.parrafos }}<p style="font-size:var(--bp-text-body);line-height:1.6;color:var(--bp-ink-2);margin:0 0 18px">{{ . | safeHTML }}</p>{{ end }}
+      {{- with $b.lista }}
+      <ul style="margin:0 0 18px;padding-left:22px">
+        {{- range . }}<li style="margin-bottom:10px;color:var(--bp-ink-2)">{{ . | safeHTML }}</li>{{ end }}
+      </ul>
+      {{- end }}
+      {{- with $b.boton }}
+      <div class="bp-btn-row" style="margin-top:8px">{{ partial "bp2c/ui/button.html" (dict "texto" .texto "url" .url "variant" (.variant | default "secondary")) }}</div>
+      {{- end }}
+      {{- with $b.enlace }}
+      <p style="margin:8px 0 0"><a class="bp-textlink" href="{{ .url }}">{{ .texto }} →</a></p>
+      {{- end }}
+    </div>
+    {{- with $b.foto }}
+    <div class="bp-split__media">
+      {{ partial "bp2c/blocks/foto.html" (dict "foto" . "palabra" ($b.palabra | default "Crear.") "alt" ($b.foto_alt | default "")) }}
+    </div>
+    {{- end }}
+  </div>
+</section>

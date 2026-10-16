@@ -1,0 +1,19 @@
+{{- /* Fundamentos: la tarjeta destacada que decide la acreditación.
+       Las cifras van en lima sobre navy, nunca lime sobre fondo claro. */ -}}
+{{- $b := .block -}}
+<section class="bp-section bp-section--paper">
+  <div class="bp-shell">
+    <div class="bp-feature">
+      {{- with $b.etiqueta }}
+      <p style="margin:0 0 16px"><span class="bp-paso__pago">{{ . }}</span></p>
+      {{- end }}
+      <h2 class="bp-h2" style="color:#fff">{{ $b.h2 | safeHTML }}</h2>
+      {{- with $b.texto }}<p style="margin:0;color:var(--bp-sky);max-width:46em">{{ . | safeHTML }}</p>{{ end }}
+      {{- with $b.criterio }}
+      <ul class="bp-feature__criteria">
+        {{- range . }}<li><b>{{ .cifra }}</b><span>{{ .texto }}</span></li>{{ end }}
+      </ul>
+      {{- end }}
+    </div>
+  </div>
+</section>

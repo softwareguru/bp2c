@@ -1,0 +1,85 @@
+{{- /* C11 · Formulario. 03-medicion-y-formularios.md no está en el repo, así
+       que los campos son una propuesta: los rangos de tamaño son los del
+       "mientras tanto" de D12 y el destino de los leads sigue abierto (D4).
+       Sustituye el iframe de Google Forms de la página actual. */ -}}
+{{- $b := .block -}}
+{{- $d := site.Data.bp2c.global -}}
+<form class="bp-form" name="contacto-bp2c" method="POST" action="/contacto/gracias/"
+      data-netlify="true" netlify-honeypot="bot-field" data-form>
+  <input type="hidden" name="form-name" value="contacto-bp2c">
+  <p hidden><label>No llenar <input name="bot-field"></label></p>
+
+  {{- /* Resumen de errores: aparece al intentar enviar con campos sin
+         resolver, con un enlace a cada uno. */ -}}
+  <div class="bp-form__errores" data-form-errores role="alert" tabindex="-1" hidden></div>
+
+  <div class="bp-field">
+    <label for="f-interes">Me interesa <span class="bp-req">(requerido)</span></label>
+    <select id="f-interes" name="interes" required>
+      <option value="evaluar">Evaluar a mi organización</option>
+      <option value="recomendar">Recomendar una organización</option>
+      <option value="prensa">Prensa o alianzas</option>
+    </select>
+  </div>
+
+  <fieldset>
+    <legend>Quién eres</legend>
+  <div class="bp-field">
+    <label for="f-nombre">Nombre <span class="bp-req">(requerido)</span></label>
+    <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+  </div>
+
+  <div class="bp-field">
+    <label for="f-correo">Correo de trabajo <span class="bp-req">(requerido)</span></label>
+    <input id="f-correo" name="correo" type="email" autocomplete="email" required>
+  </div>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Tu organización</legend>
+  <div class="bp-field">
+    <label for="f-organizacion">Organización <span class="bp-req">(requerido)</span></label>
+    <input id="f-organizacion" name="organizacion" type="text" autocomplete="organization" required>
+  </div>
+
+  <div class="bp-field">
+    <label for="f-puesto">Tu puesto</label>
+    <input id="f-puesto" name="puesto" type="text" autocomplete="organization-title">
+  </div>
+
+  <div class="bp-field">
+    <label for="f-tamano">Tamaño de tu equipo de tecnología</label>
+    <select id="f-tamano" name="tamano" aria-describedby="f-tamano-ayuda">
+      <option value="">Selecciona una opción</option>
+      <option>Menos de 10</option>
+      <option>Entre 10 y 100</option>
+      <option>Entre 101 y 200</option>
+      <option>Más de 200</option>
+    </select>
+    <span class="bp-hint" id="f-tamano-ayuda">Con esto armamos la propuesta. No define la categoría en la que compites.</span>
+  </div>
+
+  </fieldset>
+
+  <div class="bp-field">
+    <label for="f-mensaje">¿Hay algo que debamos saber antes de llamarte?</label>
+    <textarea id="f-mensaje" name="mensaje" rows="4"></textarea>
+  </div>
+
+  <div>
+    <button class="bp-btn bp-btn--primary" type="submit">Enviar</button>
+    <p class="bp-hint" style="margin:14px 0 0">Te escribimos al correo que dejes. No compartimos tus datos con las organizaciones del directorio ni con nadie más.</p>
+  </div>
+</form>
+{{- $formjs := resources.Get "js/form.js" | minify | fingerprint }}
+<script defer src="{{ $formjs.RelPermalink }}" integrity="{{ $formjs.Data.Integrity }}"></script>
+<script>
+/* Preselecciona el interés con el que llegó la persona desde el CTA
+   (/contacto/?interes=evaluar). Sin esto el parámetro no significa nada. */
+(function () {
+  var v = new URLSearchParams(location.search).get('interes');
+  var s = document.getElementById('f-interes');
+  if (v && s && s.querySelector('option[value="' + CSS.escape(v) + '"]')) { s.value = v; }
+})();
+</script>

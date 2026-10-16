@@ -1,0 +1,16 @@
+{{- /* Tres cifras con su fuente. */ -}}
+{{- $b := .block -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--sky" }}">
+  <div class="bp-shell">
+    {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
+    <div class="bp-grid bp-grid--3">
+      {{- range $b.cifras }}
+      <div>
+        <p style="margin:0;font-size:clamp(40px,6vw,64px);line-height:1;font-weight:800;letter-spacing:-0.03em">{{ .cifra }}</p>
+        <p style="margin:10px 0 0;color:var(--bp-ink-2)">{{ .texto }}</p>
+      </div>
+      {{- end }}
+    </div>
+    {{- with $b.fuente }}<p class="bp-fuente" style="margin-top:26px">{{ . }}</p>{{ end }}
+  </div>
+</section>

@@ -1,0 +1,12 @@
+{{- /* Barra de puntaje con role="meter" y el valor también en texto.
+       Un solo partial en lugar del bloque repetido seis veces por página. */ -}}
+{{- $v := .valor | default 0 -}}
+<div class="bp-score">
+  <div class="bp-score__head">
+    <span class="bp-score__label">{{ .etiqueta }}</span>
+    <span class="bp-score__value">{{ $v }}%</span>
+  </div>
+  <div class="bp-score__track" role="meter" aria-valuenow="{{ $v }}" aria-valuemin="0" aria-valuemax="100" aria-label="{{ .etiqueta }}: {{ $v }} por ciento">
+    <div class="bp-score__fill" style="width: {{ $v }}%"></div>
+  </div>
+</div>

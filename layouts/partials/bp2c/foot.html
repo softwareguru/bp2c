@@ -1,0 +1,22 @@
+{{- $g := site.Data.bp2c.global -}}
+</main>
+
+{{- /* La fachada de vídeo solo se carga en las páginas que tienen vídeo. */ -}}
+{{- $conVideo := false -}}
+{{- range .Params.blocks }}{{ if eq .type "testimonios" }}{{ $conVideo = true }}{{ end }}{{ end -}}
+{{- if $conVideo }}
+{{- $videojs := resources.Get "js/video.js" | minify | fingerprint }}
+<script defer src="{{ $videojs.RelPermalink }}" integrity="{{ $videojs.Data.Integrity }}"></script>
+{{- end }}
+
+{{- /* Banda CTA (C10). La página puede declarar su propia variante en
+       front matter con `cta:`; si no, se usa la banda por defecto. */ -}}
+{{- if not .Params.sin_cta }}
+{{- $default := $g.cta_default -}}
+{{- if eq .Section "companies" }}{{ $default = $g.cta_talento }}{{ end -}}
+{{ partial "bp2c/blocks/cta.html" (dict "page" . "cta" (.Params.cta | default $default)) }}
+{{- end }}
+
+{{ partial "bp2c/pie.html" . }}
+</body>
+</html>

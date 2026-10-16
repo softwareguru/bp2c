@@ -1,0 +1,5 @@
+{{- /* Botón. Siempre <a> o <button> real, nunca un div. */ -}}
+{{- $v := .variant | default "primary" -}}
+{{- with .url -}}
+<a class="bp-btn bp-btn--{{ $v }}" href="{{ . }}">{{ $.texto }}{{ if $.icono }}{{ partial "bp2c/ui/icon.html" (dict "name" $.icono "size" 18) }}{{ end }}</a>
+{{- end -}}

@@ -1,0 +1,26 @@
+{{- /* C4 · Rejilla de tarjetas. Sirve para 2, 3, 4 o 5 tarjetas. */ -}}
+{{- $b := .block -}}
+{{- $n := len $b.tarjetas -}}
+{{- $cols := $b.cols | default (cond (le $n 2) 2 (cond (eq $n 4) 4 3)) -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--paper" }}{{ if $b.oscuro }} bp-dark{{ end }}">
+  <div class="bp-shell">
+    {{- with $b.kicker }}<p class="bp-kicker">{{ . }}</p>{{ end }}
+    {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
+    {{- with $b.texto }}<p class="bp-lead" style="margin-bottom:36px">{{ . | safeHTML }}</p>{{ end }}
+    <div class="bp-grid bp-grid--{{ $cols }}">
+      {{- range $i, $t := $b.tarjetas }}
+      <article class="bp-card{{ if $b.tarjeta_crema }} bp-card--paper{{ end }}">
+        {{- if $b.numerar }}<span class="bp-card__n" aria-hidden="true">{{ add $i 1 }}</span>{{ end }}
+        <h3 class="bp-h3">{{ $t.titulo }}</h3>
+        {{- with $t.texto }}<p>{{ . | safeHTML }}</p>{{ end }}
+        {{- with $t.lista }}
+        <ul class="bp-card__list">{{ range . }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>
+        {{- end }}
+      </article>
+      {{- end }}
+    </div>
+    {{- with $b.enlace }}
+    <p style="margin:28px 0 0"><a class="bp-textlink" href="{{ .url }}">{{ .texto }} →</a></p>
+    {{- end }}
+  </div>
+</section>

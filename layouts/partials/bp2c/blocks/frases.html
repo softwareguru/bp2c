@@ -1,0 +1,15 @@
+{{- /* C2 · Banda de frases. En una línea en escritorio, apiladas en móvil. */ -}}
+{{- $b := .block -}}
+<section class="bp-section bp-section--white">
+  <div class="bp-shell">
+    <ul class="bp-frases">
+      {{- range $i, $f := $b.frases }}
+      {{- if $i }}<li class="bp-frases__sep" aria-hidden="true">·</li>{{ end }}
+      <li>{{ if eq $f "Best place to create" }}Best place to <span class="bp-accent-type">create</span>{{ else }}{{ $f }}{{ end }}</li>
+      {{- end }}
+    </ul>
+    {{- with $b.texto }}
+    <p style="margin:0 auto;max-width:46em;text-align:center;color:var(--bp-ink-2)">{{ . | safeHTML }}</p>
+    {{- end }}
+  </div>
+</section>

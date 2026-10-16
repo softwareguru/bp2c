@@ -1,0 +1,17 @@
+# Categorías de reconocimiento, en el orden en que se muestran.
+# El slug corresponde al campo `tipo-empresa` del frontmatter de cada perfil.
+- slug: "startups-&-isvs"
+  nombre: "ISV o startup"
+  descripcion: "Construyen su propio producto digital. Sin rango de tamaño."
+- slug: "boutiques-&-digital-agencies"
+  nombre: "Boutique"
+  descripcion: "Consultoría tecnológica o agencia digital, con menos de 10 personas de tecnología."
+- slug: "tech-consulting-mid"
+  nombre: "Consultoría mediana"
+  descripcion: "Consultoría, desarrollo a la medida o team augmentation, con entre 10 y 100 personas de tecnología."
+- slug: "tech-consulting-large"
+  nombre: "Consultoría global"
+  descripcion: "Outsourcing tecnológico o integración de sistemas, con más de 100 personas de tecnología."
+- slug: "corp"
+  nombre: "Corporativo e Instituciones"
+  descripcion: "Organizaciones con un área de tecnología interna. Sin rango de tamaño."

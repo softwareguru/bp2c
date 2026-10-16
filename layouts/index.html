@@ -1,21 +1,65 @@
-{{ define "main" }}
+{{- /* Portada 2027. Documento completo: no pasa por el baseof del tema ni por
+       la cabecera del resto del sitio, porque la portada tiene su propio
+       diseño. El resto de las páginas sigue intacto.
+       Las secciones viven en layouts/partials/bp2c/home/. */ -}}
+{{- $css := resources.Get "css/bp2c-home.css" | minify | fingerprint -}}
+{{- $js := resources.Get "js/cuenta-regresiva.js" | minify | fingerprint -}}
+<!doctype html>
+<html lang="{{ .Language.LanguageCode | default "es-MX" }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ with .Params.seo_title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta name="theme-color" content="{{ site.Params.themeColor | default "#012233" }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+{{- end }}
+<link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}">
 
-{{ $data := index .Site.Data }}
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ with .Params.seo_title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:locale" content="{{ .Language.LanguageCode | default "es-MX" }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+{{- with (index (.Params.images | default site.Params.images) 0) }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
 
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '930977');
-</script>
-<!-- End MailerLite Universal -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
-{{ partial "hero" . }}
-
-{{ partial "companies" . }}
-
-{{ partial "locations" . }}
-
-{{ end }}
+{{ partial "bp2c/schema.html" . }}
+{{- with site.Params.googleTag }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ . }}');</script>
+{{- end }}
+</head>
+<body>
+<div style="width: 100%; overflow: hidden; background: #012233;">
+{{ partial "bp2c/cabecera.html" . }}
+<main id="contenido">
+{{ partial "bp2c/home/hero.html" . }}
+{{ partial "bp2c/home/cifras.html" . }}
+{{ partial "bp2c/home/changelog.html" . }}
+{{ partial "bp2c/home/manifiesto.html" . }}
+{{ partial "bp2c/home/pilares.html" . }}
+{{ partial "bp2c/home/medimos.html" . }}
+{{ partial "bp2c/home/sello.html" . }}
+{{ partial "bp2c/home/entregables.html" . }}
+{{ partial "bp2c/home/testimonios.html" . }}
+{{ partial "bp2c/home/talento.html" . }}
+{{ partial "bp2c/home/acreditadas.html" . }}
+{{ partial "bp2c/home/fechas.html" . }}
+{{ partial "bp2c/home/cierre.html" . }}
+</main>
+{{ partial "bp2c/pie.html" . }}
+</div>
+</body>
+</html>

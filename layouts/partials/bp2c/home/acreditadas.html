@@ -1,0 +1,23 @@
+{{- /* Sección «acreditadas» de la portada 2027. Marcado del diseño aprobado.
+       Los logos salen de las fichas de content/companies/ con `sello: true`,
+       el mismo filtro que usa el muro de logos: así la marquesina crece
+       sola cuando se acredita una organización nueva. */ -}}
+{{- $acreditadas := where (where site.RegularPages "Section" "companies") "Params.sello" true -}}
+<section id="acreditadas" style="background: #F4F0E9; padding: 96px 0 104px;">
+<div style="max-width: 1320px; margin: 0 auto; padding: 0 32px;">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(36px, 4.4vw, 64px); line-height: 1.04; letter-spacing: -0.03em;">Ellas ya crean <span class="hand" style="font-weight: 400; letter-spacing: .01em;">las condiciones</span></h2>
+<p style="margin: 14px 0 0; font-size: 17px; color: #4A5B68; max-width: 46em;">Acreditadas en el ciclo 2025-2026, cuando todavía nos llamábamos Best Place to Code.</p>
+</div>
+<div class="marquee" style="margin-top: 48px;">
+<div class="marquee__track marquee__track--slow" style="gap: 16px;">
+{{- /* La lista va dos veces: la marquesina se desplaza media pista, así
+       el ciclo queda sin costura. */ -}}
+{{- range $vuelta := (seq 2) }}{{ range $e := $acreditadas }}
+<span style="background: #FFFFFF; border-radius: 18px; padding: 18px 26px; display: flex; align-items: center;"><img src="{{ (index $e.Params.images 0) | absURL }}" alt="{{ $e.Title }}" loading="lazy" style="height: 44px; width: auto;"></span>
+{{- end }}{{ end }}
+</div>
+</div>
+<div style="max-width: 1320px; margin: 32px auto 0; padding: 0 32px;"><a href="/companies/" style="color: #012233; font-weight: 800; font-size: 17px; text-underline-offset: 4px;">Conócelas y mira sus vacantes →</a></div>
+</section>
+
+<!-- FECHAS -->

@@ -1,0 +1,20 @@
+{{- /* C3 · Dato. La cifra, su frase y la fuente con fecha y etiqueta de
+       preliminar, que es lo que un asistente puede citar sin inventar. */ -}}
+{{- $b := .block -}}
+{{- $g := site.Data.bp2c.global -}}
+{{- $fuente := $b.fuente -}}
+{{- if and (not $fuente) $b.fuente_n -}}
+  {{- $fuente = printf $g.tech_pulse.plantilla $b.fuente_n -}}
+{{- end -}}
+<section class="bp-section {{ if $b.oscuro }}bp-section--navy bp-dark{{ else }}bp-section--sky{{ end }}">
+  <div class="bp-shell">
+    <div class="bp-dato">
+      <p class="bp-dato__cifra">{{ $b.cifra }}</p>
+      <div class="bp-dato__texto">
+        <p class="bp-dato__frase">{{ $b.frase | safeHTML }}</p>
+        {{- with $b.remate }}<p class="bp-dato__remate">{{ . | safeHTML }}</p>{{ end }}
+        {{- with $fuente }}<p class="bp-fuente">{{ . }}</p>{{ end }}
+      </div>
+    </div>
+  </div>
+</section>

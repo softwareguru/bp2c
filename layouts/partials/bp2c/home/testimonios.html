@@ -1,0 +1,21 @@
+{{- /* Sección «testimonios» de la portada 2027. Marcado del diseño aprobado.
+       Los vídeos salen de data/bp2c/testimonios.yaml, la misma fuente que
+       usa el bloque de testimonios del resto del sitio. */ -}}
+{{- $t := site.Data.bp2c.testimonios -}}
+<section style="background: #012233; color: #F4F0E9; padding: 112px 32px;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: end; justify-content: space-between;">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(40px, 5vw, 76px); line-height: 1.02; letter-spacing: -0.035em;">No nos creas <span class="hand" style="font-weight: 400; letter-spacing: .01em; color: #B1D635;">a nosotros.</span></h2></div>
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+{{- range $tm := $t.testimonios }}
+<a class="vid tilt" href="https://www.youtube.com/watch?v={{ $tm.youtube }}" style="display: block; text-decoration: none; color: #F4F0E9; background: #0A2E42; border-radius: 22px; overflow: hidden;">
+<div style="position: relative;"><img src="/{{ $tm.poster }}" alt="Video de {{ $tm.empresa }}" loading="lazy" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;"><span class="play" style="position: absolute; left: 50%; top: 50%; width: 68px; height: 68px; margin: -34px 0 0 -34px; border-radius: 50%; background: #B1D635; display: flex; align-items: center; justify-content: center;"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#012233"></path></svg></span></div>
+<div style="padding: 20px 22px 24px;"><p style="margin: 0; font-weight: 800; font-size: 20px;">{{ $tm.empresa }}</p><p style="margin: 6px 0 0; font-size: 16px; color: #C0D6EB; line-height: 1.45;">{{ $tm.titulo }}</p></div>
+</a>
+{{- end }}
+</div>
+<p style="margin: 20px 0 0; font-size: 14px; color: #C0D6EB;">{{ $t.nota }}</p>
+</div>
+</section>
+
+<!-- PARA TI -->

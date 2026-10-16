@@ -1,0 +1,35 @@
+{{- /* Fachada de vídeo. En reposo es una imagen procesada por Hugo y un
+       botón: ninguna petición a YouTube hasta que alguien pide verlo.
+       Los subtítulos no son opcionales: criterio 1.2.2 de WCAG, nivel A. */ -}}
+{{- $t := .testimonio -}}
+{{- $vertical := .vertical -}}
+{{- $hay := or $t.video $t.youtube -}}
+{{- $quien := $t.empresa | default ($t.nombre | default "esta organización") -}}
+{{- $img := "" -}}
+{{- with $t.poster }}{{ $img = resources.Get . }}{{ end -}}
+<div class="bp-video{{ if $vertical }} bp-video--vertical{{ end }}"
+     {{ if $hay }}data-video
+     {{ with $t.youtube }}data-youtube="{{ . }}"{{ end }}
+     {{ with $t.video }}data-src="{{ . | relURL }}"{{ end }}
+     {{ with $t.subtitulos }}data-track="{{ . | relURL }}"{{ end }}
+     data-titulo="Testimonio de {{ $quien }}"{{ end }}>
+  {{- if $img }}
+  {{- $w := $img.Resize "420x webp q80" }}
+  {{- $w2 := $img.Resize "760x webp q74" }}
+  {{- $w3 := $img.Resize "1140x webp q70" }}
+  <img class="bp-video__poster" src="{{ $w.RelPermalink }}"
+       srcset="{{ $w.RelPermalink }} 420w, {{ $w2.RelPermalink }} 760w, {{ $w3.RelPermalink }} 1140w"
+       sizes="(max-width: 899px) 100vw, 380px"
+       alt="" loading="lazy" width="{{ $w.Width }}" height="{{ $w.Height }}">
+  {{- else }}
+  <p class="bp-video__ph">[ MINIATURA DEL VÍDEO · WebP, ~40 KB ]</p>
+  {{- end }}
+
+  {{- if $hay }}
+  <button class="bp-video__play" type="button" data-video-play
+          aria-label="Reproducir el testimonio de {{ $quien }}{{ with $t.duracion }}, {{ . }}{{ end }}">
+    {{ partial "bp2c/ui/icon.html" (dict "name" "play" "size" 30 "color" "#08293A") }}
+  </button>
+  {{- with $t.duracion }}<span class="bp-video__dur">{{ . }}</span>{{ end }}
+  {{- end }}
+</div>

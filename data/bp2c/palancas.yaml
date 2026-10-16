@@ -1,0 +1,15 @@
+# Las cinco palancas. D15 abierta: las descripciones están pendientes de
+# validar con Xuxo, así que `publicar_descripcion` queda en false y las
+# tarjetas muestran solo el nombre.
+publicar_descripcion: false
+palancas:
+  - nombre: "Habilitación de IA"
+    descripcion: "Herramientas, permisos y formación para usar IA en el trabajo."
+  - nombre: "Gestión de Tecno-Ansiedad"
+    descripcion: "Cómo acompaña la organización la incertidumbre que genera el cambio tecnológico."
+  - nombre: "Justicia Algorítmica"
+    descripcion: "Trato justo cuando hay decisiones apoyadas en sistemas automatizados."
+  - nombre: "Agencia del Empleado"
+    descripcion: "Autonomía y voz en las decisiones sobre el propio trabajo."
+  - nombre: "Confianza en el Futuro"
+    descripcion: "Expectativa de crecer dentro de la organización."

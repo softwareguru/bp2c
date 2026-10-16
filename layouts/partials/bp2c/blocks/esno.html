@@ -1,0 +1,27 @@
+{{- /* C12 · Qué es y qué no es. Las dos columnas se distinguen por icono y
+       por luminosidad del borde, no solo por color. */ -}}
+{{- $b := .block -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--paper" }}">
+  <div class="bp-shell">
+    {{- with $b.kicker }}<p class="bp-kicker">{{ . }}</p>{{ end }}
+    {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
+    <div class="bp-cols">
+      <div class="bp-col bp-col--si">
+        <h3 class="bp-h3">{{ $b.titulo_si | default "Best Place to Create es…" }}</h3>
+        <ul>
+          {{- range $b.es }}
+          <li>{{ partial "bp2c/ui/icon.html" (dict "name" "check" "size" 18 "color" "#08293A") }}<span>{{ . | safeHTML }}</span></li>
+          {{- end }}
+        </ul>
+      </div>
+      <div class="bp-col bp-col--no">
+        <h3 class="bp-h3">{{ $b.titulo_no | default "Best Place to Create no es…" }}</h3>
+        <ul>
+          {{- range $b.no_es }}
+          <li>{{ partial "bp2c/ui/icon.html" (dict "name" "cruz" "size" 18 "color" "#5A6E7A") }}<span>{{ . | safeHTML }}</span></li>
+          {{- end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

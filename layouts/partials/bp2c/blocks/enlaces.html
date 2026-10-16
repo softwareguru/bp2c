@@ -1,0 +1,15 @@
+{{- /* Tres enlaces en tarjeta (página de gracias). */ -}}
+{{- $b := .block -}}
+<section class="bp-section {{ $b.fondo | default "bp-section--paper" }}">
+  <div class="bp-shell">
+    {{- with $b.h2 }}<h2 class="bp-h2">{{ . | safeHTML }}</h2>{{ end }}
+    <div class="bp-grid bp-grid--3">
+      {{- range $b.enlaces }}
+      <a class="bp-card" href="{{ .url }}" style="text-decoration:none">
+        <h3 class="bp-h3">{{ .texto }}</h3>
+        <p style="display:flex;align-items:center;gap:8px;font-weight:700;color:var(--bp-ink)">Ir {{ partial "bp2c/ui/icon.html" (dict "name" "flecha" "size" 18) }}</p>
+      </a>
+      {{- end }}
+    </div>
+  </div>
+</section>
