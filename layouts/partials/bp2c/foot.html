@@ -17,31 +17,6 @@
 {{ partial "bp2c/blocks/cta.html" (dict "page" . "cta" (.Params.cta | default $default)) }}
 {{- end }}
 
-<footer class="bp-footer">
-  <div class="bp-shell">
-    <div class="bp-footer__grid">
-      <div>
-        <a class="bp-logo" href="/" style="margin-bottom:14px">
-          {{ partial "bp2c/ui/icon.html" (dict "name" "despegue" "size" 34 "color" "#AFD235") }}
-          <span><b>Best Place</b><i>to Create</i></span>
-        </a>
-        <p style="margin:0;max-width:26em">{{ $g.footer.bajo_logo }}</p>
-      </div>
-      {{- range $g.footer_columnas }}
-      <div>
-        <h2>{{ .titulo }}</h2>
-        <ul>
-          {{- range .enlaces }}
-          <li><a href="{{ .url }}">{{ .nombre }}</a></li>
-          {{- end }}
-        </ul>
-      </div>
-      {{- end }}
-    </div>
-    <div class="bp-footer__legal">
-      <p>&copy; {{ now.Year }} Software Guru. {{ $g.footer.legal }}</p>
-    </div>
-  </div>
-</footer>
+{{ partial "bp2c/pie.html" . }}
 </body>
 </html>
