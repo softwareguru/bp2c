@@ -27,10 +27,13 @@
 <a href="/faq/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/faq/" }} aria-current="page"{{ end }}>FAQ</a>
 </nav>
 <span style="display: flex; align-items: center; gap: 16px;">
-<span class="hide-sm" style="display: flex; gap: 8px; font-size: 14px; font-weight: 700;">
-<a href="/" hreflang="es" style="color: {{ if eq .Language.Lang "es" }}#B1D635{{ else }}#F4F0E9{{ end }}; text-decoration: none;">ES</a>
-<a href="/en/" hreflang="en" style="color: {{ if eq .Language.Lang "en" }}#B1D635{{ else }}#F4F0E9{{ end }}; text-decoration: none;">EN</a>
-</span>
+{{- /* El selector de idioma queda fuera mientras no haya portada en
+       inglés del diseño 2027: enviaba a una página que ya redirige
+       de vuelta. Las páginas internas en inglés siguen publicadas. */ -}}
+{{- /* <span class="hide-sm" style="display: flex; gap: 8px; font-size: 14px; font-weight: 700;">
+<a href="/" hreflang="es" style="color: <% if eq .Language.Lang "es" %>#B1D635<% else %>#F4F0E9<% end %>; text-decoration: none;">ES</a>
+<a href="/en/" hreflang="en" style="color: <% if eq .Language.Lang "en" %>#B1D635<% else %>#F4F0E9<% end %>; text-decoration: none;">EN</a>
+</span> */ -}}
 <details class="menu-movil">
 <summary aria-label="Menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F4F0E9" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></summary>
 <nav class="menu-panel" aria-label="Menú">
