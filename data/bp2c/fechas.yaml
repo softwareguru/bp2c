@@ -1,9 +1,12 @@
 # Fechas del ciclo 2027. `resaltar: true` pinta la fila en lima.
 # `fecha_corta` es la etiqueta breve que usa la portada.
+# `etiqueta` reemplaza a `fecha` en la tabla larga de Para organizaciones,
+# solo en las dos filas que no son una fecha concreta y no caben en su columna.
 # `corta: true` marca las filas que aparecen en la versión breve (Inicio).
 titulo: "Fechas 2027"
 filas:
   - fecha: "Desde octubre de 2026"
+    etiqueta: "Desde oct 2026"
     hito: "Evaluaciones abiertas"
     hito_corto: "Evaluaciones abiertas"
     resaltar: false
@@ -44,6 +47,7 @@ filas:
     resaltar: true
     corta: true
   - fecha: "Después del 4 de febrero"
+    etiqueta: "Después"
     hito: "Entrega de reconocimientos en un evento para organizaciones y comunidad tech (fecha por anunciar)"
     hito_corto: ""
     resaltar: false

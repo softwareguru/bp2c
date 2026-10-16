@@ -1,0 +1,52 @@
+{{- /* Contacto · diseño 2027 (artboard «Contacto»).
+
+       Tres zonas: la intro con la foto, el formulario y los pasos de qué pasa
+       después. En móvil se apilan en ese orden.
+
+       El formulario es el mismo de siempre —Netlify Forms, validación y
+       preselección del interés—; aquí solo cambia el envoltorio. */ -}}
+{{- $b := dict -}}
+{{- range .Params.blocks }}{{ if eq .type "contacto" }}{{ $b = . }}{{ end }}{{ end -}}
+{{- $privacidad := site.GetPage "/privacidad" -}}
+
+<section style="background: #012233; color: #F4F0E9; padding: 48px 32px 120px; overflow: hidden;">
+<div class="ct">
+
+<div class="ct-intro">
+<p class="kicker" style="color: #C0D6EB; text-transform: uppercase;">{{ $b.kicker }}</p>
+<h1 style="margin: 18px 0 0; font-weight: 800; font-size: clamp(46px, 6vw, 92px); line-height: 1.02; letter-spacing: -0.04em;">Hablemos de <span style="color: #B1D635;">tu equipo</span></h1>
+<p style="margin: 26px 0 0; font-size: 20px; line-height: 1.55; max-width: 30em; opacity: .92;">{{ $b.texto | safeHTML }}</p>
+{{- with $b.foto }}
+<div class="deco" style="margin-top: 36px; position: relative; max-width: 520px;">
+<div style="border-radius: 24px; overflow: hidden; transform: rotate(-2deg); border: 3px solid #F4F0E9; position: relative;">
+<img src="/images/bp2c27/{{ . }}" alt="{{ $b.foto_alt }}" width="1400" height="935" style="display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;">
+<p class="hand" style="position: absolute; right: 18px; bottom: 12px; margin: 0; color: #B1D635; font-size: clamp(28px, 3.4vw, 40px); transform: rotate(-6deg); text-shadow: 0 2px 14px rgba(1,34,51,.75);">{{ $b.palabra | default "Hablemos." }}</p>
+</div>
+</div>
+{{- end }}
+</div>
+
+<div class="ct-form">
+{{ partial "bp2c/blocks/form.html" (dict "page" . "block" $b) }}
+</div>
+
+<div class="ct-pasos">
+<p class="kicker" style="color: #C0D6EB; text-transform: uppercase;">{{ $b.pasos_titulo }}</p>
+<ol class="ct-numeros">
+{{- range $i, $p := $b.pasos }}
+<li><span class="hand ct-num">{{ add $i 1 }}</span><span>{{ $p | safeHTML }}</span></li>
+{{- end }}
+</ol>
+{{- with $b.recordatorio }}
+<div class="ct-aviso">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B1D635" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg>
+<p style="margin: 0; font-size: 17px; line-height: 1.55;">{{ . | safeHTML }}</p>
+</div>
+{{- end }}
+{{- with $b.nota }}
+<p style="margin: 22px 0 0; font-size: 16px; line-height: 1.55; color: #C0D6EB;">{{ . | safeHTML }}</p>
+{{- end }}
+</div>
+
+</div>
+</section>
