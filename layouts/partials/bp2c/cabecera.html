@@ -18,9 +18,7 @@
 <header class="bp-cab" style="background: #012233; margin: 0; padding: 22px calc(max(0px, (100% - {{ $ancho }}) / 2) + 32px); display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;">
 <a href="/" aria-label="Best Place to Create, inicio" style="display: flex;"{{ if $inicio }} aria-current="page"{{ end }}><img src="/images/home/logo-best-place-to-create.png" alt="Best Place to Create" width="196" height="46" style="height: 46px; width: auto; display: block;"></a>
 <nav class="nav-links" aria-label="Principal">
-{{- /* «Para organizaciones» queda oculto por ahora: llevaba a /que-es/, que
-       todavía tiene el diseño anterior. Reactivarlo es descomentar la línea. */ -}}
-{{- /* <a href="/que-es/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;">Para organizaciones</a> */ -}}
+<a href="/para-organizaciones/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/para-organizaciones/" }} aria-current="page"{{ end }}>Para organizaciones</a>
 <a href="/para-talento/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/para-talento/" }} aria-current="page"{{ end }}>Para ti</a>
 <a href="/companies/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/companies/" }} aria-current="page"{{ end }}>Acreditadas</a>
 <a href="/rankings/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/rankings/" }} aria-current="page"{{ end }}>Listados</a>
@@ -37,6 +35,7 @@
 <details class="menu-movil">
 <summary aria-label="Menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F4F0E9" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></summary>
 <nav class="menu-panel" aria-label="Menú">
+<a href="/para-organizaciones/"{{ if eq .RelPermalink "/para-organizaciones/" }} aria-current="page"{{ end }}>Para organizaciones</a>
 <a href="/para-talento/"{{ if eq .RelPermalink "/para-talento/" }} aria-current="page"{{ end }}>Para ti</a>
 <a href="/companies/"{{ if eq .RelPermalink "/companies/" }} aria-current="page"{{ end }}>Acreditadas</a>
 <a href="/rankings/"{{ if eq .RelPermalink "/rankings/" }} aria-current="page"{{ end }}>Listados anteriores</a>

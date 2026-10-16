@@ -9,6 +9,12 @@
 <script defer src="{{ $videojs.RelPermalink }}" integrity="{{ $videojs.Data.Integrity }}"></script>
 {{- end }}
 
+{{- /* El contador de días solo se carga donde hay uno. */ -}}
+{{- if .Params.cuenta_regresiva }}
+{{- $cuenta := resources.Get "js/cuenta-regresiva.js" | minify | fingerprint }}
+<script defer src="{{ $cuenta.RelPermalink }}" integrity="{{ $cuenta.Data.Integrity }}"></script>
+{{- end }}
+
 {{- /* Banda CTA (C10). La página puede declarar su propia variante en
        front matter con `cta:`; si no, se usa la banda por defecto. */ -}}
 {{- if not .Params.sin_cta }}

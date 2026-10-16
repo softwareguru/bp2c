@@ -60,6 +60,9 @@ menu:
   - nombre: "El programa"
     grupo: true
     enlaces:
+      - nombre: "Para organizaciones"
+        url: "/para-organizaciones/"
+        resumen: "Todo el programa en una página: qué medimos, cómo funciona y qué recibes"
       - nombre: "Qué es"
         url: "/que-es/"
         resumen: "Qué evaluamos y por qué cambió el nombre"
