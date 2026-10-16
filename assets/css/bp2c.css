@@ -37,8 +37,8 @@
   --bp-shell: 1200px;
   --bp-gutter: 32px;
   --bp-section-y: clamp(56px, 7vw, 88px);
-  --bp-radius: 16px;
-  --bp-radius-lg: 18px;
+  --bp-radius: 22px;
+  --bp-radius-lg: 24px;
   --bp-radius-pill: 999px;
   --bp-arch: 210px 210px 24px 24px;
 }
@@ -105,7 +105,8 @@ img { max-width: 100%; height: auto; }
    -------------------------------------------------------------------------- */
 .bp-kicker {
   display: block; margin: 0 0 14px;
-  font-size: var(--bp-text-kicker); font-weight: 800;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px; font-weight: 700;
   letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--bp-ink-3);
 }
@@ -614,3 +615,298 @@ a:hover { color: var(--bp-navy-hover); }
   .bp-cab .cta-top { padding: 12px 18px !important; font-size: 15px !important; }
   .bp-cab .hide-sm { display: none; }
 }
+
+/* --------------------------------------------------------------------------
+   Gestos del diseño 2027. Los mismos que usa la portada, para que los bloques
+   del resto del sitio se sientan de la misma pieza.
+   -------------------------------------------------------------------------- */
+
+/* Los botones se levantan y giran un grado, con sombra sólida. */
+.bp-btn { transition: transform .2s, box-shadow .2s, background-color .2s, border-color .2s; }
+.bp-btn--primary:hover, .bp-btn--secondary:hover {
+  transform: translateY(-2px) rotate(-1deg);
+  box-shadow: 0 8px 0 var(--bp-navy);
+}
+.bp-dark .bp-btn--primary:hover { box-shadow: 0 8px 0 rgba(0,0,0,.35); }
+
+/* Las tarjetas se elevan al pasar encima. Las pares giran al otro lado, para
+   que una rejilla no se mueva toda igual. */
+.bp-card { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+.bp-card:hover { transform: translateY(-8px) rotate(-1.5deg); box-shadow: 0 18px 40px rgba(1,34,51,.18); }
+.bp-card:nth-child(even):hover { transform: translateY(-8px) rotate(1.5deg); }
+
+/* Resalte lima detrás de unas palabras, como «Te evalúas:» en la portada.
+   Se usa en el copy: <span class="bp-hl">palabras</span>. */
+.bp-hl {
+  background: linear-gradient(transparent 36%, var(--bp-lime) 36%, var(--bp-lime) 86%, transparent 86%);
+  padding: 0 .06em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+
+/* Quien prefiere menos movimiento no lo recibe. */
+@media (prefers-reduced-motion: reduce) {
+  .bp-btn, .bp-card { transition: none; }
+  .bp-btn--primary:hover, .bp-btn--secondary:hover, .bp-card:hover { transform: none; }
+}
+
+/* Listados de blog y de ediciones anteriores. */
+.bp-card--nota, .bp-card--edicion { display: block; text-decoration: none; color: inherit; }
+.bp-card--nota img, .bp-card--edicion img {
+  display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+  border-radius: 14px; margin: 0 0 16px;
+}
+.bp-card--edicion img { aspect-ratio: 4 / 3; }
+.bp-card--nota .bp-h3, .bp-card--edicion .bp-h3 { margin: 0 0 8px; }
+.bp-paginacion { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: center; margin-top: 40px; }
+
+/* Menú de móvil del diseño: un botón ≡ en vez de una cabecera de tres filas. */
+.menu-movil { display: none; position: relative; }
+.menu-movil > summary {
+  list-style: none; width: 46px; height: 46px; border-radius: 999px;
+  border: 2px solid rgba(244,240,233,.45);
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+}
+.menu-movil > summary::-webkit-details-marker { display: none; }
+.menu-panel {
+  position: absolute; right: 0; top: calc(100% + 8px); min-width: 240px;
+  background: var(--bp-paper); border-radius: 22px; padding: 10px;
+  display: flex; flex-direction: column; z-index: 60;
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+.menu-panel a { padding: 14px 16px; border-radius: 14px; color: var(--bp-navy); text-decoration: none; font-weight: 700; font-size: 18px; }
+.menu-panel a[aria-current] { background: var(--bp-lime); }
+@media (max-width: 900px) {
+  .bp-cab .nav-links { display: none; }
+  .menu-movil { display: block; }
+}
+
+/* --------------------------------------------------------------------------
+   Preguntas frecuentes · diseño 2027 (artboard FAQ)
+   -------------------------------------------------------------------------- */
+.kicker { margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; letter-spacing: .1em; font-weight: 700; }
+.faq-lay { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: 300px minmax(0,1fr); gap: 48px 72px; align-items: start; }
+.indice { position: sticky; top: 24px; display: flex; flex-direction: column; gap: 8px; }
+.indice a { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 14px 18px; border-radius: 16px; border: 1.5px solid var(--bp-navy); text-decoration: none; font-weight: 700; font-size: 16px; }
+.indice a:hover { background: var(--bp-navy); color: var(--bp-paper); }
+.indice a:hover span { color: var(--bp-sky) !important; }
+.grupo { scroll-margin-top: 24px; }
+.grupo + .grupo { margin-top: 64px; }
+details.faq { border-top: 1.5px solid rgba(1,34,51,.18); }
+details.faq:last-child { border-bottom: 1.5px solid rgba(1,34,51,.18); }
+details.faq > summary { list-style: none; cursor: pointer; display: flex; gap: 18px; align-items: center; justify-content: space-between; padding: 22px 0; font-weight: 800; font-size: 20px; line-height: 1.35; }
+details.faq > summary::-webkit-details-marker { display: none; }
+details.faq .mas { flex: 0 0 40px; height: 40px; border-radius: 50%; background: var(--bp-navy); color: var(--bp-lime); display: flex; align-items: center; justify-content: center; transition: transform .25s; }
+details.faq[open] .mas { transform: rotate(45deg); }
+details.faq p { margin: 0 0 24px; font-size: 18px; line-height: 1.6; max-width: 40em; }
+@media (max-width: 900px) {
+  .faq-lay { grid-template-columns: minmax(0,1fr); }
+  .indice { position: static; flex-direction: row; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; }
+  .indice a { flex: 0 0 auto; border-radius: 999px; padding: 10px 16px; font-size: 15px; }
+  .indice a span, .indice .kicker { display: none; }
+}
+@media (max-width: 520px) { details.faq > summary { font-size: 18px; } }
+@media (prefers-reduced-motion: reduce) { details.faq .mas { transition: none; } }
+
+/* --------------------------------------------------------------------------
+   Gestos de la portada que también usan las páginas con diseño propio
+   (acreditadas, FAQ). Viven aquí porque ya no son solo de la portada.
+   -------------------------------------------------------------------------- */
+.hand { font-family: var(--bp-font-accent); font-weight: 400; text-transform: uppercase; letter-spacing: .01em; }
+.sticker { display: inline-block; background: var(--bp-navy); color: var(--bp-lime); padding: .04em .2em .02em; border-radius: 14px; transform: rotate(-2deg); }
+.btn { transition: transform .2s, box-shadow .2s; }
+.btn:hover { transform: translateY(-2px) rotate(-1deg); box-shadow: 0 8px 0 var(--bp-navy); }
+.tilt { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+.tilt:hover { transform: translateY(-8px) rotate(-1.5deg); box-shadow: 0 18px 40px rgba(1,34,51,.18); }
+.tilt--r:hover { transform: translateY(-8px) rotate(1.5deg); }
+.float { animation: float 6s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateY(0) rotate(var(--r,0deg)); } 50% { transform: translateY(-14px) rotate(calc(var(--r,0deg) + 4deg)); } }
+@media (prefers-reduced-motion: reduce) {
+  .btn, .tilt { transition: none; }
+  .btn:hover, .tilt:hover, .tilt--r:hover { transform: none; }
+  .float { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Organizaciones acreditadas · diseño 2027 (artboard «Acreditadas»)
+   -------------------------------------------------------------------------- */
+
+/* El filtro se queda a la vista mientras se recorre el directorio. */
+.filtros { position: sticky; top: 0; z-index: 30; background: var(--bp-paper); border-bottom: 1.5px solid rgba(1,34,51,.14); }
+.filtros__in { max-width: 1320px; margin: 0 auto; padding: 12px 32px; display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; }
+.filtros__in::-webkit-scrollbar { display: none; }
+.filtros a { flex: 0 0 auto; display: flex; gap: 8px; align-items: center; padding: 10px 18px; border-radius: 999px; border: 1.5px solid var(--bp-navy); color: var(--bp-navy); text-decoration: none; font-weight: 700; font-size: 15px; white-space: nowrap; }
+.filtros a b { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; background: var(--bp-navy); color: var(--bp-paper); border-radius: 999px; padding: 2px 8px; }
+.filtros a[aria-current] { background: var(--bp-navy); color: var(--bp-paper); }
+.filtros a[aria-current] b { background: var(--bp-lime); color: var(--bp-navy); }
+
+.cat { scroll-margin-top: 80px; }
+.cat + .cat { margin-top: 80px; }
+.cat-cab { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between; border-bottom: 2px solid var(--bp-navy); padding-bottom: 16px; }
+
+.grid-emp { margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.emp { background: #FFFFFF; border-radius: var(--bp-radius); padding: 22px; display: flex; flex-direction: column; gap: 14px; transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+.emp:hover { transform: translateY(-6px) rotate(-1deg); box-shadow: 0 18px 40px rgba(1,34,51,.16); }
+.emp-logo { height: 72px; display: flex; align-items: center; justify-content: flex-start; }
+.emp-logo img { max-height: 56px; max-width: 170px; width: auto; height: auto; object-fit: contain; }
+.emp-n { margin: 0; font-weight: 800; font-size: 20px; line-height: 1.2; }
+.emp-c { margin: -6px 0 0; display: flex; gap: 6px; align-items: center; font-size: 15px; color: var(--bp-ink-3); }
+.emp-d { align-self: flex-start; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; background: var(--bp-sky); border-radius: 999px; padding: 5px 10px; }
+.emp-l { margin-top: auto; display: flex; flex-wrap: wrap; gap: 16px; padding-top: 12px; border-top: 1px solid rgba(1,34,51,.12); }
+.emp-l a { font-weight: 800; font-size: 15px; text-underline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) { .emp { transition: none; } .emp:hover { transform: none; } }
+@media (max-width: 520px) {
+  .filtros__in { padding: 10px 16px; }
+  .grid-emp { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+  .emp { padding: 16px; border-radius: 18px; }
+  .emp-logo { height: 52px; }
+  .emp-logo img { max-height: 40px; max-width: 120px; }
+  .emp-n { font-size: 16px; }
+  .emp-d { display: none; }
+  .emp-l { flex-direction: column; gap: 8px; }
+  /* Lo decorativo no compite con el contenido en pantalla estrecha. */
+  .deco { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Ediciones anteriores del listado. El cuerpo es el comunicado original,
+   así que la prosa necesita encabezados, listas y enlaces con estilo propio.
+   -------------------------------------------------------------------------- */
+.bp-prose--ancha { max-width: 46em; }
+.bp-prose h2, .bp-prose h3 { margin: 48px 0 12px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.bp-prose h2 { font-size: clamp(26px, 3vw, 38px); }
+.bp-prose h3 { font-size: clamp(22px, 2.4vw, 30px); }
+.bp-prose h2:first-child, .bp-prose h3:first-child { margin-top: 0; }
+.bp-prose ol, .bp-prose ul { margin: 0 0 24px; padding-left: 24px; color: var(--bp-ink-2); }
+.bp-prose li { margin: 0 0 8px; line-height: 1.5; }
+.bp-prose a { color: var(--bp-navy); font-weight: 700; text-underline-offset: 3px; }
+.bp-prose img { max-width: 100%; height: auto; border-radius: 14px; }
+
+/* La serie de años, para recorrerla sin volver al índice. */
+.bp-anios { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.bp-anios a { padding: 10px 20px; border-radius: 999px; border: 1.5px solid var(--bp-navy); color: var(--bp-navy); text-decoration: none; font-weight: 800; font-size: 17px; }
+.bp-anios a:hover { background: var(--bp-navy); color: var(--bp-paper); }
+.bp-anios a[aria-current] { background: var(--bp-lime); }
+
+/* --------------------------------------------------------------------------
+   Para organizaciones · diseño 2027 (artboard «Organizaciones»)
+   -------------------------------------------------------------------------- */
+.h2 { margin: 12px 0 0; font-weight: 800; font-size: clamp(36px, 4.6vw, 68px); line-height: 1.04; letter-spacing: -0.03em; }
+.lead { margin: 22px 0 0; font-size: 20px; line-height: 1.55; max-width: 34em; }
+.hl {
+  background: linear-gradient(transparent 36%, var(--bp-lime) 36%, var(--bp-lime) 86%, transparent 86%);
+  padding: 0 .06em; -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.pat-iconos { background-image: url(/images/home/patron-iconos.png); background-size: 600px; background-repeat: repeat; }
+.pat-lima { background-image: url(/images/home/patron-lima.png); background-size: 520px; background-repeat: repeat; }
+
+/* El blob y la barra de progreso, los mismos gestos que la portada. */
+.blob { border-radius: 58% 42% 36% 64% / 48% 58% 42% 52%; animation: blob 14s ease-in-out infinite; }
+@keyframes blob { 0%,100% { border-radius: 58% 42% 36% 64% / 48% 58% 42% 52%; } 33% { border-radius: 40% 60% 62% 38% / 60% 38% 62% 40%; } 66% { border-radius: 64% 36% 48% 52% / 38% 62% 38% 62%; } }
+.bar { height: 100%; border-radius: 999px; background: var(--bp-navy); transform-origin: left; animation: grow 1.6s cubic-bezier(.2,.8,.2,1) .4s both; }
+@keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.spin { animation: spin 22s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Índice de anclas de la página, pegado al scroll. */
+.anclas { position: sticky; top: 0; z-index: 30; background: var(--bp-paper); border-bottom: 1.5px solid rgba(1,34,51,.14); }
+.anclas__in { max-width: 1320px; margin: 0 auto; padding: 12px 32px; display: flex; gap: 10px; align-items: center; overflow-x: auto; scrollbar-width: none; }
+.anclas__in::-webkit-scrollbar { display: none; }
+.anclas a { flex: 0 0 auto; padding: 10px 18px; border-radius: 999px; border: 1.5px solid var(--bp-navy); color: var(--bp-navy); text-decoration: none; font-weight: 700; font-size: 15px; white-space: nowrap; }
+.anclas a:hover { background: var(--bp-navy); color: var(--bp-paper); }
+.anclas__cta { margin-left: auto; background: var(--bp-lime); }
+
+/* Listas de «sí es / no es». */
+.lista-marca { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-direction: column; gap: 18px; }
+.lista-marca li { display: flex; gap: 14px; align-items: flex-start; font-size: 20px; line-height: 1.4; font-weight: 700; }
+.marca { flex: 0 0 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.marca--si { background: var(--bp-lime); }
+.marca--no { background: var(--bp-mist); }
+
+/* Los cinco pasos. */
+.pasos { list-style: none; margin: 56px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.pasos > li { border-radius: 24px; padding: 26px; border: 2px solid var(--bp-navy); display: flex; flex-direction: column; gap: 12px; }
+.paso-cab { display: flex; justify-content: space-between; align-items: center; gap: 10px; min-height: 30px; }
+.paso-pago { background: var(--bp-lime); color: var(--bp-navy); border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 700; letter-spacing: .06em; }
+.step { background: #FFFFFF; color: var(--bp-navy); transition: background .3s, color .3s, transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+.step .k { color: var(--bp-ink-3); transition: color .3s; }
+.step:hover { background: var(--bp-navy); color: var(--bp-paper); }
+.step:hover .k { color: var(--bp-sky); }
+
+/* Tabla de entregables: evaluada frente a acreditada. */
+.tabla-entregas { width: 100%; border-collapse: collapse; color: var(--bp-navy); font-size: 18px; }
+.tabla-entregas th, .tabla-entregas td { padding: 18px 22px; border-bottom: 1px solid rgba(1,34,51,.1); }
+.tabla-entregas thead th { font-size: 13px; letter-spacing: .08em; background: #FFFFFF; }
+.tabla-entregas thead th:first-child { text-align: left; color: var(--bp-ink-3); }
+.tabla-entregas .col { width: clamp(78px, 14vw, 170px); text-align: center; letter-spacing: .06em; }
+.tabla-entregas .col--si { background: var(--bp-lime); }
+.tabla-entregas tbody th { text-align: left; font-weight: 700; }
+.tabla-entregas tbody td { text-align: center; }
+.tabla-entregas tbody td.si { background: rgba(177,214,53,.28); }
+.tabla-entregas .no { color: #8A96A0; font-size: 22px; }
+
+/* La tabla de fechas del ciclo. */
+.fechas-lista { flex: 999 1 560px; min-width: 0; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.fechas-lista .fecha { display: flex; gap: 18px; align-items: baseline; padding: 16px 22px; border-radius: 18px; border: 1.5px solid rgba(244,240,233,.22); }
+.fechas-lista .fecha .mono { flex: 0 0 150px; font-size: 15px; font-weight: 700; color: var(--bp-sky); }
+.fechas-lista .fecha > span:last-child { font-size: 17px; line-height: 1.45; }
+.fechas-lista .fecha--clave { background: var(--bp-lime); color: var(--bp-navy); border-color: transparent; font-weight: 800; }
+.fechas-lista .fecha--listado { background: var(--bp-paper); color: var(--bp-navy); border-color: transparent; font-weight: 800; }
+.fechas-lista .fecha--clave .mono, .fechas-lista .fecha--listado .mono { color: var(--bp-navy); }
+.fechas-lista .fecha--abierta { border-style: dashed; border-color: rgba(244,240,233,.3); }
+
+@media (prefers-reduced-motion: reduce) {
+  .blob, .bar, .spin { animation: none; }
+  .step { transition: none; }
+}
+@media (max-width: 560px) {
+  .anclas__in { padding: 10px 16px; }
+  .anclas__cta { margin-left: 0; }
+  .fechas-lista .fecha { flex-direction: column; gap: 4px; }
+  .fechas-lista .fecha .mono { flex: 0 0 auto; }
+  .lista-marca li { font-size: 18px; }
+}
+
+/* Texto solo para lectores de pantalla. Lo usan el encabezado de la tabla de
+   entregables y las celdas que marcan «no incluido». */
+.bp-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+/* --------------------------------------------------------------------------
+   Contacto · diseño 2027 (artboard «Contacto»)
+   La intro y los pasos comparten columna; el formulario ocupa la otra entera.
+   -------------------------------------------------------------------------- */
+.ct {
+  max-width: 1320px; margin: 0 auto;
+  display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.08fr);
+  grid-template-areas: "intro form" "pasos form";
+  gap: 40px 72px; align-items: start;
+}
+.ct-intro { grid-area: intro; }
+.ct-form { grid-area: form; }
+.ct-pasos { grid-area: pasos; }
+/* La sombra lima del diseño, y la tarjeta en papel en vez de blanco. */
+.ct-form .bp-form { color: var(--bp-navy); background: var(--bp-paper); border-radius: 30px; padding: clamp(22px, 3.2vw, 40px); gap: 26px; box-shadow: 12px 12px 0 var(--bp-lime); }
+
+.ct-numeros { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.ct-numeros li { display: flex; gap: 16px; align-items: flex-start; }
+.ct-numeros li > span:last-child { font-size: 18px; line-height: 1.5; padding-top: 8px; }
+.ct-num { flex: 0 0 44px; height: 44px; border-radius: 50%; background: var(--bp-lime); color: var(--bp-navy); display: flex; align-items: center; justify-content: center; font-size: 22px; }
+.ct-aviso { margin-top: 28px; border-radius: 20px; padding: 22px 24px; border: 1.5px solid rgba(244,240,233,.25); display: flex; gap: 16px; align-items: flex-start; }
+.ct-aviso svg { flex: 0 0 28px; margin-top: 2px; }
+.ct-aviso strong { color: var(--bp-lime); }
+/* La nota de privacidad va bajo el botón, no pegada a un campo. */
+/* El envío va en navy sobre lima, como en el diseño: es la acción principal
+   de la tarjeta y la tarjeta ya es clara. */
+.ct-form .bp-form .bp-btn--primary { background: var(--bp-navy); color: var(--bp-lime); }
+.ct-form .bp-form > div > .bp-hint { font-size: 14px; line-height: 1.45; color: var(--bp-ink-3); max-width: 42em; }
+
+@media (max-width: 900px) {
+  .ct { grid-template-columns: minmax(0,1fr); grid-template-areas: "intro" "form" "pasos"; }
+}
+
+/* Tarjetas de «a dónde seguir» de la página de gracias. */
+.enlace { display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 190px; text-decoration: none; border-radius: 24px; padding: 28px; }
+.enlace-k { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+.enlace-t { font-weight: 800; font-size: 25px; line-height: 1.2; }
+.enlace--propuesta { border: 2px dashed rgba(244,240,233,.4); color: var(--bp-paper); }
+.enlace--propuesta .enlace-k { color: var(--bp-sky); }

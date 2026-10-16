@@ -1,0 +1,37 @@
+{{- /* Gracias · diseño 2027 (artboard «Gracias»). La página a la que llega el
+       formulario de contacto: el acuse y tres sitios a donde seguir.
+
+       La cuarta tarjeta del diseño —agendar una llamada— está marcada como
+       propuesta porque falta la liga de agenda. Mientras `agenda.url` esté
+       vacía en el frontmatter, no se pinta: una tarjeta que no lleva a
+       ningún lado es peor que no tenerla. */ -}}
+{{- $b := dict -}}{{- $enlaces := slice -}}
+{{- range .Params.blocks -}}
+  {{- if eq .type "hero" }}{{ $b = . }}{{ else if eq .type "enlaces" }}{{ $enlaces = .enlaces }}{{ end }}
+{{- end -}}
+{{- $fondos := slice "#F4F0E9" "#C0D6EB" "#B1D635" -}}
+
+<section style="background: #012233; color: #F4F0E9; padding: 56px 32px 72px; position: relative; overflow: hidden;">
+<div style="max-width: 1320px; margin: 0 auto; position: relative; z-index: 2;">
+<p class="hand" style="display: inline-block; margin: 0; background: #B1D635; color: #012233; padding: 6px 22px; border-radius: 16px; font-size: clamp(40px, 5vw, 64px); transform: rotate(-4deg);">Gracias.</p>
+<h1 style="margin: 30px 0 0; font-weight: 800; font-size: clamp(44px, 6vw, 92px); line-height: 1.02; letter-spacing: -0.04em; max-width: 11em;">{{ $b.h1 }}</h1>
+<p style="margin: 24px 0 0; font-size: 21px; line-height: 1.55; color: #C0D6EB; max-width: 30em;">{{ $b.subtitulo | safeHTML }}</p>
+</div>
+<img class="float deco" src="/images/home/garabato-hero-a.png" alt="" aria-hidden="true" width="130" height="130" style="--r: -12deg; position: absolute; right: 10%; top: 22%; width: 130px;">
+<img class="float float--b deco" src="/images/home/garabato-hero-b.png" alt="" aria-hidden="true" width="74" height="74" style="--r: 10deg; position: absolute; right: 24%; bottom: 10%; width: 74px;">
+</section>
+
+<section style="background: #012233; padding: 0 32px 120px;">
+<div style="max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+{{- range $i, $e := $enlaces }}
+<a href="{{ $e.url }}" class="tilt enlace{{ if eq (mod $i 2) 1 }} tilt--r{{ end }}" style="background: {{ index $fondos (mod $i 3) }}; color: #012233;"><span class="mono enlace-k">{{ $e.kicker }}</span><span class="enlace-t">{{ $e.texto }} →</span></a>
+{{- end }}
+{{- with .Params.agenda }}
+{{- if .url }}
+<a href="{{ .url }}" class="tilt enlace" style="background: #F4F0E9; color: #012233;"><span class="mono enlace-k">{{ .kicker }}</span><span class="enlace-t">{{ .texto }} →</span></a>
+{{- else if not hugo.IsProduction }}
+<div class="enlace enlace--propuesta"><span class="mono enlace-k">PROPUESTA · FALTA LA LIGA DE AGENDA</span><span class="enlace-t">{{ .texto }} →</span></div>
+{{- end }}
+{{- end }}
+</div>
+</section>

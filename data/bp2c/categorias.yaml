@@ -1,17 +1,37 @@
 # Categorías de reconocimiento, en el orden en que se muestran.
 # El slug corresponde al campo `tipo-empresa` del frontmatter de cada perfil.
+# `ancla` es el id de la sección en el directorio: así los enlaces del filtro
+# son legibles y estables aunque el slug interno cambie.
+# `descripcion` es la frase completa, que usa el directorio de acreditadas.
+# `tamano` y `resumen` la parten en etiqueta y descripción corta, que es como
+# las pide la página Para organizaciones.
 - slug: "startups-&-isvs"
+  ancla: "c-isv"
+  tamano: "Sin rango de tamaño"
+  resumen: "Construyen su propio producto digital."
   nombre: "ISV o startup"
   descripcion: "Construyen su propio producto digital. Sin rango de tamaño."
 - slug: "boutiques-&-digital-agencies"
+  ancla: "c-boutique"
+  tamano: "Menos de 10 en tecnología"
+  resumen: "Consultoría tecnológica o agencia digital."
   nombre: "Boutique"
   descripcion: "Consultoría tecnológica o agencia digital, con menos de 10 personas de tecnología."
 - slug: "tech-consulting-mid"
+  ancla: "c-mediana"
+  tamano: "De 10 a 100 en tecnología"
+  resumen: "Consultoría, desarrollo a la medida o team augmentation."
   nombre: "Consultoría mediana"
   descripcion: "Consultoría, desarrollo a la medida o team augmentation, con entre 10 y 100 personas de tecnología."
 - slug: "tech-consulting-large"
+  ancla: "c-global"
+  tamano: "Más de 100 en tecnología"
+  resumen: "Outsourcing tecnológico o integración de sistemas."
   nombre: "Consultoría global"
   descripcion: "Outsourcing tecnológico o integración de sistemas, con más de 100 personas de tecnología."
 - slug: "corp"
+  ancla: "c-corp"
+  tamano: "Sin rango de tamaño"
+  resumen: "Organizaciones con un área de tecnología interna."
   nombre: "Corporativo e Instituciones"
   descripcion: "Organizaciones con un área de tecnología interna. Sin rango de tamaño."

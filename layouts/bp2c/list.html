@@ -1,3 +1,11 @@
+{{- /* Secciones del sitio BP2C (p. ej. /contacto/). Mismo enrutador que
+       bp2c/single.html: si la página tiene maqueta propia del diseño 2027 la
+       usa, si no sigue con el sistema de bloques. */ -}}
 {{ partial "bp2c/head.html" . }}
+{{- $pagina := printf "bp2c/paginas/%s.html" (path.Base .RelPermalink) -}}
+{{- if templates.Exists (printf "partials/%s" $pagina) }}
+{{ partial $pagina . }}
+{{- else }}
 {{ partial "bp2c/blocks/render.html" (dict "page" .) }}
+{{- end }}
 {{ partial "bp2c/foot.html" . }}

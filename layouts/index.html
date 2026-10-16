@@ -13,9 +13,11 @@
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <meta name="theme-color" content="{{ site.Params.themeColor | default "#012233" }}">
 <link rel="canonical" href="{{ .Permalink }}">
-{{- range .AllTranslations }}
+{{- /* Mientras /en/ redirija a esta portada, no se anuncia como alternativa:
+       apuntar un hreflang a una redirección es una señal contradictoria. */ -}}
+{{- range .AllTranslations }}{{ if ne .Language.Lang "en" }}
 <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
-{{- end }}
+{{- end }}{{ end }}
 <link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}">
 
 <meta property="og:type" content="website">
@@ -56,6 +58,7 @@
 {{ partial "bp2c/home/testimonios.html" . }}
 {{ partial "bp2c/home/talento.html" . }}
 {{ partial "bp2c/home/acreditadas.html" . }}
+{{ partial "bp2c/home/rankings.html" . }}
 {{ partial "bp2c/home/fechas.html" . }}
 {{ partial "bp2c/home/cierre.html" . }}
 </main>

@@ -39,6 +39,8 @@ footer:
 etiquetas:
   distincion_2027: "Acreditada · Best Place to Create 2027"
   distincion_2026: "Acreditada como Best Place to Code 2026"
+  # Versión corta, para la insignia de las tarjetas del directorio.
+  sello_2026: "Best Place to Code 2026"
   puntajes_historicos: "Evaluación 2026 · metodología Best Place to Code"
 
 # Fuente de datos de SG Tech Pulse. El valor de n cambia por corte.
@@ -58,6 +60,9 @@ menu:
   - nombre: "El programa"
     grupo: true
     enlaces:
+      - nombre: "Para organizaciones"
+        url: "/para-organizaciones/"
+        resumen: "Todo el programa en una página: qué medimos, cómo funciona y qué recibes"
       - nombre: "Qué es"
         url: "/que-es/"
         resumen: "Qué evaluamos y por qué cambió el nombre"

@@ -9,11 +9,24 @@
 <script defer src="{{ $videojs.RelPermalink }}" integrity="{{ $videojs.Data.Integrity }}"></script>
 {{- end }}
 
+{{- /* El script de compartir solo se carga donde hay algo que compartir. */ -}}
+{{- if .Params.compartir }}
+{{- $comp := resources.Get "js/compartir.js" | minify | fingerprint }}
+<script defer src="{{ $comp.RelPermalink }}" integrity="{{ $comp.Data.Integrity }}"></script>
+{{- end }}
+
+{{- /* El contador de días solo se carga donde hay uno. */ -}}
+{{- if .Params.cuenta_regresiva }}
+{{- $cuenta := resources.Get "js/cuenta-regresiva.js" | minify | fingerprint }}
+<script defer src="{{ $cuenta.RelPermalink }}" integrity="{{ $cuenta.Data.Integrity }}"></script>
+{{- end }}
+
 {{- /* Banda CTA (C10). La página puede declarar su propia variante en
        front matter con `cta:`; si no, se usa la banda por defecto. */ -}}
 {{- if not .Params.sin_cta }}
 {{- $default := $g.cta_default -}}
 {{- if eq .Section "companies" }}{{ $default = $g.cta_talento }}{{ end -}}
+{{- if eq .Section "blog" }}{{ $default = $g.cta_blog }}{{ end -}}
 {{ partial "bp2c/blocks/cta.html" (dict "page" . "cta" (.Params.cta | default $default)) }}
 {{- end }}
 

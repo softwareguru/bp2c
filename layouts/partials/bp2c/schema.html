@@ -68,3 +68,28 @@
 }}
 </script>
 {{- end -}}
+
+{{- /* Directorio de acreditadas: un ItemList con las organizaciones que
+       pasaron el criterio. Es el dato que más preguntan los buscadores y los
+       motores generativos ("¿qué empresas están acreditadas?"), y sale de las
+       mismas fichas que pinta la página, así que no se desincroniza. */ -}}
+{{- if eq .RelPermalink "/companies/" -}}
+{{- $acreditadas := where (where site.RegularPages "Section" "companies") "Params.sello" true -}}
+{{- $items := slice -}}
+{{- range $i, $e := $acreditadas -}}
+  {{- $org := dict "@type" "Organization" "name" $e.Title "url" $e.Permalink -}}
+  {{- with (index ($e.Params.images | default slice) 0) }}{{ $org = merge $org (dict "logo" (. | absURL)) }}{{ end -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "item" $org) -}}
+{{- end -}}
+<script type="application/ld+json">
+{{ dict
+  "@context" "https://schema.org"
+  "@type" "ItemList"
+  "name" (printf "Organizaciones acreditadas · %s" site.Title)
+  "description" "Organizaciones cuyas personas de tecnología calificaron su entorno de trabajo en anónimo y alcanzaron el criterio de acreditación."
+  "numberOfItems" (len $items)
+  "itemListOrder" "https://schema.org/ItemListUnordered"
+  "itemListElement" $items
+| jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{- end -}}
