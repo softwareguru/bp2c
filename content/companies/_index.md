@@ -2,6 +2,14 @@
 title: "Organizaciones acreditadas"
 description: "Las organizaciones cuyas personas de tecnología calificaron su entorno de trabajo por encima del criterio. Conoce sus perfiles, sus vacantes y sus testimonios."
 tags: ["index"]
+
+# El diseño de esta página vive en layouts/companies/list.es.html (artboard
+# «Acreditadas»). De aquí toma la copia del hero y la del CTA; el directorio y
+# los testimonios los arma de las fichas y de data/bp2c/testimonios.yaml.
+# `sin_cta` evita que el pie añada una segunda banda: la del artboard ya va
+# dentro de la página. El bloque `testimonios` se queda declarado porque es lo
+# que hace que el pie cargue la fachada de vídeo.
+sin_cta: true
 aliases:
   - /testimonios/
 cta:
