@@ -1,0 +1,341 @@
+{{- /* Para organizaciones · diseño 2027 (artboard «Organizaciones»).
+
+       Es la página larga del programa: qué es y qué no, qué medimos, el
+       anonimato, los cinco pasos, qué recibes, qué haces con el sello, los
+       kits, las fechas, las categorías, las dudas más comunes y el cierre.
+
+       Los hechos salen de data/bp2c/: las fechas de fechas.yaml, las cinco
+       palancas de palancas.yaml, las categorías de categorias.yaml y las
+       cuatro preguntas de faq.yaml, buscadas por su id para que la respuesta
+       viva en un solo lugar. La copia editorial va aquí. */ -}}
+{{- $g := site.Data.bp2c.global -}}
+{{- $f := site.Data.bp2c.fechas -}}
+{{- $cats := site.Data.bp2c.categorias -}}
+{{- $pal := site.Data.bp2c.palancas -}}
+{{- $h := .Params.hero -}}
+
+<!-- HERO -->
+<section style="background: #012233; overflow: hidden;">
+<div style="max-width: 1320px; margin: 0 auto; padding: 40px 32px 96px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
+<div style="flex: 999 1 540px; min-width: 0;">
+<p class="kicker" style="color: #C0D6EB; text-transform: uppercase;">{{ $h.kicker }}</p>
+<h1 style="margin: 18px 0 0; color: #F4F0E9; font-weight: 800; font-size: clamp(48px, 7vw, 104px); line-height: 1.02; letter-spacing: -0.04em;">Escucha a tu equipo <span class="hand" style="display: inline-block; color: #B1D635; white-space: nowrap; font-size: .9em; letter-spacing: .01em; transform: rotate(-2deg);">sin filtro.</span></h1>
+<p style="margin: 28px 0 0; max-width: 32em; color: #F4F0E9; opacity: .92; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5;">La evaluación es anónima y mide seis categorías. Si cumples el criterio, te acreditas; si no, sabes dónde actuar.</p>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center;">
+<a href="{{ $g.cta_principal.url }}" class="btn" style="background: #B1D635; color: #012233; text-decoration: none; font-weight: 800; font-size: 18px; padding: 18px 28px; border-radius: 999px;">{{ $g.cta_principal.texto }}</a>
+<a href="#fechas" style="color: #F4F0E9; text-decoration: none; font-weight: 700; font-size: 18px; padding: 16px 24px; border-radius: 999px; border: 2px solid rgba(244,240,233,.4);">Ver fechas 2027</a>
+</div>
+</div>
+<div class="deco" style="flex: 1 1 440px; min-width: 0; max-width: 580px; margin: 0 auto; position: relative; padding: 24px 12px 0 0;">
+<div class="blob" style="position: absolute; left: 10%; top: 0; width: 92%; height: 96%; background: #C0D6EB;"></div>
+<div style="position: relative; border-radius: 28px; overflow: hidden; border: 3px solid #F4F0E9; transform: rotate(-2deg);">
+<img src="/images/bp2c27/{{ $h.foto }}" alt="{{ $h.foto_alt }}" width="1400" height="788" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+</div>
+<p class="hand" style="position: absolute; right: -6px; top: -6px; width: 128px; height: 128px; margin: 0; border-radius: 50%; background: #B1D635; color: #012233; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 21px; line-height: 1.05; transform: rotate(-9deg);">en<br>anónimo</p>
+<img class="float" src="/images/home/garabato-hero-a.png" alt="" aria-hidden="true" width="78" height="78" style="--r: -12deg; position: absolute; left: -22px; bottom: -30px; width: 78px;">
+</div>
+</div>
+</section>
+
+<!-- ANCLAS -->
+<nav class="anclas" aria-label="En esta página">
+<div class="anclas__in">
+<a href="#que-medimos">Qué medimos</a>
+<a href="#como-funciona">Cómo funciona</a>
+<a href="#que-recibes">Qué recibes</a>
+<a href="#fechas">Fechas</a>
+<a href="#categorias">Categorías</a>
+<a href="{{ $g.cta_principal.url }}" class="anclas__cta">{{ $g.cta_principal.texto }}</a>
+</div>
+</nav>
+
+<!-- QUÉ ES (Y QUÉ NO) -->
+<section style="background: #F4F0E9; color: #012233; padding: 96px 32px 104px;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<h2 class="h2" style="margin-top: 0;">Qué es <span class="hand sticker" style="font-weight: 400;">y qué no</span></h2>
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+<div style="background: #FFFFFF; border: 2px solid #012233; border-radius: 26px; padding: 32px;">
+<p class="kicker" style="color: #4A5B68;">SÍ ES</p>
+<ul class="lista-marca">
+{{- range slice "Un diagnóstico de tu entorno, contado por quienes lo viven" "Una acreditación con un criterio público" "Una herramienta para decidir dónde actuar primero" }}
+<li><span aria-hidden="true" class="marca marca--si"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#012233" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>{{ . }}</li>
+{{- end }}
+</ul>
+</div>
+<div style="background: #012233; color: #F4F0E9; border-radius: 26px; padding: 32px;">
+<p class="kicker" style="color: #C0D6EB;">NO ES</p>
+<ul class="lista-marca">
+{{- range slice "Una medición de qué tan creativa es tu gente" "Una certificación de uso de IA" "Un sello que se consigue pagando" }}
+<li><span aria-hidden="true" class="marca marca--no"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#012233" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg></span>{{ . }}</li>
+{{- end }}
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- QUÉ MEDIMOS -->
+<section id="que-medimos" class="pat-iconos" style="background-color: #012233; color: #F4F0E9; padding: 112px 32px; scroll-margin-top: 72px;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<p class="kicker" style="color: #C0D6EB;">QUÉ MEDIMOS</p>
+<div style="margin-top: 22px; background: #B1D635; color: #012233; border-radius: 30px; padding: clamp(28px, 4vw, 52px); display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+<div style="flex: 999 1 420px; min-width: 0;">
+<p class="kicker">ESTA DECIDE EL SELLO</p>
+<h2 class="h2" style="font-size: clamp(44px, 5.6vw, 84px);">Fundamentos</h2>
+<p style="margin: 18px 0 0; font-size: 20px; line-height: 1.55; max-width: 30em; font-weight: 600;">14 preguntas sobre lo básico de un buen lugar para trabajar, como el liderazgo, el crecimiento y el ambiente. Para acreditarte se necesitan dos cosas: un buen promedio y ninguna pregunta con calificación baja.</p>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 14px;">
+<div style="background: #012233; color: #F4F0E9; border-radius: 22px; padding: 22px 24px; transform: rotate(-1.5deg);">
+<div style="display: flex; gap: 18px; align-items: center;"><p class="hand" style="margin: 0; font-size: 60px; line-height: 1; color: #B1D635; white-space: nowrap;">85&#8239;%</p><p style="margin: 0; font-size: 17px; line-height: 1.4; font-weight: 600;">de promedio en las 14 preguntas</p></div>
+<div style="margin-top: 14px; height: 12px; border-radius: 999px; background: rgba(244,240,233,.16);"><div class="bar" style="width: 85%; background: #B1D635;"></div></div>
+</div>
+<div style="background: #012233; color: #F4F0E9; border-radius: 22px; padding: 22px 24px; transform: rotate(1deg);">
+<div style="display: flex; gap: 18px; align-items: center;"><p class="hand" style="margin: 0; font-size: 60px; line-height: 1; color: #B1D635; white-space: nowrap;">75&#8239;%</p><p style="margin: 0; font-size: 17px; line-height: 1.4; font-weight: 600;">como mínimo en cada pregunta</p></div>
+<div style="margin-top: 14px; height: 12px; border-radius: 999px; background: rgba(244,240,233,.16);"><div class="bar" style="width: 75%; background: #B1D635; animation-delay: .8s;"></div></div>
+</div>
+</div>
+</div>
+<div style="margin-top: 72px; display: flex; flex-wrap: wrap; gap: 24px 56px; align-items: end; justify-content: space-between;">
+<h3 style="margin: 0; font-weight: 800; font-size: clamp(30px, 3.4vw, 48px); line-height: 1.08; letter-spacing: -0.025em; max-width: 15em;">Cinco palancas para encontrar <span style="color: #B1D635;">tu siguiente oportunidad</span></h3>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; max-width: 26em; color: #C0D6EB;">No deciden el sello. Te muestran qué está frenando a tu equipo y dónde actuar primero para que saque más valor de la tecnología.</p>
+</div>
+<div style="margin-top: 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px;">
+{{- range $i, $p := $pal.palancas }}
+<div class="tilt{{ if eq (mod $i 2) 1 }} tilt--r{{ end }}" style="border: 1.5px solid rgba(192,214,235,.55); background: rgba(1,34,51,.86); border-radius: 22px; padding: 24px;"><p class="mono" style="margin: 0; font-size: 14px; color: #B1D635;">{{ printf "%02d" (add $i 1) }}</p><p style="margin: 34px 0 0; font-weight: 800; font-size: 22px; line-height: 1.2;">{{ $p.nombre }}</p>
+{{- /* Las descripciones siguen pendientes de validar; mientras tanto la
+       tarjeta muestra solo el nombre, como en el resto del sitio. */ -}}
+{{- if $pal.publicar_descripcion }}<p style="margin: 10px 0 0; font-size: 16px; line-height: 1.45; color: #C0D6EB;">{{ $p.descripcion }}</p>{{ end }}</div>
+{{- end }}
+</div>
+</div>
+</section>
+
+<!-- ANONIMATO -->
+<section style="background: #C0D6EB; color: #012233; padding: 112px 32px;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<p class="kicker" style="color: #012233;">ANONIMATO</p>
+<h2 class="h2" style="max-width: 15em;">Tu equipo responde lo que piensa, <span class="hl">no lo que conviene.</span></h2>
+<div style="margin-top: 52px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+<div class="tilt" style="background: #F4F0E9; border-radius: 24px; padding: 30px;">
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#012233" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M10 38V26M20 38V14M30 38V22M40 38V10"></path></svg>
+<h3 style="margin: 20px 0 10px; font-weight: 800; font-size: 25px; line-height: 1.2;">Ves calificaciones, no respuestas</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.5;">Nadie en tu organización sabe quién dijo qué.</p>
+</div>
+<div class="tilt tilt--r" style="background: #F4F0E9; border-radius: 24px; padding: 30px;">
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#012233" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="17" r="6"></circle><circle cx="33" cy="17" r="6"></circle><path d="M5 38c1.5-7 6-10 11-10s9.5 3 11 10M22 38c1.5-7 6-10 11-10s9.5 3 11 10"></path></svg>
+<h3 style="margin: 20px 0 10px; font-weight: 800; font-size: 25px; line-height: 1.2;">Equipos chicos, protegidos</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.5;">Con menos de 10 respuestas, los resultados se ven en rangos, para que nadie sea identificable por descarte.</p>
+</div>
+<div class="tilt" style="background: #012233; color: #F4F0E9; border-radius: 24px; padding: 30px;">
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#B1D635" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M8 18h32M8 30h32"></path></svg>
+<h3 style="margin: 20px 0 10px; font-weight: 800; font-size: 25px; line-height: 1.2;">El mismo criterio para todas</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.5;">85&#8239;% y 75&#8239;% aplican igual a una startup de ocho personas que a un corporativo de dos mil.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="como-funciona" style="background: #F4F0E9; color: #012233; padding: 112px 32px; scroll-margin-top: 72px;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<p class="kicker" style="color: #4A5B68;">CÓMO FUNCIONA</p>
+<h2 class="h2">Cinco pasos, <span class="hand sticker" style="font-weight: 400;">dos pagos,</span> cero sorpresas</h2>
+<ol class="pasos">
+{{- $pasos := slice
+  (dict "t" "Contratas la evaluación" "d" "Acuerdas la propuesta y pagas. Ideal: antes del 8 de enero. Último día: 15 de enero." "pago" "PAGO 1")
+  (dict "t" "Invitas a tu equipo" "d" "Con el Kit de despliegue, tu gente de tecnología responde en anónimo durante dos semanas.")
+  (dict "t" "Ves todo en vivo" "d" "El Dashboard de monitoreo muestra avance y calificación por categoría mientras responden.")
+  (dict "t" "Recibes tu resultado" "d" "Sabes si cumpliste el criterio y dónde están tus puntos flojos. Esto lo recibes cumplas o no.")
+  (dict "t" "Te acreditas" "d" "Si cumpliste, pagas la acreditación a más tardar el 29 de enero y entras al Listado 2027." "pago" "PAGO 2") -}}
+{{- range $i, $p := $pasos }}
+<li class="tilt step{{ if eq (mod $i 2) 1 }} tilt--r{{ end }}">
+<div class="paso-cab"><span class="mono k" style="font-size: 14px;">{{ printf "%02d" (add $i 1) }}</span>{{ with $p.pago }}<span class="mono paso-pago">{{ . }}</span>{{ end }}</div>
+<h3 style="margin: 8px 0 0; font-weight: 800; font-size: 23px; line-height: 1.2;">{{ $p.t }}</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.5;">{{ $p.d }}</p>
+</li>
+{{- end }}
+</ol>
+<p style="margin: 32px 0 0; font-size: 19px; font-weight: 700; line-height: 1.5; max-width: 40em;">Pagar la evaluación no compra el sello. Los reportes y la acreditación se entregan al cubrir el pago que les corresponde.</p>
+</div>
+</section>
+
+<!-- QUÉ RECIBES -->
+<section id="que-recibes" class="pat-iconos" style="background-color: #012233; color: #F4F0E9; padding: 112px 32px; scroll-margin-top: 72px;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<h2 class="h2" style="margin-top: 0; max-width: 17em;"><span style="color: #B1D635; white-space: nowrap;">Te evalúas:</span> sabes dónde estás. <span style="color: #B1D635; white-space: nowrap;">Te acreditas:</span> lo sabe todo el mundo.</h2>
+<div style="margin-top: 52px; border-radius: 26px; overflow-x: auto; background: #F4F0E9;">
+<table class="tabla-entregas">
+<caption class="bp-sr">Qué recibe una organización evaluada y qué recibe una acreditada</caption>
+<thead>
+<tr>
+<th scope="col" class="mono">QUÉ RECIBES</th>
+<th scope="col" class="mono col">EVALUADA</th>
+<th scope="col" class="mono col col--si">ACREDITADA</th>
+</tr>
+</thead>
+<tbody>
+{{- $filas := slice
+  (dict "q" "Dashboard de monitoreo durante las dos semanas" "ev" true)
+  (dict "q" "Calificación de Fundamentos y de las seis categorías" "ev" true)
+  (dict "q" "Análisis corto de las cinco palancas" "ev" true)
+  (dict "q" "Radiografía del Empleador: hallazgos, una acción por palanca y tu comparación con organizaciones parecidas" "ev" false)
+  (dict "q" "Reconocimiento físico, constancia digital y el sello en tus materiales" "ev" false)
+  (dict "q" "Perfil en el directorio de bestplacetocreate.com" "ev" false)
+  (dict "q" "Entrada al Listado 2027, con mención en newsletters y redes de Best Place to Create y Software Guru" "ev" false) -}}
+{{- range $filas }}
+<tr><th scope="row">{{ .q }}</th>
+<td>{{ if .ev }}<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#012233" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Incluido"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>{{ else }}<span aria-hidden="true" class="no">—</span><span class="bp-sr">No incluido</span>{{ end }}</td>
+<td class="si"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#012233" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Incluido"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></td></tr>
+{{- end }}
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- QUÉ HACES CON EL SELLO -->
+<section style="background: #F4F0E9; color: #012233; padding: 112px 32px;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<p class="kicker" style="color: #4A5B68;">AL ACREDITARTE</p>
+<h2 class="h2">Qué haces con <span class="hand sticker" style="font-weight: 400;">el sello</span></h2>
+<div style="margin-top: 52px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+{{- $usos := slice
+  (dict "t" "Decidir con datos" "p" (slice "Radiografía del Empleador con una acción por palanca" "Tu comparación con la cohorte" "El reporte del ecosistema"))
+  (dict "t" "Contarlo" "p" (slice "Reconocimiento físico y constancia digital" "El sello en tus materiales impresos y digitales" "Perfil en el directorio" "Entrada al Listado 2027"))
+  (dict "t" "Contratar mejor" "p" (slice "2 vacantes destacadas al mes en el newsletter de Software Guru, SG4 Women, el sitio de Software Guru y Get on Board" "Un perk para reclutar con Get on Board el primer año"))
+  (dict "t" "Estar en la conversación" "oscuro" true "p" (slice "Mención en newsletters y redes de Best Place to Create y Software Guru" "Puedes publicar en el blog de Best Place to Create" "20&#8239;% de descuento en patrocinios de eventos de Software Guru" "30&#8239;% de descuento para asistir a esos eventos")) -}}
+{{- range $i, $u := $usos }}
+<div class="tilt{{ if eq (mod $i 2) 1 }} tilt--r{{ end }}" style="background: {{ if $u.oscuro }}#012233; color: #F4F0E9{{ else }}#FFFFFF{{ end }}; border-radius: 24px; padding: 28px;">
+<h3 style="margin: 0 0 16px; font-weight: 800; font-size: 24px;{{ if $u.oscuro }} color: #B1D635;{{ end }}">{{ $u.t }}</h3>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.45;">{{ range $u.p }}<li>{{ . | safeHTML }}</li>{{ end }}</ul>
+</div>
+{{- end }}
+</div>
+</div>
+</section>
+
+<!-- KITS Y CÓMO SE COMUNICA -->
+<section class="pat-lima" style="background-color: #B1D635; color: #012233; padding: 104px 32px; border-top: 3px solid #012233; border-bottom: 3px solid #012233;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<h2 class="h2" style="margin-top: 0;">Dos kits para no hacerlo a ciegas</h2>
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px;">
+<div class="tilt" style="background: #F4F0E9; border: 2px solid #012233; border-radius: 24px; padding: 30px;">
+<p class="kicker" style="color: #4A5B68;">LLEGA AL CONTRATAR</p>
+<h3 style="margin: 12px 0 10px; font-weight: 800; font-size: 28px;">Kit de despliegue</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.5;">Materiales y enlace para invitar a tu equipo y explicarle de qué se trata.</p>
+</div>
+<div class="tilt tilt--r" style="background: #F4F0E9; border: 2px solid #012233; border-radius: 24px; padding: 30px;">
+<p class="kicker" style="color: #4A5B68;">LLEGA AL ACREDITARTE</p>
+<h3 style="margin: 12px 0 10px; font-weight: 800; font-size: 28px;">Kit de acreditación</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.5;">Piezas y lineamientos para anunciar tu acreditación sin equivocarte en cómo se nombra.</p>
+</div>
+</div>
+<div style="margin-top: 18px; background: #012233; color: #F4F0E9; border-radius: 24px; padding: 28px 30px; display: flex; flex-wrap: wrap; gap: 14px 32px; align-items: baseline;">
+<p class="kicker" style="color: #B1D635; flex: 0 0 auto;">CÓMO SE COMUNICA EL SELLO</p>
+<p style="margin: 0; flex: 1 1 420px; font-size: 18px; line-height: 1.55;">Siempre con el nombre oficial del listado. No publicamos posiciones por categoría, así que no existe un «#1 en Consultoría mediana» que anunciar.</p>
+</div>
+</div>
+</section>
+
+<!-- FECHAS -->
+{{- /* El contador se calcula al construir, para que funcione sin JS y venga
+       ya en el HTML servido, y se refresca en el navegador porque el sitio es
+       estático y el número cambia cada día: el mismo gesto que la portada. */ -}}
+{{- $limite := time.AsTime "2027-01-15T00:00:00Z" -}}
+{{- $dias := int (math.Ceil (div (float (sub $limite.Unix now.Unix)) 86400.0)) -}}
+{{- if lt $dias 0 }}{{ $dias = 0 }}{{ end -}}
+<section id="fechas" style="background: #012233; color: #F4F0E9; padding: 112px 32px; scroll-margin-top: 72px;">
+<div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start;">
+<div style="flex: 1 1 340px; min-width: 0;">
+<p class="kicker" style="color: #C0D6EB;">CICLO 2027</p>
+<h2 class="h2" style="font-size: clamp(40px, 5vw, 72px);">2027 ya tiene fechas.</h2>
+<div style="margin-top: 32px;">
+<span class="hand" data-cuenta-regresiva="2027-01-15" style="display: block; font-size: clamp(88px, 10vw, 150px); line-height: 1; color: #B1D635;">{{ $dias }}</span>
+<span class="hand" style="display: block; margin-top: 10px; font-size: 34px;">días</span>
+</div>
+<p style="margin: 12px 0 0; font-size: 18px; line-height: 1.5; color: #C0D6EB; max-width: 22em;">para el último día de pago de la evaluación.</p>
+</div>
+<ol class="fechas-lista">
+{{- range $f.filas }}
+<li class="fecha{{ if .resaltar }} fecha--clave{{ end }}{{ if eq .hito "Publicación del Listado 2027" }} fecha--listado{{ end }}{{ if hasPrefix .fecha "Después" }} fecha--abierta{{ end }}"><span class="mono">{{ .fecha }}</span><span>{{ .hito }}</span></li>
+{{- end }}
+</ol>
+</div>
+</section>
+
+<!-- CATEGORÍAS -->
+<section id="categorias" style="background: #F4F0E9; color: #012233; padding: 112px 32px; scroll-margin-top: 72px;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<p class="kicker" style="color: #4A5B68;">CATEGORÍAS</p>
+<h2 class="h2">Compites contra <span class="hl">quien se te parece</span></h2>
+<p class="lead">La categoría depende de tu tipo de trabajo, no del tamaño que define tu propuesta.</p>
+<div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px;">
+{{- range $i, $c := $cats }}
+{{- $ultima := eq (add $i 1) (len $cats) }}
+<div class="tilt{{ if eq (mod $i 2) 1 }} tilt--r{{ end }}" style="background: {{ if $ultima }}#012233; color: #F4F0E9{{ else }}#FFFFFF{{ end }}; border-radius: 22px; padding: 26px;"><p class="mono" style="margin: 0; font-size: 12px; letter-spacing: .08em; color: {{ if $ultima }}#C0D6EB{{ else }}#4A5B68{{ end }}; text-transform: uppercase;">{{ $c.tamano }}</p><h3 style="margin: 14px 0 10px; font-weight: 800; font-size: 23px;">{{ $c.nombre }}</h3><p style="margin: 0; font-size: 16px; line-height: 1.5;">{{ $c.resumen }}</p></div>
+{{- end }}
+</div>
+<p style="margin: 32px 0 0;"><a href="/companies/" style="color: #012233; font-weight: 800; font-size: 17px; text-underline-offset: 4px;">Mira quién está acreditada en cada una →</a></p>
+</div>
+</section>
+
+<!-- ¿Y SI…? -->
+<section style="background: #C0D6EB; color: #012233; padding: 112px 32px;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<h2 class="h2" style="margin-top: 0; font-size: clamp(48px, 6.4vw, 104px);">¿Y si<span class="hand" style="font-weight: 400;">…?</span></h2>
+<div style="margin-top: 44px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;">
+{{- $sies := slice
+  (dict "p" "¿…no alcanzamos el criterio?" "r" "Te quedas con el diagnóstico, que es lo que sirve para mejorar. Puedes evaluarte de nuevo sin costo; ese intento cuenta para el siguiente ciclo.")
+  (dict "p" "¿…ya estamos acreditadas?" "r" "La evaluación de renovación no cuesta. Si vuelves a cumplir, pagas la acreditación antes del 29 de enero y sigues en el listado.")
+  (dict "p" "¿…somos un equipo chico?" "r" "Puedes evaluarte con cualquier tamaño. Con menos de 10 respuestas, los resultados se ven en rangos para proteger a tu gente.") -}}
+{{- range $i, $s := $sies }}
+<div class="tilt{{ if eq (mod $i 2) 1 }} tilt--r{{ end }}" style="background: #F4F0E9; border-radius: 24px; padding: 30px;"><h3 style="margin: 0 0 12px; font-weight: 800; font-size: 24px; line-height: 1.25;">{{ $s.p }}</h3><p style="margin: 0; font-size: 17px; line-height: 1.5;">{{ $s.r }}</p></div>
+{{- end }}
+</div>
+</div>
+</section>
+
+<!-- QUIÉN ESTÁ DETRÁS -->
+<section style="background: #C6C0CA; color: #012233; padding: 96px 32px;">
+<div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 72px; align-items: flex-start;">
+<h2 class="h2" style="margin-top: 0; flex: 1 1 320px; font-size: clamp(34px, 4vw, 56px);">Quién está detrás</h2>
+<div style="flex: 2 1 480px; min-width: 0;">
+<p style="margin: 0; font-size: 19px; line-height: 1.6;">Software Guru define la metodología y el criterio, opera el proceso y cuida el anonimato. La Radiografía del Empleador lleva el sello de The Data Pub.</p>
+<p style="margin: 18px 0 0; font-size: 19px; line-height: 1.6;">Los resultados agregados —nunca los de tu organización por separado— alimentan el Observatorio Tech Talent de Software Guru.</p>
+<a href="{{ $g.software_guru.url }}" rel="noopener" target="_blank" style="display: inline-block; margin-top: 22px; color: #012233; font-weight: 800; font-size: 17px; text-underline-offset: 4px;">Conoce Software Guru →</a>
+</div>
+</div>
+</section>
+
+<!-- FAQ CORTA -->
+{{- /* Las cuatro preguntas se buscan por su id en data/bp2c/faq.yaml: la
+       respuesta vive en un solo lugar y alimenta también el JSON-LD. */ -}}
+{{- $todas := slice -}}
+{{- range site.Data.bp2c.faq.grupos }}{{ $todas = $todas | append .preguntas }}{{ end -}}
+<section style="background: #F4F0E9; color: #012233; padding: 112px 32px;">
+<div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 72px; align-items: flex-start;">
+<div style="flex: 1 1 320px; min-width: 0;">
+<h2 class="h2" style="margin-top: 0; font-size: clamp(34px, 4vw, 56px);">Lo que nos preguntan antes de decidir</h2>
+<a href="/faq/" style="display: inline-block; margin-top: 24px; color: #012233; font-weight: 800; font-size: 17px; text-underline-offset: 4px;">Ver todas las preguntas →</a>
+</div>
+<div style="flex: 2 1 520px; min-width: 0; border-bottom: 1.5px solid rgba(1,34,51,.18);">
+{{- range $i, $id := (slice "costo" "pago-garantiza" "no-alcanzamos" "duracion") }}
+{{- with (index (where $todas "id" $id) 0) }}
+<details class="faq" id="{{ .id }}"{{ if eq $i 0 }} open{{ end }}><summary>{{ .p }}<span class="mas" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary><p>{{ .r | safeHTML }}</p></details>
+{{- end }}
+{{- end }}
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section style="background: #C0D6EB; color: #012233; padding: 112px 32px; overflow: hidden;">
+<div style="max-width: 1320px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: center; justify-content: space-between;">
+<div style="flex: 1 1 600px; min-width: 0;">
+<h2 class="h2" style="margin-top: 0; font-size: clamp(44px, 6vw, 96px); letter-spacing: -0.04em;">Las evaluaciones 2027 <span class="hand sticker" style="font-weight: 400;">ya están abiertas</span></h2>
+<p style="margin: 28px 0 0; font-size: 21px; line-height: 1.5; max-width: 30em;">{{ $g.cta_default.texto }}</p>
+<a href="{{ $g.cta_default.boton.url }}" class="btn" style="display: inline-block; margin-top: 34px; background: #012233; color: #B1D635; text-decoration: none; font-weight: 800; font-size: 20px; padding: 20px 32px; border-radius: 999px;">{{ $g.cta_default.boton.texto }}</a>
+</div>
+<img class="spin" src="/images/home/sello-cierre.png" alt="" aria-hidden="true" width="280" height="280" style="flex: 0 0 auto; width: clamp(150px, 20vw, 280px); height: auto;">
+</div>
+</section>
