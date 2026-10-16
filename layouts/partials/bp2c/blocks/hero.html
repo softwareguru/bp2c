@@ -6,7 +6,8 @@
 <section class="bp-hero bp-section--navy bp-dark" aria-labelledby="hero-titulo">
   <div class="bp-shell bp-hero__inner">
     <div class="bp-hero__text">
-      {{- with $b.kicker }}<p class="bp-hero__chip">{{ partial "bp2c/ui/icon.html" (dict "name" "destello" "size" 16 "color" "#AFD235") }}{{ . }}</p>{{ end }}
+      {{- /* El kicker va en monoespaciada, sin icono: mismo gesto que la portada. */ -}}
+      {{- with $b.kicker }}<p class="bp-hero__chip">{{ . }}</p>{{ end }}
       <h1 class="bp-display" id="hero-titulo">{{ $b.h1 | safeHTML }}</h1>
       {{- with $b.subtitulo }}<p class="bp-lead">{{ . | safeHTML }}</p>{{ end }}
       {{- with $b.botones }}
