@@ -24,10 +24,13 @@
 <a href="/faq/" style="color: #F4F0E9; text-decoration: none; font-weight: 600; font-size: 16px;"{{ if eq .RelPermalink "/faq/" }} aria-current="page"{{ end }}>FAQ</a>
 </nav>
 <span style="display: flex; align-items: center; gap: 16px;">
-<span class="hide-sm" style="display: flex; gap: 8px; font-size: 14px; font-weight: 700;">
-<a href="/" hreflang="es" style="color: {{ if eq .Language.Lang "es" }}#B1D635{{ else }}#F4F0E9{{ end }}; text-decoration: none;">ES</a>
-<a href="/en/" hreflang="en" style="color: {{ if eq .Language.Lang "en" }}#B1D635{{ else }}#F4F0E9{{ end }}; text-decoration: none;">EN</a>
-</span>
+{{- /* El selector de idioma queda fuera mientras no haya portada en
+       inglés del diseño 2027: enviaba a una página que ya redirige
+       de vuelta. Las páginas internas en inglés siguen publicadas. */ -}}
+{{- /* <span class="hide-sm" style="display: flex; gap: 8px; font-size: 14px; font-weight: 700;">
+<a href="/" hreflang="es" style="color: <% if eq .Language.Lang "es" %>#B1D635<% else %>#F4F0E9<% end %>; text-decoration: none;">ES</a>
+<a href="/en/" hreflang="en" style="color: <% if eq .Language.Lang "en" %>#B1D635<% else %>#F4F0E9<% end %>; text-decoration: none;">EN</a>
+</span> */ -}}
 <a href="{{ $g.cta_principal.url }}" class="btn cta-top" style="background: #B1D635; color: #012233; text-decoration: none; font-weight: 800; font-size: 16px; padding: 14px 22px; border-radius: 999px; white-space: nowrap;"><span class="cta-long">{{ $g.cta_principal.texto }}</span><span class="cta-short">Evalúate</span></a>
 </span>
 </header>

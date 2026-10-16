@@ -28,3 +28,14 @@ HUGO_VERSION = "0.142.0"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+# La portada en inglés todavía era el sitio anterior, con la marca vieja
+# ("Best Place to Code"). Hasta que exista una portada en inglés del diseño
+# 2027, /en/ manda a la portada nueva. Es 302 a propósito: el día que la haya,
+# se quita esta regla y nada más queda roto.
+# Solo la portada: las páginas internas en inglés siguen alcanzables.
+[[redirects]]
+  from = "/en/"
+  to = "/"
+  status = 302
+  force = true
