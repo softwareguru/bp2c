@@ -1,0 +1,30 @@
+{{- /* Sección «medimos» de la portada 2027. Marcado del diseño aprobado.
+       Las cinco palancas salen de data/bp2c/palancas.yaml, la misma fuente
+       que usa /que-medimos/. */ -}}
+{{- $pal := site.Data.bp2c.palancas -}}
+<section class="pat-iconos" style="background-color: #012233; color: #F4F0E9; padding: 112px 32px; position: relative;">
+<div style="max-width: 1320px; margin: 0 auto;">
+<p class="mono" style="margin: 0 0 14px; font-size: 13px; letter-spacing: .1em; color: #C0D6EB;">QUÉ MEDIMOS</p>
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(38px, 4.8vw, 72px); line-height: 1.05; letter-spacing: -0.03em; max-width: 14em;">Tu equipo evalúa<br><span style="color: #B1D635;">el entorno que le das.</span></h2>
+<p style="margin: 28px 0 0; font-size: 20px; line-height: 1.55; max-width: 34em; color: #C0D6EB;">La evaluación no califica qué tan creativa es tu gente ni cuánta IA usa. Mide las condiciones que tu organización crea para ella.</p>
+<div style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 14px; align-items: stretch;">
+<div style="flex: 1 1 300px; background: #B1D635; color: #012233; border-radius: 22px; padding: 26px;">
+<p class="mono" style="margin: 0; font-size: 12px; letter-spacing: .1em; font-weight: 700;">DECIDE EL SELLO</p>
+<p style="margin: 10px 0 8px; font-weight: 800; font-size: 34px; letter-spacing: -0.02em;">Fundamentos</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.5;">14 reactivos sobre lo básico de un buen lugar para trabajar. Son los únicos que cuentan para acreditarte.</p>
+</div>
+<div style="flex: 2 1 520px; border: 1.5px solid rgba(244,240,233,.25); border-radius: 22px; padding: 26px;">
+<p class="mono" style="margin: 0; font-size: 12px; letter-spacing: .1em; font-weight: 700; color: #C0D6EB;">CINCO PALANCAS · DÓNDE MOVER PRIMERO</p>
+<div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px;">
+{{- range $p := $pal.palancas }}
+<span style="padding: 10px 16px; border-radius: 999px; background: rgba(192,214,235,.12); color: #F4F0E9; border: 1.5px solid #C0D6EB; font-weight: 700; font-size: 16px;">{{ $p.nombre }}</span>
+{{- end }}
+</div>
+<p style="margin: 18px 0 0; font-size: 15px; color: #C0D6EB;">No deciden la acreditación. Te dicen qué condición mover primero.</p>
+</div>
+</div>
+<a href="/que-medimos/" style="display: inline-block; margin-top: 28px; color: #B1D635; font-weight: 700; font-size: 17px; text-underline-offset: 4px;">Qué medimos, a detalle →</a>
+</div>
+</section>
+
+<!-- CÓMO SE GANA -->

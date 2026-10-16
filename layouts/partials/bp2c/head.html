@@ -30,11 +30,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
-{{- $navjs := resources.Get "js/nav.js" | minify | fingerprint }}
-<script defer src="{{ $navjs.RelPermalink }}" integrity="{{ $navjs.Data.Integrity }}"></script>
 
 {{ partial "bp2c/schema.html" . }}
 {{- with site.Params.googleTag }}
@@ -45,70 +43,7 @@
 <body>
 <a class="bp-skip" href="#contenido">Saltar al contenido</a>
 
-{{- /* Franja de urgencia: la fecha límite deja de depender de la memoria. */}}
-<div class="bp-franja">
-  <div class="bp-shell bp-franja__inner">
-    <p><b>{{ $g.franja.texto }}</b> <span>{{ $g.franja.detalle }}</span></p>
-    <a href="{{ $g.franja.enlace.url }}">{{ $g.franja.enlace.texto }}</a>
-  </div>
-</div>
-
-<header class="bp-nav bp-dark" data-nav>
-  <div class="bp-shell bp-nav__inner">
-    <a class="bp-logo" href="/" {{ if .IsHome }}aria-current="page"{{ end }}>
-      {{ partial "bp2c/ui/icon.html" (dict "name" "despegue" "size" 34 "color" "#AFD235") }}
-      <span>
-        <b>Best Place</b>
-        <i>to Create</i>
-      </span>
-    </a>
-
-    <button class="bp-nav__burger" type="button" data-nav-burger
-            aria-expanded="true" aria-controls="bp-menu">
-      <span class="bp-nav__burger-icon" aria-hidden="true"><span></span><span></span><span></span></span>
-      Menú
-    </button>
-
-    <nav class="bp-nav__menu" id="bp-menu" data-nav-menu aria-label="Principal">
-      <ul class="bp-nav__links">
-        {{- range $i, $m := $g.menu }}
-        {{- if $m.grupo }}
-        {{- $activo := false }}
-        {{- range $m.enlaces }}{{ if eq $.RelPermalink .url }}{{ $activo = true }}{{ end }}{{ end }}
-        <li class="bp-nav__group">
-          <button class="bp-nav__toggle" type="button" data-nav-toggle
-                  aria-expanded="true" aria-controls="bp-g{{ $i }}"
-                  {{ if $activo }}aria-current="true"{{ end }}>
-            {{ $m.nombre }}
-            {{ partial "bp2c/ui/icon.html" (dict "name" "chevron" "size" 16) }}
-          </button>
-          <ul class="bp-nav__panel" id="bp-g{{ $i }}">
-            {{- range $m.enlaces }}
-            <li>
-              <a href="{{ .url }}"{{ if eq $.RelPermalink .url }} aria-current="page"{{ end }}>
-                <b>{{ .nombre }}</b>
-                {{- with .resumen }}<span>{{ . }}</span>{{ end }}
-              </a>
-            </li>
-            {{- end }}
-          </ul>
-        </li>
-        {{- else }}
-        <li><a class="bp-nav__link" href="{{ $m.url }}"{{ if eq $.RelPermalink $m.url }} aria-current="page"{{ end }}>{{ $m.nombre }}</a></li>
-        {{- end }}
-        {{- end }}
-      </ul>
-
-      <div class="bp-nav__end">
-        <span class="bp-lang-group">
-          <a class="bp-lang" href="/" aria-current="true" hreflang="es">ES</a>
-          <a class="bp-lang" href="/en/" hreflang="en">EN</a>
-        </span>
-        <a class="bp-btn bp-btn--primary" href="{{ $g.cta_principal.url }}">{{ $g.cta_principal.texto }}</a>
-      </div>
-    </nav>
-  </div>
-</header>
+{{ partial "bp2c/cabecera.html" . }}
 
 {{- if not .IsHome }}
 {{- /* El grupo de navegación al que pertenece la página, para que las migas
