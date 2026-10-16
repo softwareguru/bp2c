@@ -18,5 +18,6 @@ blocks:
     recordatorio: "Contrata antes del 8 de enero y tu equipo tendrá las dos semanas completas para responder. El último día para pagar la evaluación es el 15 de enero de 2027."
     nota: "¿Eres de prensa, de una comunidad tech o quieres ser aliado? Usa este mismo formulario y elige “Prensa o alianzas”."
     foto: "fotos/contacto.jpg"
+    foto_alt: "Tres personas revisan juntas algo en una laptop"
     palabra: "Hablemos."
 ---

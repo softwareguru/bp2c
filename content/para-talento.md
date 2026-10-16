@@ -14,6 +14,7 @@ blocks:
     h1: "Este sello lo ponen las personas que trabajan ahí"
     subtitulo: "No lo da un jurado ni lo escribe el equipo de marketing. Sale de lo que respondió, en anónimo, la gente de tecnología de esa organización."
     foto: "fotos/talento-hero.jpg"
+    foto_alt: "Dos colegas conversan frente a una laptop en una oficina con plantas"
     palabra: "Colegas."
     botones:
       - texto: "Ver organizaciones acreditadas"
@@ -63,5 +64,6 @@ blocks:
       texto: "Responder SG Tech Pulse"
       url: "https://salarios.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
     foto: "fotos/talento-tech-pulse.jpg"
+    foto_alt: "Una mujer con lentes sonríe frente a un pizarrón con notas"
     palabra: "Tu voz."
 ---
