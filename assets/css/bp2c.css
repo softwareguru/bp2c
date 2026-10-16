@@ -870,3 +870,43 @@ details.faq p { margin: 0 0 24px; font-size: 18px; line-height: 1.6; max-width: 
 /* Texto solo para lectores de pantalla. Lo usan el encabezado de la tabla de
    entregables y las celdas que marcan «no incluido». */
 .bp-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+/* --------------------------------------------------------------------------
+   Contacto · diseño 2027 (artboard «Contacto»)
+   La intro y los pasos comparten columna; el formulario ocupa la otra entera.
+   -------------------------------------------------------------------------- */
+.ct {
+  max-width: 1320px; margin: 0 auto;
+  display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.08fr);
+  grid-template-areas: "intro form" "pasos form";
+  gap: 40px 72px; align-items: start;
+}
+.ct-intro { grid-area: intro; }
+.ct-form { grid-area: form; }
+.ct-pasos { grid-area: pasos; }
+/* La sombra lima del diseño, y la tarjeta en papel en vez de blanco. */
+.ct-form .bp-form { color: var(--bp-navy); background: var(--bp-paper); border-radius: 30px; padding: clamp(22px, 3.2vw, 40px); gap: 26px; box-shadow: 12px 12px 0 var(--bp-lime); }
+
+.ct-numeros { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.ct-numeros li { display: flex; gap: 16px; align-items: flex-start; }
+.ct-numeros li > span:last-child { font-size: 18px; line-height: 1.5; padding-top: 8px; }
+.ct-num { flex: 0 0 44px; height: 44px; border-radius: 50%; background: var(--bp-lime); color: var(--bp-navy); display: flex; align-items: center; justify-content: center; font-size: 22px; }
+.ct-aviso { margin-top: 28px; border-radius: 20px; padding: 22px 24px; border: 1.5px solid rgba(244,240,233,.25); display: flex; gap: 16px; align-items: flex-start; }
+.ct-aviso svg { flex: 0 0 28px; margin-top: 2px; }
+.ct-aviso strong { color: var(--bp-lime); }
+/* La nota de privacidad va bajo el botón, no pegada a un campo. */
+/* El envío va en navy sobre lima, como en el diseño: es la acción principal
+   de la tarjeta y la tarjeta ya es clara. */
+.ct-form .bp-form .bp-btn--primary { background: var(--bp-navy); color: var(--bp-lime); }
+.ct-form .bp-form > div > .bp-hint { font-size: 14px; line-height: 1.45; color: var(--bp-ink-3); max-width: 42em; }
+
+@media (max-width: 900px) {
+  .ct { grid-template-columns: minmax(0,1fr); grid-template-areas: "intro" "form" "pasos"; }
+}
+
+/* Tarjetas de «a dónde seguir» de la página de gracias. */
+.enlace { display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 190px; text-decoration: none; border-radius: 24px; padding: 28px; }
+.enlace-k { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+.enlace-t { font-weight: 800; font-size: 25px; line-height: 1.2; }
+.enlace--propuesta { border: 2px dashed rgba(244,240,233,.4); color: var(--bp-paper); }
+.enlace--propuesta .enlace-k { color: var(--bp-sky); }

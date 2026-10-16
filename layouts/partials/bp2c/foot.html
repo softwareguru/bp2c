@@ -9,6 +9,12 @@
 <script defer src="{{ $videojs.RelPermalink }}" integrity="{{ $videojs.Data.Integrity }}"></script>
 {{- end }}
 
+{{- /* El script de compartir solo se carga donde hay algo que compartir. */ -}}
+{{- if .Params.compartir }}
+{{- $comp := resources.Get "js/compartir.js" | minify | fingerprint }}
+<script defer src="{{ $comp.RelPermalink }}" integrity="{{ $comp.Data.Integrity }}"></script>
+{{- end }}
+
 {{- /* El contador de días solo se carga donde hay uno. */ -}}
 {{- if .Params.cuenta_regresiva }}
 {{- $cuenta := resources.Get "js/cuenta-regresiva.js" | minify | fingerprint }}

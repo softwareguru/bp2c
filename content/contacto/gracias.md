@@ -7,16 +7,26 @@ sin_cta: true
 blocks:
   - type: hero
     h1: "Listo, recibimos tus datos"
-    subtitulo: "Te contactamos pronto. <span class=\"bp-pendiente\">PENDIENTE D4: tiempo de respuesta</span> Mientras esperas, esto te puede servir:"
+    subtitulo: "Nos pondremos en contacto contigo a la brevedad. Mientras, esto te puede servir:"
 
   - type: enlaces
     enlaces:
-      - texto: "Mira quién ya se acreditó"
+      - kicker: "Directorio"
+        texto: "Mira quién ya se acreditó"
         url: "/companies/"
-      - texto: "Revisa qué preguntamos y cuál es el criterio"
-        url: "/que-medimos/"
-      - texto: "Lee el blog"
+      - kicker: "Para organizaciones"
+        texto: "Revisa qué preguntamos y cuál es el criterio"
+        url: "/para-organizaciones/"
+      - kicker: "Blog"
+        texto: "Lee el blog"
         url: "/blog/"
+
+# La cuarta tarjeta del diseño. Sin `url` no se publica: en cuanto exista la
+# liga de agenda, se pega aquí y aparece sola.
+agenda:
+  kicker: "Agenda"
+  texto: "Agenda una llamada con nuestro equipo"
+  url: ""
 ---
 
 <script>

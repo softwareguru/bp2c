@@ -12,7 +12,7 @@ blocks:
     texto: "Déjanos tus datos y te contactamos para explicarte cómo funciona y cuánto costaría para el tamaño de tu equipo de tecnología. Sin compromiso: la propuesta la ves antes de decidir."
     pasos_titulo: "Qué pasa después de enviar"
     pasos:
-      - "Te contactamos para conocer a tu organización. <span class=\"bp-pendiente\">PENDIENTE D4: tiempo de respuesta</span>"
+      - "Te escribimos al correo que nos dejes para conocer a tu organización."
       - "Te mandamos la propuesta según el tamaño de tu equipo de tecnología."
       - "Si decides seguir, firmas, pagas la evaluación y recibes el Kit de despliegue para invitar a tu equipo."
     recordatorio: "Contrata antes del 8 de enero y tu equipo tendrá las dos semanas completas para responder. El último día para pagar la evaluación es el 15 de enero de 2027."

@@ -257,7 +257,7 @@
 </div>
 <ol class="fechas-lista">
 {{- range $f.filas }}
-<li class="fecha{{ if .resaltar }} fecha--clave{{ end }}{{ if eq .hito "Publicación del Listado 2027" }} fecha--listado{{ end }}{{ if hasPrefix .fecha "Después" }} fecha--abierta{{ end }}"><span class="mono">{{ .fecha }}</span><span>{{ .hito }}</span></li>
+<li class="fecha{{ if .resaltar }} fecha--clave{{ end }}{{ if eq .hito "Publicación del Listado 2027" }} fecha--listado{{ end }}{{ if hasPrefix .fecha "Después" }} fecha--abierta{{ end }}"><span class="mono">{{ .etiqueta | default .fecha }}</span><span>{{ .hito }}</span></li>
 {{- end }}
 </ol>
 </div>

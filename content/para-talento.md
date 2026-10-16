@@ -1,6 +1,12 @@
 ---
 title: "Qué significa trabajar en una organización acreditada"
 type: bp2c
+
+# El diseño vive en layouts/partials/bp2c/paginas/para-talento.html
+# (artboard «ParaTi»). La copia se queda aquí; el partial solo la maqueta.
+# La banda de cierre va dentro, así que el pie no debe añadir otra.
+sin_cta: true
+compartir: true
 description: "El sello Best Place to Create sale de lo que respondieron, en anónimo, las personas de tecnología de esa organización. Esto es lo que te dice."
 cta:
   titulo: "Busca tu próximo lugar para crear"
@@ -48,8 +54,8 @@ blocks:
     ancla: "recomienda"
     h2: "¿Tu organización debería estar en esta lista?"
     texto: "Si crees que sí, o si crees que le haría bien saber qué piensa su equipo, pásale esto a tu líder o a quien lleve talento. Copia el mensaje o mándalo directo."
-    mensaje: "Te comparto Best Place to Create, un diagnóstico anónimo del entorno de trabajo de las personas de tecnología, de Software Guru. Creo que nos serviría evaluarnos: https://bestplacetocreate.com/como-funciona/?utm_source=recomendacion-talento&utm_medium=referral&utm_campaign=bp2c27-venta"
-    url_compartir: "https://bestplacetocreate.com/como-funciona/?utm_source=recomendacion-talento&utm_medium=referral&utm_campaign=bp2c27-venta"
+    mensaje: "Te comparto Best Place to Create, un diagnóstico anónimo del entorno de trabajo de las personas de tecnología, de Software Guru. Creo que nos serviría evaluarnos: https://bestplacetocreate.com/para-organizaciones/?utm_source=recomendacion-talento&utm_medium=referral&utm_campaign=bp2c27-venta"
+    url_compartir: "https://bestplacetocreate.com/para-organizaciones/?utm_source=recomendacion-talento&utm_medium=referral&utm_campaign=bp2c27-venta"
     enlace:
       texto: "Prefiero que lo contacten ustedes"
       url: "/contacto/?interes=recomendar"
