@@ -41,7 +41,7 @@ HUGO_ENABLEGITINFO = "true"
   force = true
 
 [[redirects]]
-  from = "https://bestplacetocode.com"
-  to = "https://bestplacetocreate.com"
+  from = "https://bestplacetocode.com/*"
+  to = "https://bestplacetocreate.com/:splat"
   status = 301
   force = true
