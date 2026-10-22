@@ -39,3 +39,9 @@ HUGO_ENABLEGITINFO = "true"
   to = "/"
   status = 302
   force = true
+
+[[redirects]]
+  from = "https://bestplacetocode.com"
+  to = "https://bestplacetocreate.com"
+  status = 301
+  force = true
