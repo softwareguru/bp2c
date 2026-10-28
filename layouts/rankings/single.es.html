@@ -1,4 +1,4 @@
-{{- /* Landing de una edición del listado · diseño 2027.
+{{- /* Landing de una edición del ranking · diseño 2027.
 
        Son páginas históricas: el cuerpo es el comunicado tal como se publicó
        ese año y no se toca. Lo que cambia es el envoltorio, para que al
@@ -17,12 +17,12 @@
 <section class="bp-section bp-section--navy bp-dark">
   <div class="bp-shell" style="display: flex; flex-wrap: wrap; gap: 56px; align-items: center;">
     <div style="flex: 999 1 520px; min-width: 0;">
-      <p class="bp-kicker">Listado anterior</p>
+      <p class="bp-kicker">Ranking anterior</p>
       <h1 class="bp-display">{{ .Title }}</h1>
       <p class="bp-lead">Las organizaciones que alcanzaron el criterio en esta edición, por categoría. El comunicado es el que se publicó entonces.</p>
       <div class="bp-btn-row">
         {{ partial "bp2c/ui/button.html" (dict "texto" "Ver las acreditadas de hoy" "url" "/companies/" "variant" "primary") }}
-        {{ partial "bp2c/ui/button.html" (dict "texto" "Todos los listados" "url" "/rankings/" "variant" "outline") }}
+        {{ partial "bp2c/ui/button.html" (dict "texto" "Todos los rankings" "url" "/rankings/" "variant" "outline") }}
       </div>
     </div>
     {{- with $portada }}
@@ -43,7 +43,7 @@
 <section class="bp-section bp-section--paper" style="padding-top: 0;">
   <div class="bp-shell">
     <h2 class="bp-h2">Todas las ediciones</h2>
-    <nav class="bp-anios" aria-label="Listados anteriores">
+    <nav class="bp-anios" aria-label="Rankings anteriores">
       {{- range . }}
       <a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $.RelPermalink }} aria-current="page"{{ end }}>{{ replace .Title "Ranking " "" }}</a>
       {{- end }}

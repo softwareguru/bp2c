@@ -1,8 +1,8 @@
 # Fechas del ciclo 2027. `resaltar: true` pinta la fila en lima.
 # `fecha_corta` es la etiqueta breve que usa la portada.
-# `etiqueta` reemplaza a `fecha` en la tabla larga de Para organizaciones,
-# solo en las dos filas que no son una fecha concreta y no caben en su columna.
 # `corta: true` marca las filas que aparecen en la versión breve (Inicio).
+# `etiqueta` reemplaza a `fecha` en la tabla larga de Para organizaciones,
+# solo en las filas que no son una fecha concreta y no caben en su columna.
 titulo: "Fechas 2027"
 filas:
   - fecha: "Desde octubre de 2026"
@@ -11,42 +11,43 @@ filas:
     hito_corto: "Evaluaciones abiertas"
     resaltar: false
     corta: false
-  - fecha: "8 de enero"
-    fecha_corta: "8 ene"
-    hito: "Fecha sugerida para contratar y pagar tu evaluación: tu equipo tiene dos semanas completas para responder"
-    hito_corto: "Ideal para contratar tu evaluación"
-    resaltar: false
-    corta: true
-  - fecha: "15 de enero"
-    fecha_corta: "15 ene"
+  - fecha: "28 de enero"
+    fecha_corta: "28 ene"
     hito: "Último día para pagar la evaluación"
     hito_corto: "Último día para pagar la evaluación"
     resaltar: true
     corta: true
-  - fecha: "22 de enero"
-    fecha_corta: "22 ene"
+  - fecha: "11 de febrero"
+    fecha_corta: "11 feb"
     hito: "Cierran las respuestas de la evaluación"
     hito_corto: "Cierran las respuestas"
     resaltar: false
     corta: true
-  - fecha: "27 de enero"
-    hito: "Las organizaciones evaluadas reciben el listado previo"
+  - fecha: "12 y 13 de febrero"
+    etiqueta: "12 y 13 feb"
+    hito: "Auditoría de las evaluaciones"
     hito_corto: ""
     resaltar: false
     corta: false
-  - fecha: "29 de enero"
-    fecha_corta: "29 ene"
-    hito: "Último día para pagar la acreditación"
+  - fecha: "15 de febrero"
+    fecha_corta: "15 feb"
+    hito: "Último día para pagar la acreditación. Las organizaciones acreditadas reciben la versión previa del Ranking 2027"
     hito_corto: "Último día para pagar la acreditación"
     resaltar: true
     corta: true
-  - fecha: "4 de febrero"
-    fecha_corta: "4 feb"
-    hito: "Publicación del Listado 2027"
-    hito_corto: "Sale el Listado 2027"
+  - fecha: "18 de febrero"
+    fecha_corta: "18 feb"
+    hito: "Publicación del Ranking 2027"
+    hito_corto: "Sale el Ranking 2027"
     resaltar: true
     corta: true
-  - fecha: "Después del 4 de febrero"
+  - fecha: "Fin de marzo"
+    etiqueta: "Fin de marzo"
+    hito: "Las organizaciones acreditadas reciben su Radiografía del Empleador"
+    hito_corto: ""
+    resaltar: false
+    corta: false
+  - fecha: "Después del 18 de febrero"
     etiqueta: "Después"
     hito: "Entrega de reconocimientos en un evento para organizaciones y comunidad tech (fecha por anunciar)"
     hito_corto: ""

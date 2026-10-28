@@ -44,7 +44,7 @@
 <a href="#como-funciona">Cómo funciona</a>
 <a href="#que-recibes">Qué recibes</a>
 <a href="#fechas">Fechas</a>
-<a href="#categorias">Categorías</a>
+<a href="#categorias">Con quién compites</a>
 <a href="{{ $g.cta_principal.url }}" class="anclas__cta">{{ $g.cta_principal.texto }}</a>
 </div>
 </nav>
@@ -142,11 +142,11 @@
 <h2 class="h2">Cinco pasos, <span class="hand sticker" style="font-weight: 400;">dos pagos,</span> cero sorpresas</h2>
 <ol class="pasos">
 {{- $pasos := slice
-  (dict "t" "Contratas la evaluación" "d" "Acuerdas la propuesta y pagas. Ideal: antes del 8 de enero. Último día: 15 de enero." "pago" "PAGO 1")
+  (dict "t" "Contratas la evaluación" "d" "Acuerdas la propuesta y pagas. Último día: 28 de enero." "pago" "PAGO 1")
   (dict "t" "Invitas a tu equipo" "d" "Con el Kit de despliegue, tu gente de tecnología responde en anónimo durante dos semanas.")
   (dict "t" "Ves todo en vivo" "d" "El Dashboard de monitoreo muestra avance y calificación por categoría mientras responden.")
-  (dict "t" "Recibes tu resultado" "d" "Sabes si cumpliste el criterio y dónde están tus puntos flojos. Esto lo recibes cumplas o no.")
-  (dict "t" "Te acreditas" "d" "Si cumpliste, pagas la acreditación a más tardar el 29 de enero y entras al Listado 2027." "pago" "PAGO 2") -}}
+  (dict "t" "Recibes tu resultado" "d" "Sabes si cumpliste el criterio y dónde están tus oportunidades. Esto lo recibes cumplas o no.")
+  (dict "t" "Te acreditas" "d" "Si cumpliste, pagas la acreditación a más tardar el 15 de febrero y entras al Ranking 2027." "pago" "PAGO 2") -}}
 {{- range $i, $p := $pasos }}
 <li class="tilt step{{ if eq (mod $i 2) 1 }} tilt--r{{ end }}">
 <div class="paso-cab"><span class="mono k" style="font-size: 14px;">{{ printf "%02d" (add $i 1) }}</span>{{ with $p.pago }}<span class="mono paso-pago">{{ . }}</span>{{ end }}</div>
@@ -181,7 +181,7 @@
   (dict "q" "Radiografía del Empleador: hallazgos, una acción por palanca y tu comparación con organizaciones parecidas" "ev" false)
   (dict "q" "Reconocimiento físico, constancia digital y el sello en tus materiales" "ev" false)
   (dict "q" "Perfil en el directorio de bestplacetocreate.com" "ev" false)
-  (dict "q" "Entrada al Listado 2027, con mención en newsletters y redes de Best Place to Create y Software Guru" "ev" false) -}}
+  (dict "q" "Entrada al Ranking 2027, con mención en newsletters y redes de Best Place to Create y Software Guru" "ev" false) -}}
 {{- range $filas }}
 <tr><th scope="row">{{ .q }}</th>
 <td>{{ if .ev }}<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#012233" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Incluido"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>{{ else }}<span aria-hidden="true" class="no">—</span><span class="bp-sr">No incluido</span>{{ end }}</td>
@@ -201,7 +201,7 @@
 <div style="margin-top: 52px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
 {{- $usos := slice
   (dict "t" "Decidir con datos" "p" (slice "Radiografía del Empleador con una acción por palanca" "Tu comparación con la cohorte" "El reporte del ecosistema"))
-  (dict "t" "Contarlo" "p" (slice "Reconocimiento físico y constancia digital" "El sello en tus materiales impresos y digitales" "Perfil en el directorio" "Entrada al Listado 2027"))
+  (dict "t" "Contarlo" "p" (slice "Reconocimiento físico y constancia digital" "El sello en tus materiales impresos y digitales" "Perfil en el directorio" "Entrada al Ranking 2027"))
   (dict "t" "Contratar mejor" "p" (slice "2 vacantes destacadas al mes en el newsletter de Software Guru, SG4 Women, el sitio de Software Guru y Get on Board" "Un perk para reclutar con Get on Board el primer año"))
   (dict "t" "Estar en la conversación" "oscuro" true "p" (slice "Mención en newsletters y redes de Best Place to Create y Software Guru" "Puedes publicar en el blog de Best Place to Create" "20&#8239;% de descuento en patrocinios de eventos de Software Guru" "30&#8239;% de descuento para asistir a esos eventos")) -}}
 {{- range $i, $u := $usos }}
@@ -232,7 +232,7 @@
 </div>
 <div style="margin-top: 18px; background: #012233; color: #F4F0E9; border-radius: 24px; padding: 28px 30px; display: flex; flex-wrap: wrap; gap: 14px 32px; align-items: baseline;">
 <p class="kicker" style="color: #B1D635; flex: 0 0 auto;">CÓMO SE COMUNICA EL SELLO</p>
-<p style="margin: 0; flex: 1 1 420px; font-size: 18px; line-height: 1.55;">Siempre con el nombre oficial del listado. No publicamos posiciones por categoría, así que no existe un «#1 en Consultoría mediana» que anunciar.</p>
+<p style="margin: 0; flex: 1 1 420px; font-size: 18px; line-height: 1.55;">Siempre con el nombre oficial del ranking y tu categoría. Nunca como un ranking aparte, tipo «#1 en Consultoría mediana» sin decir de dónde viene.</p>
 </div>
 </div>
 </section>
@@ -241,7 +241,7 @@
 {{- /* El contador se calcula al construir, para que funcione sin JS y venga
        ya en el HTML servido, y se refresca en el navegador porque el sitio es
        estático y el número cambia cada día: el mismo gesto que la portada. */ -}}
-{{- $limite := time.AsTime "2027-01-15T00:00:00Z" -}}
+{{- $limite := time.AsTime "2027-01-28T00:00:00Z" -}}
 {{- $dias := int (math.Ceil (div (float (sub $limite.Unix now.Unix)) 86400.0)) -}}
 {{- if lt $dias 0 }}{{ $dias = 0 }}{{ end -}}
 <section id="fechas" style="background: #012233; color: #F4F0E9; padding: 112px 32px; scroll-margin-top: 72px;">
@@ -250,14 +250,14 @@
 <p class="kicker" style="color: #C0D6EB;">CICLO 2027</p>
 <h2 class="h2" style="font-size: clamp(40px, 5vw, 72px);">2027 ya tiene fechas.</h2>
 <div style="margin-top: 32px;">
-<span class="hand" data-cuenta-regresiva="2027-01-15" style="display: block; font-size: clamp(88px, 10vw, 150px); line-height: 1; color: #B1D635;">{{ $dias }}</span>
+<span class="hand" data-cuenta-regresiva="2027-01-28" style="display: block; font-size: clamp(88px, 10vw, 150px); line-height: 1; color: #B1D635;">{{ $dias }}</span>
 <span class="hand" style="display: block; margin-top: 10px; font-size: 34px;">días</span>
 </div>
 <p style="margin: 12px 0 0; font-size: 18px; line-height: 1.5; color: #C0D6EB; max-width: 22em;">para el último día de pago de la evaluación.</p>
 </div>
 <ol class="fechas-lista">
 {{- range $f.filas }}
-<li class="fecha{{ if .resaltar }} fecha--clave{{ end }}{{ if eq .hito "Publicación del Listado 2027" }} fecha--listado{{ end }}{{ if hasPrefix .fecha "Después" }} fecha--abierta{{ end }}"><span class="mono">{{ .etiqueta | default .fecha }}</span><span>{{ .hito }}</span></li>
+<li class="fecha{{ if .resaltar }} fecha--clave{{ end }}{{ if eq .hito "Publicación del Ranking 2027" }} fecha--listado{{ end }}{{ if hasPrefix .fecha "Después" }} fecha--abierta{{ end }}"><span class="mono">{{ .etiqueta | default .fecha }}</span><span>{{ .hito }}</span></li>
 {{- end }}
 </ol>
 </div>
@@ -266,9 +266,9 @@
 <!-- CATEGORÍAS -->
 <section id="categorias" style="background: #F4F0E9; color: #012233; padding: 112px 32px; scroll-margin-top: 72px;">
 <div style="max-width: 1320px; margin: 0 auto;">
-<p class="kicker" style="color: #4A5B68;">CATEGORÍAS</p>
-<h2 class="h2">Compites contra <span class="hl">quien se te parece</span></h2>
-<p class="lead">La categoría depende de tu tipo de trabajo, no del tamaño que define tu propuesta.</p>
+<p class="kicker" style="color: #4A5B68;">CON QUIÉN COMPITES</p>
+<h2 class="h2">Compites con organizaciones <span class="hl">como la tuya</span></h2>
+<p class="lead">Hay cinco grupos, según a qué se dedica tu organización y, en consultoría, cuántas personas de tecnología tiene. Así una startup no se mide contra un corporativo.</p>
 <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px;">
 {{- range $i, $c := $cats }}
 {{- $ultima := eq (add $i 1) (len $cats) }}
@@ -286,7 +286,7 @@
 <div style="margin-top: 44px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;">
 {{- $sies := slice
   (dict "p" "¿…no alcanzamos el criterio?" "r" "Te quedas con el diagnóstico, que es lo que sirve para mejorar. Puedes evaluarte de nuevo sin costo; ese intento cuenta para el siguiente ciclo.")
-  (dict "p" "¿…ya estamos acreditadas?" "r" "La evaluación de renovación no cuesta. Si vuelves a cumplir, pagas la acreditación antes del 29 de enero y sigues en el listado.")
+  (dict "p" "¿…ya estamos acreditadas?" "r" "La evaluación de renovación no cuesta. Si vuelves a cumplir, pagas la acreditación a más tardar el 15 de febrero y sigues en el ranking.")
   (dict "p" "¿…somos un equipo chico?" "r" "Puedes evaluarte con cualquier tamaño. Con menos de 10 respuestas, los resultados se ven en rangos para proteger a tu gente.") -}}
 {{- range $i, $s := $sies }}
 <div class="tilt{{ if eq (mod $i 2) 1 }} tilt--r{{ end }}" style="background: #F4F0E9; border-radius: 24px; padding: 30px;"><h3 style="margin: 0 0 12px; font-weight: 800; font-size: 24px; line-height: 1.25;">{{ $s.p }}</h3><p style="margin: 0; font-size: 17px; line-height: 1.5;">{{ $s.r }}</p></div>

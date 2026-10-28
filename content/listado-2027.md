@@ -1,12 +1,12 @@
 ---
-title: "Listado 2027"
+title: "Ranking 2027"
 type: bp2c
 draft: true
 description: ""
 images:
   - "/images/bp2c27/fotos/listado.jpg"
-# No publicar antes del 4 de febrero de 2027.
-# D8 abierta: el nombre comercial del listado está pendiente.
+# No publicar antes del 18 de febrero de 2027.
+# D8 resuelta: el nombre es «Ranking 2027», como quedó en el diseño.
 # D2 abierta: el formato (con o sin posiciones dentro de cada categoría)
 # lo deciden Xuxo y Yolo.
 cta:
@@ -17,8 +17,8 @@ cta:
     url: "/contacto/?interes=evaluar"
 blocks:
   - type: hero
-    kicker: "Listado 2027"
-    h1: "<span class=\"bp-pendiente\">PENDIENTE D8: nombre del listado</span> 2027"
+    kicker: "Ranking 2027"
+    h1: "Ranking 2027"
     subtitulo: "Las organizaciones de tecnología que, según sus propias personas de tecnología, crean las condiciones para aprender, aportar, colaborar y crear valor."
     foto: "fotos/listado.jpg"
     palabra: "2027."
@@ -39,5 +39,5 @@ blocks:
   - type: callout
     titulo: "Nota de uso"
     parrafos:
-      - "El reconocimiento se comunica con el nombre oficial del listado. Las posiciones por categoría no se publican como ranking independiente."
+      - "El reconocimiento se comunica con el nombre oficial del ranking y tu categoría, nunca como un ranking aparte."
 ---

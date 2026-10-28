@@ -80,7 +80,7 @@ blocks:
       - titulo: "Recibes el resultado"
         texto: "Sabes si alcanzaste el criterio y dónde están tus puntos débiles. Eso lo recibes cumplas o no."
       - titulo: "Te acreditas"
-        texto: "Si lo alcanzaste, pagas la acreditación y entras al Listado 2027 con el sello y los materiales para comunicarlo."
+        texto: "Si lo alcanzaste, pagas la acreditación y entras al Ranking 2027 con el sello y los materiales para comunicarlo."
         pago: "Pago 2"
     nota: "Pagar la evaluación te da el diagnóstico. La acreditación depende del resultado, no del pago."
     enlace:
@@ -103,7 +103,7 @@ blocks:
       - titulo: "El criterio está publicado"
         texto: "85 % de promedio en Fundamentos y ninguna de sus 14 preguntas por debajo de 75 %. El mismo número para una startup de ocho personas y para un corporativo."
       - titulo: "No todas pasan"
-        texto: "Quien no alcanza el criterio no aparece en ninguna parte: el directorio y el Listado 2027 solo incluyen a las organizaciones acreditadas."
+        texto: "Quien no alcanza el criterio no aparece en ninguna parte: el directorio y el Ranking 2027 solo incluyen a las organizaciones acreditadas."
     enlace:
       texto: "Ver cómo se calcula"
       url: "/que-medimos/"
