@@ -5,7 +5,7 @@
        HTML servido) y se refresca en el navegador, porque el sitio es
        estático y el número cambia cada día. */ -}}
 {{- $f := site.Data.bp2c.fechas -}}
-{{- $limite := time.AsTime "2027-01-15T00:00:00Z" -}}
+{{- $limite := time.AsTime "2027-01-28T00:00:00Z" -}}
 {{- $dias := int (math.Ceil (div (float (sub $limite.Unix now.Unix)) 86400.0)) -}}
 {{- if lt $dias 0 }}{{ $dias = 0 }}{{ end -}}
 <section id="fechas" style="background: #012233; color: #F4F0E9; padding: 112px 32px;">
@@ -14,10 +14,10 @@
 <p class="mono" style="margin: 0; font-size: 13px; letter-spacing: .1em; color: #C0D6EB;">CICLO 2027</p>
 <h2 style="margin: 12px 0 0; font-weight: 800; font-size: clamp(40px, 5vw, 72px); line-height: 1.02; letter-spacing: -0.035em;">2027 ya tiene fechas.</h2>
 <div style="margin-top: 32px;">
-<span class="hand" data-cuenta-regresiva="2027-01-15" style="display: block; font-weight: 400; font-size: clamp(88px, 10vw, 150px); line-height: 1; letter-spacing: .01em; color: #B1D635;">{{ $dias }}</span>
+<span class="hand" data-cuenta-regresiva="2027-01-28" style="display: block; font-weight: 400; font-size: clamp(88px, 10vw, 150px); line-height: 1; letter-spacing: .01em; color: #B1D635;">{{ $dias }}</span>
 <span class="hand" style="display: block; margin-top: 10px; font-size: 34px; color: #F4F0E9;">días</span>
 </div>
-<p style="margin: 12px 0 0; font-size: 18px; line-height: 1.5; color: #C0D6EB; max-width: 22em;">para el último día de pago de la evaluación. Si contratas antes del 8 de enero, tu equipo tiene dos semanas completas para responder.</p>
+<p style="margin: 12px 0 0; font-size: 18px; line-height: 1.5; color: #C0D6EB; max-width: 22em;">para el último día de pago de la evaluación. Tu equipo tiene dos semanas para responder y las respuestas cierran el 11 de febrero.</p>
 </div>
 <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 12px;">
 {{- $cortas := where $f.filas "corta" true }}

@@ -20,7 +20,7 @@ blocks:
     h2: "Qué pasa, paso por paso"
     pasos:
       - titulo: "Contratas la evaluación"
-        texto: "Acuerdas la propuesta con nuestro equipo y pagas. Contrata antes del 8 de enero si quieres que tu equipo tenga las dos semanas completas; el último día para pagar es el 15 de enero de 2027."
+        texto: "Acuerdas la propuesta con nuestro equipo y pagas. El último día para pagar es el 28 de enero de 2027."
         pago: "Pago 1"
       - titulo: "Tu equipo responde"
         texto: "Te entregamos el Kit de despliegue —los materiales y el enlace— para que invites a tus personas de tecnología. Responden en anónimo y tienen dos semanas."
@@ -29,7 +29,7 @@ blocks:
       - titulo: "Recibes el resultado"
         texto: "Sabes si alcanzaste el criterio en Fundamentos y dónde están tus puntos débiles. Si lo alcanzaste, te llegan las instrucciones para acreditarte."
       - titulo: "Te acreditas"
-        texto: "Pagas la acreditación a más tardar el 29 de enero de 2027 para entrar al Listado 2027. Desde ahí recibes la Radiografía del Empleador, el reconocimiento y los beneficios."
+        texto: "Pagas la acreditación a más tardar el 15 de febrero de 2027 para entrar al Ranking 2027. Desde ahí recibes la Radiografía del Empleador, el reconocimiento y los beneficios."
         pago: "Pago 2"
     nota: "Los reportes y la acreditación se entregan cuando está cubierto el pago que les corresponde."
 
@@ -64,7 +64,7 @@ blocks:
       - titulo: "No alcanzaste el criterio"
         texto: "Te quedas con el diagnóstico completo, que es la parte que sirve para mejorar. Puedes volver a evaluarte sin costo, y ese segundo intento cuenta para el siguiente ciclo."
       - titulo: "Ya estás acreditada"
-        texto: "La evaluación de renovación no cuesta. Si tu organización vuelve a alcanzar el criterio, pagas la acreditación antes del 29 de enero y sigues en el listado."
+        texto: "La evaluación de renovación no cuesta. Si tu organización vuelve a alcanzar el criterio, pagas la acreditación antes del 15 de febrero y sigues en el ranking."
       - titulo: "Tu equipo es pequeño"
         texto: "Puedes evaluarte con cualquier tamaño. Si responden menos de 10 personas, los resultados se muestran en rangos amplios, para que nadie pueda ser identificado por descarte."
 

@@ -37,7 +37,7 @@ blocks:
       - que: "Perfil en el directorio de bestplacetocreate.com"
         evaluada: false
         acreditada: true
-      - que: "Entrada al Listado 2027, con mención en los newsletters y redes de Best Place to Create y Software Guru"
+      - que: "Entrada al Ranking 2027, con mención en los newsletters y redes de Best Place to Create y Software Guru"
         evaluada: false
         acreditada: true
 
@@ -57,7 +57,7 @@ blocks:
           - "Reconocimiento físico y constancia digital"
           - "El sello Best Place to Create en tus materiales, impresos y digitales"
           - "Perfil propio en el directorio"
-          - "Entrada al Listado 2027"
+          - "Entrada al Ranking 2027"
       - titulo: "Contratar mejor"
         lista:
           - "2 vacantes destacadas al mes en el newsletter de Software Guru, SG4 Women, el sitio de Software Guru y Get on Board"

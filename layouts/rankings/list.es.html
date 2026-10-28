@@ -1,13 +1,13 @@
-{{- /* Listados anteriores. Usa la cabecera y el pie compartidos, para que no
+{{- /* Rankings anteriores. Usa la cabecera y el pie compartidos, para que no
        se sienta otro sitio al llegar desde la portada.
        Solo en español: el sitio en inglés sigue en el tema anterior. */ -}}
 {{ partial "bp2c/head.html" . }}
 
 <section class="bp-section bp-section--navy bp-dark">
   <div class="bp-shell">
-    <p class="bp-kicker">Listados anteriores</p>
+    <p class="bp-kicker">Rankings anteriores</p>
     <h1 class="bp-display">Ocho años reconociendo a las mejores</h1>
-    <p class="bp-lead">Cada edición dejó un listado público de las organizaciones que pasaron el criterio. Están todas, desde la primera.</p>
+    <p class="bp-lead">Cada edición dejó un ranking público de las organizaciones que pasaron el criterio. Están todos, desde el primero.</p>
   </div>
 </section>
 
@@ -15,12 +15,16 @@
   <div class="bp-shell">
     <div class="bp-grid bp-grid--3">
       {{- range sort .Pages "Title" "desc" }}
+      {{- $edicion := .Title }}
       <a class="bp-card bp-card--edicion" href="{{ .RelPermalink }}">
+        {{- /* Dentro del `with` el contexto es la ruta de la imagen, así que el
+             título de la edición se guarda antes: si no, el alt decía
+             «Portada del ranking Rankings» en las ocho tarjetas. */ -}}
         {{- with (index (.Params.images | default slice) 0) }}
-        <img src="{{ . | absURL }}" alt="Portada del {{ $.Scratch.Get "t" | default "listado" }} {{ $.Title }}" loading="lazy" width="520" height="390">
+        <img src="{{ . | absURL }}" alt="Portada del {{ $edicion }}" loading="lazy" width="520" height="390">
         {{- end }}
         <h2 class="bp-h3">{{ .Title }}</h2>
-        <span class="bp-textlink">Ver el listado →</span>
+        <span class="bp-textlink">Ver el ranking →</span>
       </a>
       {{- end }}
     </div>

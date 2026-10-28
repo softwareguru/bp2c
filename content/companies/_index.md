@@ -23,7 +23,7 @@ blocks:
     kicker: "Directorio"
     h1: "Organizaciones acreditadas"
     subtitulo: "Las personas de tecnología de estas organizaciones calificaron su entorno de trabajo en anónimo, y esa calificación pasó el criterio: 85 % de promedio y ninguna pregunta por debajo de 75 %."
-    nota: "Las acreditaciones del ciclo 2025-2026 se otorgaron como Best Place to Code. El Listado 2027 se publica el 4 de febrero de 2027."
+    nota: "Las acreditaciones del ciclo 2025-2026 se otorgaron como Best Place to Code. El Ranking 2027 se publica el 18 de febrero de 2027."
     foto: "fotos/organizaciones.jpg"
     palabra: "Equipos."
     botones:
