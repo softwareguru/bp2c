@@ -28,7 +28,7 @@ blocks:
       - que: "Análisis corto de las cinco palancas"
         evaluada: true
         acreditada: true
-      - que: "Radiografía del Empleador: hallazgos, qué hacer con cada palanca y comparación con organizaciones parecidas a la tuya"
+      - que: "Radiografía del Empleador: hallazgos, qué hacer con cada palanca y comparación con tu cohorte y con el mercado de SG Tech Pulse"
         evaluada: false
         acreditada: true
       - que: "Reconocimiento físico, constancia digital y derecho a usar el sello"

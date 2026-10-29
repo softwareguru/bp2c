@@ -52,7 +52,7 @@ blocks:
       - "Medimos si tu equipo tiene herramientas y permisos para usar IA"
       - "Y cómo acompañas la incertidumbre que trae el cambio tecnológico"
       - "El reporte llega con acciones recomendadas, no solo con calificaciones"
-      - "Te comparamos con organizaciones parecidas a la tuya, no con un promedio"
+      - "Te comparamos con tu cohorte y con el mercado de SG Tech Pulse, no con un promedio"
 
   - type: esno
     h2: "Qué es y qué no es"

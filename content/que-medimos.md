@@ -49,7 +49,7 @@ blocks:
     h2: "Qué recibes: del tablero al reporte"
     parrafos:
       - "Si te evalúas, consultas el Dashboard de monitoreo durante las dos semanas: la calificación de Fundamentos y de las seis categorías, más un análisis corto de las cinco palancas. Eso lo tienes cumplas el criterio o no."
-      - "Si te acreditas, recibes además la Radiografía del Empleador: los hallazgos de cada categoría, qué hacer con cada palanca, cómo te ves frente a organizaciones parecidas a la tuya y el panorama del sector. Lleva el sello de The Data Pub."
+      - "Si te acreditas, recibes además la Radiografía del Empleador: los hallazgos de cada categoría, qué hacer con cada palanca, cómo te ves frente a tu cohorte y al mercado de SG Tech Pulse, y el panorama del sector. Lleva el sello de The Data Pub."
     enlace:
       texto: "Ver todo lo que incluye"
       url: "/beneficios/"
