@@ -18,7 +18,7 @@ cultura: 100
 friendly: 90
 infraestructura: 100 
 
-sello: true
+sello: 
 
 location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15056.047930340097!2d-99.19278314865133!3d19.368633827468177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffcaf46f2a47%3A0xfdbf5cbbffe0e5bf!2sEngine%20Core%20-%20B-Drive!5e0!3m2!1ses-419!2smx!4v1738039018885!5m2!1ses-419!2smx
 
