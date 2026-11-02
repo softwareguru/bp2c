@@ -18,7 +18,10 @@ cultura: 100
 friendly: 85
 infraestructura: 100  
 
-sello: 
+sello: true
+# Acreditada en el ciclo 2025: se queda en el directorio, pero fuera de
+# la marquesina de la portada.
+en_portada: false
 
 location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.626826027306!2d-99.18383112108545!3d19.385304535173116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff781f910ee7%3A0x27054d7908d19bbe!2sSan%20Antonio%20120%2C%20N%C3%A1poles%2C%20Benito%20Ju%C3%A1rez%2C%2003710%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1738086059332!5m2!1ses-419!2smx
 
