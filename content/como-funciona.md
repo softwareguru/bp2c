@@ -29,7 +29,7 @@ blocks:
       - titulo: "Recibes el resultado"
         texto: "Sabes si alcanzaste el criterio en Fundamentos y dónde están tus puntos débiles. Si lo alcanzaste, te llegan las instrucciones para acreditarte."
       - titulo: "Te acreditas"
-        texto: "Si cumpliste, pagas la acreditación y entras al Listado 2027. Desde ahí recibes la Radiografía del Empleador, el reconocimiento y los beneficios."
+        texto: "Si cumpliste, pagas la acreditación y entras al Ranking 2027. Desde ahí recibes la Radiografía del Empleador, el reconocimiento y los beneficios."
         pago: "Pago 2"
     nota: "Los reportes y la acreditación se entregan cuando está cubierto el pago que les corresponde."
 
