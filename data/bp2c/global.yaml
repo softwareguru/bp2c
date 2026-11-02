@@ -9,7 +9,7 @@ cta_principal:
 # salvo que la página declare su propio bloque cta.
 cta_default:
   titulo: "Las evaluaciones 2027 ya están abiertas"
-  texto: "Tu equipo tiene dos semanas para responder. El último día para pagar la evaluación es el 28 de enero."
+  texto: "Tu equipo tiene dos semanas para responder y las respuestas cierran el 11 de febrero."
   boton:
     texto: "Evalúa a tu organización"
     url: "/contacto/?interes=evaluar"
@@ -98,7 +98,7 @@ menu:
 # aquí está siempre visible, para no obligar a recordarla.
 franja:
   texto: "Evaluaciones 2027 abiertas"
-  detalle: "Último día para pagar la evaluación: 28 de enero"
+  detalle: "Las respuestas cierran el 11 de febrero"
   enlace:
     texto: "Ver fechas"
     url: "/como-funciona/#fechas"

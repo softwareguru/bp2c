@@ -20,6 +20,9 @@ friendly: 86
 infraestructura: 94 
 
 sello: true
+# Acreditada en el ciclo 2025: se queda en el directorio, pero fuera de
+# la marquesina de la portada.
+en_portada: false
 
 location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.565081790537!2d-99.20467342107708!3d19.431188735043925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2034fd849f15f%3A0x2dc2164708e2a13e!2sIPCOM!5e0!3m2!1ses-419!2smx!4v1738036551672!5m2!1ses-419!2smx
 

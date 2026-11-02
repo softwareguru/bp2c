@@ -15,7 +15,7 @@ blocks:
       - "Te escribimos al correo que nos dejes para conocer a tu organización."
       - "Te mandamos la propuesta según el tamaño de tu equipo de tecnología."
       - "Si decides seguir, firmas, pagas la evaluación y recibes el Kit de despliegue para invitar a tu equipo."
-    recordatorio: "Tu equipo tiene dos semanas para responder. El último día para pagar la evaluación es el 28 de enero de 2027."
+    recordatorio: "Tu equipo tiene dos semanas para responder y las respuestas cierran el 11 de febrero de 2027."
     nota: "¿Eres de prensa, de una comunidad tech o quieres ser aliado? Usa este mismo formulario y elige “Prensa o alianzas”."
     foto: "fotos/contacto.jpg"
     foto_alt: "Tres personas revisan juntas algo en una laptop"
