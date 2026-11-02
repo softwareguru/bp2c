@@ -64,7 +64,7 @@ grupos:
         r: "Vuelves a evaluarte sin costo. Si tu organización alcanza otra vez el criterio, pagas la acreditación y sigues en el ranking."
       - id: "numero-uno"
         p: "¿Cómo anunciamos nuestro lugar en el ranking?"
-        r: "Siempre con el nombre oficial del ranking y tu categoría, nunca como un ranking aparte. El Kit de acreditación trae las frases correctas."
+        r: "Siempre con el nombre oficial del ranking y tu categoría, nunca como un ranking aparte. El listado oficial va por categoría, pero las posiciones dentro de cada una no se publican: tu organización ve la suya cuando sale el Ranking 2027, y desde esa fecha puede usar el sello. El Kit de acreditación trae las frases correctas."
   - nombre: "Para personas de tecnología"
     preguntas:
       - id: "que-me-dice"

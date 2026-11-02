@@ -7,8 +7,8 @@ images:
   - "/images/bp2c27/fotos/listado.jpg"
 # No publicar antes del 18 de febrero de 2027.
 # D8 resuelta: el nombre es «Ranking 2027», como quedó en el diseño.
-# D2 abierta: el formato (con o sin posiciones dentro de cada categoría)
-# lo deciden Xuxo y Yolo.
+# D2 resuelta: el listado es oficial por categoría y no publica posiciones
+# dentro de cada una. Cada organización ve la suya al publicarse el ranking.
 cta:
   titulo: "El ciclo 2028 empieza pronto"
   texto: "Evalúa a tu organización y conoce dónde actuar."
