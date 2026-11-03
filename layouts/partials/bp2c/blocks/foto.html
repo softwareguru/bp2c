@@ -4,7 +4,9 @@
 {{- $foto := .foto -}}
 {{- $palabra := .palabra -}}
 {{- $alt := .alt | default "" -}}
-{{- $ruta := printf "/images/bp2c27/%s" $foto -}}
+{{- /* Una ruta que ya empieza con «/» se usa tal cual: asi un hero puede
+       reutilizar una imagen que vive fuera del kit 2027. */ -}}
+{{- $ruta := cond (hasPrefix $foto "/") $foto (printf "/images/bp2c27/%s" $foto) -}}
 {{- $existe := and $foto (fileExists (printf "static%s" $ruta)) -}}
 <div class="bp-arch">
   {{- if $existe }}
