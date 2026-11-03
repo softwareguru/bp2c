@@ -1,0 +1,38 @@
+{{- /* Iconos de las redes de Best Place to Create. Salen de
+       data/bp2c/global.yaml, asi que un cambio de red se hace en un lugar.
+
+       El SVG se incrusta en linea, no se carga con <img>: los iconos de
+       static/images/icons/ son `fill="currentColor"`, y dentro de un <img>
+       eso no hereda nada y se pintan en su color por defecto. En el pie, que
+       es casi negro, quedarian invisibles. Incrustados toman el color del
+       enlace, asi que el mismo partial sirve en fondo claro y en fondo
+       oscuro.
+
+       Los archivos traen width y height fijos en 16, que mandan sobre el
+       contenedor, asi que se reescriben al tamano pedido.
+
+       Parametros: `color`, `tamano` (lado en px) y `margen` (el margin de la
+       lista). Se llama asi:
+       {{ partial "bp2c/redes.html" (dict "color" "#F4F0E9") }} */ -}}
+{{- $color := .color | default "currentColor" -}}
+{{- $tamano := .tamano | default 22 -}}
+{{- $margen := .margen | default "18px 0 0" -}}
+{{- with site.Data.bp2c.global.redes }}
+<ul style="list-style: none; display: flex; gap: 18px; margin: {{ $margen }}; padding: 0;">
+  {{- range . }}
+  {{- $ruta := printf "static/images/icons/%s.svg" .icono }}
+  <li style="display: flex;">
+    <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .nombre }}" style="color: {{ $color }}; display: flex;">
+      {{- if fileExists $ruta -}}
+        {{- $svg := readFile $ruta -}}
+        {{- $svg = replaceRE `\swidth="[0-9.]+"` (printf ` width="%d"` $tamano) $svg -}}
+        {{- $svg = replaceRE `\sheight="[0-9.]+"` (printf ` height="%d"` $tamano) $svg -}}
+        {{- $svg | safeHTML -}}
+      {{- else -}}
+        {{ .nombre }}
+      {{- end -}}
+    </a>
+  </li>
+  {{- end }}
+</ul>
+{{- end }}
