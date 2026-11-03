@@ -35,6 +35,20 @@ footer:
   bajo_logo: "Preguntamos a las personas de tecnología cómo es trabajar en su organización, y acreditamos a las que alcanzan el criterio."
   legal: "Best Place to Create es una iniciativa de Software Guru y la evolución de Best Place to Code."
 
+# Redes de Best Place to Create. El icono es el nombre del archivo en
+# static/images/icons/, sin extension. El partial los incrusta en linea
+# para que hereden el color del texto donde se pinten.
+redes:
+  - nombre: "Instagram"
+    icono: "instagram"
+    url: "https://www.instagram.com/bestplacetocreate/"
+  - nombre: "Facebook"
+    icono: "facebook"
+    url: "https://www.facebook.com/bestplacetocreate"
+  - nombre: "TikTok"
+    icono: "tiktok"
+    url: "https://www.tiktok.com/@bestplacetocreate"
+
 # Etiquetas que se repiten
 etiquetas:
   distincion_2027: "Acreditada · Best Place to Create 2027"
