@@ -53,7 +53,7 @@ blocks:
       - titulo: "Consultoría global"
         texto: "Outsourcing tecnológico o integración de sistemas, con más de 100 personas de tecnología."
       - titulo: "Corporativo e Instituciones"
-        texto: "Organizaciones con un área de tecnología interna. Sin rango de tamaño."
+        texto: "Organizaciones e instituciones con un área de tecnología interna. Sin rango de tamaño."
 
   - type: cards
     fondo: "bp-section--paper"

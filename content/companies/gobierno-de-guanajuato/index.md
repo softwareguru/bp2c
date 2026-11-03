@@ -19,7 +19,7 @@ cultura: 98
 friendly: 88
 infraestructura: 94
 
-sello: 
+sello: true
 
 location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.738583876333!2d-101.24304402496931!3d21.00311358063979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf461bf297c9%3A0x3dfc4e503d6c88bd!2sSecretaria%20de%20Finanzas%2C%20Inversi%C3%B3n%20y%20Administraci%C3%B3n!5e0!3m2!1ses-419!2smx!4v1738079955239!5m2!1ses-419!2smx
 
