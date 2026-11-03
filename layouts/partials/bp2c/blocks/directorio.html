@@ -16,7 +16,9 @@
       <h2 class="bp-h2" style="margin-bottom:8px">{{ $nombre }}</h2>
       <p class="bp-note" style="margin:0 0 26px;max-width:46em">{{ $desc }}</p>
       <div class="bp-grid bp-grid--4">
-        {{- range (sort . "Title") }}
+        {{- /* Mismo orden que el Ranking 2026: `weight` es la posicion
+               dentro de la categoria, no el alfabetico. */ -}}
+        {{- range (sort . "Weight") }}
         {{ partial "bp2c/ui/company-card.html" (dict "page" .) }}
         {{- end }}
       </div>
