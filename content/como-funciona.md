@@ -45,7 +45,7 @@ blocks:
     tarjeta_crema: true
     tarjetas:
       - titulo: "ISV o startup"
-        texto: "Construyen su propio producto digital. Sin rango de tamaño."
+        texto: "Construyen su propio producto digital."
       - titulo: "Boutique"
         texto: "Consultoría tecnológica o agencia digital, con menos de 10 personas de tecnología."
       - titulo: "Consultoría mediana"
@@ -53,7 +53,7 @@ blocks:
       - titulo: "Consultoría global"
         texto: "Outsourcing tecnológico o integración de sistemas, con más de 100 personas de tecnología."
       - titulo: "Corporativo e Instituciones"
-        texto: "Organizaciones e instituciones con un área de tecnología interna. Sin rango de tamaño."
+        texto: "Organizaciones e instituciones con un área de tecnología interna."
 
   - type: cards
     fondo: "bp-section--paper"
