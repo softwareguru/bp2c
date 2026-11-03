@@ -84,5 +84,5 @@ blocks:
   - type: callout
     titulo: "Cómo se comunica el reconocimiento"
     parrafos:
-      - "Siempre con el nombre oficial del listado. No publicamos posiciones dentro de cada categoría, así que no existe un “#1 en Consultoría mediana” que anunciar."
+      - "Siempre con el nombre oficial del listado y tu categoría. El listado oficial va por categoría, pero las posiciones dentro de cada una no se publican: tu organización ve la suya cuando sale el Ranking 2027, y desde esa fecha puede usar el sello. Nunca como un ranking aparte, tipo “#1 en Consultoría mediana”."
 ---

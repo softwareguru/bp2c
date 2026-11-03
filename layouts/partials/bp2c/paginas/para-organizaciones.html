@@ -146,7 +146,7 @@
   (dict "t" "Invitas a tu equipo" "d" "Con el Kit de despliegue, tu gente de tecnología responde en anónimo durante dos semanas.")
   (dict "t" "Ves todo en vivo" "d" "El Dashboard de monitoreo muestra avance y calificación por categoría mientras responden.")
   (dict "t" "Recibes tu resultado" "d" "Sabes si cumpliste el criterio y dónde están tus oportunidades. Esto lo recibes cumplas o no.")
-  (dict "t" "Te acreditas" "d" "Si cumpliste, pagas la acreditación y entras al Listado 2027." "pago" "PAGO 2") -}}
+  (dict "t" "Te acreditas" "d" "Si cumpliste, pagas la acreditación y entras al Ranking 2027." "pago" "PAGO 2") -}}
 {{- range $i, $p := $pasos }}
 <li class="tilt step{{ if eq (mod $i 2) 1 }} tilt--r{{ end }}">
 <div class="paso-cab"><span class="mono k" style="font-size: 14px;">{{ printf "%02d" (add $i 1) }}</span>{{ with $p.pago }}<span class="mono paso-pago">{{ . }}</span>{{ end }}</div>
@@ -232,7 +232,7 @@
 </div>
 <div style="margin-top: 18px; background: #012233; color: #F4F0E9; border-radius: 24px; padding: 28px 30px; display: flex; flex-wrap: wrap; gap: 14px 32px; align-items: baseline;">
 <p class="kicker" style="color: #B1D635; flex: 0 0 auto;">CÓMO SE COMUNICA EL SELLO</p>
-<p style="margin: 0; flex: 1 1 420px; font-size: 18px; line-height: 1.55;">Siempre con el nombre oficial del ranking y tu categoría. Nunca como un ranking aparte, tipo «#1 en Consultoría mediana» sin decir de dónde viene.</p>
+<p style="margin: 0; flex: 1 1 420px; font-size: 18px; line-height: 1.55;">Siempre con el nombre oficial del ranking y tu categoría. El listado oficial va por categoría, pero las posiciones dentro de cada una no se publican: tu organización ve la suya cuando sale el Ranking 2027, y desde esa fecha puede usar el sello. Nunca como un ranking aparte, tipo «#1 en Consultoría mediana».</p>
 </div>
 </div>
 </section>
