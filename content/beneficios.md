@@ -84,5 +84,5 @@ blocks:
   - type: callout
     titulo: "Cómo se comunica el reconocimiento"
     parrafos:
-      - "Siempre con el nombre oficial del listado y tu categoría. El listado oficial va por categoría, pero las posiciones dentro de cada una no se publican: tu organización ve la suya cuando sale el Ranking 2027, y desde esa fecha puede usar el sello. Nunca como un ranking aparte, tipo “#1 en Consultoría mediana”."
+      - "Siempre con el nombre oficial del ranking y tu categoría. El listado oficial va por categoría y se publicarán las posiciones dentro de cada una. Los sellos podrán utilizarse a partir de la publicación oficial del ranking donde cada empresa conocerá su posición."
 ---
