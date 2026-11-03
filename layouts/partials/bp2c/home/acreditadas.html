@@ -1,13 +1,8 @@
 {{- /* Sección «acreditadas» de la portada 2027. Marcado del diseño aprobado.
        Los logos salen de las fichas de content/companies/ con `sello: true`,
        el mismo filtro que usa el muro de logos: así la marquesina crece
-       sola cuando se acredita una organización nueva.
-       `en_portada: false` saca una ficha de esta marquesina sin sacarla del
-       directorio: las acreditadas del ciclo 2025 siguen en /companies/, que
-       es el listado completo, pero no encabezan la portada. Las fichas sin
-       ese campo entran, que es el caso normal. */ -}}
+       sola cuando se acredita una organización nueva. */ -}}
 {{- $acreditadas := where (where site.RegularPages "Section" "companies") "Params.sello" true -}}
-{{- $acreditadas = where $acreditadas "Params.en_portada" "!=" false -}}
 <section id="acreditadas" style="background: #F4F0E9; padding: 96px 0 104px;">
 <div style="max-width: 1320px; margin: 0 auto; padding: 0 32px;">
 <h2 style="margin: 0; font-weight: 800; font-size: clamp(36px, 4.4vw, 64px); line-height: 1.04; letter-spacing: -0.03em;">Ellas ya crean <span class="hand" style="font-weight: 400; letter-spacing: .01em;">las condiciones</span></h2>
