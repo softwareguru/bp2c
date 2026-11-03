@@ -9,7 +9,8 @@ blocks:
     kicker: "El proceso"
     h1: "Cinco pasos, dos pagos"
     subtitulo: "El primer pago te da el diagnóstico. El segundo solo existe si tu organización alcanza el criterio, y eso lo deciden las respuestas de tu equipo."
-    foto: "fotos/como-funciona.jpg"
+    foto: "/images/home/hero.png"
+    foto_alt: "Dos personas de tecnología revisan algo juntas en una laptop"
     palabra: "Proceso."
     botones:
       - texto: "Evalúa a tu organización"
