@@ -20,7 +20,7 @@ cultura: 89
 friendly: 85
 infraestructura: 86 
 
-sello: 
+sello: true
 
 location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6575662410946!2d-99.16339122501323!3d19.427196081851026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff33e9e9aac5%3A0xe1b6a39d6e28a90d!2sLondres%2061-Piso%2012%2C%20Ju%C3%A1rez%2C%20Cuauht%C3%A9moc%2C%2006600%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1766171248788!5m2!1ses-419!2smx
 

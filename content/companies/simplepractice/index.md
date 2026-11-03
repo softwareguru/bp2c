@@ -34,7 +34,7 @@ cultura: 100
 friendly: 88
 infraestructura: 90 
 
-sello: 
+sello: true
 
 location: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.4958451788984!2d-99.17936912501452!3d19.381201281887137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff246383692b%3A0x928d41ac821be11d!2sWeWork%20Insurgentes%20Sur%201079!5e1!3m2!1ses-419!2smx!4v1769199537193!5m2!1ses-419!2smx
 
