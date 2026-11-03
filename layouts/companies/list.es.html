@@ -67,7 +67,10 @@
 <div class="cat" id="{{ $c.ancla }}">
 <div class="cat-cab"><h2 style="margin: 0; font-weight: 800; font-size: clamp(28px, 3vw, 42px); letter-spacing: -0.03em;">{{ $c.nombre }}</h2><p style="margin: 0; font-size: 16px; color: #4A5B68;">{{ $c.descripcion }}</p></div>
 <div class="grid-emp">
-{{- range (sort . "Title") }}
+{{- /* El orden es el del Ranking 2026, no el alfabetico: `weight` guarda la
+     posicion de cada organizacion dentro de su categoria, que es lo que esa
+     pagina publica. */ -}}
+{{- range (sort . "Weight") }}
 <article class="emp">
 {{- with (index (.Params.images | default slice) 0) }}
 <div class="emp-logo"><img src="{{ . | absURL }}" alt="" loading="lazy" width="170" height="56"></div>
