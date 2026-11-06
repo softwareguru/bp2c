@@ -61,5 +61,5 @@ blocks:
       - "Los resultados agregados —nunca los de tu organización por separado— alimentan el Observatorio Tech Talent de Software Guru. Junto con SG Tech Pulse, la encuesta abierta de sueldos y condiciones, es lo que permite entender cómo está cambiando el trabajo técnico en la región."
     enlace:
       texto: "Conoce SG Tech Pulse"
-      url: "https://salarios.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
+      url: "https://techpulse.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
 ---
