@@ -61,7 +61,7 @@ etiquetas:
 tech_pulse:
   plantilla: "Dato preliminar · Fuente: SG Tech Pulse 2026, corte de México al 12 de octubre de 2026 (n = %s). Muestra autoseleccionada."
   n_codigo: "189 personas que crean código"
-  url: "https://salarios.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
+  url: "https://techpulse.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
 
 software_guru:
   url: "https://sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral"
@@ -105,7 +105,7 @@ menu:
         url: "/rankings/"
         resumen: "Quién se acreditó cada año desde 2019"
       - nombre: "SG Tech Pulse"
-        url: "https://salarios.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
+        url: "https://techpulse.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
         resumen: "La encuesta abierta de sueldos y condiciones"
 
 # Franja de urgencia. La oferta tiene fecha límite y vivía solo en el pie:
@@ -157,7 +157,7 @@ footer_columnas:
       - nombre: "Rankings anteriores"
         url: "/rankings/"
       - nombre: "SG Tech Pulse"
-        url: "https://salarios.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
+        url: "https://techpulse.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
       - nombre: "Software Guru"
         url: "https://sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral"
   - titulo: "Contacto"

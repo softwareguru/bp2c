@@ -45,3 +45,19 @@ HUGO_ENABLEGITINFO = "true"
   to = "https://bestplacetocreate.com/:splat"
   status = 301
   force = true
+
+# Los hallazgos de Tech Pulse se publican en techpulse.sg.com.mx/dashboard/.
+# bp2c los sirvio un tiempo en /tech-pulse/completo/, asi que esas rutas y el
+# PDF se mandan a la fuente. La pagina /tech-pulse/ se queda: es contenido
+# propio de bp2c y desde ahi se enlaza hacia alla.
+[[redirects]]
+  from = "/tech-pulse/completo/*"
+  to = "https://techpulse.sg.com.mx/dashboard/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tech-pulse/SG-Tech-Pulse-2026-Hallazgos.pdf"
+  to = "https://techpulse.sg.com.mx/dashboard/"
+  status = 301
+  force = true

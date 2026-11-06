@@ -68,7 +68,7 @@ blocks:
       - "Es la encuesta abierta de Software Guru sobre sueldos y condiciones de trabajo en tecnología. La respondes en línea, y después puedes consultar los resultados para saber cómo estás tú frente al resto de tus compañeros de mercado."
     boton:
       texto: "Responder SG Tech Pulse"
-      url: "https://salarios.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
+      url: "https://techpulse.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-aon"
     foto: "fotos/talento-tech-pulse.jpg"
     foto_alt: "Una mujer con lentes sonríe frente a un pizarrón con notas"
     palabra: "Tu voz."

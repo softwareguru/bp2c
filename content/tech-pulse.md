@@ -23,10 +23,10 @@ blocks:
     palabra: "Datos."
     botones:
       - texto: "Ver los hallazgos completos"
-        url: "/tech-pulse/completo/"
+        url: "https://techpulse.sg.com.mx/dashboard/"
         variant: "primary"
       - texto: "Descargar el reporte"
-        url: "/tech-pulse/SG-Tech-Pulse-2026-Hallazgos.pdf"
+        url: "https://techpulse.sg.com.mx/dashboard/"
         variant: "outline"
 
   - type: dato
@@ -56,7 +56,7 @@ blocks:
         texto: "Frente al inglés, la experiencia o el empleador extranjero, las certificaciones mueven el número bastante menos de lo que se suele suponer."
     enlace:
       texto: "Ver cada palanca con sus gráficas"
-      url: "/tech-pulse/completo/"
+      url: "https://techpulse.sg.com.mx/dashboard/"
 
   - type: dato
     oscuro: true
@@ -74,7 +74,7 @@ blocks:
       - "Eso no se explica por la entrada: la participación en los primeros niveles es alta. El problema aparece en el ascenso, y una pausa de carrera reinicia el reloj."
     enlace:
       texto: "Ver los hallazgos de género completos"
-      url: "/tech-pulse/completo/"
+      url: "https://techpulse.sg.com.mx/dashboard/"
 
   - type: cards
     kicker: "Acto 3"
@@ -91,7 +91,7 @@ blocks:
         texto: "50 % de los hombres programa con agentes, contra <strong>32 % de las mujeres</strong>. La palanca nueva está repitiendo la brecha vieja."
     enlace:
       texto: "Ver el acto completo, con el oficio nuevo que ya tiene nombre"
-      url: "/tech-pulse/completo/"
+      url: "https://techpulse.sg.com.mx/dashboard/"
 
   - type: cards
     kicker: "Acto 4"
@@ -110,23 +110,22 @@ blocks:
         texto: "tiene un segundo trabajo, y otro 13 % deuda educativa."
     enlace:
       texto: "Ver también los hallazgos de neurodivergencia y discapacidad"
-      url: "/tech-pulse/completo/"
+      url: "https://techpulse.sg.com.mx/dashboard/"
 
-  - type: enlaces
-    h2: "Los hallazgos completos"
+  - type: texto
     fondo: "bp-section--sky"
-    enlaces:
-      - texto: "Los 27 hallazgos, con sus gráficas"
-        url: "/tech-pulse/completo/"
-      - texto: "El reporte para leer de corrido"
-        url: "/tech-pulse/completo/report.html"
-      - texto: "El reporte en PDF"
-        url: "/tech-pulse/SG-Tech-Pulse-2026-Hallazgos.pdf"
+    h2: "Los hallazgos completos viven en SG Tech Pulse"
+    parrafos:
+      - "Los 27 hallazgos, con sus gráficas y el cierre metodológico, están en el sitio de la encuesta. Ahí se recalculan en cada corte."
+    boton:
+      texto: "Ver los hallazgos en SG Tech Pulse"
+      url: "https://techpulse.sg.com.mx/dashboard/"
+      variant: "primary"
 
   - type: callout
     titulo: "Qué sí dice esto, y qué no"
     parrafos:
       - "Son <strong>resultados preliminares</strong> del corte de México al 12 de octubre de 2026, sobre 620 personas residentes en México que crean código, de 689 respuestas totales. Los sueldos son mensuales brutos en pesos; lo reportado en dólares se convirtió a 18.5 y se recortó la cola de los extremos."
       - "La muestra es <strong>autoseleccionada</strong>: contestó quien quiso contestar, así que no es una muestra representativa del país. Sirve para ver el tamaño de las diferencias entre grupos, no para fijar un sueldo de mercado. Cada hallazgo publica su propia n, y las brechas van sin ajustar por puesto ni experiencia salvo donde se diga lo contrario."
-      - "La encuesta sigue abierta, y los números se recalculan completos en cada corte. <a href=\"https://salarios.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-hallazgos\">Puedes contestarla aquí</a>."
+      - "La encuesta sigue abierta, y los números se recalculan completos en cada corte. <a href=\"https://techpulse.sg.com.mx/?utm_source=bp2c-sitio&utm_medium=referral&utm_campaign=techpulse-hallazgos\">Puedes contestarla aquí</a>."
 ---
