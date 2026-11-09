@@ -12,6 +12,9 @@
 <title>{{ with .Params.seo_title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
 <meta name="theme-color" content="{{ site.Params.themeColor | default "#012233" }}">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 <link rel="canonical" href="{{ .Permalink }}">
 {{- /* Mientras /en/ redirija a esta portada, no se anuncia como alternativa:
        apuntar un hreflang a una redirección es una señal contradictoria. */ -}}
