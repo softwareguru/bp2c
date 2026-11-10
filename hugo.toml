@@ -76,7 +76,7 @@ enableEmoji = true
 # https://schema.org/Article
 [params]
   description = "Best Place to Create es el estándar de diagnóstico y acreditación para organizaciones tech en Latinoamérica. Una iniciativa de Software Guru."
-  images = ['images/BestPlaceToCode-logo-100h.png']
+  images = ['images/bp2c-thumbnail.png']
   mainMenuLogo = "images/BestPlaceToCode-logo-100h.png"
 
   themeColor = "#012233"
