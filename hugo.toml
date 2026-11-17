@@ -1,10 +1,9 @@
 # D1 abierta: se construye en el dominio actual. El cambio a
 # https://bestplacetocreate.com va en el paso de dominio.
-baseURL = 'https://bestplacetocode.com'
+baseURL = 'https://bestplacetocreate.com'
 title = 'Best Place to Create'
 theme = 'hugo-bootstrap'
 defaultContentLanguage = "es"
-
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
