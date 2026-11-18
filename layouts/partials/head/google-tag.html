@@ -1,0 +1,33 @@
+{{/*
+<!--
+    Google tag
+    (see google-tag-consent.js and google-tag.js)
+
+    https://developers.google.com/tag-platform/devguides/consent
+    
+    Uses 'googleTag' and 'googleAds' site params, if existent
+
+    With:
+      - Variables inside JavaScript (https://discourse.gohugo.io/t/variables-inside-javascript/39086) 
+      - Generate inline script SHA for Content-Security-Policy (https://discourse.gohugo.io/t/generate-inline-script-sha-for-content-security-policy/14627)
+
+    Notes:
+      - Use Tag Manager with a Content Security Policy (https://developers.google.com/tag-platform/tag-manager/web/csp)
+      - Using GTM with a Content Security Policy (CSP) and impress your DevOps team in the process (https://www.dumky.net/posts/using-gtm-with-a-content-security-policy-csp-and-impress-your-devops-team-in-the-process/)
+-->
+*/}}
+{{ with $.Site.Params.googleTag }}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{.}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{.}}');
+</script>
+{{ end }}
+
+{{- /* Añadido en el sitio: LinkedIn Insight Tag para las páginas que usan el baseof del tema. */ -}}
+{{ partial "bp2c/linkedin-insight.html" . }}
