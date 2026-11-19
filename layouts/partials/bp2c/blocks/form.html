@@ -1,9 +1,11 @@
-<form id="contacto" class="form-contacto"
-      action="https://docs.google.com/forms/d/e/1FAIpQLScCNhhaFvAefpe0NUETnA-h9QUNC_wdPW-9RfVhISd3p7YxeQ/formResponse"
-      method="POST" target="hidden_iframe">
+{{- /* El envio lo recibe netlify/functions/contacto.mjs, que lo deja en
+       Pipedrive y, mientras se prueba, tambien en el Google Form de siempre.
+       Los campos van con nombre legible: la traduccion a las claves
+       entry.NNN de Google la hace la funcion, no el navegador. */ -}}
+<form id="contacto" class="form-contacto" action="/api/contacto" method="POST">
 
   <label for="interes">Me interesa *</label>
-  <select id="interes" name="entry.2043203638" required>
+  <select id="interes" name="interes" required>
     <option value="Evaluar a mi organización">Evaluar a mi organización</option>
     <option value="Recomendar una organización">Recomendar una organización</option>
     <option value="Prensa o alianzas">Prensa o alianzas</option>
@@ -12,22 +14,22 @@
   <fieldset>
     <legend>Quién eres</legend>
     <label for="nombre">Nombre *</label>
-    <input id="nombre" name="entry.1703096167" required>
+    <input id="nombre" name="nombre" required>
 
     <label for="correo">Correo de trabajo *</label>
-    <input id="correo" name="entry.1574457905" type="email" required>
+    <input id="correo" name="correo" type="email" required>
   </fieldset>
 
   <fieldset>
     <legend>Tu organización</legend>
     <label for="org">Organización *</label>
-    <input id="org" name="entry.770527947" required>
+    <input id="org" name="organizacion" required>
 
     <label for="puesto">Tu puesto</label>
-    <input id="puesto" name="entry.754306744">
+    <input id="puesto" name="puesto">
 
     <label for="tamano">Tamaño de tu equipo de tecnología</label>
-    <select id="tamano" name="entry.733970373">
+    <select id="tamano" name="tamano">
       <option value="">Selecciona una opción</option>
       <option>Menos de 10</option>
       <option>Entre 10 y 100</option>
@@ -37,13 +39,16 @@
   </fieldset>
 
   <label for="comentarios">¿Hay algo que debamos saber antes de llamarte?</label>
-  <textarea id="comentarios" name="entry.783181383" rows="4"></textarea>
+  <textarea id="comentarios" name="comentarios" rows="4"></textarea>
 
   <!-- Honeypot antispam -->
   <input type="text" name="website" tabindex="-1" autocomplete="off"
          style="position:absolute;left:-9999px" aria-hidden="true">
 
   <button type="submit">Enviar</button>
+  <p id="error-envio" class="error-envio" hidden role="alert">No se pudo enviar.
+    Vuelve a intentarlo o escríbenos a
+    <a href="mailto:hola@bestplacetocreate.com">hola@bestplacetocreate.com</a>.</p>
   <p class="nota">Te escribimos al correo que dejes. Consulta el
     <a href="/privacidad/">aviso de privacidad</a>.</p>
 </form>
@@ -53,16 +58,14 @@
   <p>Recibimos tus datos y te escribiremos pronto.</p>
 </div>
 
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
-
 <script>
 (function () {
   var form = document.getElementById('contacto');
   var gracias = document.getElementById('gracias');
-  var iframe = document.getElementById('hidden_iframe');
-  var enviado = false;
+  var error = document.getElementById('error-envio');
+  var boton = form.querySelector('button[type="submit"]');
 
-  // Preselecciona según ?interes=evaluar | recomendar | prensa
+  // Preselecciona segun ?interes=evaluar | recomendar | prensa
   var mapa = {
     evaluar: 'Evaluar a mi organización',
     recomendar: 'Recomendar una organización',
@@ -72,15 +75,34 @@
   if (mapa[p]) document.getElementById('interes').value = mapa[p];
 
   form.addEventListener('submit', function (e) {
-    if (form.website.value) { e.preventDefault(); return; }
-    enviado = true;
-  });
+    e.preventDefault();
+    if (form.website.value) return;   // el campo trampa
 
-  iframe.addEventListener('load', function () {
-    if (!enviado) return;
-    form.hidden = true;
-    gracias.hidden = false;
-    gracias.scrollIntoView({ behavior: 'smooth' });
+    error.hidden = true;
+    boton.disabled = true;
+    boton.textContent = 'Enviando...';
+
+    var datos = Object.fromEntries(new FormData(form));
+    datos.origen = location.pathname + location.search;
+
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(datos)
+    })
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+      .then(function () {
+        form.hidden = true;
+        gracias.hidden = false;
+        gracias.scrollIntoView({ behavior: 'smooth' });
+      })
+      .catch(function () {
+        // Sin iframe de por medio ya se sabe si fallo, asi que se dice:
+        // antes el envio se daba por bueno pasara lo que pasara.
+        error.hidden = false;
+        boton.disabled = false;
+        boton.textContent = 'Enviar';
+      });
   });
 })();
 </script>
@@ -98,6 +120,7 @@
     background: #012233; color: #fff; font: inherit; font-weight: 600;
   }
   .form-contacto .nota { font-size: .85rem; color: #666; }
+  .form-contacto .error-envio { font-size: .9rem; color: #B3261E; font-weight: 600; margin: 0; }
   .gracias { padding: 1.5rem; border: 1px solid #ccc; border-radius: 8px; max-width: 560px; }
   [hidden] { display: none !important; }
 </style>
