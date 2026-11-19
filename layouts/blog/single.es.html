@@ -10,7 +10,7 @@
   <div class="bp-shell">
     <p class="bp-kicker">Blog</p>
     <h1 class="bp-display">{{ .Title }}</h1>
-    <p class="bp-note" style="color: var(--bp-sky); margin-top: 18px;"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 de enero, 2006" }}</time>{{ with .ReadingTime }} · {{ . }} min de lectura{{ end }}</p>
+    <p class="bp-note" style="color: var(--bp-sky); margin-top: 18px;">{{ with .Params.author }}Por <strong style="color: #fff;">{{ . }}</strong> · {{ end }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "2 de January, 2006" }}</time>{{ with .ReadingTime }} · {{ . }} min de lectura{{ end }}</p>
   </div>
 </section>
 
