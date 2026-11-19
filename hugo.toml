@@ -80,6 +80,7 @@ enableEmoji = true
 
   themeColor = "#012233"
   googleTag = "G-NXBQTWJD3K"
+  linkedinPartnerId = "10411028"
 
   [params.options]
     bootStrapJs = true
