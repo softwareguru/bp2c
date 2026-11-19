@@ -13,11 +13,16 @@
      3 · un lead en la bandeja de prospectos, ligado a las dos
      4 · una nota en el lead con lo que no cabe en campos estandar
 
-   Lo de la nota es a proposito: puesto, tamano de equipo y comentarios no
-   tienen campo estandar en Pipedrive, son campos personalizados con una clave
-   distinta en cada cuenta. Si se crean, se ponen sus claves en
-   PIPEDRIVE_CAMPO_PUESTO y PIPEDRIVE_CAMPO_TAMANO y se llenan ademas del
-   texto de la nota. Sin esas variables todo sigue funcionando. */
+   El puesto y el origen van a dos campos que ya existen en la cuenta, no a
+   campos nuevos: «Title» y «Lead Source» de persona. Sus claves son las de
+   CAMPOS_PERSONA; se pueden cambiar por variable de entorno si algun dia se
+   renombran.
+
+   El tamano del equipo de tecnologia se queda en la nota a proposito. La
+   organizacion tiene un campo «Tamaño», pero mide la empresa entera —Micro,
+   Pequena, Mediana, Multinacional— y aqui se pregunta por el equipo de
+   tecnologia, que es otra cosa: una multinacional puede tener ocho personas
+   en tech. Meterlo ahi seria guardar un dato falso. */
 
 const API = "https://api.pipedrive.com";
 
@@ -34,6 +39,18 @@ const CAMPOS_GOOGLE = {
   tamano: "entry.733970373",
   comentarios: "entry.783181383",
 };
+
+/* Campos personalizados de persona que ya existian en la cuenta. No son
+   secretos, solo identificadores, por eso van aqui y no en el entorno; la
+   variable queda por si algun dia cambian. */
+const CAMPOS_PERSONA = {
+  puesto: process.env.PIPEDRIVE_CAMPO_PUESTO
+    || "c7cc1bf0316c9846ab8980112936433aa45ba18a",   // «Title»
+  origen: process.env.PIPEDRIVE_CAMPO_ORIGEN
+    || "e42eafcdab9ed10dfd623122e77481a571ea35b4",   // «Lead Source»
+};
+
+const ORIGEN = "Best Place to Create · formulario de contacto";
 
 const token = () => process.env.PIPEDRIVE_API_TOKEN;
 
@@ -80,20 +97,30 @@ async function enviarAPipedrive(d) {
       })).id;
   }
 
+  const datosPersona = {
+    ...(organizacionId ? { org_id: organizacionId } : {}),
+    ...(d.puesto ? { [CAMPOS_PERSONA.puesto]: d.puesto } : {}),
+    [CAMPOS_PERSONA.origen]: ORIGEN,
+  };
+
   let personaId = await buscar("persons", d.correo, "email");
-  if (!personaId) {
+  if (personaId) {
+    // Ya existia: se le completa lo que trae el formulario, sin pisar nombre
+    // ni correo, que es lo que la identifica.
+    await pipedrive(`/v1/persons/${personaId}`, {
+      method: "PUT",
+      body: JSON.stringify(datosPersona),
+    });
+  } else {
     personaId = (await pipedrive("/v1/persons", {
       method: "POST",
       body: JSON.stringify({
         name: d.nombre,
         email: [{ value: d.correo, primary: true, label: "work" }],
-        ...(organizacionId ? { org_id: organizacionId } : {}),
+        ...datosPersona,
       }),
     })).id;
   }
-
-  const campoPuesto = process.env.PIPEDRIVE_CAMPO_PUESTO;
-  const campoTamano = process.env.PIPEDRIVE_CAMPO_TAMANO;
 
   const lead = await pipedrive("/v1/leads", {
     method: "POST",
@@ -101,8 +128,6 @@ async function enviarAPipedrive(d) {
       title: `${d.organizacion || d.nombre} · ${d.interes}`,
       person_id: personaId,
       ...(organizacionId ? { organization_id: organizacionId } : {}),
-      ...(campoPuesto && d.puesto ? { [campoPuesto]: d.puesto } : {}),
-      ...(campoTamano && d.tamano ? { [campoTamano]: d.tamano } : {}),
     }),
   });
 
