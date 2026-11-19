@@ -20,7 +20,7 @@
         <img src="{{ . | absURL }}" alt="" loading="lazy" width="520" height="293">
         {{- end }}
         <h2 class="bp-h3">{{ .Title }}</h2>
-        <p class="bp-note"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 de enero, 2006" }}</time></p>
+        <p class="bp-note"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "2 de January, 2006" }}</time></p>
       </a>
       {{- end }}
     </div>

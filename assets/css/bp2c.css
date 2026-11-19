@@ -781,6 +781,11 @@ details.faq p { margin: 0 0 24px; font-size: 18px; line-height: 1.6; max-width: 
 .bp-prose li { margin: 0 0 8px; line-height: 1.5; }
 .bp-prose a { color: var(--bp-navy); font-weight: 700; text-underline-offset: 3px; }
 .bp-prose img { max-width: 100%; height: auto; border-radius: 14px; }
+.bp-prose table { width: 100%; border-collapse: collapse; margin: 0 0 32px; font-size: 16px; line-height: 1.45; }
+.bp-prose th, .bp-prose td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--bp-rule); color: var(--bp-ink-2); }
+.bp-prose th { font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--bp-ink-3); border-bottom: 2px solid var(--bp-ink-3); }
+.bp-prose tbody tr:last-child td { border-bottom: none; }
+@media (max-width: 600px) { .bp-prose th, .bp-prose td { padding: 10px 8px; font-size: 15px; } }
 
 /* La serie de años, para recorrerla sin volver al índice. */
 .bp-anios { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
