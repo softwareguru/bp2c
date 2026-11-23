@@ -58,10 +58,28 @@
   <p>Recibimos tus datos y te escribiremos pronto.</p>
 </div>
 
+{{- /* Modal de gracias. <dialog> con showModal() ya atrapa el foco, cierra
+       con Esc y devuelve el foco al cerrar; aqui solo se le da estilo. Al
+       cerrarlo queda el recuadro #gracias en lugar del formulario, para que
+       nadie lo vuelva a enviar por error. */ -}}
+<dialog id="modal-gracias" class="modal-gracias" aria-labelledby="modal-gracias-titulo">
+  <form method="dialog" class="modal-gracias__cerrar-x">
+    <button type="submit" aria-label="Cerrar">&times;</button>
+  </form>
+  <p class="bp-kicker modal-gracias__kicker">Listo</p>
+  <h2 id="modal-gracias-titulo" class="modal-gracias__titulo">¡Gracias<span data-nombre></span>!</h2>
+  <p class="modal-gracias__texto">Recibimos tus datos. Nuestro equipo te escribirá<span data-correo></span> muy pronto.</p>
+  <form method="dialog" class="modal-gracias__acciones">
+    <button type="submit" class="bp-btn bp-btn--primary" autofocus>Entendido</button>
+    <a class="bp-textlink" href="/companies/">Mira quién ya se acreditó →</a>
+  </form>
+</dialog>
+
 <script>
 (function () {
   var form = document.getElementById('contacto');
   var gracias = document.getElementById('gracias');
+  var modal = document.getElementById('modal-gracias');
   var error = document.getElementById('error-envio');
   var boton = form.querySelector('button[type="submit"]');
 
@@ -74,6 +92,26 @@
   var p = new URLSearchParams(location.search).get('interes');
   if (mapa[p]) document.getElementById('interes').value = mapa[p];
 
+  function mostrarGracias(datos) {
+    var nombre = (datos.nombre || '').trim().split(/\s+/)[0];
+    modal.querySelector('[data-nombre]').textContent = nombre ? ', ' + nombre : '';
+    modal.querySelector('[data-correo]').textContent = datos.correo ? ' a ' + datos.correo : '';
+    if (typeof modal.showModal === 'function') {
+      modal.showModal();
+    } else {
+      // Navegador sin <dialog>: queda el recuadro de siempre.
+      gracias.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  // Clic en el fondo oscuro tambien cierra.
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal) modal.close();
+  });
+  modal.addEventListener('close', function () {
+    gracias.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (form.website.value) return;   // el campo trampa
@@ -85,16 +123,34 @@
     var datos = Object.fromEntries(new FormData(form));
     datos.origen = location.pathname + location.search;
 
-    fetch(form.action, {
+    {{- /* Con `hugo server` no existe /api/contacto (es una funcion de
+           Netlify), asi que el envio siempre fallaba en local. Ahi se simula
+           una respuesta buena para poder probar el modal. En el build de
+           produccion esta rama no existe y siempre se envia de verdad. */}}
+    {{- if hugo.IsServer }}
+    console.info('[contacto] modo local: envío simulado, no se mandó nada a Pipedrive');
+    var envio = new Promise(function (ok) {
+      setTimeout(function () { ok({ ok: true, json: function () { return {}; } }); }, 600);
+    });
+    {{- else }}
+    var envio = fetch(form.action, {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(datos)
-    })
+    });
+    {{- end }}
+
+    envio
       .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
       .then(function () {
         form.hidden = true;
         gracias.hidden = false;
-        gracias.scrollIntoView({ behavior: 'smooth' });
+        mostrarGracias(datos);
+        // generate_lead: antes vivia en /contacto/gracias/, pero el
+        // formulario nunca lleva a esa pagina y el evento no se disparaba.
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', { metodo: 'formulario_contacto', interes: datos.interes });
+        }
       })
       .catch(function () {
         // Sin iframe de por medio ya se sabe si fallo, asi que se dice:
@@ -123,4 +179,35 @@
   .form-contacto .error-envio { font-size: .9rem; color: #B3261E; font-weight: 600; margin: 0; }
   .gracias { padding: 1.5rem; border: 1px solid #ccc; border-radius: 8px; max-width: 560px; }
   [hidden] { display: none !important; }
+
+  /* En /contacto/ el formulario va sobre fondo azul marino (.ct-form): el
+     rojo y los links azul marino de siempre no se leian. */
+  .ct-form .form-contacto .error-envio { color: #FFB4AB; }
+  .ct-form .form-contacto .error-envio a { color: #B1D635; }
+  .ct-form .form-contacto .nota { color: #C0D6EB; }
+  .ct-form .form-contacto .nota a { color: #FFFFFF; }
+  .ct-form .form-contacto .error-envio a:hover,
+  .ct-form .form-contacto .nota a:hover { color: #B1D635; }
+
+  .modal-gracias {
+    width: min(480px, calc(100vw - 32px)); padding: 40px 32px 32px; border: 0;
+    border-radius: var(--bp-radius, 22px); background: var(--bp-paper, #F4F0E9);
+    color: var(--bp-navy, #012233); box-shadow: 0 24px 64px rgba(0, 19, 31, .35);
+    text-align: left;
+  }
+  .modal-gracias::backdrop { background: rgba(0, 19, 31, .6); }
+  .modal-gracias[open] { animation: modal-gracias-entra .22s ease-out; }
+  @keyframes modal-gracias-entra { from { opacity: 0; transform: translateY(12px) scale(.98); } }
+  @media (prefers-reduced-motion: reduce) { .modal-gracias[open] { animation: none; } }
+  .modal-gracias__kicker { margin: 0 0 8px; }
+  .modal-gracias__titulo { margin: 0 0 12px; font-size: clamp(28px, 4vw, 36px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .modal-gracias__texto { margin: 0 0 28px; color: var(--bp-ink-2, #2c3e4a); overflow-wrap: anywhere; }
+  .modal-gracias__acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; margin: 0; }
+  .modal-gracias__acciones .bp-btn { border: 0; cursor: pointer; font: inherit; font-weight: 700; }
+  .modal-gracias__cerrar-x { position: absolute; top: 12px; right: 12px; margin: 0; }
+  .modal-gracias__cerrar-x button {
+    width: 40px; height: 40px; border: 0; border-radius: 50%; background: transparent;
+    color: var(--bp-navy, #012233); font-size: 28px; line-height: 1; cursor: pointer;
+  }
+  .modal-gracias__cerrar-x button:hover { background: rgba(1, 34, 51, .08); }
 </style>
